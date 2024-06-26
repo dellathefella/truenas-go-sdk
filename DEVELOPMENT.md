@@ -1,6 +1,6 @@
 # TrueNAS Go SDK Development
 
-This SDK supports both `angelfish` and `bluefin` release trains. Substitude `<release>` with your release train below.
+This SDK supports both `angelfish`,`dragonfish` and `bluefin` release trains. Substitude `<release>` with your release train below.
 
 Repo layout is as follows:
 
@@ -11,17 +11,20 @@ Repo layout is as follows:
 
 Unfortunately the raw openapi spec (`cfg/<release>_original.yaml`) is both incompatible with openapi generator, but also missing a lot of response/input definitions.
 
-
-To fetch orignal spec:
+To fetch the remote spec:
 
 ```bash
-./cfg/fetch.sh your.nas.hostname cfg/original.yaml
+./cfg/fetch-remote.sh core_13.0-u6_apiv2 cfg/dragonfish.yaml
 ```
 
 To generate go SDK from current (curated) openapi spec use this command:
+```bash
+npm install @openapitools/openapi-generator-cli -g
+npm install -g swagger2openapi
+```
 
 ```bash
-$ openapi-generator-cli generate -i cfg/bluefin.yaml -c cfg/bluefin_config.yaml -o . -g go --git-user-id dariusbakunas --git-repo-id truenas-go-sdk
+$ openapi-generator-cli generate -i cfg/dragonfish.yaml -c cfg/dragonfish_config.yaml -o . -g go --git-user-id dellathefella --git-repo-id truenas-go-sdk
 ```
 
 Workaround for TrueNAS content negotiation issue:
@@ -35,7 +38,6 @@ The full release build can be built using the `generate.sh` script:
 ```bash
 ./generate.sh <release>
 ```
-
 ## Code quality
 
 * Install git pre-commit: [https://pre-commit.com/](https://pre-commit.com/) and run `pre-commit install` in project root
