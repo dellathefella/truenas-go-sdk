@@ -1069,13 +1069,16 @@ Create a Replication Task that will push or pull ZFS snapshots to or from remote
 * `name` specifies a name for replication task
 * `direction` specifies whether task will `PUSH` or `PULL` snapshots
 * `transport` is a method of snapshots transfer:
+
   - `SSH` transfers snapshots via SSH connection. This method is supported everywhere but does not achieve
     great performance
     `ssh_credentials` is a required field for this transport (Keychain Credential ID of type `SSH_CREDENTIALS`)
+
   - `SSH+NETCAT` uses unencrypted connection for data transfer. This can only be used in trusted networks
     and requires a port (specified by range from `netcat_active_side_port_min` to `netcat_active_side_port_max`)
     to be open on `netcat_active_side`
     `ssh_credentials` is also required for control connection
+
   - `LOCAL` replicates to or from localhost
 
   - `source_datasets` is a non-empty list of datasets to replicate snapshots from
