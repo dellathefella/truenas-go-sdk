@@ -1,4 +1,4 @@
-module github.com/dellathefella/truenas-go-sdk v0.1.0
+module github.com/dellathefella/truenas-go-sdk
 
 go 1.13
 
