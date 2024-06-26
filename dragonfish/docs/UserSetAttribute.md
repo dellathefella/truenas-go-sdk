@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Key** | Pointer to **string** |  | [optional] 
-**Value** | Pointer to [**UserSetAttribute2**](UserSetAttribute2.md) |  | [optional] 
+**Value** | Pointer to [**[]Any**](Any.md) |  | [optional] 
 
 ## Methods
 
@@ -53,20 +53,20 @@ HasKey returns a boolean if a field has been set.
 
 ### GetValue
 
-`func (o *UserSetAttribute) GetValue() UserSetAttribute2`
+`func (o *UserSetAttribute) GetValue() []Any`
 
 GetValue returns the Value field if non-nil, zero value otherwise.
 
 ### GetValueOk
 
-`func (o *UserSetAttribute) GetValueOk() (*UserSetAttribute2, bool)`
+`func (o *UserSetAttribute) GetValueOk() (*[]Any, bool)`
 
 GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetValue
 
-`func (o *UserSetAttribute) SetValue(v UserSetAttribute2)`
+`func (o *UserSetAttribute) SetValue(v []Any)`
 
 SetValue sets Value field to given value.
 

@@ -16,8 +16,8 @@ import (
 
 // UserSetAttribute struct for UserSetAttribute
 type UserSetAttribute struct {
-	Key                  *string            `json:"key,omitempty"`
-	Value                *UserSetAttribute2 `json:"value,omitempty"`
+	Key                  *string `json:"key,omitempty"`
+	Value                []Any   `json:"value,omitempty"`
 	AdditionalProperties map[string]interface{}
 }
 
@@ -73,17 +73,17 @@ func (o *UserSetAttribute) SetKey(v string) {
 }
 
 // GetValue returns the Value field value if set, zero value otherwise.
-func (o *UserSetAttribute) GetValue() UserSetAttribute2 {
+func (o *UserSetAttribute) GetValue() []Any {
 	if o == nil || o.Value == nil {
-		var ret UserSetAttribute2
+		var ret []Any
 		return ret
 	}
-	return *o.Value
+	return o.Value
 }
 
 // GetValueOk returns a tuple with the Value field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *UserSetAttribute) GetValueOk() (*UserSetAttribute2, bool) {
+func (o *UserSetAttribute) GetValueOk() ([]Any, bool) {
 	if o == nil || o.Value == nil {
 		return nil, false
 	}
@@ -99,9 +99,9 @@ func (o *UserSetAttribute) HasValue() bool {
 	return false
 }
 
-// SetValue gets a reference to the given UserSetAttribute2 and assigns it to the Value field.
-func (o *UserSetAttribute) SetValue(v UserSetAttribute2) {
-	o.Value = &v
+// SetValue gets a reference to the given []Any and assigns it to the Value field.
+func (o *UserSetAttribute) SetValue(v []Any) {
+	o.Value = v
 }
 
 func (o UserSetAttribute) MarshalJSON() ([]byte, error) {

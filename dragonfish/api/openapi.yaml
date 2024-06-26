@@ -16442,7 +16442,11 @@ components:
           nullable: true
           type: boolean
         callback:
-          $ref: '#/components/schemas/callback'
+          items:
+            type: any
+          nullable: false
+          title: callback
+          type: array
       title: options
       type: object
     failover_call_remote:
@@ -16753,8 +16757,8 @@ components:
           type: boolean
         tls_policy:
           enum:
-          - "true"
-          - "false"
+          - "on"
+          - "off"
           - data
           - '!data'
           - auth
@@ -17981,8 +17985,8 @@ components:
           type: boolean
         ssl:
           enum:
-          - "false"
-          - "true"
+          - "OFF"
+          - "ON"
           - START_TLS
           type: string
         certificate:
@@ -18443,16 +18447,16 @@ components:
         deduplication:
           enum:
           - null
-          - "true"
+          - "ON"
           - VERIFY
-          - "false"
+          - "OFF"
           nullable: true
           type: string
         checksum:
           enum:
           - null
-          - "true"
-          - "false"
+          - "ON"
+          - "OFF"
           - FLETCHER2
           - FLETCHER4
           - SHA256
@@ -18480,8 +18484,8 @@ components:
           type: boolean
         autotrim:
           enum:
-          - "true"
-          - "false"
+          - "ON"
+          - "OFF"
           type: string
       title: pool_create
       type: object
@@ -18745,7 +18749,7 @@ components:
           type: string
         compression:
           enum:
-          - "false"
+          - "OFF"
           - LZ4
           - GZIP
           - GZIP-1
@@ -18797,13 +18801,13 @@ components:
           type: string
         atime:
           enum:
-          - "true"
-          - "false"
+          - "ON"
+          - "OFF"
           type: string
         exec:
           enum:
-          - "true"
-          - "false"
+          - "ON"
+          - "OFF"
           type: string
         managedby:
           type: string
@@ -18836,14 +18840,14 @@ components:
           type: string
         deduplication:
           enum:
-          - "true"
+          - "ON"
           - VERIFY
-          - "false"
+          - "OFF"
           type: string
         checksum:
           enum:
-          - "true"
-          - "false"
+          - "ON"
+          - "OFF"
           - FLETCHER2
           - FLETCHER4
           - SHA256
@@ -18852,8 +18856,8 @@ components:
           type: string
         readonly:
           enum:
-          - "true"
-          - "false"
+          - "ON"
+          - "OFF"
           type: string
         recordsize:
           type: string
@@ -18881,7 +18885,7 @@ components:
           type: string
         xattr:
           enum:
-          - "true"
+          - "ON"
           - SA
           type: string
         encryption_options:
@@ -18921,7 +18925,7 @@ components:
           type: string
         compression:
           enum:
-          - "false"
+          - "OFF"
           - LZ4
           - GZIP
           - GZIP-1
@@ -18974,14 +18978,14 @@ components:
           type: string
         atime:
           enum:
-          - "true"
-          - "false"
+          - "ON"
+          - "OFF"
           - INHERIT
           type: string
         exec:
           enum:
-          - "true"
-          - "false"
+          - "ON"
+          - "OFF"
           - INHERIT
           type: string
         managedby:
@@ -19016,15 +19020,15 @@ components:
           type: string
         deduplication:
           enum:
-          - "true"
+          - "ON"
           - VERIFY
-          - "false"
+          - "OFF"
           - INHERIT
           type: string
         checksum:
           enum:
-          - "true"
-          - "false"
+          - "ON"
+          - "OFF"
           - FLETCHER2
           - FLETCHER4
           - SHA256
@@ -19034,8 +19038,8 @@ components:
           type: string
         readonly:
           enum:
-          - "true"
-          - "false"
+          - "ON"
+          - "OFF"
           - INHERIT
           type: string
         recordsize:
@@ -19053,7 +19057,7 @@ components:
           type: string
         xattr:
           enum:
-          - "true"
+          - "ON"
           - SA
           type: string
       title: pool_dataset_create
@@ -21688,21 +21692,22 @@ components:
       title: key
       type: string
     user_set_attribute_2:
-      anyOf:
-      - type: string
-      - type: integer
-      - type: boolean
-      - type: object
-      - type: array
+      items:
+        type: any
       nullable: false
       title: value
+      type: array
     user_set_attribute:
       properties:
         key:
           title: key
           type: string
         value:
-          $ref: '#/components/schemas/user_set_attribute_2'
+          items:
+            type: any
+          nullable: false
+          title: value
+          type: array
       type: object
     user_shell_choices_0:
       nullable: true
@@ -22174,15 +22179,6 @@ components:
         slot:
           type: integer
       type: object
-    callback:
-      anyOf:
-      - type: string
-      - type: integer
-      - type: boolean
-      - type: object
-      - type: array
-      nullable: false
-      title: callback
     filesystem_chown_0_options:
       additionalProperties: false
       properties:
@@ -22254,8 +22250,8 @@ components:
           type: string
         ssl:
           enum:
-          - "false"
-          - "true"
+          - "OFF"
+          - "ON"
           - START_TLS
           type: string
         linked_service:

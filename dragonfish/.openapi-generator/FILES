@@ -144,7 +144,6 @@ docs/BootenvApi.md
 docs/BootenvCreate0.md
 docs/BootenvSetAttribute1.md
 docs/BootenvUpdate1.md
-docs/Callback.md
 docs/CertificateApi.md
 docs/CertificateCreate0.md
 docs/CertificateCreate0CertExtensions.md
@@ -527,7 +526,6 @@ docs/UserCreate0.md
 docs/UserDelete1.md
 docs/UserGetUserObj0.md
 docs/UserSetAttribute.md
-docs/UserSetAttribute2.md
 docs/UserUpdate1.md
 docs/VmApi.md
 docs/VmCreate0.md
@@ -580,7 +578,6 @@ model_boot_replace.go
 model_bootenv_create_0.go
 model_bootenv_set_attribute_1.go
 model_bootenv_update_1.go
-model_callback.go
 model_certificate_create_0.go
 model_certificate_create_0_cert_extensions.go
 model_certificate_create_0_cert_extensions_authority_key_identifier.go
@@ -874,7 +871,6 @@ model_user_create_0.go
 model_user_delete_1.go
 model_user_get_user_obj_0.go
 model_user_set_attribute.go
-model_user_set_attribute_2.go
 model_user_update_1.go
 model_vm_create_0.go
 model_vm_delete_1.go

@@ -22,7 +22,7 @@ go get golang.org/x/net/context
 Put the package under your project folder and add the following in import:
 
 ```golang
-import dragonfish "github.com/dellathefella/truenas-go-sdk/dragonfish"
+import dragonfish "github.com/dellathefella/truenas-go-sdk"
 ```
 
 To use a proxy, set the environment variable `HTTP_PROXY`:
@@ -788,7 +788,6 @@ Class | Method | HTTP request | Description
  - [BootenvCreate0](docs/BootenvCreate0.md)
  - [BootenvSetAttribute1](docs/BootenvSetAttribute1.md)
  - [BootenvUpdate1](docs/BootenvUpdate1.md)
- - [Callback](docs/Callback.md)
  - [CertificateCreate0](docs/CertificateCreate0.md)
  - [CertificateCreate0CertExtensions](docs/CertificateCreate0CertExtensions.md)
  - [CertificateCreate0CertExtensionsAuthorityKeyIdentifier](docs/CertificateCreate0CertExtensionsAuthorityKeyIdentifier.md)
@@ -1082,7 +1081,6 @@ Class | Method | HTTP request | Description
  - [UserDelete1](docs/UserDelete1.md)
  - [UserGetUserObj0](docs/UserGetUserObj0.md)
  - [UserSetAttribute](docs/UserSetAttribute.md)
- - [UserSetAttribute2](docs/UserSetAttribute2.md)
  - [UserUpdate1](docs/UserUpdate1.md)
  - [VmCreate0](docs/VmCreate0.md)
  - [VmDelete1](docs/VmDelete1.md)

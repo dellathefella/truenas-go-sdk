@@ -14,17 +14,13 @@ Unfortunately the raw openapi spec (`cfg/<release>_original.yaml`) is both incom
 To fetch the remote spec:
 
 ```bash
-./cfg/fetch-remote.sh core_13.0-u6_apiv2 cfg/dragonfish.yaml
+./cfg/fetch.sh core_13.0-u6_apiv2 cfg/dragonfish_original.yaml
 ```
 
 To generate go SDK from current (curated) openapi spec use this command:
-```bash
-npm install @openapitools/openapi-generator-cli -g
-npm install -g swagger2openapi
-```
 
 ```bash
-$ openapi-generator-cli generate -i cfg/dragonfish.yaml -c cfg/dragonfish_config.yaml -o . -g go --git-user-id dellathefella --git-repo-id truenas-go-sdk
+$ openapi-generator-cli generate -i cfg/dragonfish.yaml -c cfg/dragonfish_config.yaml -o ./test -g go --git-user-id dellathefella --git-repo-id truenas-go-sdk
 ```
 
 Workaround for TrueNAS content negotiation issue:

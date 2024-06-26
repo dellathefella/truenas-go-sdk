@@ -19,7 +19,7 @@ type FailoverCallRemote2 struct {
 	Timeout   *int32       `json:"timeout,omitempty"`
 	Job       *bool        `json:"job,omitempty"`
 	JobReturn NullableBool `json:"job_return,omitempty"`
-	Callback  *Callback    `json:"callback,omitempty"`
+	Callback  []Any        `json:"callback,omitempty"`
 }
 
 // NewFailoverCallRemote2 instantiates a new FailoverCallRemote2 object
@@ -147,17 +147,17 @@ func (o *FailoverCallRemote2) UnsetJobReturn() {
 }
 
 // GetCallback returns the Callback field value if set, zero value otherwise.
-func (o *FailoverCallRemote2) GetCallback() Callback {
+func (o *FailoverCallRemote2) GetCallback() []Any {
 	if o == nil || o.Callback == nil {
-		var ret Callback
+		var ret []Any
 		return ret
 	}
-	return *o.Callback
+	return o.Callback
 }
 
 // GetCallbackOk returns a tuple with the Callback field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *FailoverCallRemote2) GetCallbackOk() (*Callback, bool) {
+func (o *FailoverCallRemote2) GetCallbackOk() ([]Any, bool) {
 	if o == nil || o.Callback == nil {
 		return nil, false
 	}
@@ -173,9 +173,9 @@ func (o *FailoverCallRemote2) HasCallback() bool {
 	return false
 }
 
-// SetCallback gets a reference to the given Callback and assigns it to the Callback field.
-func (o *FailoverCallRemote2) SetCallback(v Callback) {
-	o.Callback = &v
+// SetCallback gets a reference to the given []Any and assigns it to the Callback field.
+func (o *FailoverCallRemote2) SetCallback(v []Any) {
+	o.Callback = v
 }
 
 func (o FailoverCallRemote2) MarshalJSON() ([]byte, error) {

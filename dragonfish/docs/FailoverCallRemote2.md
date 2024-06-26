@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Timeout** | Pointer to **int32** |  | [optional] 
 **Job** | Pointer to **bool** |  | [optional] 
 **JobReturn** | Pointer to **NullableBool** |  | [optional] 
-**Callback** | Pointer to [**Callback**](Callback.md) |  | [optional] 
+**Callback** | Pointer to [**[]Any**](Any.md) |  | [optional] 
 
 ## Methods
 
@@ -115,20 +115,20 @@ HasJobReturn returns a boolean if a field has been set.
 UnsetJobReturn ensures that no value is present for JobReturn, not even an explicit nil
 ### GetCallback
 
-`func (o *FailoverCallRemote2) GetCallback() Callback`
+`func (o *FailoverCallRemote2) GetCallback() []Any`
 
 GetCallback returns the Callback field if non-nil, zero value otherwise.
 
 ### GetCallbackOk
 
-`func (o *FailoverCallRemote2) GetCallbackOk() (*Callback, bool)`
+`func (o *FailoverCallRemote2) GetCallbackOk() (*[]Any, bool)`
 
 GetCallbackOk returns a tuple with the Callback field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCallback
 
-`func (o *FailoverCallRemote2) SetCallback(v Callback)`
+`func (o *FailoverCallRemote2) SetCallback(v []Any)`
 
 SetCallback sets Callback field to given value.
 

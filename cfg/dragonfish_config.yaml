@@ -1,5 +1,5 @@
 packageName: dragonfish
-isGoSubmodule: true
+isGoSubmodule: false
 disallowAdditionalPropertiesIfNotPresent: false
 apiTests: false
 modelTests: false
