@@ -4,34 +4,34 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Tos** | Pointer to **bool** |  | [optional] 
-**DnsMapping** | Pointer to **map[string]interface{}** |  | [optional] 
-**CsrId** | Pointer to **int32** |  | [optional] 
-**Signedby** | Pointer to **int32** |  | [optional] 
-**KeyLength** | Pointer to **int32** |  | [optional] 
-**RenewDays** | Pointer to **int32** |  | [optional] 
-**Type** | Pointer to **int32** |  | [optional] 
-**Lifetime** | Pointer to **int32** |  | [optional] 
-**Serial** | Pointer to **int32** |  | [optional] 
+**CSR** | Pointer to **string** |  | [optional] 
 **AcmeDirectoryUri** | Pointer to **string** |  | [optional] 
+**CertExtensions** | Pointer to [**CertificateCreate0CertExtensions**](CertificateCreate0CertExtensions.md) |  | [optional] 
 **Certificate** | Pointer to **string** |  | [optional] 
 **City** | Pointer to **string** |  | [optional] 
 **Common** | Pointer to **NullableString** |  | [optional] 
 **Country** | Pointer to **string** |  | [optional] 
-**CSR** | Pointer to **string** |  | [optional] 
+**CreateType** | Pointer to **string** |  | [optional] 
+**CsrId** | Pointer to **int32** |  | [optional] 
+**DigestAlgorithm** | Pointer to **string** |  | [optional] 
+**DnsMapping** | Pointer to **map[string]interface{}** |  | [optional] 
 **EcCurve** | Pointer to **string** |  | [optional] 
 **Email** | Pointer to **string** |  | [optional] 
+**KeyLength** | Pointer to **int32** |  | [optional] 
 **KeyType** | Pointer to **string** |  | [optional] 
+**Lifetime** | Pointer to **int32** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Organization** | Pointer to **string** |  | [optional] 
 **OrganizationalUnit** | Pointer to **string** |  | [optional] 
 **Passphrase** | Pointer to **string** |  | [optional] 
 **Privatekey** | Pointer to **string** |  | [optional] 
-**State** | Pointer to **string** |  | [optional] 
-**CreateType** | Pointer to **string** |  | [optional] 
-**DigestAlgorithm** | Pointer to **string** |  | [optional] 
+**RenewDays** | Pointer to **int32** |  | [optional] 
 **San** | Pointer to **[]string** |  | [optional] 
-**CertExtensions** | Pointer to [**CertificateCreate0CertExtensions**](CertificateCreate0CertExtensions.md) |  | [optional] 
+**Serial** | Pointer to **int32** |  | [optional] 
+**Signedby** | Pointer to **int32** |  | [optional] 
+**State** | Pointer to **string** |  | [optional] 
+**Tos** | Pointer to **bool** |  | [optional] 
+**Type** | Pointer to **int32** |  | [optional] 
 
 ## Methods
 
@@ -52,230 +52,30 @@ NewCertificateCreate0WithDefaults instantiates a new CertificateCreate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetTos
+### GetCSR
 
-`func (o *CertificateCreate0) GetTos() bool`
+`func (o *CertificateCreate0) GetCSR() string`
 
-GetTos returns the Tos field if non-nil, zero value otherwise.
+GetCSR returns the CSR field if non-nil, zero value otherwise.
 
-### GetTosOk
+### GetCSROk
 
-`func (o *CertificateCreate0) GetTosOk() (*bool, bool)`
+`func (o *CertificateCreate0) GetCSROk() (*string, bool)`
 
-GetTosOk returns a tuple with the Tos field if it's non-nil, zero value otherwise
+GetCSROk returns a tuple with the CSR field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetTos
+### SetCSR
 
-`func (o *CertificateCreate0) SetTos(v bool)`
+`func (o *CertificateCreate0) SetCSR(v string)`
 
-SetTos sets Tos field to given value.
+SetCSR sets CSR field to given value.
 
-### HasTos
+### HasCSR
 
-`func (o *CertificateCreate0) HasTos() bool`
+`func (o *CertificateCreate0) HasCSR() bool`
 
-HasTos returns a boolean if a field has been set.
-
-### GetDnsMapping
-
-`func (o *CertificateCreate0) GetDnsMapping() map[string]interface{}`
-
-GetDnsMapping returns the DnsMapping field if non-nil, zero value otherwise.
-
-### GetDnsMappingOk
-
-`func (o *CertificateCreate0) GetDnsMappingOk() (*map[string]interface{}, bool)`
-
-GetDnsMappingOk returns a tuple with the DnsMapping field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetDnsMapping
-
-`func (o *CertificateCreate0) SetDnsMapping(v map[string]interface{})`
-
-SetDnsMapping sets DnsMapping field to given value.
-
-### HasDnsMapping
-
-`func (o *CertificateCreate0) HasDnsMapping() bool`
-
-HasDnsMapping returns a boolean if a field has been set.
-
-### GetCsrId
-
-`func (o *CertificateCreate0) GetCsrId() int32`
-
-GetCsrId returns the CsrId field if non-nil, zero value otherwise.
-
-### GetCsrIdOk
-
-`func (o *CertificateCreate0) GetCsrIdOk() (*int32, bool)`
-
-GetCsrIdOk returns a tuple with the CsrId field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCsrId
-
-`func (o *CertificateCreate0) SetCsrId(v int32)`
-
-SetCsrId sets CsrId field to given value.
-
-### HasCsrId
-
-`func (o *CertificateCreate0) HasCsrId() bool`
-
-HasCsrId returns a boolean if a field has been set.
-
-### GetSignedby
-
-`func (o *CertificateCreate0) GetSignedby() int32`
-
-GetSignedby returns the Signedby field if non-nil, zero value otherwise.
-
-### GetSignedbyOk
-
-`func (o *CertificateCreate0) GetSignedbyOk() (*int32, bool)`
-
-GetSignedbyOk returns a tuple with the Signedby field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSignedby
-
-`func (o *CertificateCreate0) SetSignedby(v int32)`
-
-SetSignedby sets Signedby field to given value.
-
-### HasSignedby
-
-`func (o *CertificateCreate0) HasSignedby() bool`
-
-HasSignedby returns a boolean if a field has been set.
-
-### GetKeyLength
-
-`func (o *CertificateCreate0) GetKeyLength() int32`
-
-GetKeyLength returns the KeyLength field if non-nil, zero value otherwise.
-
-### GetKeyLengthOk
-
-`func (o *CertificateCreate0) GetKeyLengthOk() (*int32, bool)`
-
-GetKeyLengthOk returns a tuple with the KeyLength field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetKeyLength
-
-`func (o *CertificateCreate0) SetKeyLength(v int32)`
-
-SetKeyLength sets KeyLength field to given value.
-
-### HasKeyLength
-
-`func (o *CertificateCreate0) HasKeyLength() bool`
-
-HasKeyLength returns a boolean if a field has been set.
-
-### GetRenewDays
-
-`func (o *CertificateCreate0) GetRenewDays() int32`
-
-GetRenewDays returns the RenewDays field if non-nil, zero value otherwise.
-
-### GetRenewDaysOk
-
-`func (o *CertificateCreate0) GetRenewDaysOk() (*int32, bool)`
-
-GetRenewDaysOk returns a tuple with the RenewDays field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRenewDays
-
-`func (o *CertificateCreate0) SetRenewDays(v int32)`
-
-SetRenewDays sets RenewDays field to given value.
-
-### HasRenewDays
-
-`func (o *CertificateCreate0) HasRenewDays() bool`
-
-HasRenewDays returns a boolean if a field has been set.
-
-### GetType
-
-`func (o *CertificateCreate0) GetType() int32`
-
-GetType returns the Type field if non-nil, zero value otherwise.
-
-### GetTypeOk
-
-`func (o *CertificateCreate0) GetTypeOk() (*int32, bool)`
-
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetType
-
-`func (o *CertificateCreate0) SetType(v int32)`
-
-SetType sets Type field to given value.
-
-### HasType
-
-`func (o *CertificateCreate0) HasType() bool`
-
-HasType returns a boolean if a field has been set.
-
-### GetLifetime
-
-`func (o *CertificateCreate0) GetLifetime() int32`
-
-GetLifetime returns the Lifetime field if non-nil, zero value otherwise.
-
-### GetLifetimeOk
-
-`func (o *CertificateCreate0) GetLifetimeOk() (*int32, bool)`
-
-GetLifetimeOk returns a tuple with the Lifetime field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetLifetime
-
-`func (o *CertificateCreate0) SetLifetime(v int32)`
-
-SetLifetime sets Lifetime field to given value.
-
-### HasLifetime
-
-`func (o *CertificateCreate0) HasLifetime() bool`
-
-HasLifetime returns a boolean if a field has been set.
-
-### GetSerial
-
-`func (o *CertificateCreate0) GetSerial() int32`
-
-GetSerial returns the Serial field if non-nil, zero value otherwise.
-
-### GetSerialOk
-
-`func (o *CertificateCreate0) GetSerialOk() (*int32, bool)`
-
-GetSerialOk returns a tuple with the Serial field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSerial
-
-`func (o *CertificateCreate0) SetSerial(v int32)`
-
-SetSerial sets Serial field to given value.
-
-### HasSerial
-
-`func (o *CertificateCreate0) HasSerial() bool`
-
-HasSerial returns a boolean if a field has been set.
+HasCSR returns a boolean if a field has been set.
 
 ### GetAcmeDirectoryUri
 
@@ -301,6 +101,31 @@ SetAcmeDirectoryUri sets AcmeDirectoryUri field to given value.
 `func (o *CertificateCreate0) HasAcmeDirectoryUri() bool`
 
 HasAcmeDirectoryUri returns a boolean if a field has been set.
+
+### GetCertExtensions
+
+`func (o *CertificateCreate0) GetCertExtensions() CertificateCreate0CertExtensions`
+
+GetCertExtensions returns the CertExtensions field if non-nil, zero value otherwise.
+
+### GetCertExtensionsOk
+
+`func (o *CertificateCreate0) GetCertExtensionsOk() (*CertificateCreate0CertExtensions, bool)`
+
+GetCertExtensionsOk returns a tuple with the CertExtensions field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCertExtensions
+
+`func (o *CertificateCreate0) SetCertExtensions(v CertificateCreate0CertExtensions)`
+
+SetCertExtensions sets CertExtensions field to given value.
+
+### HasCertExtensions
+
+`func (o *CertificateCreate0) HasCertExtensions() bool`
+
+HasCertExtensions returns a boolean if a field has been set.
 
 ### GetCertificate
 
@@ -412,30 +237,105 @@ SetCountry sets Country field to given value.
 
 HasCountry returns a boolean if a field has been set.
 
-### GetCSR
+### GetCreateType
 
-`func (o *CertificateCreate0) GetCSR() string`
+`func (o *CertificateCreate0) GetCreateType() string`
 
-GetCSR returns the CSR field if non-nil, zero value otherwise.
+GetCreateType returns the CreateType field if non-nil, zero value otherwise.
 
-### GetCSROk
+### GetCreateTypeOk
 
-`func (o *CertificateCreate0) GetCSROk() (*string, bool)`
+`func (o *CertificateCreate0) GetCreateTypeOk() (*string, bool)`
 
-GetCSROk returns a tuple with the CSR field if it's non-nil, zero value otherwise
+GetCreateTypeOk returns a tuple with the CreateType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetCSR
+### SetCreateType
 
-`func (o *CertificateCreate0) SetCSR(v string)`
+`func (o *CertificateCreate0) SetCreateType(v string)`
 
-SetCSR sets CSR field to given value.
+SetCreateType sets CreateType field to given value.
 
-### HasCSR
+### HasCreateType
 
-`func (o *CertificateCreate0) HasCSR() bool`
+`func (o *CertificateCreate0) HasCreateType() bool`
 
-HasCSR returns a boolean if a field has been set.
+HasCreateType returns a boolean if a field has been set.
+
+### GetCsrId
+
+`func (o *CertificateCreate0) GetCsrId() int32`
+
+GetCsrId returns the CsrId field if non-nil, zero value otherwise.
+
+### GetCsrIdOk
+
+`func (o *CertificateCreate0) GetCsrIdOk() (*int32, bool)`
+
+GetCsrIdOk returns a tuple with the CsrId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCsrId
+
+`func (o *CertificateCreate0) SetCsrId(v int32)`
+
+SetCsrId sets CsrId field to given value.
+
+### HasCsrId
+
+`func (o *CertificateCreate0) HasCsrId() bool`
+
+HasCsrId returns a boolean if a field has been set.
+
+### GetDigestAlgorithm
+
+`func (o *CertificateCreate0) GetDigestAlgorithm() string`
+
+GetDigestAlgorithm returns the DigestAlgorithm field if non-nil, zero value otherwise.
+
+### GetDigestAlgorithmOk
+
+`func (o *CertificateCreate0) GetDigestAlgorithmOk() (*string, bool)`
+
+GetDigestAlgorithmOk returns a tuple with the DigestAlgorithm field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDigestAlgorithm
+
+`func (o *CertificateCreate0) SetDigestAlgorithm(v string)`
+
+SetDigestAlgorithm sets DigestAlgorithm field to given value.
+
+### HasDigestAlgorithm
+
+`func (o *CertificateCreate0) HasDigestAlgorithm() bool`
+
+HasDigestAlgorithm returns a boolean if a field has been set.
+
+### GetDnsMapping
+
+`func (o *CertificateCreate0) GetDnsMapping() map[string]interface{}`
+
+GetDnsMapping returns the DnsMapping field if non-nil, zero value otherwise.
+
+### GetDnsMappingOk
+
+`func (o *CertificateCreate0) GetDnsMappingOk() (*map[string]interface{}, bool)`
+
+GetDnsMappingOk returns a tuple with the DnsMapping field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDnsMapping
+
+`func (o *CertificateCreate0) SetDnsMapping(v map[string]interface{})`
+
+SetDnsMapping sets DnsMapping field to given value.
+
+### HasDnsMapping
+
+`func (o *CertificateCreate0) HasDnsMapping() bool`
+
+HasDnsMapping returns a boolean if a field has been set.
 
 ### GetEcCurve
 
@@ -487,6 +387,31 @@ SetEmail sets Email field to given value.
 
 HasEmail returns a boolean if a field has been set.
 
+### GetKeyLength
+
+`func (o *CertificateCreate0) GetKeyLength() int32`
+
+GetKeyLength returns the KeyLength field if non-nil, zero value otherwise.
+
+### GetKeyLengthOk
+
+`func (o *CertificateCreate0) GetKeyLengthOk() (*int32, bool)`
+
+GetKeyLengthOk returns a tuple with the KeyLength field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetKeyLength
+
+`func (o *CertificateCreate0) SetKeyLength(v int32)`
+
+SetKeyLength sets KeyLength field to given value.
+
+### HasKeyLength
+
+`func (o *CertificateCreate0) HasKeyLength() bool`
+
+HasKeyLength returns a boolean if a field has been set.
+
 ### GetKeyType
 
 `func (o *CertificateCreate0) GetKeyType() string`
@@ -511,6 +436,31 @@ SetKeyType sets KeyType field to given value.
 `func (o *CertificateCreate0) HasKeyType() bool`
 
 HasKeyType returns a boolean if a field has been set.
+
+### GetLifetime
+
+`func (o *CertificateCreate0) GetLifetime() int32`
+
+GetLifetime returns the Lifetime field if non-nil, zero value otherwise.
+
+### GetLifetimeOk
+
+`func (o *CertificateCreate0) GetLifetimeOk() (*int32, bool)`
+
+GetLifetimeOk returns a tuple with the Lifetime field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLifetime
+
+`func (o *CertificateCreate0) SetLifetime(v int32)`
+
+SetLifetime sets Lifetime field to given value.
+
+### HasLifetime
+
+`func (o *CertificateCreate0) HasLifetime() bool`
+
+HasLifetime returns a boolean if a field has been set.
 
 ### GetName
 
@@ -637,80 +587,30 @@ SetPrivatekey sets Privatekey field to given value.
 
 HasPrivatekey returns a boolean if a field has been set.
 
-### GetState
+### GetRenewDays
 
-`func (o *CertificateCreate0) GetState() string`
+`func (o *CertificateCreate0) GetRenewDays() int32`
 
-GetState returns the State field if non-nil, zero value otherwise.
+GetRenewDays returns the RenewDays field if non-nil, zero value otherwise.
 
-### GetStateOk
+### GetRenewDaysOk
 
-`func (o *CertificateCreate0) GetStateOk() (*string, bool)`
+`func (o *CertificateCreate0) GetRenewDaysOk() (*int32, bool)`
 
-GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise
+GetRenewDaysOk returns a tuple with the RenewDays field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetState
+### SetRenewDays
 
-`func (o *CertificateCreate0) SetState(v string)`
+`func (o *CertificateCreate0) SetRenewDays(v int32)`
 
-SetState sets State field to given value.
+SetRenewDays sets RenewDays field to given value.
 
-### HasState
+### HasRenewDays
 
-`func (o *CertificateCreate0) HasState() bool`
+`func (o *CertificateCreate0) HasRenewDays() bool`
 
-HasState returns a boolean if a field has been set.
-
-### GetCreateType
-
-`func (o *CertificateCreate0) GetCreateType() string`
-
-GetCreateType returns the CreateType field if non-nil, zero value otherwise.
-
-### GetCreateTypeOk
-
-`func (o *CertificateCreate0) GetCreateTypeOk() (*string, bool)`
-
-GetCreateTypeOk returns a tuple with the CreateType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCreateType
-
-`func (o *CertificateCreate0) SetCreateType(v string)`
-
-SetCreateType sets CreateType field to given value.
-
-### HasCreateType
-
-`func (o *CertificateCreate0) HasCreateType() bool`
-
-HasCreateType returns a boolean if a field has been set.
-
-### GetDigestAlgorithm
-
-`func (o *CertificateCreate0) GetDigestAlgorithm() string`
-
-GetDigestAlgorithm returns the DigestAlgorithm field if non-nil, zero value otherwise.
-
-### GetDigestAlgorithmOk
-
-`func (o *CertificateCreate0) GetDigestAlgorithmOk() (*string, bool)`
-
-GetDigestAlgorithmOk returns a tuple with the DigestAlgorithm field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetDigestAlgorithm
-
-`func (o *CertificateCreate0) SetDigestAlgorithm(v string)`
-
-SetDigestAlgorithm sets DigestAlgorithm field to given value.
-
-### HasDigestAlgorithm
-
-`func (o *CertificateCreate0) HasDigestAlgorithm() bool`
-
-HasDigestAlgorithm returns a boolean if a field has been set.
+HasRenewDays returns a boolean if a field has been set.
 
 ### GetSan
 
@@ -737,30 +637,130 @@ SetSan sets San field to given value.
 
 HasSan returns a boolean if a field has been set.
 
-### GetCertExtensions
+### GetSerial
 
-`func (o *CertificateCreate0) GetCertExtensions() CertificateCreate0CertExtensions`
+`func (o *CertificateCreate0) GetSerial() int32`
 
-GetCertExtensions returns the CertExtensions field if non-nil, zero value otherwise.
+GetSerial returns the Serial field if non-nil, zero value otherwise.
 
-### GetCertExtensionsOk
+### GetSerialOk
 
-`func (o *CertificateCreate0) GetCertExtensionsOk() (*CertificateCreate0CertExtensions, bool)`
+`func (o *CertificateCreate0) GetSerialOk() (*int32, bool)`
 
-GetCertExtensionsOk returns a tuple with the CertExtensions field if it's non-nil, zero value otherwise
+GetSerialOk returns a tuple with the Serial field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetCertExtensions
+### SetSerial
 
-`func (o *CertificateCreate0) SetCertExtensions(v CertificateCreate0CertExtensions)`
+`func (o *CertificateCreate0) SetSerial(v int32)`
 
-SetCertExtensions sets CertExtensions field to given value.
+SetSerial sets Serial field to given value.
 
-### HasCertExtensions
+### HasSerial
 
-`func (o *CertificateCreate0) HasCertExtensions() bool`
+`func (o *CertificateCreate0) HasSerial() bool`
 
-HasCertExtensions returns a boolean if a field has been set.
+HasSerial returns a boolean if a field has been set.
+
+### GetSignedby
+
+`func (o *CertificateCreate0) GetSignedby() int32`
+
+GetSignedby returns the Signedby field if non-nil, zero value otherwise.
+
+### GetSignedbyOk
+
+`func (o *CertificateCreate0) GetSignedbyOk() (*int32, bool)`
+
+GetSignedbyOk returns a tuple with the Signedby field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSignedby
+
+`func (o *CertificateCreate0) SetSignedby(v int32)`
+
+SetSignedby sets Signedby field to given value.
+
+### HasSignedby
+
+`func (o *CertificateCreate0) HasSignedby() bool`
+
+HasSignedby returns a boolean if a field has been set.
+
+### GetState
+
+`func (o *CertificateCreate0) GetState() string`
+
+GetState returns the State field if non-nil, zero value otherwise.
+
+### GetStateOk
+
+`func (o *CertificateCreate0) GetStateOk() (*string, bool)`
+
+GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetState
+
+`func (o *CertificateCreate0) SetState(v string)`
+
+SetState sets State field to given value.
+
+### HasState
+
+`func (o *CertificateCreate0) HasState() bool`
+
+HasState returns a boolean if a field has been set.
+
+### GetTos
+
+`func (o *CertificateCreate0) GetTos() bool`
+
+GetTos returns the Tos field if non-nil, zero value otherwise.
+
+### GetTosOk
+
+`func (o *CertificateCreate0) GetTosOk() (*bool, bool)`
+
+GetTosOk returns a tuple with the Tos field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTos
+
+`func (o *CertificateCreate0) SetTos(v bool)`
+
+SetTos sets Tos field to given value.
+
+### HasTos
+
+`func (o *CertificateCreate0) HasTos() bool`
+
+HasTos returns a boolean if a field has been set.
+
+### GetType
+
+`func (o *CertificateCreate0) GetType() int32`
+
+GetType returns the Type field if non-nil, zero value otherwise.
+
+### GetTypeOk
+
+`func (o *CertificateCreate0) GetTypeOk() (*int32, bool)`
+
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetType
+
+`func (o *CertificateCreate0) SetType(v int32)`
+
+SetType sets Type field to given value.
+
+### HasType
+
+`func (o *CertificateCreate0) HasType() bool`
+
+HasType returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

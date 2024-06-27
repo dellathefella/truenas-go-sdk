@@ -5,11 +5,11 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **BridgeMembers** | Pointer to **bool** |  | [optional] 
-**LagPorts** | Pointer to **bool** |  | [optional] 
-**VlanParent** | Pointer to **bool** |  | [optional] 
 **Exclude** | Pointer to **[]interface{}** |  | [optional] 
 **ExcludeTypes** | Pointer to **[]string** |  | [optional] 
 **Include** | Pointer to **[]interface{}** |  | [optional] 
+**LagPorts** | Pointer to **bool** |  | [optional] 
+**VlanParent** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -54,56 +54,6 @@ SetBridgeMembers sets BridgeMembers field to given value.
 `func (o *InterfaceChoices0) HasBridgeMembers() bool`
 
 HasBridgeMembers returns a boolean if a field has been set.
-
-### GetLagPorts
-
-`func (o *InterfaceChoices0) GetLagPorts() bool`
-
-GetLagPorts returns the LagPorts field if non-nil, zero value otherwise.
-
-### GetLagPortsOk
-
-`func (o *InterfaceChoices0) GetLagPortsOk() (*bool, bool)`
-
-GetLagPortsOk returns a tuple with the LagPorts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetLagPorts
-
-`func (o *InterfaceChoices0) SetLagPorts(v bool)`
-
-SetLagPorts sets LagPorts field to given value.
-
-### HasLagPorts
-
-`func (o *InterfaceChoices0) HasLagPorts() bool`
-
-HasLagPorts returns a boolean if a field has been set.
-
-### GetVlanParent
-
-`func (o *InterfaceChoices0) GetVlanParent() bool`
-
-GetVlanParent returns the VlanParent field if non-nil, zero value otherwise.
-
-### GetVlanParentOk
-
-`func (o *InterfaceChoices0) GetVlanParentOk() (*bool, bool)`
-
-GetVlanParentOk returns a tuple with the VlanParent field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetVlanParent
-
-`func (o *InterfaceChoices0) SetVlanParent(v bool)`
-
-SetVlanParent sets VlanParent field to given value.
-
-### HasVlanParent
-
-`func (o *InterfaceChoices0) HasVlanParent() bool`
-
-HasVlanParent returns a boolean if a field has been set.
 
 ### GetExclude
 
@@ -179,6 +129,56 @@ SetInclude sets Include field to given value.
 `func (o *InterfaceChoices0) HasInclude() bool`
 
 HasInclude returns a boolean if a field has been set.
+
+### GetLagPorts
+
+`func (o *InterfaceChoices0) GetLagPorts() bool`
+
+GetLagPorts returns the LagPorts field if non-nil, zero value otherwise.
+
+### GetLagPortsOk
+
+`func (o *InterfaceChoices0) GetLagPortsOk() (*bool, bool)`
+
+GetLagPortsOk returns a tuple with the LagPorts field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLagPorts
+
+`func (o *InterfaceChoices0) SetLagPorts(v bool)`
+
+SetLagPorts sets LagPorts field to given value.
+
+### HasLagPorts
+
+`func (o *InterfaceChoices0) HasLagPorts() bool`
+
+HasLagPorts returns a boolean if a field has been set.
+
+### GetVlanParent
+
+`func (o *InterfaceChoices0) GetVlanParent() bool`
+
+GetVlanParent returns the VlanParent field if non-nil, zero value otherwise.
+
+### GetVlanParentOk
+
+`func (o *InterfaceChoices0) GetVlanParentOk() (*bool, bool)`
+
+GetVlanParentOk returns a tuple with the VlanParent field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetVlanParent
+
+`func (o *InterfaceChoices0) SetVlanParent(v bool)`
+
+SetVlanParent sets VlanParent field to given value.
+
+### HasVlanParent
+
+`func (o *InterfaceChoices0) HasVlanParent() bool`
+
+HasVlanParent returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

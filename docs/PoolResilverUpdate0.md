@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Begin** | Pointer to **string** |  | [optional] 
-**End** | Pointer to **string** |  | [optional] 
 **Enabled** | Pointer to **bool** |  | [optional] 
+**End** | Pointer to **string** |  | [optional] 
 **Weekday** | Pointer to **[]int32** |  | [optional] 
 
 ## Methods
@@ -53,31 +53,6 @@ SetBegin sets Begin field to given value.
 
 HasBegin returns a boolean if a field has been set.
 
-### GetEnd
-
-`func (o *PoolResilverUpdate0) GetEnd() string`
-
-GetEnd returns the End field if non-nil, zero value otherwise.
-
-### GetEndOk
-
-`func (o *PoolResilverUpdate0) GetEndOk() (*string, bool)`
-
-GetEndOk returns a tuple with the End field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetEnd
-
-`func (o *PoolResilverUpdate0) SetEnd(v string)`
-
-SetEnd sets End field to given value.
-
-### HasEnd
-
-`func (o *PoolResilverUpdate0) HasEnd() bool`
-
-HasEnd returns a boolean if a field has been set.
-
 ### GetEnabled
 
 `func (o *PoolResilverUpdate0) GetEnabled() bool`
@@ -102,6 +77,31 @@ SetEnabled sets Enabled field to given value.
 `func (o *PoolResilverUpdate0) HasEnabled() bool`
 
 HasEnabled returns a boolean if a field has been set.
+
+### GetEnd
+
+`func (o *PoolResilverUpdate0) GetEnd() string`
+
+GetEnd returns the End field if non-nil, zero value otherwise.
+
+### GetEndOk
+
+`func (o *PoolResilverUpdate0) GetEndOk() (*string, bool)`
+
+GetEndOk returns a tuple with the End field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEnd
+
+`func (o *PoolResilverUpdate0) SetEnd(v string)`
+
+SetEnd sets End field to given value.
+
+### HasEnd
+
+`func (o *PoolResilverUpdate0) HasEnd() bool`
+
+HasEnd returns a boolean if a field has been set.
 
 ### GetWeekday
 

@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Method** | Pointer to **string** |  | [optional] 
 **Args** | Pointer to **[]interface{}** |  | [optional] [default to []]
-**Filename** | Pointer to **string** |  | [optional] 
 **Buffered** | Pointer to **bool** |  | [optional] [default to false]
+**Filename** | Pointer to **string** |  | [optional] 
+**Method** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -27,31 +27,6 @@ will change when the set of required properties is changed
 NewCoreDownloadWithDefaults instantiates a new CoreDownload object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetMethod
-
-`func (o *CoreDownload) GetMethod() string`
-
-GetMethod returns the Method field if non-nil, zero value otherwise.
-
-### GetMethodOk
-
-`func (o *CoreDownload) GetMethodOk() (*string, bool)`
-
-GetMethodOk returns a tuple with the Method field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetMethod
-
-`func (o *CoreDownload) SetMethod(v string)`
-
-SetMethod sets Method field to given value.
-
-### HasMethod
-
-`func (o *CoreDownload) HasMethod() bool`
-
-HasMethod returns a boolean if a field has been set.
 
 ### GetArgs
 
@@ -78,6 +53,31 @@ SetArgs sets Args field to given value.
 
 HasArgs returns a boolean if a field has been set.
 
+### GetBuffered
+
+`func (o *CoreDownload) GetBuffered() bool`
+
+GetBuffered returns the Buffered field if non-nil, zero value otherwise.
+
+### GetBufferedOk
+
+`func (o *CoreDownload) GetBufferedOk() (*bool, bool)`
+
+GetBufferedOk returns a tuple with the Buffered field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetBuffered
+
+`func (o *CoreDownload) SetBuffered(v bool)`
+
+SetBuffered sets Buffered field to given value.
+
+### HasBuffered
+
+`func (o *CoreDownload) HasBuffered() bool`
+
+HasBuffered returns a boolean if a field has been set.
+
 ### GetFilename
 
 `func (o *CoreDownload) GetFilename() string`
@@ -103,30 +103,30 @@ SetFilename sets Filename field to given value.
 
 HasFilename returns a boolean if a field has been set.
 
-### GetBuffered
+### GetMethod
 
-`func (o *CoreDownload) GetBuffered() bool`
+`func (o *CoreDownload) GetMethod() string`
 
-GetBuffered returns the Buffered field if non-nil, zero value otherwise.
+GetMethod returns the Method field if non-nil, zero value otherwise.
 
-### GetBufferedOk
+### GetMethodOk
 
-`func (o *CoreDownload) GetBufferedOk() (*bool, bool)`
+`func (o *CoreDownload) GetMethodOk() (*string, bool)`
 
-GetBufferedOk returns a tuple with the Buffered field if it's non-nil, zero value otherwise
+GetMethodOk returns a tuple with the Method field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetBuffered
+### SetMethod
 
-`func (o *CoreDownload) SetBuffered(v bool)`
+`func (o *CoreDownload) SetMethod(v string)`
 
-SetBuffered sets Buffered field to given value.
+SetMethod sets Method field to given value.
 
-### HasBuffered
+### HasMethod
 
-`func (o *CoreDownload) HasBuffered() bool`
+`func (o *CoreDownload) HasMethod() bool`
 
-HasBuffered returns a boolean if a field has been set.
+HasMethod returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

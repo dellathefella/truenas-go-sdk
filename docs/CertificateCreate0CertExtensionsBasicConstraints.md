@@ -6,8 +6,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Ca** | Pointer to **bool** |  | [optional] 
 **Enabled** | Pointer to **bool** |  | [optional] 
-**PathLength** | Pointer to **NullableInt32** |  | [optional] 
 **ExtensionCritical** | Pointer to **bool** |  | [optional] 
+**PathLength** | Pointer to **NullableInt32** |  | [optional] 
 
 ## Methods
 
@@ -78,6 +78,31 @@ SetEnabled sets Enabled field to given value.
 
 HasEnabled returns a boolean if a field has been set.
 
+### GetExtensionCritical
+
+`func (o *CertificateCreate0CertExtensionsBasicConstraints) GetExtensionCritical() bool`
+
+GetExtensionCritical returns the ExtensionCritical field if non-nil, zero value otherwise.
+
+### GetExtensionCriticalOk
+
+`func (o *CertificateCreate0CertExtensionsBasicConstraints) GetExtensionCriticalOk() (*bool, bool)`
+
+GetExtensionCriticalOk returns a tuple with the ExtensionCritical field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetExtensionCritical
+
+`func (o *CertificateCreate0CertExtensionsBasicConstraints) SetExtensionCritical(v bool)`
+
+SetExtensionCritical sets ExtensionCritical field to given value.
+
+### HasExtensionCritical
+
+`func (o *CertificateCreate0CertExtensionsBasicConstraints) HasExtensionCritical() bool`
+
+HasExtensionCritical returns a boolean if a field has been set.
+
 ### GetPathLength
 
 `func (o *CertificateCreate0CertExtensionsBasicConstraints) GetPathLength() int32`
@@ -113,31 +138,6 @@ HasPathLength returns a boolean if a field has been set.
 `func (o *CertificateCreate0CertExtensionsBasicConstraints) UnsetPathLength()`
 
 UnsetPathLength ensures that no value is present for PathLength, not even an explicit nil
-### GetExtensionCritical
-
-`func (o *CertificateCreate0CertExtensionsBasicConstraints) GetExtensionCritical() bool`
-
-GetExtensionCritical returns the ExtensionCritical field if non-nil, zero value otherwise.
-
-### GetExtensionCriticalOk
-
-`func (o *CertificateCreate0CertExtensionsBasicConstraints) GetExtensionCriticalOk() (*bool, bool)`
-
-GetExtensionCriticalOk returns a tuple with the ExtensionCritical field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetExtensionCritical
-
-`func (o *CertificateCreate0CertExtensionsBasicConstraints) SetExtensionCritical(v bool)`
-
-SetExtensionCritical sets ExtensionCritical field to given value.
-
-### HasExtensionCritical
-
-`func (o *CertificateCreate0CertExtensionsBasicConstraints) HasExtensionCritical() bool`
-
-HasExtensionCritical returns a boolean if a field has been set.
-
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

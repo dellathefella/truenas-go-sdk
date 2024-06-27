@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Secret** | Pointer to **string** |  | [optional] 
 **BindAddress** | Pointer to **string** |  | [optional] 
 **BindPort** | Pointer to **int32** |  | [optional] 
 **Host** | Pointer to **string** |  | [optional] 
-**WaitAttach** | Pointer to **bool** |  | [optional] 
 **LocalPath** | Pointer to **string** |  | [optional] 
+**Secret** | Pointer to **string** |  | [optional] 
 **Threaded** | Pointer to **bool** |  | [optional] 
+**WaitAttach** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -30,31 +30,6 @@ will change when the set of required properties is changed
 NewCoreDebug1WithDefaults instantiates a new CoreDebug1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetSecret
-
-`func (o *CoreDebug1) GetSecret() string`
-
-GetSecret returns the Secret field if non-nil, zero value otherwise.
-
-### GetSecretOk
-
-`func (o *CoreDebug1) GetSecretOk() (*string, bool)`
-
-GetSecretOk returns a tuple with the Secret field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSecret
-
-`func (o *CoreDebug1) SetSecret(v string)`
-
-SetSecret sets Secret field to given value.
-
-### HasSecret
-
-`func (o *CoreDebug1) HasSecret() bool`
-
-HasSecret returns a boolean if a field has been set.
 
 ### GetBindAddress
 
@@ -131,31 +106,6 @@ SetHost sets Host field to given value.
 
 HasHost returns a boolean if a field has been set.
 
-### GetWaitAttach
-
-`func (o *CoreDebug1) GetWaitAttach() bool`
-
-GetWaitAttach returns the WaitAttach field if non-nil, zero value otherwise.
-
-### GetWaitAttachOk
-
-`func (o *CoreDebug1) GetWaitAttachOk() (*bool, bool)`
-
-GetWaitAttachOk returns a tuple with the WaitAttach field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetWaitAttach
-
-`func (o *CoreDebug1) SetWaitAttach(v bool)`
-
-SetWaitAttach sets WaitAttach field to given value.
-
-### HasWaitAttach
-
-`func (o *CoreDebug1) HasWaitAttach() bool`
-
-HasWaitAttach returns a boolean if a field has been set.
-
 ### GetLocalPath
 
 `func (o *CoreDebug1) GetLocalPath() string`
@@ -181,6 +131,31 @@ SetLocalPath sets LocalPath field to given value.
 
 HasLocalPath returns a boolean if a field has been set.
 
+### GetSecret
+
+`func (o *CoreDebug1) GetSecret() string`
+
+GetSecret returns the Secret field if non-nil, zero value otherwise.
+
+### GetSecretOk
+
+`func (o *CoreDebug1) GetSecretOk() (*string, bool)`
+
+GetSecretOk returns a tuple with the Secret field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSecret
+
+`func (o *CoreDebug1) SetSecret(v string)`
+
+SetSecret sets Secret field to given value.
+
+### HasSecret
+
+`func (o *CoreDebug1) HasSecret() bool`
+
+HasSecret returns a boolean if a field has been set.
+
 ### GetThreaded
 
 `func (o *CoreDebug1) GetThreaded() bool`
@@ -205,6 +180,31 @@ SetThreaded sets Threaded field to given value.
 `func (o *CoreDebug1) HasThreaded() bool`
 
 HasThreaded returns a boolean if a field has been set.
+
+### GetWaitAttach
+
+`func (o *CoreDebug1) GetWaitAttach() bool`
+
+GetWaitAttach returns the WaitAttach field if non-nil, zero value otherwise.
+
+### GetWaitAttachOk
+
+`func (o *CoreDebug1) GetWaitAttachOk() (*bool, bool)`
+
+GetWaitAttachOk returns a tuple with the WaitAttach field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetWaitAttach
+
+`func (o *CoreDebug1) SetWaitAttach(v bool)`
+
+SetWaitAttach sets WaitAttach field to given value.
+
+### HasWaitAttach
+
+`func (o *CoreDebug1) HasWaitAttach() bool`
+
+HasWaitAttach returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

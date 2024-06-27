@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Type** | Pointer to **string** |  | [optional] 
 **Command** | Pointer to **NullableString** |  | [optional] 
-**ScriptText** | Pointer to **NullableString** |  | [optional] 
-**Script** | Pointer to **NullableString** |  | [optional] 
-**When** | Pointer to **string** |  | [optional] 
-**Enabled** | Pointer to **bool** |  | [optional] 
-**Timeout** | Pointer to **int32** |  | [optional] 
 **Comment** | Pointer to **string** |  | [optional] 
+**Enabled** | Pointer to **bool** |  | [optional] 
+**Script** | Pointer to **NullableString** |  | [optional] 
+**ScriptText** | Pointer to **NullableString** |  | [optional] 
+**Timeout** | Pointer to **int32** |  | [optional] 
+**Type** | Pointer to **string** |  | [optional] 
+**When** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -31,31 +31,6 @@ will change when the set of required properties is changed
 NewInitshutdownscriptCreate0WithDefaults instantiates a new InitshutdownscriptCreate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetType
-
-`func (o *InitshutdownscriptCreate0) GetType() string`
-
-GetType returns the Type field if non-nil, zero value otherwise.
-
-### GetTypeOk
-
-`func (o *InitshutdownscriptCreate0) GetTypeOk() (*string, bool)`
-
-GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetType
-
-`func (o *InitshutdownscriptCreate0) SetType(v string)`
-
-SetType sets Type field to given value.
-
-### HasType
-
-`func (o *InitshutdownscriptCreate0) HasType() bool`
-
-HasType returns a boolean if a field has been set.
 
 ### GetCommand
 
@@ -92,41 +67,56 @@ HasCommand returns a boolean if a field has been set.
 `func (o *InitshutdownscriptCreate0) UnsetCommand()`
 
 UnsetCommand ensures that no value is present for Command, not even an explicit nil
-### GetScriptText
+### GetComment
 
-`func (o *InitshutdownscriptCreate0) GetScriptText() string`
+`func (o *InitshutdownscriptCreate0) GetComment() string`
 
-GetScriptText returns the ScriptText field if non-nil, zero value otherwise.
+GetComment returns the Comment field if non-nil, zero value otherwise.
 
-### GetScriptTextOk
+### GetCommentOk
 
-`func (o *InitshutdownscriptCreate0) GetScriptTextOk() (*string, bool)`
+`func (o *InitshutdownscriptCreate0) GetCommentOk() (*string, bool)`
 
-GetScriptTextOk returns a tuple with the ScriptText field if it's non-nil, zero value otherwise
+GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetScriptText
+### SetComment
 
-`func (o *InitshutdownscriptCreate0) SetScriptText(v string)`
+`func (o *InitshutdownscriptCreate0) SetComment(v string)`
 
-SetScriptText sets ScriptText field to given value.
+SetComment sets Comment field to given value.
 
-### HasScriptText
+### HasComment
 
-`func (o *InitshutdownscriptCreate0) HasScriptText() bool`
+`func (o *InitshutdownscriptCreate0) HasComment() bool`
 
-HasScriptText returns a boolean if a field has been set.
+HasComment returns a boolean if a field has been set.
 
-### SetScriptTextNil
+### GetEnabled
 
-`func (o *InitshutdownscriptCreate0) SetScriptTextNil(b bool)`
+`func (o *InitshutdownscriptCreate0) GetEnabled() bool`
 
- SetScriptTextNil sets the value for ScriptText to be an explicit nil
+GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
-### UnsetScriptText
-`func (o *InitshutdownscriptCreate0) UnsetScriptText()`
+### GetEnabledOk
 
-UnsetScriptText ensures that no value is present for ScriptText, not even an explicit nil
+`func (o *InitshutdownscriptCreate0) GetEnabledOk() (*bool, bool)`
+
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEnabled
+
+`func (o *InitshutdownscriptCreate0) SetEnabled(v bool)`
+
+SetEnabled sets Enabled field to given value.
+
+### HasEnabled
+
+`func (o *InitshutdownscriptCreate0) HasEnabled() bool`
+
+HasEnabled returns a boolean if a field has been set.
+
 ### GetScript
 
 `func (o *InitshutdownscriptCreate0) GetScript() string`
@@ -162,56 +152,41 @@ HasScript returns a boolean if a field has been set.
 `func (o *InitshutdownscriptCreate0) UnsetScript()`
 
 UnsetScript ensures that no value is present for Script, not even an explicit nil
-### GetWhen
+### GetScriptText
 
-`func (o *InitshutdownscriptCreate0) GetWhen() string`
+`func (o *InitshutdownscriptCreate0) GetScriptText() string`
 
-GetWhen returns the When field if non-nil, zero value otherwise.
+GetScriptText returns the ScriptText field if non-nil, zero value otherwise.
 
-### GetWhenOk
+### GetScriptTextOk
 
-`func (o *InitshutdownscriptCreate0) GetWhenOk() (*string, bool)`
+`func (o *InitshutdownscriptCreate0) GetScriptTextOk() (*string, bool)`
 
-GetWhenOk returns a tuple with the When field if it's non-nil, zero value otherwise
+GetScriptTextOk returns a tuple with the ScriptText field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetWhen
+### SetScriptText
 
-`func (o *InitshutdownscriptCreate0) SetWhen(v string)`
+`func (o *InitshutdownscriptCreate0) SetScriptText(v string)`
 
-SetWhen sets When field to given value.
+SetScriptText sets ScriptText field to given value.
 
-### HasWhen
+### HasScriptText
 
-`func (o *InitshutdownscriptCreate0) HasWhen() bool`
+`func (o *InitshutdownscriptCreate0) HasScriptText() bool`
 
-HasWhen returns a boolean if a field has been set.
+HasScriptText returns a boolean if a field has been set.
 
-### GetEnabled
+### SetScriptTextNil
 
-`func (o *InitshutdownscriptCreate0) GetEnabled() bool`
+`func (o *InitshutdownscriptCreate0) SetScriptTextNil(b bool)`
 
-GetEnabled returns the Enabled field if non-nil, zero value otherwise.
+ SetScriptTextNil sets the value for ScriptText to be an explicit nil
 
-### GetEnabledOk
+### UnsetScriptText
+`func (o *InitshutdownscriptCreate0) UnsetScriptText()`
 
-`func (o *InitshutdownscriptCreate0) GetEnabledOk() (*bool, bool)`
-
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetEnabled
-
-`func (o *InitshutdownscriptCreate0) SetEnabled(v bool)`
-
-SetEnabled sets Enabled field to given value.
-
-### HasEnabled
-
-`func (o *InitshutdownscriptCreate0) HasEnabled() bool`
-
-HasEnabled returns a boolean if a field has been set.
-
+UnsetScriptText ensures that no value is present for ScriptText, not even an explicit nil
 ### GetTimeout
 
 `func (o *InitshutdownscriptCreate0) GetTimeout() int32`
@@ -237,30 +212,55 @@ SetTimeout sets Timeout field to given value.
 
 HasTimeout returns a boolean if a field has been set.
 
-### GetComment
+### GetType
 
-`func (o *InitshutdownscriptCreate0) GetComment() string`
+`func (o *InitshutdownscriptCreate0) GetType() string`
 
-GetComment returns the Comment field if non-nil, zero value otherwise.
+GetType returns the Type field if non-nil, zero value otherwise.
 
-### GetCommentOk
+### GetTypeOk
 
-`func (o *InitshutdownscriptCreate0) GetCommentOk() (*string, bool)`
+`func (o *InitshutdownscriptCreate0) GetTypeOk() (*string, bool)`
 
-GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetComment
+### SetType
 
-`func (o *InitshutdownscriptCreate0) SetComment(v string)`
+`func (o *InitshutdownscriptCreate0) SetType(v string)`
 
-SetComment sets Comment field to given value.
+SetType sets Type field to given value.
 
-### HasComment
+### HasType
 
-`func (o *InitshutdownscriptCreate0) HasComment() bool`
+`func (o *InitshutdownscriptCreate0) HasType() bool`
 
-HasComment returns a boolean if a field has been set.
+HasType returns a boolean if a field has been set.
+
+### GetWhen
+
+`func (o *InitshutdownscriptCreate0) GetWhen() string`
+
+GetWhen returns the When field if non-nil, zero value otherwise.
+
+### GetWhenOk
+
+`func (o *InitshutdownscriptCreate0) GetWhenOk() (*string, bool)`
+
+GetWhenOk returns a tuple with the When field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetWhen
+
+`func (o *InitshutdownscriptCreate0) SetWhen(v string)`
+
+SetWhen sets When field to given value.
+
+### HasWhen
+
+`func (o *InitshutdownscriptCreate0) HasWhen() bool`
+
+HasWhen returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

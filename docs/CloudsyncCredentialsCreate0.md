@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Attributes** | Pointer to **map[string]interface{}** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Provider** | Pointer to **string** |  | [optional] 
-**Attributes** | Pointer to **map[string]interface{}** |  | [optional] 
 
 ## Methods
 
@@ -26,6 +26,31 @@ will change when the set of required properties is changed
 NewCloudsyncCredentialsCreate0WithDefaults instantiates a new CloudsyncCredentialsCreate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetAttributes
+
+`func (o *CloudsyncCredentialsCreate0) GetAttributes() map[string]interface{}`
+
+GetAttributes returns the Attributes field if non-nil, zero value otherwise.
+
+### GetAttributesOk
+
+`func (o *CloudsyncCredentialsCreate0) GetAttributesOk() (*map[string]interface{}, bool)`
+
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetAttributes
+
+`func (o *CloudsyncCredentialsCreate0) SetAttributes(v map[string]interface{})`
+
+SetAttributes sets Attributes field to given value.
+
+### HasAttributes
+
+`func (o *CloudsyncCredentialsCreate0) HasAttributes() bool`
+
+HasAttributes returns a boolean if a field has been set.
 
 ### GetName
 
@@ -76,31 +101,6 @@ SetProvider sets Provider field to given value.
 `func (o *CloudsyncCredentialsCreate0) HasProvider() bool`
 
 HasProvider returns a boolean if a field has been set.
-
-### GetAttributes
-
-`func (o *CloudsyncCredentialsCreate0) GetAttributes() map[string]interface{}`
-
-GetAttributes returns the Attributes field if non-nil, zero value otherwise.
-
-### GetAttributesOk
-
-`func (o *CloudsyncCredentialsCreate0) GetAttributesOk() (*map[string]interface{}, bool)`
-
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetAttributes
-
-`func (o *CloudsyncCredentialsCreate0) SetAttributes(v map[string]interface{})`
-
-SetAttributes sets Attributes field to given value.
-
-### HasAttributes
-
-`func (o *CloudsyncCredentialsCreate0) HasAttributes() bool`
-
-HasAttributes returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

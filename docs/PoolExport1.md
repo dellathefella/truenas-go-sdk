@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Cascade** | Pointer to **bool** |  | [optional] 
-**RestartServices** | Pointer to **bool** |  | [optional] 
 **Destroy** | Pointer to **bool** |  | [optional] 
+**RestartServices** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -52,31 +52,6 @@ SetCascade sets Cascade field to given value.
 
 HasCascade returns a boolean if a field has been set.
 
-### GetRestartServices
-
-`func (o *PoolExport1) GetRestartServices() bool`
-
-GetRestartServices returns the RestartServices field if non-nil, zero value otherwise.
-
-### GetRestartServicesOk
-
-`func (o *PoolExport1) GetRestartServicesOk() (*bool, bool)`
-
-GetRestartServicesOk returns a tuple with the RestartServices field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRestartServices
-
-`func (o *PoolExport1) SetRestartServices(v bool)`
-
-SetRestartServices sets RestartServices field to given value.
-
-### HasRestartServices
-
-`func (o *PoolExport1) HasRestartServices() bool`
-
-HasRestartServices returns a boolean if a field has been set.
-
 ### GetDestroy
 
 `func (o *PoolExport1) GetDestroy() bool`
@@ -101,6 +76,31 @@ SetDestroy sets Destroy field to given value.
 `func (o *PoolExport1) HasDestroy() bool`
 
 HasDestroy returns a boolean if a field has been set.
+
+### GetRestartServices
+
+`func (o *PoolExport1) GetRestartServices() bool`
+
+GetRestartServices returns the RestartServices field if non-nil, zero value otherwise.
+
+### GetRestartServicesOk
+
+`func (o *PoolExport1) GetRestartServicesOk() (*bool, bool)`
+
+GetRestartServicesOk returns a tuple with the RestartServices field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRestartServices
+
+`func (o *PoolExport1) SetRestartServices(v bool)`
+
+SetRestartServices sets RestartServices field to given value.
+
+### HasRestartServices
+
+`func (o *PoolExport1) HasRestartServices() bool`
+
+HasRestartServices returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -4,15 +4,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Guest** | Pointer to **bool** |  | [optional] 
-**GuestUser** | Pointer to **string** |  | [optional] 
 **Bindip** | Pointer to **[]string** |  | [optional] 
+**ChmodRequest** | Pointer to **string** |  | [optional] 
 **ConnectionsLimit** | Pointer to **int32** |  | [optional] 
 **Dbpath** | Pointer to **string** |  | [optional] 
 **GlobalAux** | Pointer to **string** |  | [optional] 
-**MapAcls** | Pointer to **string** |  | [optional] 
-**ChmodRequest** | Pointer to **string** |  | [optional] 
+**Guest** | Pointer to **bool** |  | [optional] 
+**GuestUser** | Pointer to **string** |  | [optional] 
 **Loglevel** | Pointer to **string** |  | [optional] 
+**MapAcls** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -32,56 +32,6 @@ will change when the set of required properties is changed
 NewAfpUpdate0WithDefaults instantiates a new AfpUpdate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetGuest
-
-`func (o *AfpUpdate0) GetGuest() bool`
-
-GetGuest returns the Guest field if non-nil, zero value otherwise.
-
-### GetGuestOk
-
-`func (o *AfpUpdate0) GetGuestOk() (*bool, bool)`
-
-GetGuestOk returns a tuple with the Guest field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetGuest
-
-`func (o *AfpUpdate0) SetGuest(v bool)`
-
-SetGuest sets Guest field to given value.
-
-### HasGuest
-
-`func (o *AfpUpdate0) HasGuest() bool`
-
-HasGuest returns a boolean if a field has been set.
-
-### GetGuestUser
-
-`func (o *AfpUpdate0) GetGuestUser() string`
-
-GetGuestUser returns the GuestUser field if non-nil, zero value otherwise.
-
-### GetGuestUserOk
-
-`func (o *AfpUpdate0) GetGuestUserOk() (*string, bool)`
-
-GetGuestUserOk returns a tuple with the GuestUser field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetGuestUser
-
-`func (o *AfpUpdate0) SetGuestUser(v string)`
-
-SetGuestUser sets GuestUser field to given value.
-
-### HasGuestUser
-
-`func (o *AfpUpdate0) HasGuestUser() bool`
-
-HasGuestUser returns a boolean if a field has been set.
 
 ### GetBindip
 
@@ -107,6 +57,31 @@ SetBindip sets Bindip field to given value.
 `func (o *AfpUpdate0) HasBindip() bool`
 
 HasBindip returns a boolean if a field has been set.
+
+### GetChmodRequest
+
+`func (o *AfpUpdate0) GetChmodRequest() string`
+
+GetChmodRequest returns the ChmodRequest field if non-nil, zero value otherwise.
+
+### GetChmodRequestOk
+
+`func (o *AfpUpdate0) GetChmodRequestOk() (*string, bool)`
+
+GetChmodRequestOk returns a tuple with the ChmodRequest field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetChmodRequest
+
+`func (o *AfpUpdate0) SetChmodRequest(v string)`
+
+SetChmodRequest sets ChmodRequest field to given value.
+
+### HasChmodRequest
+
+`func (o *AfpUpdate0) HasChmodRequest() bool`
+
+HasChmodRequest returns a boolean if a field has been set.
 
 ### GetConnectionsLimit
 
@@ -183,55 +158,55 @@ SetGlobalAux sets GlobalAux field to given value.
 
 HasGlobalAux returns a boolean if a field has been set.
 
-### GetMapAcls
+### GetGuest
 
-`func (o *AfpUpdate0) GetMapAcls() string`
+`func (o *AfpUpdate0) GetGuest() bool`
 
-GetMapAcls returns the MapAcls field if non-nil, zero value otherwise.
+GetGuest returns the Guest field if non-nil, zero value otherwise.
 
-### GetMapAclsOk
+### GetGuestOk
 
-`func (o *AfpUpdate0) GetMapAclsOk() (*string, bool)`
+`func (o *AfpUpdate0) GetGuestOk() (*bool, bool)`
 
-GetMapAclsOk returns a tuple with the MapAcls field if it's non-nil, zero value otherwise
+GetGuestOk returns a tuple with the Guest field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetMapAcls
+### SetGuest
 
-`func (o *AfpUpdate0) SetMapAcls(v string)`
+`func (o *AfpUpdate0) SetGuest(v bool)`
 
-SetMapAcls sets MapAcls field to given value.
+SetGuest sets Guest field to given value.
 
-### HasMapAcls
+### HasGuest
 
-`func (o *AfpUpdate0) HasMapAcls() bool`
+`func (o *AfpUpdate0) HasGuest() bool`
 
-HasMapAcls returns a boolean if a field has been set.
+HasGuest returns a boolean if a field has been set.
 
-### GetChmodRequest
+### GetGuestUser
 
-`func (o *AfpUpdate0) GetChmodRequest() string`
+`func (o *AfpUpdate0) GetGuestUser() string`
 
-GetChmodRequest returns the ChmodRequest field if non-nil, zero value otherwise.
+GetGuestUser returns the GuestUser field if non-nil, zero value otherwise.
 
-### GetChmodRequestOk
+### GetGuestUserOk
 
-`func (o *AfpUpdate0) GetChmodRequestOk() (*string, bool)`
+`func (o *AfpUpdate0) GetGuestUserOk() (*string, bool)`
 
-GetChmodRequestOk returns a tuple with the ChmodRequest field if it's non-nil, zero value otherwise
+GetGuestUserOk returns a tuple with the GuestUser field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetChmodRequest
+### SetGuestUser
 
-`func (o *AfpUpdate0) SetChmodRequest(v string)`
+`func (o *AfpUpdate0) SetGuestUser(v string)`
 
-SetChmodRequest sets ChmodRequest field to given value.
+SetGuestUser sets GuestUser field to given value.
 
-### HasChmodRequest
+### HasGuestUser
 
-`func (o *AfpUpdate0) HasChmodRequest() bool`
+`func (o *AfpUpdate0) HasGuestUser() bool`
 
-HasChmodRequest returns a boolean if a field has been set.
+HasGuestUser returns a boolean if a field has been set.
 
 ### GetLoglevel
 
@@ -257,6 +232,31 @@ SetLoglevel sets Loglevel field to given value.
 `func (o *AfpUpdate0) HasLoglevel() bool`
 
 HasLoglevel returns a boolean if a field has been set.
+
+### GetMapAcls
+
+`func (o *AfpUpdate0) GetMapAcls() string`
+
+GetMapAcls returns the MapAcls field if non-nil, zero value otherwise.
+
+### GetMapAclsOk
+
+`func (o *AfpUpdate0) GetMapAclsOk() (*string, bool)`
+
+GetMapAclsOk returns a tuple with the MapAcls field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMapAcls
+
+`func (o *AfpUpdate0) SetMapAcls(v string)`
+
+SetMapAcls sets MapAcls field to given value.
+
+### HasMapAcls
+
+`func (o *AfpUpdate0) HasMapAcls() bool`
+
+HasMapAcls returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

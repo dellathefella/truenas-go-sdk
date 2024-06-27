@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Comment** | Pointer to **string** |  | [optional] 
-**DiscoveryAuthmethod** | Pointer to **string** |  | [optional] 
 **DiscoveryAuthgroup** | Pointer to **NullableInt32** |  | [optional] 
+**DiscoveryAuthmethod** | Pointer to **string** |  | [optional] 
 **Listen** | Pointer to **[]map[string]interface{}** |  | [optional] 
 
 ## Methods
@@ -53,31 +53,6 @@ SetComment sets Comment field to given value.
 
 HasComment returns a boolean if a field has been set.
 
-### GetDiscoveryAuthmethod
-
-`func (o *IscsiPortalUpdate1) GetDiscoveryAuthmethod() string`
-
-GetDiscoveryAuthmethod returns the DiscoveryAuthmethod field if non-nil, zero value otherwise.
-
-### GetDiscoveryAuthmethodOk
-
-`func (o *IscsiPortalUpdate1) GetDiscoveryAuthmethodOk() (*string, bool)`
-
-GetDiscoveryAuthmethodOk returns a tuple with the DiscoveryAuthmethod field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetDiscoveryAuthmethod
-
-`func (o *IscsiPortalUpdate1) SetDiscoveryAuthmethod(v string)`
-
-SetDiscoveryAuthmethod sets DiscoveryAuthmethod field to given value.
-
-### HasDiscoveryAuthmethod
-
-`func (o *IscsiPortalUpdate1) HasDiscoveryAuthmethod() bool`
-
-HasDiscoveryAuthmethod returns a boolean if a field has been set.
-
 ### GetDiscoveryAuthgroup
 
 `func (o *IscsiPortalUpdate1) GetDiscoveryAuthgroup() int32`
@@ -113,6 +88,31 @@ HasDiscoveryAuthgroup returns a boolean if a field has been set.
 `func (o *IscsiPortalUpdate1) UnsetDiscoveryAuthgroup()`
 
 UnsetDiscoveryAuthgroup ensures that no value is present for DiscoveryAuthgroup, not even an explicit nil
+### GetDiscoveryAuthmethod
+
+`func (o *IscsiPortalUpdate1) GetDiscoveryAuthmethod() string`
+
+GetDiscoveryAuthmethod returns the DiscoveryAuthmethod field if non-nil, zero value otherwise.
+
+### GetDiscoveryAuthmethodOk
+
+`func (o *IscsiPortalUpdate1) GetDiscoveryAuthmethodOk() (*string, bool)`
+
+GetDiscoveryAuthmethodOk returns a tuple with the DiscoveryAuthmethod field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDiscoveryAuthmethod
+
+`func (o *IscsiPortalUpdate1) SetDiscoveryAuthmethod(v string)`
+
+SetDiscoveryAuthmethod sets DiscoveryAuthmethod field to given value.
+
+### HasDiscoveryAuthmethod
+
+`func (o *IscsiPortalUpdate1) HasDiscoveryAuthmethod() bool`
+
+HasDiscoveryAuthmethod returns a boolean if a field has been set.
+
 ### GetListen
 
 `func (o *IscsiPortalUpdate1) GetListen() []map[string]interface{}`

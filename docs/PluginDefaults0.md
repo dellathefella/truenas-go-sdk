@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Refresh** | Pointer to **bool** |  | [optional] 
-**Plugin** | Pointer to **string** |  | [optional] 
 **Branch** | Pointer to **NullableString** |  | [optional] 
+**Plugin** | Pointer to **string** |  | [optional] 
 **PluginRepository** | Pointer to **string** |  | [optional] 
+**Refresh** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -27,56 +27,6 @@ will change when the set of required properties is changed
 NewPluginDefaults0WithDefaults instantiates a new PluginDefaults0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetRefresh
-
-`func (o *PluginDefaults0) GetRefresh() bool`
-
-GetRefresh returns the Refresh field if non-nil, zero value otherwise.
-
-### GetRefreshOk
-
-`func (o *PluginDefaults0) GetRefreshOk() (*bool, bool)`
-
-GetRefreshOk returns a tuple with the Refresh field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRefresh
-
-`func (o *PluginDefaults0) SetRefresh(v bool)`
-
-SetRefresh sets Refresh field to given value.
-
-### HasRefresh
-
-`func (o *PluginDefaults0) HasRefresh() bool`
-
-HasRefresh returns a boolean if a field has been set.
-
-### GetPlugin
-
-`func (o *PluginDefaults0) GetPlugin() string`
-
-GetPlugin returns the Plugin field if non-nil, zero value otherwise.
-
-### GetPluginOk
-
-`func (o *PluginDefaults0) GetPluginOk() (*string, bool)`
-
-GetPluginOk returns a tuple with the Plugin field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPlugin
-
-`func (o *PluginDefaults0) SetPlugin(v string)`
-
-SetPlugin sets Plugin field to given value.
-
-### HasPlugin
-
-`func (o *PluginDefaults0) HasPlugin() bool`
-
-HasPlugin returns a boolean if a field has been set.
 
 ### GetBranch
 
@@ -113,6 +63,31 @@ HasBranch returns a boolean if a field has been set.
 `func (o *PluginDefaults0) UnsetBranch()`
 
 UnsetBranch ensures that no value is present for Branch, not even an explicit nil
+### GetPlugin
+
+`func (o *PluginDefaults0) GetPlugin() string`
+
+GetPlugin returns the Plugin field if non-nil, zero value otherwise.
+
+### GetPluginOk
+
+`func (o *PluginDefaults0) GetPluginOk() (*string, bool)`
+
+GetPluginOk returns a tuple with the Plugin field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPlugin
+
+`func (o *PluginDefaults0) SetPlugin(v string)`
+
+SetPlugin sets Plugin field to given value.
+
+### HasPlugin
+
+`func (o *PluginDefaults0) HasPlugin() bool`
+
+HasPlugin returns a boolean if a field has been set.
+
 ### GetPluginRepository
 
 `func (o *PluginDefaults0) GetPluginRepository() string`
@@ -137,6 +112,31 @@ SetPluginRepository sets PluginRepository field to given value.
 `func (o *PluginDefaults0) HasPluginRepository() bool`
 
 HasPluginRepository returns a boolean if a field has been set.
+
+### GetRefresh
+
+`func (o *PluginDefaults0) GetRefresh() bool`
+
+GetRefresh returns the Refresh field if non-nil, zero value otherwise.
+
+### GetRefreshOk
+
+`func (o *PluginDefaults0) GetRefreshOk() (*bool, bool)`
+
+GetRefreshOk returns a tuple with the Refresh field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRefresh
+
+`func (o *PluginDefaults0) SetRefresh(v bool)`
+
+SetRefresh sets Refresh field to given value.
+
+### HasRefresh
+
+`func (o *PluginDefaults0) HasRefresh() bool`
+
+HasRefresh returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

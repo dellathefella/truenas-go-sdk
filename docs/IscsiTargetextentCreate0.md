@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Target** | Pointer to **int32** |  | [optional] 
-**Lunid** | Pointer to **NullableInt32** |  | [optional] 
 **Extent** | Pointer to **int32** |  | [optional] 
+**Lunid** | Pointer to **NullableInt32** |  | [optional] 
+**Target** | Pointer to **int32** |  | [optional] 
 
 ## Methods
 
@@ -27,30 +27,30 @@ NewIscsiTargetextentCreate0WithDefaults instantiates a new IscsiTargetextentCrea
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetTarget
+### GetExtent
 
-`func (o *IscsiTargetextentCreate0) GetTarget() int32`
+`func (o *IscsiTargetextentCreate0) GetExtent() int32`
 
-GetTarget returns the Target field if non-nil, zero value otherwise.
+GetExtent returns the Extent field if non-nil, zero value otherwise.
 
-### GetTargetOk
+### GetExtentOk
 
-`func (o *IscsiTargetextentCreate0) GetTargetOk() (*int32, bool)`
+`func (o *IscsiTargetextentCreate0) GetExtentOk() (*int32, bool)`
 
-GetTargetOk returns a tuple with the Target field if it's non-nil, zero value otherwise
+GetExtentOk returns a tuple with the Extent field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetTarget
+### SetExtent
 
-`func (o *IscsiTargetextentCreate0) SetTarget(v int32)`
+`func (o *IscsiTargetextentCreate0) SetExtent(v int32)`
 
-SetTarget sets Target field to given value.
+SetExtent sets Extent field to given value.
 
-### HasTarget
+### HasExtent
 
-`func (o *IscsiTargetextentCreate0) HasTarget() bool`
+`func (o *IscsiTargetextentCreate0) HasExtent() bool`
 
-HasTarget returns a boolean if a field has been set.
+HasExtent returns a boolean if a field has been set.
 
 ### GetLunid
 
@@ -87,30 +87,30 @@ HasLunid returns a boolean if a field has been set.
 `func (o *IscsiTargetextentCreate0) UnsetLunid()`
 
 UnsetLunid ensures that no value is present for Lunid, not even an explicit nil
-### GetExtent
+### GetTarget
 
-`func (o *IscsiTargetextentCreate0) GetExtent() int32`
+`func (o *IscsiTargetextentCreate0) GetTarget() int32`
 
-GetExtent returns the Extent field if non-nil, zero value otherwise.
+GetTarget returns the Target field if non-nil, zero value otherwise.
 
-### GetExtentOk
+### GetTargetOk
 
-`func (o *IscsiTargetextentCreate0) GetExtentOk() (*int32, bool)`
+`func (o *IscsiTargetextentCreate0) GetTargetOk() (*int32, bool)`
 
-GetExtentOk returns a tuple with the Extent field if it's non-nil, zero value otherwise
+GetTargetOk returns a tuple with the Target field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetExtent
+### SetTarget
 
-`func (o *IscsiTargetextentCreate0) SetExtent(v int32)`
+`func (o *IscsiTargetextentCreate0) SetTarget(v int32)`
 
-SetExtent sets Extent field to given value.
+SetTarget sets Target field to given value.
 
-### HasExtent
+### HasTarget
 
-`func (o *IscsiTargetextentCreate0) HasExtent() bool`
+`func (o *IscsiTargetextentCreate0) HasTarget() bool`
 
-HasExtent returns a boolean if a field has been set.
+HasTarget returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

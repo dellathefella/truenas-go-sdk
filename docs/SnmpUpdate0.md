@@ -4,18 +4,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Location** | Pointer to **string** |  | [optional] 
-**Contact** | Pointer to **string** |  | [optional] 
-**Traps** | Pointer to **bool** |  | [optional] 
-**V3** | Pointer to **bool** |  | [optional] 
 **Community** | Pointer to **string** |  | [optional] 
-**V3Username** | Pointer to **string** |  | [optional] 
-**V3Authtype** | Pointer to **string** |  | [optional] 
-**V3Password** | Pointer to **string** |  | [optional] 
-**V3Privproto** | Pointer to **NullableString** |  | [optional] 
-**V3Privpassphrase** | Pointer to **string** |  | [optional] 
+**Contact** | Pointer to **string** |  | [optional] 
+**Location** | Pointer to **string** |  | [optional] 
 **Loglevel** | Pointer to **int32** |  | [optional] 
 **Options** | Pointer to **string** |  | [optional] 
+**Traps** | Pointer to **bool** |  | [optional] 
+**V3** | Pointer to **bool** |  | [optional] 
+**V3Authtype** | Pointer to **string** |  | [optional] 
+**V3Password** | Pointer to **string** |  | [optional] 
+**V3Privpassphrase** | Pointer to **string** |  | [optional] 
+**V3Privproto** | Pointer to **NullableString** |  | [optional] 
+**V3Username** | Pointer to **string** |  | [optional] 
 **Zilstat** | Pointer to **bool** |  | [optional] 
 
 ## Methods
@@ -36,6 +36,56 @@ will change when the set of required properties is changed
 NewSnmpUpdate0WithDefaults instantiates a new SnmpUpdate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetCommunity
+
+`func (o *SnmpUpdate0) GetCommunity() string`
+
+GetCommunity returns the Community field if non-nil, zero value otherwise.
+
+### GetCommunityOk
+
+`func (o *SnmpUpdate0) GetCommunityOk() (*string, bool)`
+
+GetCommunityOk returns a tuple with the Community field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCommunity
+
+`func (o *SnmpUpdate0) SetCommunity(v string)`
+
+SetCommunity sets Community field to given value.
+
+### HasCommunity
+
+`func (o *SnmpUpdate0) HasCommunity() bool`
+
+HasCommunity returns a boolean if a field has been set.
+
+### GetContact
+
+`func (o *SnmpUpdate0) GetContact() string`
+
+GetContact returns the Contact field if non-nil, zero value otherwise.
+
+### GetContactOk
+
+`func (o *SnmpUpdate0) GetContactOk() (*string, bool)`
+
+GetContactOk returns a tuple with the Contact field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetContact
+
+`func (o *SnmpUpdate0) SetContact(v string)`
+
+SetContact sets Contact field to given value.
+
+### HasContact
+
+`func (o *SnmpUpdate0) HasContact() bool`
+
+HasContact returns a boolean if a field has been set.
 
 ### GetLocation
 
@@ -62,30 +112,55 @@ SetLocation sets Location field to given value.
 
 HasLocation returns a boolean if a field has been set.
 
-### GetContact
+### GetLoglevel
 
-`func (o *SnmpUpdate0) GetContact() string`
+`func (o *SnmpUpdate0) GetLoglevel() int32`
 
-GetContact returns the Contact field if non-nil, zero value otherwise.
+GetLoglevel returns the Loglevel field if non-nil, zero value otherwise.
 
-### GetContactOk
+### GetLoglevelOk
 
-`func (o *SnmpUpdate0) GetContactOk() (*string, bool)`
+`func (o *SnmpUpdate0) GetLoglevelOk() (*int32, bool)`
 
-GetContactOk returns a tuple with the Contact field if it's non-nil, zero value otherwise
+GetLoglevelOk returns a tuple with the Loglevel field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetContact
+### SetLoglevel
 
-`func (o *SnmpUpdate0) SetContact(v string)`
+`func (o *SnmpUpdate0) SetLoglevel(v int32)`
 
-SetContact sets Contact field to given value.
+SetLoglevel sets Loglevel field to given value.
 
-### HasContact
+### HasLoglevel
 
-`func (o *SnmpUpdate0) HasContact() bool`
+`func (o *SnmpUpdate0) HasLoglevel() bool`
 
-HasContact returns a boolean if a field has been set.
+HasLoglevel returns a boolean if a field has been set.
+
+### GetOptions
+
+`func (o *SnmpUpdate0) GetOptions() string`
+
+GetOptions returns the Options field if non-nil, zero value otherwise.
+
+### GetOptionsOk
+
+`func (o *SnmpUpdate0) GetOptionsOk() (*string, bool)`
+
+GetOptionsOk returns a tuple with the Options field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOptions
+
+`func (o *SnmpUpdate0) SetOptions(v string)`
+
+SetOptions sets Options field to given value.
+
+### HasOptions
+
+`func (o *SnmpUpdate0) HasOptions() bool`
+
+HasOptions returns a boolean if a field has been set.
 
 ### GetTraps
 
@@ -137,56 +212,6 @@ SetV3 sets V3 field to given value.
 
 HasV3 returns a boolean if a field has been set.
 
-### GetCommunity
-
-`func (o *SnmpUpdate0) GetCommunity() string`
-
-GetCommunity returns the Community field if non-nil, zero value otherwise.
-
-### GetCommunityOk
-
-`func (o *SnmpUpdate0) GetCommunityOk() (*string, bool)`
-
-GetCommunityOk returns a tuple with the Community field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCommunity
-
-`func (o *SnmpUpdate0) SetCommunity(v string)`
-
-SetCommunity sets Community field to given value.
-
-### HasCommunity
-
-`func (o *SnmpUpdate0) HasCommunity() bool`
-
-HasCommunity returns a boolean if a field has been set.
-
-### GetV3Username
-
-`func (o *SnmpUpdate0) GetV3Username() string`
-
-GetV3Username returns the V3Username field if non-nil, zero value otherwise.
-
-### GetV3UsernameOk
-
-`func (o *SnmpUpdate0) GetV3UsernameOk() (*string, bool)`
-
-GetV3UsernameOk returns a tuple with the V3Username field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetV3Username
-
-`func (o *SnmpUpdate0) SetV3Username(v string)`
-
-SetV3Username sets V3Username field to given value.
-
-### HasV3Username
-
-`func (o *SnmpUpdate0) HasV3Username() bool`
-
-HasV3Username returns a boolean if a field has been set.
-
 ### GetV3Authtype
 
 `func (o *SnmpUpdate0) GetV3Authtype() string`
@@ -237,6 +262,31 @@ SetV3Password sets V3Password field to given value.
 
 HasV3Password returns a boolean if a field has been set.
 
+### GetV3Privpassphrase
+
+`func (o *SnmpUpdate0) GetV3Privpassphrase() string`
+
+GetV3Privpassphrase returns the V3Privpassphrase field if non-nil, zero value otherwise.
+
+### GetV3PrivpassphraseOk
+
+`func (o *SnmpUpdate0) GetV3PrivpassphraseOk() (*string, bool)`
+
+GetV3PrivpassphraseOk returns a tuple with the V3Privpassphrase field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetV3Privpassphrase
+
+`func (o *SnmpUpdate0) SetV3Privpassphrase(v string)`
+
+SetV3Privpassphrase sets V3Privpassphrase field to given value.
+
+### HasV3Privpassphrase
+
+`func (o *SnmpUpdate0) HasV3Privpassphrase() bool`
+
+HasV3Privpassphrase returns a boolean if a field has been set.
+
 ### GetV3Privproto
 
 `func (o *SnmpUpdate0) GetV3Privproto() string`
@@ -272,80 +322,30 @@ HasV3Privproto returns a boolean if a field has been set.
 `func (o *SnmpUpdate0) UnsetV3Privproto()`
 
 UnsetV3Privproto ensures that no value is present for V3Privproto, not even an explicit nil
-### GetV3Privpassphrase
+### GetV3Username
 
-`func (o *SnmpUpdate0) GetV3Privpassphrase() string`
+`func (o *SnmpUpdate0) GetV3Username() string`
 
-GetV3Privpassphrase returns the V3Privpassphrase field if non-nil, zero value otherwise.
+GetV3Username returns the V3Username field if non-nil, zero value otherwise.
 
-### GetV3PrivpassphraseOk
+### GetV3UsernameOk
 
-`func (o *SnmpUpdate0) GetV3PrivpassphraseOk() (*string, bool)`
+`func (o *SnmpUpdate0) GetV3UsernameOk() (*string, bool)`
 
-GetV3PrivpassphraseOk returns a tuple with the V3Privpassphrase field if it's non-nil, zero value otherwise
+GetV3UsernameOk returns a tuple with the V3Username field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetV3Privpassphrase
+### SetV3Username
 
-`func (o *SnmpUpdate0) SetV3Privpassphrase(v string)`
+`func (o *SnmpUpdate0) SetV3Username(v string)`
 
-SetV3Privpassphrase sets V3Privpassphrase field to given value.
+SetV3Username sets V3Username field to given value.
 
-### HasV3Privpassphrase
+### HasV3Username
 
-`func (o *SnmpUpdate0) HasV3Privpassphrase() bool`
+`func (o *SnmpUpdate0) HasV3Username() bool`
 
-HasV3Privpassphrase returns a boolean if a field has been set.
-
-### GetLoglevel
-
-`func (o *SnmpUpdate0) GetLoglevel() int32`
-
-GetLoglevel returns the Loglevel field if non-nil, zero value otherwise.
-
-### GetLoglevelOk
-
-`func (o *SnmpUpdate0) GetLoglevelOk() (*int32, bool)`
-
-GetLoglevelOk returns a tuple with the Loglevel field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetLoglevel
-
-`func (o *SnmpUpdate0) SetLoglevel(v int32)`
-
-SetLoglevel sets Loglevel field to given value.
-
-### HasLoglevel
-
-`func (o *SnmpUpdate0) HasLoglevel() bool`
-
-HasLoglevel returns a boolean if a field has been set.
-
-### GetOptions
-
-`func (o *SnmpUpdate0) GetOptions() string`
-
-GetOptions returns the Options field if non-nil, zero value otherwise.
-
-### GetOptionsOk
-
-`func (o *SnmpUpdate0) GetOptionsOk() (*string, bool)`
-
-GetOptionsOk returns a tuple with the Options field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetOptions
-
-`func (o *SnmpUpdate0) SetOptions(v string)`
-
-SetOptions sets Options field to given value.
-
-### HasOptions
-
-`func (o *SnmpUpdate0) HasOptions() bool`
-
-HasOptions returns a boolean if a field has been set.
+HasV3Username returns a boolean if a field has been set.
 
 ### GetZilstat
 

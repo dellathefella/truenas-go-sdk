@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Jail** | Pointer to **string** |  | [optional] 
 **Command** | Pointer to **[]interface{}** |  | [optional] 
+**Jail** | Pointer to **string** |  | [optional] 
 **Options** | Pointer to [**JailExec2**](JailExec2.md) |  | [optional] [default to {}]
 
 ## Methods
@@ -26,31 +26,6 @@ will change when the set of required properties is changed
 NewJailExecWithDefaults instantiates a new JailExec object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetJail
-
-`func (o *JailExec) GetJail() string`
-
-GetJail returns the Jail field if non-nil, zero value otherwise.
-
-### GetJailOk
-
-`func (o *JailExec) GetJailOk() (*string, bool)`
-
-GetJailOk returns a tuple with the Jail field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetJail
-
-`func (o *JailExec) SetJail(v string)`
-
-SetJail sets Jail field to given value.
-
-### HasJail
-
-`func (o *JailExec) HasJail() bool`
-
-HasJail returns a boolean if a field has been set.
 
 ### GetCommand
 
@@ -76,6 +51,31 @@ SetCommand sets Command field to given value.
 `func (o *JailExec) HasCommand() bool`
 
 HasCommand returns a boolean if a field has been set.
+
+### GetJail
+
+`func (o *JailExec) GetJail() string`
+
+GetJail returns the Jail field if non-nil, zero value otherwise.
+
+### GetJailOk
+
+`func (o *JailExec) GetJailOk() (*string, bool)`
+
+GetJailOk returns a tuple with the Jail field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetJail
+
+`func (o *JailExec) SetJail(v string)`
+
+SetJail sets Jail field to given value.
+
+### HasJail
+
+`func (o *JailExec) HasJail() bool`
+
+HasJail returns a boolean if a field has been set.
 
 ### GetOptions
 

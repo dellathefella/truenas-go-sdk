@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**EnableAttachments** | Pointer to **bool** |  | [optional] 
 **Guid** | Pointer to **string** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Passphrase** | Pointer to **string** |  | [optional] 
-**EnableAttachments** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -27,6 +27,31 @@ will change when the set of required properties is changed
 NewPoolImportPool0WithDefaults instantiates a new PoolImportPool0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetEnableAttachments
+
+`func (o *PoolImportPool0) GetEnableAttachments() bool`
+
+GetEnableAttachments returns the EnableAttachments field if non-nil, zero value otherwise.
+
+### GetEnableAttachmentsOk
+
+`func (o *PoolImportPool0) GetEnableAttachmentsOk() (*bool, bool)`
+
+GetEnableAttachmentsOk returns a tuple with the EnableAttachments field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEnableAttachments
+
+`func (o *PoolImportPool0) SetEnableAttachments(v bool)`
+
+SetEnableAttachments sets EnableAttachments field to given value.
+
+### HasEnableAttachments
+
+`func (o *PoolImportPool0) HasEnableAttachments() bool`
+
+HasEnableAttachments returns a boolean if a field has been set.
 
 ### GetGuid
 
@@ -102,31 +127,6 @@ SetPassphrase sets Passphrase field to given value.
 `func (o *PoolImportPool0) HasPassphrase() bool`
 
 HasPassphrase returns a boolean if a field has been set.
-
-### GetEnableAttachments
-
-`func (o *PoolImportPool0) GetEnableAttachments() bool`
-
-GetEnableAttachments returns the EnableAttachments field if non-nil, zero value otherwise.
-
-### GetEnableAttachmentsOk
-
-`func (o *PoolImportPool0) GetEnableAttachmentsOk() (*bool, bool)`
-
-GetEnableAttachmentsOk returns a tuple with the EnableAttachments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetEnableAttachments
-
-`func (o *PoolImportPool0) SetEnableAttachments(v bool)`
-
-SetEnableAttachments sets EnableAttachments field to given value.
-
-### HasEnableAttachments
-
-`func (o *PoolImportPool0) HasEnableAttachments() bool`
-
-HasEnableAttachments returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

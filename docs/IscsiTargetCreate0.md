@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | Pointer to **string** |  | [optional] 
 **Alias** | Pointer to **NullableString** |  | [optional] 
-**Mode** | Pointer to **string** |  | [optional] 
 **Groups** | Pointer to **[]map[string]interface{}** |  | [optional] 
+**Mode** | Pointer to **string** |  | [optional] 
+**Name** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -27,31 +27,6 @@ will change when the set of required properties is changed
 NewIscsiTargetCreate0WithDefaults instantiates a new IscsiTargetCreate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetName
-
-`func (o *IscsiTargetCreate0) GetName() string`
-
-GetName returns the Name field if non-nil, zero value otherwise.
-
-### GetNameOk
-
-`func (o *IscsiTargetCreate0) GetNameOk() (*string, bool)`
-
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetName
-
-`func (o *IscsiTargetCreate0) SetName(v string)`
-
-SetName sets Name field to given value.
-
-### HasName
-
-`func (o *IscsiTargetCreate0) HasName() bool`
-
-HasName returns a boolean if a field has been set.
 
 ### GetAlias
 
@@ -88,6 +63,31 @@ HasAlias returns a boolean if a field has been set.
 `func (o *IscsiTargetCreate0) UnsetAlias()`
 
 UnsetAlias ensures that no value is present for Alias, not even an explicit nil
+### GetGroups
+
+`func (o *IscsiTargetCreate0) GetGroups() []map[string]interface{}`
+
+GetGroups returns the Groups field if non-nil, zero value otherwise.
+
+### GetGroupsOk
+
+`func (o *IscsiTargetCreate0) GetGroupsOk() (*[]map[string]interface{}, bool)`
+
+GetGroupsOk returns a tuple with the Groups field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetGroups
+
+`func (o *IscsiTargetCreate0) SetGroups(v []map[string]interface{})`
+
+SetGroups sets Groups field to given value.
+
+### HasGroups
+
+`func (o *IscsiTargetCreate0) HasGroups() bool`
+
+HasGroups returns a boolean if a field has been set.
+
 ### GetMode
 
 `func (o *IscsiTargetCreate0) GetMode() string`
@@ -113,30 +113,30 @@ SetMode sets Mode field to given value.
 
 HasMode returns a boolean if a field has been set.
 
-### GetGroups
+### GetName
 
-`func (o *IscsiTargetCreate0) GetGroups() []map[string]interface{}`
+`func (o *IscsiTargetCreate0) GetName() string`
 
-GetGroups returns the Groups field if non-nil, zero value otherwise.
+GetName returns the Name field if non-nil, zero value otherwise.
 
-### GetGroupsOk
+### GetNameOk
 
-`func (o *IscsiTargetCreate0) GetGroupsOk() (*[]map[string]interface{}, bool)`
+`func (o *IscsiTargetCreate0) GetNameOk() (*string, bool)`
 
-GetGroupsOk returns a tuple with the Groups field if it's non-nil, zero value otherwise
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetGroups
+### SetName
 
-`func (o *IscsiTargetCreate0) SetGroups(v []map[string]interface{})`
+`func (o *IscsiTargetCreate0) SetName(v string)`
 
-SetGroups sets Groups field to given value.
+SetName sets Name field to given value.
 
-### HasGroups
+### HasName
 
-`func (o *IscsiTargetCreate0) HasGroups() bool`
+`func (o *IscsiTargetCreate0) HasName() bool`
 
-HasGroups returns a boolean if a field has been set.
+HasName returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

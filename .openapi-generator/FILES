@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .travis.yml
 README.md
 api/openapi.yaml
@@ -45,7 +44,6 @@ api_iscsi_initiator.go
 api_iscsi_portal.go
 api_iscsi_target.go
 api_iscsi_targetextent.go
-api_jail.go
 api_kerberos.go
 api_kerberos_keytab.go
 api_kerberos_realm.go
@@ -195,9 +193,7 @@ docs/DiskApi.md
 docs/DiskGetEncrypted0.md
 docs/DiskOverprovision.md
 docs/DiskTemperature.md
-docs/DiskTemperature1.md
 docs/DiskTemperatures.md
-docs/DiskTemperatures1.md
 docs/DiskUpdate1.md
 docs/DiskUpdate1Enclosure.md
 docs/DiskWipe.md
@@ -284,7 +280,6 @@ docs/IscsiTargetUpdate1.md
 docs/IscsiTargetextentApi.md
 docs/IscsiTargetextentCreate0.md
 docs/IscsiTargetextentUpdate1.md
-docs/JailApi.md
 docs/JailClean0.md
 docs/JailClone1.md
 docs/JailCreate0.md
@@ -324,8 +319,8 @@ docs/MailApi.md
 docs/MailSend.md
 docs/MailSend0.md
 docs/MailSend1.md
+docs/MailSend1Oauth.md
 docs/MailUpdate0.md
-docs/MailUpdate0Oauth.md
 docs/MultipathApi.md
 docs/NetworkConfigurationApi.md
 docs/NetworkConfigurationUpdate0.md
@@ -370,7 +365,7 @@ docs/PoolDatasetPermission1.md
 docs/PoolDatasetUnlock.md
 docs/PoolDatasetUnlock1.md
 docs/PoolDatasetUpdate1.md
-docs/PoolDatasetUpdate1QuotaWarning.md
+docs/PoolDatasetUpdate1QuotaCritical.md
 docs/PoolDatasetUserpropApi.md
 docs/PoolDatasetUserpropCreate0.md
 docs/PoolDatasetUserpropCreate0Property.md
@@ -621,9 +616,7 @@ model_device_get_info_0.go
 model_disk_get_encrypted_0.go
 model_disk_overprovision.go
 model_disk_temperature.go
-model_disk_temperature_1.go
 model_disk_temperatures.go
-model_disk_temperatures_1.go
 model_disk_update_1.go
 model_disk_update_1_enclosure.go
 model_disk_wipe.go
@@ -720,8 +713,8 @@ model_lldp_update_0.go
 model_mail_send.go
 model_mail_send_0.go
 model_mail_send_1.go
+model_mail_send_1_oauth.go
 model_mail_update_0.go
-model_mail_update_0_oauth.go
 model_network_configuration_update_0.go
 model_network_configuration_update_0_service_announcement.go
 model_nfs_add_principal_0.go
@@ -756,7 +749,7 @@ model_pool_dataset_permission_1.go
 model_pool_dataset_unlock.go
 model_pool_dataset_unlock_1.go
 model_pool_dataset_update_1.go
-model_pool_dataset_update_1_quota_warning.go
+model_pool_dataset_update_1_quota_critical.go
 model_pool_dataset_userprop_create_0.go
 model_pool_dataset_userprop_create_0_property.go
 model_pool_dataset_userprop_delete_1.go

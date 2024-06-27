@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Perm** | Pointer to **bool** |  | [optional] 
-**Ro** | Pointer to **bool** |  | [optional] 
 **Comment** | Pointer to **string** |  | [optional] 
+**Enabled** | Pointer to **bool** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Path** | Pointer to **string** |  | [optional] 
-**Enabled** | Pointer to **bool** |  | [optional] 
+**Perm** | Pointer to **bool** |  | [optional] 
+**Ro** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -29,56 +29,6 @@ will change when the set of required properties is changed
 NewSharingWebdavCreate0WithDefaults instantiates a new SharingWebdavCreate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetPerm
-
-`func (o *SharingWebdavCreate0) GetPerm() bool`
-
-GetPerm returns the Perm field if non-nil, zero value otherwise.
-
-### GetPermOk
-
-`func (o *SharingWebdavCreate0) GetPermOk() (*bool, bool)`
-
-GetPermOk returns a tuple with the Perm field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPerm
-
-`func (o *SharingWebdavCreate0) SetPerm(v bool)`
-
-SetPerm sets Perm field to given value.
-
-### HasPerm
-
-`func (o *SharingWebdavCreate0) HasPerm() bool`
-
-HasPerm returns a boolean if a field has been set.
-
-### GetRo
-
-`func (o *SharingWebdavCreate0) GetRo() bool`
-
-GetRo returns the Ro field if non-nil, zero value otherwise.
-
-### GetRoOk
-
-`func (o *SharingWebdavCreate0) GetRoOk() (*bool, bool)`
-
-GetRoOk returns a tuple with the Ro field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRo
-
-`func (o *SharingWebdavCreate0) SetRo(v bool)`
-
-SetRo sets Ro field to given value.
-
-### HasRo
-
-`func (o *SharingWebdavCreate0) HasRo() bool`
-
-HasRo returns a boolean if a field has been set.
 
 ### GetComment
 
@@ -104,6 +54,31 @@ SetComment sets Comment field to given value.
 `func (o *SharingWebdavCreate0) HasComment() bool`
 
 HasComment returns a boolean if a field has been set.
+
+### GetEnabled
+
+`func (o *SharingWebdavCreate0) GetEnabled() bool`
+
+GetEnabled returns the Enabled field if non-nil, zero value otherwise.
+
+### GetEnabledOk
+
+`func (o *SharingWebdavCreate0) GetEnabledOk() (*bool, bool)`
+
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEnabled
+
+`func (o *SharingWebdavCreate0) SetEnabled(v bool)`
+
+SetEnabled sets Enabled field to given value.
+
+### HasEnabled
+
+`func (o *SharingWebdavCreate0) HasEnabled() bool`
+
+HasEnabled returns a boolean if a field has been set.
 
 ### GetName
 
@@ -155,30 +130,55 @@ SetPath sets Path field to given value.
 
 HasPath returns a boolean if a field has been set.
 
-### GetEnabled
+### GetPerm
 
-`func (o *SharingWebdavCreate0) GetEnabled() bool`
+`func (o *SharingWebdavCreate0) GetPerm() bool`
 
-GetEnabled returns the Enabled field if non-nil, zero value otherwise.
+GetPerm returns the Perm field if non-nil, zero value otherwise.
 
-### GetEnabledOk
+### GetPermOk
 
-`func (o *SharingWebdavCreate0) GetEnabledOk() (*bool, bool)`
+`func (o *SharingWebdavCreate0) GetPermOk() (*bool, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
+GetPermOk returns a tuple with the Perm field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetEnabled
+### SetPerm
 
-`func (o *SharingWebdavCreate0) SetEnabled(v bool)`
+`func (o *SharingWebdavCreate0) SetPerm(v bool)`
 
-SetEnabled sets Enabled field to given value.
+SetPerm sets Perm field to given value.
 
-### HasEnabled
+### HasPerm
 
-`func (o *SharingWebdavCreate0) HasEnabled() bool`
+`func (o *SharingWebdavCreate0) HasPerm() bool`
 
-HasEnabled returns a boolean if a field has been set.
+HasPerm returns a boolean if a field has been set.
+
+### GetRo
+
+`func (o *SharingWebdavCreate0) GetRo() bool`
+
+GetRo returns the Ro field if non-nil, zero value otherwise.
+
+### GetRoOk
+
+`func (o *SharingWebdavCreate0) GetRoOk() (*bool, bool)`
+
+GetRoOk returns a tuple with the Ro field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRo
+
+`func (o *SharingWebdavCreate0) SetRo(v bool)`
+
+SetRo sets Ro field to given value.
+
+### HasRo
+
+`func (o *SharingWebdavCreate0) HasRo() bool`
+
+HasRo returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

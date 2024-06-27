@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**TargetVdev** | Pointer to **string** |  | [optional] 
+**AllowDuplicateSerials** | Pointer to **bool** |  | [optional] 
 **NewDisk** | Pointer to **string** |  | [optional] 
 **Passphrase** | Pointer to **string** |  | [optional] 
-**AllowDuplicateSerials** | Pointer to **bool** |  | [optional] 
+**TargetVdev** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -28,30 +28,30 @@ NewPoolAttach1WithDefaults instantiates a new PoolAttach1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetTargetVdev
+### GetAllowDuplicateSerials
 
-`func (o *PoolAttach1) GetTargetVdev() string`
+`func (o *PoolAttach1) GetAllowDuplicateSerials() bool`
 
-GetTargetVdev returns the TargetVdev field if non-nil, zero value otherwise.
+GetAllowDuplicateSerials returns the AllowDuplicateSerials field if non-nil, zero value otherwise.
 
-### GetTargetVdevOk
+### GetAllowDuplicateSerialsOk
 
-`func (o *PoolAttach1) GetTargetVdevOk() (*string, bool)`
+`func (o *PoolAttach1) GetAllowDuplicateSerialsOk() (*bool, bool)`
 
-GetTargetVdevOk returns a tuple with the TargetVdev field if it's non-nil, zero value otherwise
+GetAllowDuplicateSerialsOk returns a tuple with the AllowDuplicateSerials field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetTargetVdev
+### SetAllowDuplicateSerials
 
-`func (o *PoolAttach1) SetTargetVdev(v string)`
+`func (o *PoolAttach1) SetAllowDuplicateSerials(v bool)`
 
-SetTargetVdev sets TargetVdev field to given value.
+SetAllowDuplicateSerials sets AllowDuplicateSerials field to given value.
 
-### HasTargetVdev
+### HasAllowDuplicateSerials
 
-`func (o *PoolAttach1) HasTargetVdev() bool`
+`func (o *PoolAttach1) HasAllowDuplicateSerials() bool`
 
-HasTargetVdev returns a boolean if a field has been set.
+HasAllowDuplicateSerials returns a boolean if a field has been set.
 
 ### GetNewDisk
 
@@ -103,30 +103,30 @@ SetPassphrase sets Passphrase field to given value.
 
 HasPassphrase returns a boolean if a field has been set.
 
-### GetAllowDuplicateSerials
+### GetTargetVdev
 
-`func (o *PoolAttach1) GetAllowDuplicateSerials() bool`
+`func (o *PoolAttach1) GetTargetVdev() string`
 
-GetAllowDuplicateSerials returns the AllowDuplicateSerials field if non-nil, zero value otherwise.
+GetTargetVdev returns the TargetVdev field if non-nil, zero value otherwise.
 
-### GetAllowDuplicateSerialsOk
+### GetTargetVdevOk
 
-`func (o *PoolAttach1) GetAllowDuplicateSerialsOk() (*bool, bool)`
+`func (o *PoolAttach1) GetTargetVdevOk() (*string, bool)`
 
-GetAllowDuplicateSerialsOk returns a tuple with the AllowDuplicateSerials field if it's non-nil, zero value otherwise
+GetTargetVdevOk returns a tuple with the TargetVdev field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetAllowDuplicateSerials
+### SetTargetVdev
 
-`func (o *PoolAttach1) SetAllowDuplicateSerials(v bool)`
+`func (o *PoolAttach1) SetTargetVdev(v string)`
 
-SetAllowDuplicateSerials sets AllowDuplicateSerials field to given value.
+SetTargetVdev sets TargetVdev field to given value.
 
-### HasAllowDuplicateSerials
+### HasTargetVdev
 
-`func (o *PoolAttach1) HasAllowDuplicateSerials() bool`
+`func (o *PoolAttach1) HasTargetVdev() bool`
 
-HasAllowDuplicateSerials returns a boolean if a field has been set.
+HasTargetVdev returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

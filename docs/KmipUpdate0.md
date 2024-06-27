@@ -4,16 +4,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Certificate** | Pointer to **NullableInt32** |  | [optional] 
+**CertificateAuthority** | Pointer to **NullableInt32** |  | [optional] 
+**ChangeServer** | Pointer to **bool** |  | [optional] 
 **Enabled** | Pointer to **bool** |  | [optional] 
 **ForceClear** | Pointer to **bool** |  | [optional] 
 **ManageSedDisks** | Pointer to **bool** |  | [optional] 
 **ManageZfsKeys** | Pointer to **bool** |  | [optional] 
-**ChangeServer** | Pointer to **bool** |  | [optional] 
-**Validate** | Pointer to **bool** |  | [optional] 
-**Certificate** | Pointer to **NullableInt32** |  | [optional] 
-**CertificateAuthority** | Pointer to **NullableInt32** |  | [optional] 
 **Port** | Pointer to **int32** |  | [optional] 
 **Server** | Pointer to **string** |  | [optional] 
+**Validate** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -33,6 +33,101 @@ will change when the set of required properties is changed
 NewKmipUpdate0WithDefaults instantiates a new KmipUpdate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetCertificate
+
+`func (o *KmipUpdate0) GetCertificate() int32`
+
+GetCertificate returns the Certificate field if non-nil, zero value otherwise.
+
+### GetCertificateOk
+
+`func (o *KmipUpdate0) GetCertificateOk() (*int32, bool)`
+
+GetCertificateOk returns a tuple with the Certificate field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCertificate
+
+`func (o *KmipUpdate0) SetCertificate(v int32)`
+
+SetCertificate sets Certificate field to given value.
+
+### HasCertificate
+
+`func (o *KmipUpdate0) HasCertificate() bool`
+
+HasCertificate returns a boolean if a field has been set.
+
+### SetCertificateNil
+
+`func (o *KmipUpdate0) SetCertificateNil(b bool)`
+
+ SetCertificateNil sets the value for Certificate to be an explicit nil
+
+### UnsetCertificate
+`func (o *KmipUpdate0) UnsetCertificate()`
+
+UnsetCertificate ensures that no value is present for Certificate, not even an explicit nil
+### GetCertificateAuthority
+
+`func (o *KmipUpdate0) GetCertificateAuthority() int32`
+
+GetCertificateAuthority returns the CertificateAuthority field if non-nil, zero value otherwise.
+
+### GetCertificateAuthorityOk
+
+`func (o *KmipUpdate0) GetCertificateAuthorityOk() (*int32, bool)`
+
+GetCertificateAuthorityOk returns a tuple with the CertificateAuthority field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCertificateAuthority
+
+`func (o *KmipUpdate0) SetCertificateAuthority(v int32)`
+
+SetCertificateAuthority sets CertificateAuthority field to given value.
+
+### HasCertificateAuthority
+
+`func (o *KmipUpdate0) HasCertificateAuthority() bool`
+
+HasCertificateAuthority returns a boolean if a field has been set.
+
+### SetCertificateAuthorityNil
+
+`func (o *KmipUpdate0) SetCertificateAuthorityNil(b bool)`
+
+ SetCertificateAuthorityNil sets the value for CertificateAuthority to be an explicit nil
+
+### UnsetCertificateAuthority
+`func (o *KmipUpdate0) UnsetCertificateAuthority()`
+
+UnsetCertificateAuthority ensures that no value is present for CertificateAuthority, not even an explicit nil
+### GetChangeServer
+
+`func (o *KmipUpdate0) GetChangeServer() bool`
+
+GetChangeServer returns the ChangeServer field if non-nil, zero value otherwise.
+
+### GetChangeServerOk
+
+`func (o *KmipUpdate0) GetChangeServerOk() (*bool, bool)`
+
+GetChangeServerOk returns a tuple with the ChangeServer field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetChangeServer
+
+`func (o *KmipUpdate0) SetChangeServer(v bool)`
+
+SetChangeServer sets ChangeServer field to given value.
+
+### HasChangeServer
+
+`func (o *KmipUpdate0) HasChangeServer() bool`
+
+HasChangeServer returns a boolean if a field has been set.
 
 ### GetEnabled
 
@@ -134,126 +229,6 @@ SetManageZfsKeys sets ManageZfsKeys field to given value.
 
 HasManageZfsKeys returns a boolean if a field has been set.
 
-### GetChangeServer
-
-`func (o *KmipUpdate0) GetChangeServer() bool`
-
-GetChangeServer returns the ChangeServer field if non-nil, zero value otherwise.
-
-### GetChangeServerOk
-
-`func (o *KmipUpdate0) GetChangeServerOk() (*bool, bool)`
-
-GetChangeServerOk returns a tuple with the ChangeServer field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetChangeServer
-
-`func (o *KmipUpdate0) SetChangeServer(v bool)`
-
-SetChangeServer sets ChangeServer field to given value.
-
-### HasChangeServer
-
-`func (o *KmipUpdate0) HasChangeServer() bool`
-
-HasChangeServer returns a boolean if a field has been set.
-
-### GetValidate
-
-`func (o *KmipUpdate0) GetValidate() bool`
-
-GetValidate returns the Validate field if non-nil, zero value otherwise.
-
-### GetValidateOk
-
-`func (o *KmipUpdate0) GetValidateOk() (*bool, bool)`
-
-GetValidateOk returns a tuple with the Validate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetValidate
-
-`func (o *KmipUpdate0) SetValidate(v bool)`
-
-SetValidate sets Validate field to given value.
-
-### HasValidate
-
-`func (o *KmipUpdate0) HasValidate() bool`
-
-HasValidate returns a boolean if a field has been set.
-
-### GetCertificate
-
-`func (o *KmipUpdate0) GetCertificate() int32`
-
-GetCertificate returns the Certificate field if non-nil, zero value otherwise.
-
-### GetCertificateOk
-
-`func (o *KmipUpdate0) GetCertificateOk() (*int32, bool)`
-
-GetCertificateOk returns a tuple with the Certificate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCertificate
-
-`func (o *KmipUpdate0) SetCertificate(v int32)`
-
-SetCertificate sets Certificate field to given value.
-
-### HasCertificate
-
-`func (o *KmipUpdate0) HasCertificate() bool`
-
-HasCertificate returns a boolean if a field has been set.
-
-### SetCertificateNil
-
-`func (o *KmipUpdate0) SetCertificateNil(b bool)`
-
- SetCertificateNil sets the value for Certificate to be an explicit nil
-
-### UnsetCertificate
-`func (o *KmipUpdate0) UnsetCertificate()`
-
-UnsetCertificate ensures that no value is present for Certificate, not even an explicit nil
-### GetCertificateAuthority
-
-`func (o *KmipUpdate0) GetCertificateAuthority() int32`
-
-GetCertificateAuthority returns the CertificateAuthority field if non-nil, zero value otherwise.
-
-### GetCertificateAuthorityOk
-
-`func (o *KmipUpdate0) GetCertificateAuthorityOk() (*int32, bool)`
-
-GetCertificateAuthorityOk returns a tuple with the CertificateAuthority field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCertificateAuthority
-
-`func (o *KmipUpdate0) SetCertificateAuthority(v int32)`
-
-SetCertificateAuthority sets CertificateAuthority field to given value.
-
-### HasCertificateAuthority
-
-`func (o *KmipUpdate0) HasCertificateAuthority() bool`
-
-HasCertificateAuthority returns a boolean if a field has been set.
-
-### SetCertificateAuthorityNil
-
-`func (o *KmipUpdate0) SetCertificateAuthorityNil(b bool)`
-
- SetCertificateAuthorityNil sets the value for CertificateAuthority to be an explicit nil
-
-### UnsetCertificateAuthority
-`func (o *KmipUpdate0) UnsetCertificateAuthority()`
-
-UnsetCertificateAuthority ensures that no value is present for CertificateAuthority, not even an explicit nil
 ### GetPort
 
 `func (o *KmipUpdate0) GetPort() int32`
@@ -303,6 +278,31 @@ SetServer sets Server field to given value.
 `func (o *KmipUpdate0) HasServer() bool`
 
 HasServer returns a boolean if a field has been set.
+
+### GetValidate
+
+`func (o *KmipUpdate0) GetValidate() bool`
+
+GetValidate returns the Validate field if non-nil, zero value otherwise.
+
+### GetValidateOk
+
+`func (o *KmipUpdate0) GetValidateOk() (*bool, bool)`
+
+GetValidateOk returns a tuple with the Validate field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetValidate
+
+`func (o *KmipUpdate0) SetValidate(v bool)`
+
+SetValidate sets Validate field to given value.
+
+### HasValidate
+
+`func (o *KmipUpdate0) HasValidate() bool`
+
+HasValidate returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

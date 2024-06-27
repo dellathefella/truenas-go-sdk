@@ -4,25 +4,25 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Uid** | Pointer to **int32** |  | [optional] 
-**Username** | Pointer to **string** |  | [optional] 
+**Attributes** | Pointer to **map[string]interface{}** |  | [optional] 
+**Email** | Pointer to **NullableString** |  | [optional] 
+**FullName** | Pointer to **string** |  | [optional] 
 **Group** | Pointer to **int32** |  | [optional] 
+**Groups** | Pointer to **[]interface{}** |  | [optional] 
 **Home** | Pointer to **string** |  | [optional] 
 **HomeMode** | Pointer to **string** |  | [optional] 
-**Shell** | Pointer to **string** |  | [optional] 
-**FullName** | Pointer to **string** |  | [optional] 
-**Email** | Pointer to **NullableString** |  | [optional] 
-**Password** | Pointer to **string** |  | [optional] 
-**PasswordDisabled** | Pointer to **bool** |  | [optional] 
 **Locked** | Pointer to **bool** |  | [optional] 
 **MicrosoftAccount** | Pointer to **bool** |  | [optional] 
+**Password** | Pointer to **string** |  | [optional] 
+**PasswordDisabled** | Pointer to **bool** |  | [optional] 
+**Shell** | Pointer to **string** |  | [optional] 
 **Smb** | Pointer to **bool** |  | [optional] 
-**Sudo** | Pointer to **bool** |  | [optional] 
-**SudoNopasswd** | Pointer to **bool** |  | [optional] 
-**SudoCommands** | Pointer to **[]string** |  | [optional] 
 **Sshpubkey** | Pointer to **NullableString** |  | [optional] 
-**Groups** | Pointer to **[]interface{}** |  | [optional] 
-**Attributes** | Pointer to **map[string]interface{}** |  | [optional] 
+**Sudo** | Pointer to **bool** |  | [optional] 
+**SudoCommands** | Pointer to **[]string** |  | [optional] 
+**SudoNopasswd** | Pointer to **bool** |  | [optional] 
+**Uid** | Pointer to **int32** |  | [optional] 
+**Username** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -43,55 +43,90 @@ NewUserUpdate1WithDefaults instantiates a new UserUpdate1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetUid
+### GetAttributes
 
-`func (o *UserUpdate1) GetUid() int32`
+`func (o *UserUpdate1) GetAttributes() map[string]interface{}`
 
-GetUid returns the Uid field if non-nil, zero value otherwise.
+GetAttributes returns the Attributes field if non-nil, zero value otherwise.
 
-### GetUidOk
+### GetAttributesOk
 
-`func (o *UserUpdate1) GetUidOk() (*int32, bool)`
+`func (o *UserUpdate1) GetAttributesOk() (*map[string]interface{}, bool)`
 
-GetUidOk returns a tuple with the Uid field if it's non-nil, zero value otherwise
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetUid
+### SetAttributes
 
-`func (o *UserUpdate1) SetUid(v int32)`
+`func (o *UserUpdate1) SetAttributes(v map[string]interface{})`
 
-SetUid sets Uid field to given value.
+SetAttributes sets Attributes field to given value.
 
-### HasUid
+### HasAttributes
 
-`func (o *UserUpdate1) HasUid() bool`
+`func (o *UserUpdate1) HasAttributes() bool`
 
-HasUid returns a boolean if a field has been set.
+HasAttributes returns a boolean if a field has been set.
 
-### GetUsername
+### GetEmail
 
-`func (o *UserUpdate1) GetUsername() string`
+`func (o *UserUpdate1) GetEmail() string`
 
-GetUsername returns the Username field if non-nil, zero value otherwise.
+GetEmail returns the Email field if non-nil, zero value otherwise.
 
-### GetUsernameOk
+### GetEmailOk
 
-`func (o *UserUpdate1) GetUsernameOk() (*string, bool)`
+`func (o *UserUpdate1) GetEmailOk() (*string, bool)`
 
-GetUsernameOk returns a tuple with the Username field if it's non-nil, zero value otherwise
+GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetUsername
+### SetEmail
 
-`func (o *UserUpdate1) SetUsername(v string)`
+`func (o *UserUpdate1) SetEmail(v string)`
 
-SetUsername sets Username field to given value.
+SetEmail sets Email field to given value.
 
-### HasUsername
+### HasEmail
 
-`func (o *UserUpdate1) HasUsername() bool`
+`func (o *UserUpdate1) HasEmail() bool`
 
-HasUsername returns a boolean if a field has been set.
+HasEmail returns a boolean if a field has been set.
+
+### SetEmailNil
+
+`func (o *UserUpdate1) SetEmailNil(b bool)`
+
+ SetEmailNil sets the value for Email to be an explicit nil
+
+### UnsetEmail
+`func (o *UserUpdate1) UnsetEmail()`
+
+UnsetEmail ensures that no value is present for Email, not even an explicit nil
+### GetFullName
+
+`func (o *UserUpdate1) GetFullName() string`
+
+GetFullName returns the FullName field if non-nil, zero value otherwise.
+
+### GetFullNameOk
+
+`func (o *UserUpdate1) GetFullNameOk() (*string, bool)`
+
+GetFullNameOk returns a tuple with the FullName field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetFullName
+
+`func (o *UserUpdate1) SetFullName(v string)`
+
+SetFullName sets FullName field to given value.
+
+### HasFullName
+
+`func (o *UserUpdate1) HasFullName() bool`
+
+HasFullName returns a boolean if a field has been set.
 
 ### GetGroup
 
@@ -117,6 +152,31 @@ SetGroup sets Group field to given value.
 `func (o *UserUpdate1) HasGroup() bool`
 
 HasGroup returns a boolean if a field has been set.
+
+### GetGroups
+
+`func (o *UserUpdate1) GetGroups() []interface{}`
+
+GetGroups returns the Groups field if non-nil, zero value otherwise.
+
+### GetGroupsOk
+
+`func (o *UserUpdate1) GetGroupsOk() (*[]interface{}, bool)`
+
+GetGroupsOk returns a tuple with the Groups field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetGroups
+
+`func (o *UserUpdate1) SetGroups(v []interface{})`
+
+SetGroups sets Groups field to given value.
+
+### HasGroups
+
+`func (o *UserUpdate1) HasGroups() bool`
+
+HasGroups returns a boolean if a field has been set.
 
 ### GetHome
 
@@ -168,141 +228,6 @@ SetHomeMode sets HomeMode field to given value.
 
 HasHomeMode returns a boolean if a field has been set.
 
-### GetShell
-
-`func (o *UserUpdate1) GetShell() string`
-
-GetShell returns the Shell field if non-nil, zero value otherwise.
-
-### GetShellOk
-
-`func (o *UserUpdate1) GetShellOk() (*string, bool)`
-
-GetShellOk returns a tuple with the Shell field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetShell
-
-`func (o *UserUpdate1) SetShell(v string)`
-
-SetShell sets Shell field to given value.
-
-### HasShell
-
-`func (o *UserUpdate1) HasShell() bool`
-
-HasShell returns a boolean if a field has been set.
-
-### GetFullName
-
-`func (o *UserUpdate1) GetFullName() string`
-
-GetFullName returns the FullName field if non-nil, zero value otherwise.
-
-### GetFullNameOk
-
-`func (o *UserUpdate1) GetFullNameOk() (*string, bool)`
-
-GetFullNameOk returns a tuple with the FullName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetFullName
-
-`func (o *UserUpdate1) SetFullName(v string)`
-
-SetFullName sets FullName field to given value.
-
-### HasFullName
-
-`func (o *UserUpdate1) HasFullName() bool`
-
-HasFullName returns a boolean if a field has been set.
-
-### GetEmail
-
-`func (o *UserUpdate1) GetEmail() string`
-
-GetEmail returns the Email field if non-nil, zero value otherwise.
-
-### GetEmailOk
-
-`func (o *UserUpdate1) GetEmailOk() (*string, bool)`
-
-GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetEmail
-
-`func (o *UserUpdate1) SetEmail(v string)`
-
-SetEmail sets Email field to given value.
-
-### HasEmail
-
-`func (o *UserUpdate1) HasEmail() bool`
-
-HasEmail returns a boolean if a field has been set.
-
-### SetEmailNil
-
-`func (o *UserUpdate1) SetEmailNil(b bool)`
-
- SetEmailNil sets the value for Email to be an explicit nil
-
-### UnsetEmail
-`func (o *UserUpdate1) UnsetEmail()`
-
-UnsetEmail ensures that no value is present for Email, not even an explicit nil
-### GetPassword
-
-`func (o *UserUpdate1) GetPassword() string`
-
-GetPassword returns the Password field if non-nil, zero value otherwise.
-
-### GetPasswordOk
-
-`func (o *UserUpdate1) GetPasswordOk() (*string, bool)`
-
-GetPasswordOk returns a tuple with the Password field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPassword
-
-`func (o *UserUpdate1) SetPassword(v string)`
-
-SetPassword sets Password field to given value.
-
-### HasPassword
-
-`func (o *UserUpdate1) HasPassword() bool`
-
-HasPassword returns a boolean if a field has been set.
-
-### GetPasswordDisabled
-
-`func (o *UserUpdate1) GetPasswordDisabled() bool`
-
-GetPasswordDisabled returns the PasswordDisabled field if non-nil, zero value otherwise.
-
-### GetPasswordDisabledOk
-
-`func (o *UserUpdate1) GetPasswordDisabledOk() (*bool, bool)`
-
-GetPasswordDisabledOk returns a tuple with the PasswordDisabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPasswordDisabled
-
-`func (o *UserUpdate1) SetPasswordDisabled(v bool)`
-
-SetPasswordDisabled sets PasswordDisabled field to given value.
-
-### HasPasswordDisabled
-
-`func (o *UserUpdate1) HasPasswordDisabled() bool`
-
-HasPasswordDisabled returns a boolean if a field has been set.
-
 ### GetLocked
 
 `func (o *UserUpdate1) GetLocked() bool`
@@ -353,6 +278,81 @@ SetMicrosoftAccount sets MicrosoftAccount field to given value.
 
 HasMicrosoftAccount returns a boolean if a field has been set.
 
+### GetPassword
+
+`func (o *UserUpdate1) GetPassword() string`
+
+GetPassword returns the Password field if non-nil, zero value otherwise.
+
+### GetPasswordOk
+
+`func (o *UserUpdate1) GetPasswordOk() (*string, bool)`
+
+GetPasswordOk returns a tuple with the Password field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPassword
+
+`func (o *UserUpdate1) SetPassword(v string)`
+
+SetPassword sets Password field to given value.
+
+### HasPassword
+
+`func (o *UserUpdate1) HasPassword() bool`
+
+HasPassword returns a boolean if a field has been set.
+
+### GetPasswordDisabled
+
+`func (o *UserUpdate1) GetPasswordDisabled() bool`
+
+GetPasswordDisabled returns the PasswordDisabled field if non-nil, zero value otherwise.
+
+### GetPasswordDisabledOk
+
+`func (o *UserUpdate1) GetPasswordDisabledOk() (*bool, bool)`
+
+GetPasswordDisabledOk returns a tuple with the PasswordDisabled field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPasswordDisabled
+
+`func (o *UserUpdate1) SetPasswordDisabled(v bool)`
+
+SetPasswordDisabled sets PasswordDisabled field to given value.
+
+### HasPasswordDisabled
+
+`func (o *UserUpdate1) HasPasswordDisabled() bool`
+
+HasPasswordDisabled returns a boolean if a field has been set.
+
+### GetShell
+
+`func (o *UserUpdate1) GetShell() string`
+
+GetShell returns the Shell field if non-nil, zero value otherwise.
+
+### GetShellOk
+
+`func (o *UserUpdate1) GetShellOk() (*string, bool)`
+
+GetShellOk returns a tuple with the Shell field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetShell
+
+`func (o *UserUpdate1) SetShell(v string)`
+
+SetShell sets Shell field to given value.
+
+### HasShell
+
+`func (o *UserUpdate1) HasShell() bool`
+
+HasShell returns a boolean if a field has been set.
+
 ### GetSmb
 
 `func (o *UserUpdate1) GetSmb() bool`
@@ -377,81 +377,6 @@ SetSmb sets Smb field to given value.
 `func (o *UserUpdate1) HasSmb() bool`
 
 HasSmb returns a boolean if a field has been set.
-
-### GetSudo
-
-`func (o *UserUpdate1) GetSudo() bool`
-
-GetSudo returns the Sudo field if non-nil, zero value otherwise.
-
-### GetSudoOk
-
-`func (o *UserUpdate1) GetSudoOk() (*bool, bool)`
-
-GetSudoOk returns a tuple with the Sudo field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSudo
-
-`func (o *UserUpdate1) SetSudo(v bool)`
-
-SetSudo sets Sudo field to given value.
-
-### HasSudo
-
-`func (o *UserUpdate1) HasSudo() bool`
-
-HasSudo returns a boolean if a field has been set.
-
-### GetSudoNopasswd
-
-`func (o *UserUpdate1) GetSudoNopasswd() bool`
-
-GetSudoNopasswd returns the SudoNopasswd field if non-nil, zero value otherwise.
-
-### GetSudoNopasswdOk
-
-`func (o *UserUpdate1) GetSudoNopasswdOk() (*bool, bool)`
-
-GetSudoNopasswdOk returns a tuple with the SudoNopasswd field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSudoNopasswd
-
-`func (o *UserUpdate1) SetSudoNopasswd(v bool)`
-
-SetSudoNopasswd sets SudoNopasswd field to given value.
-
-### HasSudoNopasswd
-
-`func (o *UserUpdate1) HasSudoNopasswd() bool`
-
-HasSudoNopasswd returns a boolean if a field has been set.
-
-### GetSudoCommands
-
-`func (o *UserUpdate1) GetSudoCommands() []string`
-
-GetSudoCommands returns the SudoCommands field if non-nil, zero value otherwise.
-
-### GetSudoCommandsOk
-
-`func (o *UserUpdate1) GetSudoCommandsOk() (*[]string, bool)`
-
-GetSudoCommandsOk returns a tuple with the SudoCommands field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSudoCommands
-
-`func (o *UserUpdate1) SetSudoCommands(v []string)`
-
-SetSudoCommands sets SudoCommands field to given value.
-
-### HasSudoCommands
-
-`func (o *UserUpdate1) HasSudoCommands() bool`
-
-HasSudoCommands returns a boolean if a field has been set.
 
 ### GetSshpubkey
 
@@ -488,55 +413,130 @@ HasSshpubkey returns a boolean if a field has been set.
 `func (o *UserUpdate1) UnsetSshpubkey()`
 
 UnsetSshpubkey ensures that no value is present for Sshpubkey, not even an explicit nil
-### GetGroups
+### GetSudo
 
-`func (o *UserUpdate1) GetGroups() []interface{}`
+`func (o *UserUpdate1) GetSudo() bool`
 
-GetGroups returns the Groups field if non-nil, zero value otherwise.
+GetSudo returns the Sudo field if non-nil, zero value otherwise.
 
-### GetGroupsOk
+### GetSudoOk
 
-`func (o *UserUpdate1) GetGroupsOk() (*[]interface{}, bool)`
+`func (o *UserUpdate1) GetSudoOk() (*bool, bool)`
 
-GetGroupsOk returns a tuple with the Groups field if it's non-nil, zero value otherwise
+GetSudoOk returns a tuple with the Sudo field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetGroups
+### SetSudo
 
-`func (o *UserUpdate1) SetGroups(v []interface{})`
+`func (o *UserUpdate1) SetSudo(v bool)`
 
-SetGroups sets Groups field to given value.
+SetSudo sets Sudo field to given value.
 
-### HasGroups
+### HasSudo
 
-`func (o *UserUpdate1) HasGroups() bool`
+`func (o *UserUpdate1) HasSudo() bool`
 
-HasGroups returns a boolean if a field has been set.
+HasSudo returns a boolean if a field has been set.
 
-### GetAttributes
+### GetSudoCommands
 
-`func (o *UserUpdate1) GetAttributes() map[string]interface{}`
+`func (o *UserUpdate1) GetSudoCommands() []string`
 
-GetAttributes returns the Attributes field if non-nil, zero value otherwise.
+GetSudoCommands returns the SudoCommands field if non-nil, zero value otherwise.
 
-### GetAttributesOk
+### GetSudoCommandsOk
 
-`func (o *UserUpdate1) GetAttributesOk() (*map[string]interface{}, bool)`
+`func (o *UserUpdate1) GetSudoCommandsOk() (*[]string, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
+GetSudoCommandsOk returns a tuple with the SudoCommands field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetAttributes
+### SetSudoCommands
 
-`func (o *UserUpdate1) SetAttributes(v map[string]interface{})`
+`func (o *UserUpdate1) SetSudoCommands(v []string)`
 
-SetAttributes sets Attributes field to given value.
+SetSudoCommands sets SudoCommands field to given value.
 
-### HasAttributes
+### HasSudoCommands
 
-`func (o *UserUpdate1) HasAttributes() bool`
+`func (o *UserUpdate1) HasSudoCommands() bool`
 
-HasAttributes returns a boolean if a field has been set.
+HasSudoCommands returns a boolean if a field has been set.
+
+### GetSudoNopasswd
+
+`func (o *UserUpdate1) GetSudoNopasswd() bool`
+
+GetSudoNopasswd returns the SudoNopasswd field if non-nil, zero value otherwise.
+
+### GetSudoNopasswdOk
+
+`func (o *UserUpdate1) GetSudoNopasswdOk() (*bool, bool)`
+
+GetSudoNopasswdOk returns a tuple with the SudoNopasswd field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSudoNopasswd
+
+`func (o *UserUpdate1) SetSudoNopasswd(v bool)`
+
+SetSudoNopasswd sets SudoNopasswd field to given value.
+
+### HasSudoNopasswd
+
+`func (o *UserUpdate1) HasSudoNopasswd() bool`
+
+HasSudoNopasswd returns a boolean if a field has been set.
+
+### GetUid
+
+`func (o *UserUpdate1) GetUid() int32`
+
+GetUid returns the Uid field if non-nil, zero value otherwise.
+
+### GetUidOk
+
+`func (o *UserUpdate1) GetUidOk() (*int32, bool)`
+
+GetUidOk returns a tuple with the Uid field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUid
+
+`func (o *UserUpdate1) SetUid(v int32)`
+
+SetUid sets Uid field to given value.
+
+### HasUid
+
+`func (o *UserUpdate1) HasUid() bool`
+
+HasUid returns a boolean if a field has been set.
+
+### GetUsername
+
+`func (o *UserUpdate1) GetUsername() string`
+
+GetUsername returns the Username field if non-nil, zero value otherwise.
+
+### GetUsernameOk
+
+`func (o *UserUpdate1) GetUsernameOk() (*string, bool)`
+
+GetUsernameOk returns a tuple with the Username field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUsername
+
+`func (o *UserUpdate1) SetUsername(v string)`
+
+SetUsername sets Username field to given value.
+
+### HasUsername
+
+`func (o *UserUpdate1) HasUsername() bool`
+
+HasUsername returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

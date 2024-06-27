@@ -4,26 +4,26 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**SchemaMode** | Pointer to **string** |  | [optional] 
-**UnixPrimaryGroup** | Pointer to **bool** |  | [optional] 
-**UnixNssInfo** | Pointer to **bool** |  | [optional] 
-**Rangesize** | Pointer to **int32** |  | [optional] 
-**Readonly** | Pointer to **bool** |  | [optional] 
+**BindPathGroup** | Pointer to **string** |  | [optional] 
+**BindPathUser** | Pointer to **string** |  | [optional] 
+**CnRealm** | Pointer to **string** |  | [optional] 
 **IgnoreBuiltin** | Pointer to **bool** |  | [optional] 
 **LdapBaseDn** | Pointer to **string** |  | [optional] 
+**LdapDomain** | Pointer to **string** |  | [optional] 
+**LdapRealm** | Pointer to **bool** |  | [optional] 
+**LdapServer** | Pointer to **string** |  | [optional] 
+**LdapUrl** | Pointer to **string** |  | [optional] 
 **LdapUserDn** | Pointer to **string** |  | [optional] 
 **LdapUserDnPassword** | Pointer to **string** |  | [optional] 
-**LdapUrl** | Pointer to **string** |  | [optional] 
-**Ssl** | Pointer to **string** |  | [optional] 
 **LinkedService** | Pointer to **string** |  | [optional] 
-**LdapServer** | Pointer to **string** |  | [optional] 
-**LdapRealm** | Pointer to **bool** |  | [optional] 
-**BindPathUser** | Pointer to **string** |  | [optional] 
-**BindPathGroup** | Pointer to **string** |  | [optional] 
-**UserCn** | Pointer to **bool** |  | [optional] 
-**CnRealm** | Pointer to **string** |  | [optional] 
-**LdapDomain** | Pointer to **string** |  | [optional] 
+**Rangesize** | Pointer to **int32** |  | [optional] 
+**Readonly** | Pointer to **bool** |  | [optional] 
+**SchemaMode** | Pointer to **string** |  | [optional] 
+**Ssl** | Pointer to **string** |  | [optional] 
 **SssdCompat** | Pointer to **bool** |  | [optional] 
+**UnixNssInfo** | Pointer to **bool** |  | [optional] 
+**UnixPrimaryGroup** | Pointer to **bool** |  | [optional] 
+**UserCn** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -44,130 +44,80 @@ NewIdmapCreate0OptionsWithDefaults instantiates a new IdmapCreate0Options object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetSchemaMode
+### GetBindPathGroup
 
-`func (o *IdmapCreate0Options) GetSchemaMode() string`
+`func (o *IdmapCreate0Options) GetBindPathGroup() string`
 
-GetSchemaMode returns the SchemaMode field if non-nil, zero value otherwise.
+GetBindPathGroup returns the BindPathGroup field if non-nil, zero value otherwise.
 
-### GetSchemaModeOk
+### GetBindPathGroupOk
 
-`func (o *IdmapCreate0Options) GetSchemaModeOk() (*string, bool)`
+`func (o *IdmapCreate0Options) GetBindPathGroupOk() (*string, bool)`
 
-GetSchemaModeOk returns a tuple with the SchemaMode field if it's non-nil, zero value otherwise
+GetBindPathGroupOk returns a tuple with the BindPathGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetSchemaMode
+### SetBindPathGroup
 
-`func (o *IdmapCreate0Options) SetSchemaMode(v string)`
+`func (o *IdmapCreate0Options) SetBindPathGroup(v string)`
 
-SetSchemaMode sets SchemaMode field to given value.
+SetBindPathGroup sets BindPathGroup field to given value.
 
-### HasSchemaMode
+### HasBindPathGroup
 
-`func (o *IdmapCreate0Options) HasSchemaMode() bool`
+`func (o *IdmapCreate0Options) HasBindPathGroup() bool`
 
-HasSchemaMode returns a boolean if a field has been set.
+HasBindPathGroup returns a boolean if a field has been set.
 
-### GetUnixPrimaryGroup
+### GetBindPathUser
 
-`func (o *IdmapCreate0Options) GetUnixPrimaryGroup() bool`
+`func (o *IdmapCreate0Options) GetBindPathUser() string`
 
-GetUnixPrimaryGroup returns the UnixPrimaryGroup field if non-nil, zero value otherwise.
+GetBindPathUser returns the BindPathUser field if non-nil, zero value otherwise.
 
-### GetUnixPrimaryGroupOk
+### GetBindPathUserOk
 
-`func (o *IdmapCreate0Options) GetUnixPrimaryGroupOk() (*bool, bool)`
+`func (o *IdmapCreate0Options) GetBindPathUserOk() (*string, bool)`
 
-GetUnixPrimaryGroupOk returns a tuple with the UnixPrimaryGroup field if it's non-nil, zero value otherwise
+GetBindPathUserOk returns a tuple with the BindPathUser field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetUnixPrimaryGroup
+### SetBindPathUser
 
-`func (o *IdmapCreate0Options) SetUnixPrimaryGroup(v bool)`
+`func (o *IdmapCreate0Options) SetBindPathUser(v string)`
 
-SetUnixPrimaryGroup sets UnixPrimaryGroup field to given value.
+SetBindPathUser sets BindPathUser field to given value.
 
-### HasUnixPrimaryGroup
+### HasBindPathUser
 
-`func (o *IdmapCreate0Options) HasUnixPrimaryGroup() bool`
+`func (o *IdmapCreate0Options) HasBindPathUser() bool`
 
-HasUnixPrimaryGroup returns a boolean if a field has been set.
+HasBindPathUser returns a boolean if a field has been set.
 
-### GetUnixNssInfo
+### GetCnRealm
 
-`func (o *IdmapCreate0Options) GetUnixNssInfo() bool`
+`func (o *IdmapCreate0Options) GetCnRealm() string`
 
-GetUnixNssInfo returns the UnixNssInfo field if non-nil, zero value otherwise.
+GetCnRealm returns the CnRealm field if non-nil, zero value otherwise.
 
-### GetUnixNssInfoOk
+### GetCnRealmOk
 
-`func (o *IdmapCreate0Options) GetUnixNssInfoOk() (*bool, bool)`
+`func (o *IdmapCreate0Options) GetCnRealmOk() (*string, bool)`
 
-GetUnixNssInfoOk returns a tuple with the UnixNssInfo field if it's non-nil, zero value otherwise
+GetCnRealmOk returns a tuple with the CnRealm field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetUnixNssInfo
+### SetCnRealm
 
-`func (o *IdmapCreate0Options) SetUnixNssInfo(v bool)`
+`func (o *IdmapCreate0Options) SetCnRealm(v string)`
 
-SetUnixNssInfo sets UnixNssInfo field to given value.
+SetCnRealm sets CnRealm field to given value.
 
-### HasUnixNssInfo
+### HasCnRealm
 
-`func (o *IdmapCreate0Options) HasUnixNssInfo() bool`
+`func (o *IdmapCreate0Options) HasCnRealm() bool`
 
-HasUnixNssInfo returns a boolean if a field has been set.
-
-### GetRangesize
-
-`func (o *IdmapCreate0Options) GetRangesize() int32`
-
-GetRangesize returns the Rangesize field if non-nil, zero value otherwise.
-
-### GetRangesizeOk
-
-`func (o *IdmapCreate0Options) GetRangesizeOk() (*int32, bool)`
-
-GetRangesizeOk returns a tuple with the Rangesize field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRangesize
-
-`func (o *IdmapCreate0Options) SetRangesize(v int32)`
-
-SetRangesize sets Rangesize field to given value.
-
-### HasRangesize
-
-`func (o *IdmapCreate0Options) HasRangesize() bool`
-
-HasRangesize returns a boolean if a field has been set.
-
-### GetReadonly
-
-`func (o *IdmapCreate0Options) GetReadonly() bool`
-
-GetReadonly returns the Readonly field if non-nil, zero value otherwise.
-
-### GetReadonlyOk
-
-`func (o *IdmapCreate0Options) GetReadonlyOk() (*bool, bool)`
-
-GetReadonlyOk returns a tuple with the Readonly field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetReadonly
-
-`func (o *IdmapCreate0Options) SetReadonly(v bool)`
-
-SetReadonly sets Readonly field to given value.
-
-### HasReadonly
-
-`func (o *IdmapCreate0Options) HasReadonly() bool`
-
-HasReadonly returns a boolean if a field has been set.
+HasCnRealm returns a boolean if a field has been set.
 
 ### GetIgnoreBuiltin
 
@@ -219,6 +169,106 @@ SetLdapBaseDn sets LdapBaseDn field to given value.
 
 HasLdapBaseDn returns a boolean if a field has been set.
 
+### GetLdapDomain
+
+`func (o *IdmapCreate0Options) GetLdapDomain() string`
+
+GetLdapDomain returns the LdapDomain field if non-nil, zero value otherwise.
+
+### GetLdapDomainOk
+
+`func (o *IdmapCreate0Options) GetLdapDomainOk() (*string, bool)`
+
+GetLdapDomainOk returns a tuple with the LdapDomain field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLdapDomain
+
+`func (o *IdmapCreate0Options) SetLdapDomain(v string)`
+
+SetLdapDomain sets LdapDomain field to given value.
+
+### HasLdapDomain
+
+`func (o *IdmapCreate0Options) HasLdapDomain() bool`
+
+HasLdapDomain returns a boolean if a field has been set.
+
+### GetLdapRealm
+
+`func (o *IdmapCreate0Options) GetLdapRealm() bool`
+
+GetLdapRealm returns the LdapRealm field if non-nil, zero value otherwise.
+
+### GetLdapRealmOk
+
+`func (o *IdmapCreate0Options) GetLdapRealmOk() (*bool, bool)`
+
+GetLdapRealmOk returns a tuple with the LdapRealm field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLdapRealm
+
+`func (o *IdmapCreate0Options) SetLdapRealm(v bool)`
+
+SetLdapRealm sets LdapRealm field to given value.
+
+### HasLdapRealm
+
+`func (o *IdmapCreate0Options) HasLdapRealm() bool`
+
+HasLdapRealm returns a boolean if a field has been set.
+
+### GetLdapServer
+
+`func (o *IdmapCreate0Options) GetLdapServer() string`
+
+GetLdapServer returns the LdapServer field if non-nil, zero value otherwise.
+
+### GetLdapServerOk
+
+`func (o *IdmapCreate0Options) GetLdapServerOk() (*string, bool)`
+
+GetLdapServerOk returns a tuple with the LdapServer field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLdapServer
+
+`func (o *IdmapCreate0Options) SetLdapServer(v string)`
+
+SetLdapServer sets LdapServer field to given value.
+
+### HasLdapServer
+
+`func (o *IdmapCreate0Options) HasLdapServer() bool`
+
+HasLdapServer returns a boolean if a field has been set.
+
+### GetLdapUrl
+
+`func (o *IdmapCreate0Options) GetLdapUrl() string`
+
+GetLdapUrl returns the LdapUrl field if non-nil, zero value otherwise.
+
+### GetLdapUrlOk
+
+`func (o *IdmapCreate0Options) GetLdapUrlOk() (*string, bool)`
+
+GetLdapUrlOk returns a tuple with the LdapUrl field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLdapUrl
+
+`func (o *IdmapCreate0Options) SetLdapUrl(v string)`
+
+SetLdapUrl sets LdapUrl field to given value.
+
+### HasLdapUrl
+
+`func (o *IdmapCreate0Options) HasLdapUrl() bool`
+
+HasLdapUrl returns a boolean if a field has been set.
+
 ### GetLdapUserDn
 
 `func (o *IdmapCreate0Options) GetLdapUserDn() string`
@@ -269,30 +319,105 @@ SetLdapUserDnPassword sets LdapUserDnPassword field to given value.
 
 HasLdapUserDnPassword returns a boolean if a field has been set.
 
-### GetLdapUrl
+### GetLinkedService
 
-`func (o *IdmapCreate0Options) GetLdapUrl() string`
+`func (o *IdmapCreate0Options) GetLinkedService() string`
 
-GetLdapUrl returns the LdapUrl field if non-nil, zero value otherwise.
+GetLinkedService returns the LinkedService field if non-nil, zero value otherwise.
 
-### GetLdapUrlOk
+### GetLinkedServiceOk
 
-`func (o *IdmapCreate0Options) GetLdapUrlOk() (*string, bool)`
+`func (o *IdmapCreate0Options) GetLinkedServiceOk() (*string, bool)`
 
-GetLdapUrlOk returns a tuple with the LdapUrl field if it's non-nil, zero value otherwise
+GetLinkedServiceOk returns a tuple with the LinkedService field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetLdapUrl
+### SetLinkedService
 
-`func (o *IdmapCreate0Options) SetLdapUrl(v string)`
+`func (o *IdmapCreate0Options) SetLinkedService(v string)`
 
-SetLdapUrl sets LdapUrl field to given value.
+SetLinkedService sets LinkedService field to given value.
 
-### HasLdapUrl
+### HasLinkedService
 
-`func (o *IdmapCreate0Options) HasLdapUrl() bool`
+`func (o *IdmapCreate0Options) HasLinkedService() bool`
 
-HasLdapUrl returns a boolean if a field has been set.
+HasLinkedService returns a boolean if a field has been set.
+
+### GetRangesize
+
+`func (o *IdmapCreate0Options) GetRangesize() int32`
+
+GetRangesize returns the Rangesize field if non-nil, zero value otherwise.
+
+### GetRangesizeOk
+
+`func (o *IdmapCreate0Options) GetRangesizeOk() (*int32, bool)`
+
+GetRangesizeOk returns a tuple with the Rangesize field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRangesize
+
+`func (o *IdmapCreate0Options) SetRangesize(v int32)`
+
+SetRangesize sets Rangesize field to given value.
+
+### HasRangesize
+
+`func (o *IdmapCreate0Options) HasRangesize() bool`
+
+HasRangesize returns a boolean if a field has been set.
+
+### GetReadonly
+
+`func (o *IdmapCreate0Options) GetReadonly() bool`
+
+GetReadonly returns the Readonly field if non-nil, zero value otherwise.
+
+### GetReadonlyOk
+
+`func (o *IdmapCreate0Options) GetReadonlyOk() (*bool, bool)`
+
+GetReadonlyOk returns a tuple with the Readonly field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetReadonly
+
+`func (o *IdmapCreate0Options) SetReadonly(v bool)`
+
+SetReadonly sets Readonly field to given value.
+
+### HasReadonly
+
+`func (o *IdmapCreate0Options) HasReadonly() bool`
+
+HasReadonly returns a boolean if a field has been set.
+
+### GetSchemaMode
+
+`func (o *IdmapCreate0Options) GetSchemaMode() string`
+
+GetSchemaMode returns the SchemaMode field if non-nil, zero value otherwise.
+
+### GetSchemaModeOk
+
+`func (o *IdmapCreate0Options) GetSchemaModeOk() (*string, bool)`
+
+GetSchemaModeOk returns a tuple with the SchemaMode field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSchemaMode
+
+`func (o *IdmapCreate0Options) SetSchemaMode(v string)`
+
+SetSchemaMode sets SchemaMode field to given value.
+
+### HasSchemaMode
+
+`func (o *IdmapCreate0Options) HasSchemaMode() bool`
+
+HasSchemaMode returns a boolean if a field has been set.
 
 ### GetSsl
 
@@ -319,130 +444,80 @@ SetSsl sets Ssl field to given value.
 
 HasSsl returns a boolean if a field has been set.
 
-### GetLinkedService
+### GetSssdCompat
 
-`func (o *IdmapCreate0Options) GetLinkedService() string`
+`func (o *IdmapCreate0Options) GetSssdCompat() bool`
 
-GetLinkedService returns the LinkedService field if non-nil, zero value otherwise.
+GetSssdCompat returns the SssdCompat field if non-nil, zero value otherwise.
 
-### GetLinkedServiceOk
+### GetSssdCompatOk
 
-`func (o *IdmapCreate0Options) GetLinkedServiceOk() (*string, bool)`
+`func (o *IdmapCreate0Options) GetSssdCompatOk() (*bool, bool)`
 
-GetLinkedServiceOk returns a tuple with the LinkedService field if it's non-nil, zero value otherwise
+GetSssdCompatOk returns a tuple with the SssdCompat field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetLinkedService
+### SetSssdCompat
 
-`func (o *IdmapCreate0Options) SetLinkedService(v string)`
+`func (o *IdmapCreate0Options) SetSssdCompat(v bool)`
 
-SetLinkedService sets LinkedService field to given value.
+SetSssdCompat sets SssdCompat field to given value.
 
-### HasLinkedService
+### HasSssdCompat
 
-`func (o *IdmapCreate0Options) HasLinkedService() bool`
+`func (o *IdmapCreate0Options) HasSssdCompat() bool`
 
-HasLinkedService returns a boolean if a field has been set.
+HasSssdCompat returns a boolean if a field has been set.
 
-### GetLdapServer
+### GetUnixNssInfo
 
-`func (o *IdmapCreate0Options) GetLdapServer() string`
+`func (o *IdmapCreate0Options) GetUnixNssInfo() bool`
 
-GetLdapServer returns the LdapServer field if non-nil, zero value otherwise.
+GetUnixNssInfo returns the UnixNssInfo field if non-nil, zero value otherwise.
 
-### GetLdapServerOk
+### GetUnixNssInfoOk
 
-`func (o *IdmapCreate0Options) GetLdapServerOk() (*string, bool)`
+`func (o *IdmapCreate0Options) GetUnixNssInfoOk() (*bool, bool)`
 
-GetLdapServerOk returns a tuple with the LdapServer field if it's non-nil, zero value otherwise
+GetUnixNssInfoOk returns a tuple with the UnixNssInfo field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetLdapServer
+### SetUnixNssInfo
 
-`func (o *IdmapCreate0Options) SetLdapServer(v string)`
+`func (o *IdmapCreate0Options) SetUnixNssInfo(v bool)`
 
-SetLdapServer sets LdapServer field to given value.
+SetUnixNssInfo sets UnixNssInfo field to given value.
 
-### HasLdapServer
+### HasUnixNssInfo
 
-`func (o *IdmapCreate0Options) HasLdapServer() bool`
+`func (o *IdmapCreate0Options) HasUnixNssInfo() bool`
 
-HasLdapServer returns a boolean if a field has been set.
+HasUnixNssInfo returns a boolean if a field has been set.
 
-### GetLdapRealm
+### GetUnixPrimaryGroup
 
-`func (o *IdmapCreate0Options) GetLdapRealm() bool`
+`func (o *IdmapCreate0Options) GetUnixPrimaryGroup() bool`
 
-GetLdapRealm returns the LdapRealm field if non-nil, zero value otherwise.
+GetUnixPrimaryGroup returns the UnixPrimaryGroup field if non-nil, zero value otherwise.
 
-### GetLdapRealmOk
+### GetUnixPrimaryGroupOk
 
-`func (o *IdmapCreate0Options) GetLdapRealmOk() (*bool, bool)`
+`func (o *IdmapCreate0Options) GetUnixPrimaryGroupOk() (*bool, bool)`
 
-GetLdapRealmOk returns a tuple with the LdapRealm field if it's non-nil, zero value otherwise
+GetUnixPrimaryGroupOk returns a tuple with the UnixPrimaryGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetLdapRealm
+### SetUnixPrimaryGroup
 
-`func (o *IdmapCreate0Options) SetLdapRealm(v bool)`
+`func (o *IdmapCreate0Options) SetUnixPrimaryGroup(v bool)`
 
-SetLdapRealm sets LdapRealm field to given value.
+SetUnixPrimaryGroup sets UnixPrimaryGroup field to given value.
 
-### HasLdapRealm
+### HasUnixPrimaryGroup
 
-`func (o *IdmapCreate0Options) HasLdapRealm() bool`
+`func (o *IdmapCreate0Options) HasUnixPrimaryGroup() bool`
 
-HasLdapRealm returns a boolean if a field has been set.
-
-### GetBindPathUser
-
-`func (o *IdmapCreate0Options) GetBindPathUser() string`
-
-GetBindPathUser returns the BindPathUser field if non-nil, zero value otherwise.
-
-### GetBindPathUserOk
-
-`func (o *IdmapCreate0Options) GetBindPathUserOk() (*string, bool)`
-
-GetBindPathUserOk returns a tuple with the BindPathUser field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetBindPathUser
-
-`func (o *IdmapCreate0Options) SetBindPathUser(v string)`
-
-SetBindPathUser sets BindPathUser field to given value.
-
-### HasBindPathUser
-
-`func (o *IdmapCreate0Options) HasBindPathUser() bool`
-
-HasBindPathUser returns a boolean if a field has been set.
-
-### GetBindPathGroup
-
-`func (o *IdmapCreate0Options) GetBindPathGroup() string`
-
-GetBindPathGroup returns the BindPathGroup field if non-nil, zero value otherwise.
-
-### GetBindPathGroupOk
-
-`func (o *IdmapCreate0Options) GetBindPathGroupOk() (*string, bool)`
-
-GetBindPathGroupOk returns a tuple with the BindPathGroup field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetBindPathGroup
-
-`func (o *IdmapCreate0Options) SetBindPathGroup(v string)`
-
-SetBindPathGroup sets BindPathGroup field to given value.
-
-### HasBindPathGroup
-
-`func (o *IdmapCreate0Options) HasBindPathGroup() bool`
-
-HasBindPathGroup returns a boolean if a field has been set.
+HasUnixPrimaryGroup returns a boolean if a field has been set.
 
 ### GetUserCn
 
@@ -468,81 +543,6 @@ SetUserCn sets UserCn field to given value.
 `func (o *IdmapCreate0Options) HasUserCn() bool`
 
 HasUserCn returns a boolean if a field has been set.
-
-### GetCnRealm
-
-`func (o *IdmapCreate0Options) GetCnRealm() string`
-
-GetCnRealm returns the CnRealm field if non-nil, zero value otherwise.
-
-### GetCnRealmOk
-
-`func (o *IdmapCreate0Options) GetCnRealmOk() (*string, bool)`
-
-GetCnRealmOk returns a tuple with the CnRealm field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCnRealm
-
-`func (o *IdmapCreate0Options) SetCnRealm(v string)`
-
-SetCnRealm sets CnRealm field to given value.
-
-### HasCnRealm
-
-`func (o *IdmapCreate0Options) HasCnRealm() bool`
-
-HasCnRealm returns a boolean if a field has been set.
-
-### GetLdapDomain
-
-`func (o *IdmapCreate0Options) GetLdapDomain() string`
-
-GetLdapDomain returns the LdapDomain field if non-nil, zero value otherwise.
-
-### GetLdapDomainOk
-
-`func (o *IdmapCreate0Options) GetLdapDomainOk() (*string, bool)`
-
-GetLdapDomainOk returns a tuple with the LdapDomain field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetLdapDomain
-
-`func (o *IdmapCreate0Options) SetLdapDomain(v string)`
-
-SetLdapDomain sets LdapDomain field to given value.
-
-### HasLdapDomain
-
-`func (o *IdmapCreate0Options) HasLdapDomain() bool`
-
-HasLdapDomain returns a boolean if a field has been set.
-
-### GetSssdCompat
-
-`func (o *IdmapCreate0Options) GetSssdCompat() bool`
-
-GetSssdCompat returns the SssdCompat field if non-nil, zero value otherwise.
-
-### GetSssdCompatOk
-
-`func (o *IdmapCreate0Options) GetSssdCompatOk() (*bool, bool)`
-
-GetSssdCompatOk returns a tuple with the SssdCompat field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSssdCompat
-
-`func (o *IdmapCreate0Options) SetSssdCompat(v bool)`
-
-SetSssdCompat sets SssdCompat field to given value.
-
-### HasSssdCompat
-
-`func (o *IdmapCreate0Options) HasSssdCompat() bool`
-
-HasSssdCompat returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

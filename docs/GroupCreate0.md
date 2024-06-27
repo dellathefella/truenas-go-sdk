@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**AllowDuplicateGid** | Pointer to **bool** |  | [optional] 
 **Gid** | Pointer to **int32** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Smb** | Pointer to **bool** |  | [optional] 
 **Sudo** | Pointer to **bool** |  | [optional] 
-**SudoNopasswd** | Pointer to **bool** |  | [optional] 
 **SudoCommands** | Pointer to **[]string** |  | [optional] 
-**AllowDuplicateGid** | Pointer to **bool** |  | [optional] 
+**SudoNopasswd** | Pointer to **bool** |  | [optional] 
 **Users** | Pointer to **[]int32** |  | [optional] 
 
 ## Methods
@@ -31,6 +31,31 @@ will change when the set of required properties is changed
 NewGroupCreate0WithDefaults instantiates a new GroupCreate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetAllowDuplicateGid
+
+`func (o *GroupCreate0) GetAllowDuplicateGid() bool`
+
+GetAllowDuplicateGid returns the AllowDuplicateGid field if non-nil, zero value otherwise.
+
+### GetAllowDuplicateGidOk
+
+`func (o *GroupCreate0) GetAllowDuplicateGidOk() (*bool, bool)`
+
+GetAllowDuplicateGidOk returns a tuple with the AllowDuplicateGid field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetAllowDuplicateGid
+
+`func (o *GroupCreate0) SetAllowDuplicateGid(v bool)`
+
+SetAllowDuplicateGid sets AllowDuplicateGid field to given value.
+
+### HasAllowDuplicateGid
+
+`func (o *GroupCreate0) HasAllowDuplicateGid() bool`
+
+HasAllowDuplicateGid returns a boolean if a field has been set.
 
 ### GetGid
 
@@ -132,31 +157,6 @@ SetSudo sets Sudo field to given value.
 
 HasSudo returns a boolean if a field has been set.
 
-### GetSudoNopasswd
-
-`func (o *GroupCreate0) GetSudoNopasswd() bool`
-
-GetSudoNopasswd returns the SudoNopasswd field if non-nil, zero value otherwise.
-
-### GetSudoNopasswdOk
-
-`func (o *GroupCreate0) GetSudoNopasswdOk() (*bool, bool)`
-
-GetSudoNopasswdOk returns a tuple with the SudoNopasswd field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSudoNopasswd
-
-`func (o *GroupCreate0) SetSudoNopasswd(v bool)`
-
-SetSudoNopasswd sets SudoNopasswd field to given value.
-
-### HasSudoNopasswd
-
-`func (o *GroupCreate0) HasSudoNopasswd() bool`
-
-HasSudoNopasswd returns a boolean if a field has been set.
-
 ### GetSudoCommands
 
 `func (o *GroupCreate0) GetSudoCommands() []string`
@@ -182,30 +182,30 @@ SetSudoCommands sets SudoCommands field to given value.
 
 HasSudoCommands returns a boolean if a field has been set.
 
-### GetAllowDuplicateGid
+### GetSudoNopasswd
 
-`func (o *GroupCreate0) GetAllowDuplicateGid() bool`
+`func (o *GroupCreate0) GetSudoNopasswd() bool`
 
-GetAllowDuplicateGid returns the AllowDuplicateGid field if non-nil, zero value otherwise.
+GetSudoNopasswd returns the SudoNopasswd field if non-nil, zero value otherwise.
 
-### GetAllowDuplicateGidOk
+### GetSudoNopasswdOk
 
-`func (o *GroupCreate0) GetAllowDuplicateGidOk() (*bool, bool)`
+`func (o *GroupCreate0) GetSudoNopasswdOk() (*bool, bool)`
 
-GetAllowDuplicateGidOk returns a tuple with the AllowDuplicateGid field if it's non-nil, zero value otherwise
+GetSudoNopasswdOk returns a tuple with the SudoNopasswd field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetAllowDuplicateGid
+### SetSudoNopasswd
 
-`func (o *GroupCreate0) SetAllowDuplicateGid(v bool)`
+`func (o *GroupCreate0) SetSudoNopasswd(v bool)`
 
-SetAllowDuplicateGid sets AllowDuplicateGid field to given value.
+SetSudoNopasswd sets SudoNopasswd field to given value.
 
-### HasAllowDuplicateGid
+### HasSudoNopasswd
 
-`func (o *GroupCreate0) HasAllowDuplicateGid() bool`
+`func (o *GroupCreate0) HasSudoNopasswd() bool`
 
-HasAllowDuplicateGid returns a boolean if a field has been set.
+HasSudoNopasswd returns a boolean if a field has been set.
 
 ### GetUsers
 

@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Jail** | Pointer to **string** |  | [optional] 
 **CompressionAlgorithm** | Pointer to **string** |  | [optional] 
+**Jail** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -25,31 +25,6 @@ will change when the set of required properties is changed
 NewJailExport0WithDefaults instantiates a new JailExport0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetJail
-
-`func (o *JailExport0) GetJail() string`
-
-GetJail returns the Jail field if non-nil, zero value otherwise.
-
-### GetJailOk
-
-`func (o *JailExport0) GetJailOk() (*string, bool)`
-
-GetJailOk returns a tuple with the Jail field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetJail
-
-`func (o *JailExport0) SetJail(v string)`
-
-SetJail sets Jail field to given value.
-
-### HasJail
-
-`func (o *JailExport0) HasJail() bool`
-
-HasJail returns a boolean if a field has been set.
 
 ### GetCompressionAlgorithm
 
@@ -75,6 +50,31 @@ SetCompressionAlgorithm sets CompressionAlgorithm field to given value.
 `func (o *JailExport0) HasCompressionAlgorithm() bool`
 
 HasCompressionAlgorithm returns a boolean if a field has been set.
+
+### GetJail
+
+`func (o *JailExport0) GetJail() string`
+
+GetJail returns the Jail field if non-nil, zero value otherwise.
+
+### GetJailOk
+
+`func (o *JailExport0) GetJailOk() (*string, bool)`
+
+GetJailOk returns a tuple with the Jail field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetJail
+
+`func (o *JailExport0) SetJail(v string)`
+
+SetJail sets Jail field to given value.
+
+### HasJail
+
+`func (o *JailExport0) HasJail() bool`
+
+HasJail returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

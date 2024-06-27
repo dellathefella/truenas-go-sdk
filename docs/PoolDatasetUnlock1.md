@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Datasets** | Pointer to **[]map[string]interface{}** |  | [optional] 
 **KeyFile** | Pointer to **bool** |  | [optional] 
 **Recursive** | Pointer to **bool** |  | [optional] 
 **ToggleAttachments** | Pointer to **bool** |  | [optional] 
-**Datasets** | Pointer to **[]map[string]interface{}** |  | [optional] 
 
 ## Methods
 
@@ -27,6 +27,31 @@ will change when the set of required properties is changed
 NewPoolDatasetUnlock1WithDefaults instantiates a new PoolDatasetUnlock1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetDatasets
+
+`func (o *PoolDatasetUnlock1) GetDatasets() []map[string]interface{}`
+
+GetDatasets returns the Datasets field if non-nil, zero value otherwise.
+
+### GetDatasetsOk
+
+`func (o *PoolDatasetUnlock1) GetDatasetsOk() (*[]map[string]interface{}, bool)`
+
+GetDatasetsOk returns a tuple with the Datasets field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDatasets
+
+`func (o *PoolDatasetUnlock1) SetDatasets(v []map[string]interface{})`
+
+SetDatasets sets Datasets field to given value.
+
+### HasDatasets
+
+`func (o *PoolDatasetUnlock1) HasDatasets() bool`
+
+HasDatasets returns a boolean if a field has been set.
 
 ### GetKeyFile
 
@@ -102,31 +127,6 @@ SetToggleAttachments sets ToggleAttachments field to given value.
 `func (o *PoolDatasetUnlock1) HasToggleAttachments() bool`
 
 HasToggleAttachments returns a boolean if a field has been set.
-
-### GetDatasets
-
-`func (o *PoolDatasetUnlock1) GetDatasets() []map[string]interface{}`
-
-GetDatasets returns the Datasets field if non-nil, zero value otherwise.
-
-### GetDatasetsOk
-
-`func (o *PoolDatasetUnlock1) GetDatasetsOk() (*[]map[string]interface{}, bool)`
-
-GetDatasetsOk returns a tuple with the Datasets field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetDatasets
-
-`func (o *PoolDatasetUnlock1) SetDatasets(v []map[string]interface{})`
-
-SetDatasets sets Datasets field to given value.
-
-### HasDatasets
-
-`func (o *PoolDatasetUnlock1) HasDatasets() bool`
-
-HasDatasets returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

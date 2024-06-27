@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ShareName** | Pointer to **string** |  | [optional] 
 **ShareAcl** | Pointer to **[]map[string]interface{}** |  | [optional] 
+**ShareName** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -25,31 +25,6 @@ will change when the set of required properties is changed
 NewSmbSharesecCreate0WithDefaults instantiates a new SmbSharesecCreate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetShareName
-
-`func (o *SmbSharesecCreate0) GetShareName() string`
-
-GetShareName returns the ShareName field if non-nil, zero value otherwise.
-
-### GetShareNameOk
-
-`func (o *SmbSharesecCreate0) GetShareNameOk() (*string, bool)`
-
-GetShareNameOk returns a tuple with the ShareName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetShareName
-
-`func (o *SmbSharesecCreate0) SetShareName(v string)`
-
-SetShareName sets ShareName field to given value.
-
-### HasShareName
-
-`func (o *SmbSharesecCreate0) HasShareName() bool`
-
-HasShareName returns a boolean if a field has been set.
 
 ### GetShareAcl
 
@@ -75,6 +50,31 @@ SetShareAcl sets ShareAcl field to given value.
 `func (o *SmbSharesecCreate0) HasShareAcl() bool`
 
 HasShareAcl returns a boolean if a field has been set.
+
+### GetShareName
+
+`func (o *SmbSharesecCreate0) GetShareName() string`
+
+GetShareName returns the ShareName field if non-nil, zero value otherwise.
+
+### GetShareNameOk
+
+`func (o *SmbSharesecCreate0) GetShareNameOk() (*string, bool)`
+
+GetShareNameOk returns a tuple with the ShareName field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetShareName
+
+`func (o *SmbSharesecCreate0) SetShareName(v string)`
+
+SetShareName sets ShareName field to given value.
+
+### HasShareName
+
+`func (o *SmbSharesecCreate0) HasShareName() bool`
+
+HasShareName returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

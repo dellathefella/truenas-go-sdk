@@ -4,17 +4,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Provider** | Pointer to **string** |  | [optional] 
-**CheckipSsl** | Pointer to **bool** |  | [optional] 
-**CheckipServer** | Pointer to **string** |  | [optional] 
 **CheckipPath** | Pointer to **string** |  | [optional] 
-**Ssl** | Pointer to **bool** |  | [optional] 
-**CustomDdnsServer** | Pointer to **string** |  | [optional] 
+**CheckipServer** | Pointer to **string** |  | [optional] 
+**CheckipSsl** | Pointer to **bool** |  | [optional] 
 **CustomDdnsPath** | Pointer to **string** |  | [optional] 
+**CustomDdnsServer** | Pointer to **string** |  | [optional] 
 **Domain** | Pointer to **[]string** |  | [optional] 
-**Username** | Pointer to **string** |  | [optional] 
 **Password** | Pointer to **string** |  | [optional] 
 **Period** | Pointer to **int32** |  | [optional] 
+**Provider** | Pointer to **string** |  | [optional] 
+**Ssl** | Pointer to **bool** |  | [optional] 
+**Username** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -34,81 +34,6 @@ will change when the set of required properties is changed
 NewDyndnsUpdate0WithDefaults instantiates a new DyndnsUpdate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetProvider
-
-`func (o *DyndnsUpdate0) GetProvider() string`
-
-GetProvider returns the Provider field if non-nil, zero value otherwise.
-
-### GetProviderOk
-
-`func (o *DyndnsUpdate0) GetProviderOk() (*string, bool)`
-
-GetProviderOk returns a tuple with the Provider field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetProvider
-
-`func (o *DyndnsUpdate0) SetProvider(v string)`
-
-SetProvider sets Provider field to given value.
-
-### HasProvider
-
-`func (o *DyndnsUpdate0) HasProvider() bool`
-
-HasProvider returns a boolean if a field has been set.
-
-### GetCheckipSsl
-
-`func (o *DyndnsUpdate0) GetCheckipSsl() bool`
-
-GetCheckipSsl returns the CheckipSsl field if non-nil, zero value otherwise.
-
-### GetCheckipSslOk
-
-`func (o *DyndnsUpdate0) GetCheckipSslOk() (*bool, bool)`
-
-GetCheckipSslOk returns a tuple with the CheckipSsl field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCheckipSsl
-
-`func (o *DyndnsUpdate0) SetCheckipSsl(v bool)`
-
-SetCheckipSsl sets CheckipSsl field to given value.
-
-### HasCheckipSsl
-
-`func (o *DyndnsUpdate0) HasCheckipSsl() bool`
-
-HasCheckipSsl returns a boolean if a field has been set.
-
-### GetCheckipServer
-
-`func (o *DyndnsUpdate0) GetCheckipServer() string`
-
-GetCheckipServer returns the CheckipServer field if non-nil, zero value otherwise.
-
-### GetCheckipServerOk
-
-`func (o *DyndnsUpdate0) GetCheckipServerOk() (*string, bool)`
-
-GetCheckipServerOk returns a tuple with the CheckipServer field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCheckipServer
-
-`func (o *DyndnsUpdate0) SetCheckipServer(v string)`
-
-SetCheckipServer sets CheckipServer field to given value.
-
-### HasCheckipServer
-
-`func (o *DyndnsUpdate0) HasCheckipServer() bool`
-
-HasCheckipServer returns a boolean if a field has been set.
 
 ### GetCheckipPath
 
@@ -135,55 +60,55 @@ SetCheckipPath sets CheckipPath field to given value.
 
 HasCheckipPath returns a boolean if a field has been set.
 
-### GetSsl
+### GetCheckipServer
 
-`func (o *DyndnsUpdate0) GetSsl() bool`
+`func (o *DyndnsUpdate0) GetCheckipServer() string`
 
-GetSsl returns the Ssl field if non-nil, zero value otherwise.
+GetCheckipServer returns the CheckipServer field if non-nil, zero value otherwise.
 
-### GetSslOk
+### GetCheckipServerOk
 
-`func (o *DyndnsUpdate0) GetSslOk() (*bool, bool)`
+`func (o *DyndnsUpdate0) GetCheckipServerOk() (*string, bool)`
 
-GetSslOk returns a tuple with the Ssl field if it's non-nil, zero value otherwise
+GetCheckipServerOk returns a tuple with the CheckipServer field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetSsl
+### SetCheckipServer
 
-`func (o *DyndnsUpdate0) SetSsl(v bool)`
+`func (o *DyndnsUpdate0) SetCheckipServer(v string)`
 
-SetSsl sets Ssl field to given value.
+SetCheckipServer sets CheckipServer field to given value.
 
-### HasSsl
+### HasCheckipServer
 
-`func (o *DyndnsUpdate0) HasSsl() bool`
+`func (o *DyndnsUpdate0) HasCheckipServer() bool`
 
-HasSsl returns a boolean if a field has been set.
+HasCheckipServer returns a boolean if a field has been set.
 
-### GetCustomDdnsServer
+### GetCheckipSsl
 
-`func (o *DyndnsUpdate0) GetCustomDdnsServer() string`
+`func (o *DyndnsUpdate0) GetCheckipSsl() bool`
 
-GetCustomDdnsServer returns the CustomDdnsServer field if non-nil, zero value otherwise.
+GetCheckipSsl returns the CheckipSsl field if non-nil, zero value otherwise.
 
-### GetCustomDdnsServerOk
+### GetCheckipSslOk
 
-`func (o *DyndnsUpdate0) GetCustomDdnsServerOk() (*string, bool)`
+`func (o *DyndnsUpdate0) GetCheckipSslOk() (*bool, bool)`
 
-GetCustomDdnsServerOk returns a tuple with the CustomDdnsServer field if it's non-nil, zero value otherwise
+GetCheckipSslOk returns a tuple with the CheckipSsl field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetCustomDdnsServer
+### SetCheckipSsl
 
-`func (o *DyndnsUpdate0) SetCustomDdnsServer(v string)`
+`func (o *DyndnsUpdate0) SetCheckipSsl(v bool)`
 
-SetCustomDdnsServer sets CustomDdnsServer field to given value.
+SetCheckipSsl sets CheckipSsl field to given value.
 
-### HasCustomDdnsServer
+### HasCheckipSsl
 
-`func (o *DyndnsUpdate0) HasCustomDdnsServer() bool`
+`func (o *DyndnsUpdate0) HasCheckipSsl() bool`
 
-HasCustomDdnsServer returns a boolean if a field has been set.
+HasCheckipSsl returns a boolean if a field has been set.
 
 ### GetCustomDdnsPath
 
@@ -210,6 +135,31 @@ SetCustomDdnsPath sets CustomDdnsPath field to given value.
 
 HasCustomDdnsPath returns a boolean if a field has been set.
 
+### GetCustomDdnsServer
+
+`func (o *DyndnsUpdate0) GetCustomDdnsServer() string`
+
+GetCustomDdnsServer returns the CustomDdnsServer field if non-nil, zero value otherwise.
+
+### GetCustomDdnsServerOk
+
+`func (o *DyndnsUpdate0) GetCustomDdnsServerOk() (*string, bool)`
+
+GetCustomDdnsServerOk returns a tuple with the CustomDdnsServer field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCustomDdnsServer
+
+`func (o *DyndnsUpdate0) SetCustomDdnsServer(v string)`
+
+SetCustomDdnsServer sets CustomDdnsServer field to given value.
+
+### HasCustomDdnsServer
+
+`func (o *DyndnsUpdate0) HasCustomDdnsServer() bool`
+
+HasCustomDdnsServer returns a boolean if a field has been set.
+
 ### GetDomain
 
 `func (o *DyndnsUpdate0) GetDomain() []string`
@@ -234,31 +184,6 @@ SetDomain sets Domain field to given value.
 `func (o *DyndnsUpdate0) HasDomain() bool`
 
 HasDomain returns a boolean if a field has been set.
-
-### GetUsername
-
-`func (o *DyndnsUpdate0) GetUsername() string`
-
-GetUsername returns the Username field if non-nil, zero value otherwise.
-
-### GetUsernameOk
-
-`func (o *DyndnsUpdate0) GetUsernameOk() (*string, bool)`
-
-GetUsernameOk returns a tuple with the Username field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetUsername
-
-`func (o *DyndnsUpdate0) SetUsername(v string)`
-
-SetUsername sets Username field to given value.
-
-### HasUsername
-
-`func (o *DyndnsUpdate0) HasUsername() bool`
-
-HasUsername returns a boolean if a field has been set.
 
 ### GetPassword
 
@@ -309,6 +234,81 @@ SetPeriod sets Period field to given value.
 `func (o *DyndnsUpdate0) HasPeriod() bool`
 
 HasPeriod returns a boolean if a field has been set.
+
+### GetProvider
+
+`func (o *DyndnsUpdate0) GetProvider() string`
+
+GetProvider returns the Provider field if non-nil, zero value otherwise.
+
+### GetProviderOk
+
+`func (o *DyndnsUpdate0) GetProviderOk() (*string, bool)`
+
+GetProviderOk returns a tuple with the Provider field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetProvider
+
+`func (o *DyndnsUpdate0) SetProvider(v string)`
+
+SetProvider sets Provider field to given value.
+
+### HasProvider
+
+`func (o *DyndnsUpdate0) HasProvider() bool`
+
+HasProvider returns a boolean if a field has been set.
+
+### GetSsl
+
+`func (o *DyndnsUpdate0) GetSsl() bool`
+
+GetSsl returns the Ssl field if non-nil, zero value otherwise.
+
+### GetSslOk
+
+`func (o *DyndnsUpdate0) GetSslOk() (*bool, bool)`
+
+GetSslOk returns a tuple with the Ssl field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSsl
+
+`func (o *DyndnsUpdate0) SetSsl(v bool)`
+
+SetSsl sets Ssl field to given value.
+
+### HasSsl
+
+`func (o *DyndnsUpdate0) HasSsl() bool`
+
+HasSsl returns a boolean if a field has been set.
+
+### GetUsername
+
+`func (o *DyndnsUpdate0) GetUsername() string`
+
+GetUsername returns the Username field if non-nil, zero value otherwise.
+
+### GetUsernameOk
+
+`func (o *DyndnsUpdate0) GetUsernameOk() (*string, bool)`
+
+GetUsernameOk returns a tuple with the Username field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUsername
+
+`func (o *DyndnsUpdate0) SetUsername(v string)`
+
+SetUsername sets Username field to given value.
+
+### HasUsername
+
+`func (o *DyndnsUpdate0) HasUsername() bool`
+
+HasUsername returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

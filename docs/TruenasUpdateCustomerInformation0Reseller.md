@@ -7,9 +7,9 @@ Name | Type | Description | Notes
 **Company** | Pointer to **string** |  | [optional] 
 **FirstName** | Pointer to **string** |  | [optional] 
 **LastName** | Pointer to **string** |  | [optional] 
-**Title** | Pointer to **string** |  | [optional] 
-**OfficePhone** | Pointer to **string** |  | [optional] 
 **MobilePhone** | Pointer to **string** |  | [optional] 
+**OfficePhone** | Pointer to **string** |  | [optional] 
+**Title** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -105,30 +105,30 @@ SetLastName sets LastName field to given value.
 
 HasLastName returns a boolean if a field has been set.
 
-### GetTitle
+### GetMobilePhone
 
-`func (o *TruenasUpdateCustomerInformation0Reseller) GetTitle() string`
+`func (o *TruenasUpdateCustomerInformation0Reseller) GetMobilePhone() string`
 
-GetTitle returns the Title field if non-nil, zero value otherwise.
+GetMobilePhone returns the MobilePhone field if non-nil, zero value otherwise.
 
-### GetTitleOk
+### GetMobilePhoneOk
 
-`func (o *TruenasUpdateCustomerInformation0Reseller) GetTitleOk() (*string, bool)`
+`func (o *TruenasUpdateCustomerInformation0Reseller) GetMobilePhoneOk() (*string, bool)`
 
-GetTitleOk returns a tuple with the Title field if it's non-nil, zero value otherwise
+GetMobilePhoneOk returns a tuple with the MobilePhone field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetTitle
+### SetMobilePhone
 
-`func (o *TruenasUpdateCustomerInformation0Reseller) SetTitle(v string)`
+`func (o *TruenasUpdateCustomerInformation0Reseller) SetMobilePhone(v string)`
 
-SetTitle sets Title field to given value.
+SetMobilePhone sets MobilePhone field to given value.
 
-### HasTitle
+### HasMobilePhone
 
-`func (o *TruenasUpdateCustomerInformation0Reseller) HasTitle() bool`
+`func (o *TruenasUpdateCustomerInformation0Reseller) HasMobilePhone() bool`
 
-HasTitle returns a boolean if a field has been set.
+HasMobilePhone returns a boolean if a field has been set.
 
 ### GetOfficePhone
 
@@ -155,30 +155,30 @@ SetOfficePhone sets OfficePhone field to given value.
 
 HasOfficePhone returns a boolean if a field has been set.
 
-### GetMobilePhone
+### GetTitle
 
-`func (o *TruenasUpdateCustomerInformation0Reseller) GetMobilePhone() string`
+`func (o *TruenasUpdateCustomerInformation0Reseller) GetTitle() string`
 
-GetMobilePhone returns the MobilePhone field if non-nil, zero value otherwise.
+GetTitle returns the Title field if non-nil, zero value otherwise.
 
-### GetMobilePhoneOk
+### GetTitleOk
 
-`func (o *TruenasUpdateCustomerInformation0Reseller) GetMobilePhoneOk() (*string, bool)`
+`func (o *TruenasUpdateCustomerInformation0Reseller) GetTitleOk() (*string, bool)`
 
-GetMobilePhoneOk returns a tuple with the MobilePhone field if it's non-nil, zero value otherwise
+GetTitleOk returns a tuple with the Title field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetMobilePhone
+### SetTitle
 
-`func (o *TruenasUpdateCustomerInformation0Reseller) SetMobilePhone(v string)`
+`func (o *TruenasUpdateCustomerInformation0Reseller) SetTitle(v string)`
 
-SetMobilePhone sets MobilePhone field to given value.
+SetTitle sets Title field to given value.
 
-### HasMobilePhone
+### HasTitle
 
-`func (o *TruenasUpdateCustomerInformation0Reseller) HasMobilePhone() bool`
+`func (o *TruenasUpdateCustomerInformation0Reseller) HasTitle() bool`
 
-HasMobilePhone returns a boolean if a field has been set.
+HasTitle returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Args** | Pointer to **string** |  | [optional] 
+**Attributes** | Pointer to **map[string]interface{}** |  | [optional] 
 **Credentials** | Pointer to **int32** |  | [optional] 
 **Encryption** | Pointer to **bool** |  | [optional] 
-**FilenameEncryption** | Pointer to **bool** |  | [optional] 
 **EncryptionPassword** | Pointer to **string** |  | [optional] 
 **EncryptionSalt** | Pointer to **string** |  | [optional] 
-**Attributes** | Pointer to **map[string]interface{}** |  | [optional] 
-**Args** | Pointer to **string** |  | [optional] 
+**FilenameEncryption** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -30,6 +30,56 @@ will change when the set of required properties is changed
 NewCloudsyncListDirectory0WithDefaults instantiates a new CloudsyncListDirectory0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetArgs
+
+`func (o *CloudsyncListDirectory0) GetArgs() string`
+
+GetArgs returns the Args field if non-nil, zero value otherwise.
+
+### GetArgsOk
+
+`func (o *CloudsyncListDirectory0) GetArgsOk() (*string, bool)`
+
+GetArgsOk returns a tuple with the Args field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetArgs
+
+`func (o *CloudsyncListDirectory0) SetArgs(v string)`
+
+SetArgs sets Args field to given value.
+
+### HasArgs
+
+`func (o *CloudsyncListDirectory0) HasArgs() bool`
+
+HasArgs returns a boolean if a field has been set.
+
+### GetAttributes
+
+`func (o *CloudsyncListDirectory0) GetAttributes() map[string]interface{}`
+
+GetAttributes returns the Attributes field if non-nil, zero value otherwise.
+
+### GetAttributesOk
+
+`func (o *CloudsyncListDirectory0) GetAttributesOk() (*map[string]interface{}, bool)`
+
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetAttributes
+
+`func (o *CloudsyncListDirectory0) SetAttributes(v map[string]interface{})`
+
+SetAttributes sets Attributes field to given value.
+
+### HasAttributes
+
+`func (o *CloudsyncListDirectory0) HasAttributes() bool`
+
+HasAttributes returns a boolean if a field has been set.
 
 ### GetCredentials
 
@@ -81,31 +131,6 @@ SetEncryption sets Encryption field to given value.
 
 HasEncryption returns a boolean if a field has been set.
 
-### GetFilenameEncryption
-
-`func (o *CloudsyncListDirectory0) GetFilenameEncryption() bool`
-
-GetFilenameEncryption returns the FilenameEncryption field if non-nil, zero value otherwise.
-
-### GetFilenameEncryptionOk
-
-`func (o *CloudsyncListDirectory0) GetFilenameEncryptionOk() (*bool, bool)`
-
-GetFilenameEncryptionOk returns a tuple with the FilenameEncryption field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetFilenameEncryption
-
-`func (o *CloudsyncListDirectory0) SetFilenameEncryption(v bool)`
-
-SetFilenameEncryption sets FilenameEncryption field to given value.
-
-### HasFilenameEncryption
-
-`func (o *CloudsyncListDirectory0) HasFilenameEncryption() bool`
-
-HasFilenameEncryption returns a boolean if a field has been set.
-
 ### GetEncryptionPassword
 
 `func (o *CloudsyncListDirectory0) GetEncryptionPassword() string`
@@ -156,55 +181,30 @@ SetEncryptionSalt sets EncryptionSalt field to given value.
 
 HasEncryptionSalt returns a boolean if a field has been set.
 
-### GetAttributes
+### GetFilenameEncryption
 
-`func (o *CloudsyncListDirectory0) GetAttributes() map[string]interface{}`
+`func (o *CloudsyncListDirectory0) GetFilenameEncryption() bool`
 
-GetAttributes returns the Attributes field if non-nil, zero value otherwise.
+GetFilenameEncryption returns the FilenameEncryption field if non-nil, zero value otherwise.
 
-### GetAttributesOk
+### GetFilenameEncryptionOk
 
-`func (o *CloudsyncListDirectory0) GetAttributesOk() (*map[string]interface{}, bool)`
+`func (o *CloudsyncListDirectory0) GetFilenameEncryptionOk() (*bool, bool)`
 
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
+GetFilenameEncryptionOk returns a tuple with the FilenameEncryption field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetAttributes
+### SetFilenameEncryption
 
-`func (o *CloudsyncListDirectory0) SetAttributes(v map[string]interface{})`
+`func (o *CloudsyncListDirectory0) SetFilenameEncryption(v bool)`
 
-SetAttributes sets Attributes field to given value.
+SetFilenameEncryption sets FilenameEncryption field to given value.
 
-### HasAttributes
+### HasFilenameEncryption
 
-`func (o *CloudsyncListDirectory0) HasAttributes() bool`
+`func (o *CloudsyncListDirectory0) HasFilenameEncryption() bool`
 
-HasAttributes returns a boolean if a field has been set.
-
-### GetArgs
-
-`func (o *CloudsyncListDirectory0) GetArgs() string`
-
-GetArgs returns the Args field if non-nil, zero value otherwise.
-
-### GetArgsOk
-
-`func (o *CloudsyncListDirectory0) GetArgsOk() (*string, bool)`
-
-GetArgsOk returns a tuple with the Args field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetArgs
-
-`func (o *CloudsyncListDirectory0) SetArgs(v string)`
-
-SetArgs sets Args field to given value.
-
-### HasArgs
-
-`func (o *CloudsyncListDirectory0) HasArgs() bool`
-
-HasArgs returns a boolean if a field has been set.
+HasFilenameEncryption returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

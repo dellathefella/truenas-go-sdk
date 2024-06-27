@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Usages** | Pointer to **[]string** |  | [optional] 
 **Enabled** | Pointer to **bool** |  | [optional] 
 **ExtensionCritical** | Pointer to **bool** |  | [optional] 
+**Usages** | Pointer to **[]string** |  | [optional] 
 
 ## Methods
 
@@ -26,31 +26,6 @@ will change when the set of required properties is changed
 NewCertificateCreate0CertExtensionsExtendedKeyUsageWithDefaults instantiates a new CertificateCreate0CertExtensionsExtendedKeyUsage object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetUsages
-
-`func (o *CertificateCreate0CertExtensionsExtendedKeyUsage) GetUsages() []string`
-
-GetUsages returns the Usages field if non-nil, zero value otherwise.
-
-### GetUsagesOk
-
-`func (o *CertificateCreate0CertExtensionsExtendedKeyUsage) GetUsagesOk() (*[]string, bool)`
-
-GetUsagesOk returns a tuple with the Usages field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetUsages
-
-`func (o *CertificateCreate0CertExtensionsExtendedKeyUsage) SetUsages(v []string)`
-
-SetUsages sets Usages field to given value.
-
-### HasUsages
-
-`func (o *CertificateCreate0CertExtensionsExtendedKeyUsage) HasUsages() bool`
-
-HasUsages returns a boolean if a field has been set.
 
 ### GetEnabled
 
@@ -101,6 +76,31 @@ SetExtensionCritical sets ExtensionCritical field to given value.
 `func (o *CertificateCreate0CertExtensionsExtendedKeyUsage) HasExtensionCritical() bool`
 
 HasExtensionCritical returns a boolean if a field has been set.
+
+### GetUsages
+
+`func (o *CertificateCreate0CertExtensionsExtendedKeyUsage) GetUsages() []string`
+
+GetUsages returns the Usages field if non-nil, zero value otherwise.
+
+### GetUsagesOk
+
+`func (o *CertificateCreate0CertExtensionsExtendedKeyUsage) GetUsagesOk() (*[]string, bool)`
+
+GetUsagesOk returns a tuple with the Usages field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUsages
+
+`func (o *CertificateCreate0CertExtensionsExtendedKeyUsage) SetUsages(v []string)`
+
+SetUsages sets Usages field to given value.
+
+### HasUsages
+
+`func (o *CertificateCreate0CertExtensionsExtendedKeyUsage) HasUsages() bool`
+
+HasUsages returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

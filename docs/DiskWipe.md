@@ -6,8 +6,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Dev** | Pointer to **string** |  | [optional] 
 **Mode** | Pointer to [**DiskWipe1**](DiskWipe1.md) |  | [optional] 
-**Synccache** | Pointer to **bool** |  | [optional] [default to true]
 **SwapRemovalOptions** | Pointer to [**DiskWipe3**](DiskWipe3.md) |  | [optional] [default to {}]
+**Synccache** | Pointer to **bool** |  | [optional] [default to true]
 
 ## Methods
 
@@ -78,31 +78,6 @@ SetMode sets Mode field to given value.
 
 HasMode returns a boolean if a field has been set.
 
-### GetSynccache
-
-`func (o *DiskWipe) GetSynccache() bool`
-
-GetSynccache returns the Synccache field if non-nil, zero value otherwise.
-
-### GetSynccacheOk
-
-`func (o *DiskWipe) GetSynccacheOk() (*bool, bool)`
-
-GetSynccacheOk returns a tuple with the Synccache field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSynccache
-
-`func (o *DiskWipe) SetSynccache(v bool)`
-
-SetSynccache sets Synccache field to given value.
-
-### HasSynccache
-
-`func (o *DiskWipe) HasSynccache() bool`
-
-HasSynccache returns a boolean if a field has been set.
-
 ### GetSwapRemovalOptions
 
 `func (o *DiskWipe) GetSwapRemovalOptions() DiskWipe3`
@@ -127,6 +102,31 @@ SetSwapRemovalOptions sets SwapRemovalOptions field to given value.
 `func (o *DiskWipe) HasSwapRemovalOptions() bool`
 
 HasSwapRemovalOptions returns a boolean if a field has been set.
+
+### GetSynccache
+
+`func (o *DiskWipe) GetSynccache() bool`
+
+GetSynccache returns the Synccache field if non-nil, zero value otherwise.
+
+### GetSynccacheOk
+
+`func (o *DiskWipe) GetSynccacheOk() (*bool, bool)`
+
+GetSynccacheOk returns a tuple with the Synccache field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSynccache
+
+`func (o *DiskWipe) SetSynccache(v bool)`
+
+SetSynccache sets Synccache field to given value.
+
+### HasSynccache
+
+`func (o *DiskWipe) HasSynccache() bool`
+
+HasSynccache returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Description** | Pointer to **string** |  | [optional] 
-**TransferMode** | Pointer to **string** |  | [optional] 
 **Path** | Pointer to **string** |  | [optional] 
+**TransferMode** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -52,31 +52,6 @@ SetDescription sets Description field to given value.
 
 HasDescription returns a boolean if a field has been set.
 
-### GetTransferMode
-
-`func (o *CloudsyncRestore1) GetTransferMode() string`
-
-GetTransferMode returns the TransferMode field if non-nil, zero value otherwise.
-
-### GetTransferModeOk
-
-`func (o *CloudsyncRestore1) GetTransferModeOk() (*string, bool)`
-
-GetTransferModeOk returns a tuple with the TransferMode field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTransferMode
-
-`func (o *CloudsyncRestore1) SetTransferMode(v string)`
-
-SetTransferMode sets TransferMode field to given value.
-
-### HasTransferMode
-
-`func (o *CloudsyncRestore1) HasTransferMode() bool`
-
-HasTransferMode returns a boolean if a field has been set.
-
 ### GetPath
 
 `func (o *CloudsyncRestore1) GetPath() string`
@@ -101,6 +76,31 @@ SetPath sets Path field to given value.
 `func (o *CloudsyncRestore1) HasPath() bool`
 
 HasPath returns a boolean if a field has been set.
+
+### GetTransferMode
+
+`func (o *CloudsyncRestore1) GetTransferMode() string`
+
+GetTransferMode returns the TransferMode field if non-nil, zero value otherwise.
+
+### GetTransferModeOk
+
+`func (o *CloudsyncRestore1) GetTransferModeOk() (*string, bool)`
+
+GetTransferModeOk returns a tuple with the TransferMode field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTransferMode
+
+`func (o *CloudsyncRestore1) SetTransferMode(v string)`
+
+SetTransferMode sets TransferMode field to given value.
+
+### HasTransferMode
+
+`func (o *CloudsyncRestore1) HasTransferMode() bool`
+
+HasTransferMode returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Method** | Pointer to **string** |  | [optional] 
 **Args** | Pointer to **[]interface{}** |  | [optional] [default to []]
+**Method** | Pointer to **string** |  | [optional] 
 **Options** | Pointer to [**FailoverCallRemote2**](FailoverCallRemote2.md) |  | [optional] [default to {}]
 
 ## Methods
@@ -26,31 +26,6 @@ will change when the set of required properties is changed
 NewFailoverCallRemoteWithDefaults instantiates a new FailoverCallRemote object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetMethod
-
-`func (o *FailoverCallRemote) GetMethod() string`
-
-GetMethod returns the Method field if non-nil, zero value otherwise.
-
-### GetMethodOk
-
-`func (o *FailoverCallRemote) GetMethodOk() (*string, bool)`
-
-GetMethodOk returns a tuple with the Method field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetMethod
-
-`func (o *FailoverCallRemote) SetMethod(v string)`
-
-SetMethod sets Method field to given value.
-
-### HasMethod
-
-`func (o *FailoverCallRemote) HasMethod() bool`
-
-HasMethod returns a boolean if a field has been set.
 
 ### GetArgs
 
@@ -76,6 +51,31 @@ SetArgs sets Args field to given value.
 `func (o *FailoverCallRemote) HasArgs() bool`
 
 HasArgs returns a boolean if a field has been set.
+
+### GetMethod
+
+`func (o *FailoverCallRemote) GetMethod() string`
+
+GetMethod returns the Method field if non-nil, zero value otherwise.
+
+### GetMethodOk
+
+`func (o *FailoverCallRemote) GetMethodOk() (*string, bool)`
+
+GetMethodOk returns a tuple with the Method field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMethod
+
+`func (o *FailoverCallRemote) SetMethod(v string)`
+
+SetMethod sets Method field to given value.
+
+### HasMethod
+
+`func (o *FailoverCallRemote) HasMethod() bool`
+
+HasMethod returns a boolean if a field has been set.
 
 ### GetOptions
 

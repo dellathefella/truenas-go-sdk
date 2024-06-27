@@ -6,9 +6,9 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Direction** | Pointer to [**ReplicationTargetUnmatchedSnapshots0**](ReplicationTargetUnmatchedSnapshots0.md) |  | [optional] 
 **SourceDatasets** | Pointer to **[]string** |  | [optional] 
+**SshCredentials** | Pointer to **NullableInt32** |  | [optional] 
 **TargetDataset** | Pointer to **string** |  | [optional] 
 **Transport** | Pointer to [**ReplicationTargetUnmatchedSnapshots3**](ReplicationTargetUnmatchedSnapshots3.md) |  | [optional] 
-**SshCredentials** | Pointer to **NullableInt32** |  | [optional] 
 
 ## Methods
 
@@ -79,6 +79,41 @@ SetSourceDatasets sets SourceDatasets field to given value.
 
 HasSourceDatasets returns a boolean if a field has been set.
 
+### GetSshCredentials
+
+`func (o *ReplicationTargetUnmatchedSnapshots) GetSshCredentials() int32`
+
+GetSshCredentials returns the SshCredentials field if non-nil, zero value otherwise.
+
+### GetSshCredentialsOk
+
+`func (o *ReplicationTargetUnmatchedSnapshots) GetSshCredentialsOk() (*int32, bool)`
+
+GetSshCredentialsOk returns a tuple with the SshCredentials field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSshCredentials
+
+`func (o *ReplicationTargetUnmatchedSnapshots) SetSshCredentials(v int32)`
+
+SetSshCredentials sets SshCredentials field to given value.
+
+### HasSshCredentials
+
+`func (o *ReplicationTargetUnmatchedSnapshots) HasSshCredentials() bool`
+
+HasSshCredentials returns a boolean if a field has been set.
+
+### SetSshCredentialsNil
+
+`func (o *ReplicationTargetUnmatchedSnapshots) SetSshCredentialsNil(b bool)`
+
+ SetSshCredentialsNil sets the value for SshCredentials to be an explicit nil
+
+### UnsetSshCredentials
+`func (o *ReplicationTargetUnmatchedSnapshots) UnsetSshCredentials()`
+
+UnsetSshCredentials ensures that no value is present for SshCredentials, not even an explicit nil
 ### GetTargetDataset
 
 `func (o *ReplicationTargetUnmatchedSnapshots) GetTargetDataset() string`
@@ -129,41 +164,6 @@ SetTransport sets Transport field to given value.
 
 HasTransport returns a boolean if a field has been set.
 
-### GetSshCredentials
-
-`func (o *ReplicationTargetUnmatchedSnapshots) GetSshCredentials() int32`
-
-GetSshCredentials returns the SshCredentials field if non-nil, zero value otherwise.
-
-### GetSshCredentialsOk
-
-`func (o *ReplicationTargetUnmatchedSnapshots) GetSshCredentialsOk() (*int32, bool)`
-
-GetSshCredentialsOk returns a tuple with the SshCredentials field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSshCredentials
-
-`func (o *ReplicationTargetUnmatchedSnapshots) SetSshCredentials(v int32)`
-
-SetSshCredentials sets SshCredentials field to given value.
-
-### HasSshCredentials
-
-`func (o *ReplicationTargetUnmatchedSnapshots) HasSshCredentials() bool`
-
-HasSshCredentials returns a boolean if a field has been set.
-
-### SetSshCredentialsNil
-
-`func (o *ReplicationTargetUnmatchedSnapshots) SetSshCredentialsNil(b bool)`
-
- SetSshCredentialsNil sets the value for SshCredentials to be an explicit nil
-
-### UnsetSshCredentials
-`func (o *ReplicationTargetUnmatchedSnapshots) UnsetSshCredentials()`
-
-UnsetSshCredentials ensures that no value is present for SshCredentials, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

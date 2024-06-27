@@ -5,9 +5,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Device** | Pointer to **string** |  | [optional] 
-**FsType** | Pointer to **string** |  | [optional] 
-**FsOptions** | Pointer to **map[string]interface{}** |  | [optional] [default to {}]
 **DstPath** | Pointer to **string** |  | [optional] 
+**FsOptions** | Pointer to **map[string]interface{}** |  | [optional] [default to {}]
+**FsType** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -53,30 +53,30 @@ SetDevice sets Device field to given value.
 
 HasDevice returns a boolean if a field has been set.
 
-### GetFsType
+### GetDstPath
 
-`func (o *PoolImportDisk) GetFsType() string`
+`func (o *PoolImportDisk) GetDstPath() string`
 
-GetFsType returns the FsType field if non-nil, zero value otherwise.
+GetDstPath returns the DstPath field if non-nil, zero value otherwise.
 
-### GetFsTypeOk
+### GetDstPathOk
 
-`func (o *PoolImportDisk) GetFsTypeOk() (*string, bool)`
+`func (o *PoolImportDisk) GetDstPathOk() (*string, bool)`
 
-GetFsTypeOk returns a tuple with the FsType field if it's non-nil, zero value otherwise
+GetDstPathOk returns a tuple with the DstPath field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetFsType
+### SetDstPath
 
-`func (o *PoolImportDisk) SetFsType(v string)`
+`func (o *PoolImportDisk) SetDstPath(v string)`
 
-SetFsType sets FsType field to given value.
+SetDstPath sets DstPath field to given value.
 
-### HasFsType
+### HasDstPath
 
-`func (o *PoolImportDisk) HasFsType() bool`
+`func (o *PoolImportDisk) HasDstPath() bool`
 
-HasFsType returns a boolean if a field has been set.
+HasDstPath returns a boolean if a field has been set.
 
 ### GetFsOptions
 
@@ -103,30 +103,30 @@ SetFsOptions sets FsOptions field to given value.
 
 HasFsOptions returns a boolean if a field has been set.
 
-### GetDstPath
+### GetFsType
 
-`func (o *PoolImportDisk) GetDstPath() string`
+`func (o *PoolImportDisk) GetFsType() string`
 
-GetDstPath returns the DstPath field if non-nil, zero value otherwise.
+GetFsType returns the FsType field if non-nil, zero value otherwise.
 
-### GetDstPathOk
+### GetFsTypeOk
 
-`func (o *PoolImportDisk) GetDstPathOk() (*string, bool)`
+`func (o *PoolImportDisk) GetFsTypeOk() (*string, bool)`
 
-GetDstPathOk returns a tuple with the DstPath field if it's non-nil, zero value otherwise
+GetFsTypeOk returns a tuple with the FsType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetDstPath
+### SetFsType
 
-`func (o *PoolImportDisk) SetDstPath(v string)`
+`func (o *PoolImportDisk) SetFsType(v string)`
 
-SetDstPath sets DstPath field to given value.
+SetFsType sets FsType field to given value.
 
-### HasDstPath
+### HasFsType
 
-`func (o *PoolImportDisk) HasDstPath() bool`
+`func (o *PoolImportDisk) HasFsType() bool`
 
-HasDstPath returns a boolean if a field has been set.
+HasFsType returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -7,9 +7,9 @@ Name | Type | Description | Notes
 **Dataset** | Pointer to **string** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **NamingSchema** | Pointer to **string** |  | [optional] 
+**Properties** | Pointer to **map[string]interface{}** |  | [optional] 
 **Recursive** | Pointer to **bool** |  | [optional] 
 **VmwareSync** | Pointer to **bool** |  | [optional] 
-**Properties** | Pointer to **map[string]interface{}** |  | [optional] 
 
 ## Methods
 
@@ -105,6 +105,31 @@ SetNamingSchema sets NamingSchema field to given value.
 
 HasNamingSchema returns a boolean if a field has been set.
 
+### GetProperties
+
+`func (o *ZfsSnapshotCreate0) GetProperties() map[string]interface{}`
+
+GetProperties returns the Properties field if non-nil, zero value otherwise.
+
+### GetPropertiesOk
+
+`func (o *ZfsSnapshotCreate0) GetPropertiesOk() (*map[string]interface{}, bool)`
+
+GetPropertiesOk returns a tuple with the Properties field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetProperties
+
+`func (o *ZfsSnapshotCreate0) SetProperties(v map[string]interface{})`
+
+SetProperties sets Properties field to given value.
+
+### HasProperties
+
+`func (o *ZfsSnapshotCreate0) HasProperties() bool`
+
+HasProperties returns a boolean if a field has been set.
+
 ### GetRecursive
 
 `func (o *ZfsSnapshotCreate0) GetRecursive() bool`
@@ -154,31 +179,6 @@ SetVmwareSync sets VmwareSync field to given value.
 `func (o *ZfsSnapshotCreate0) HasVmwareSync() bool`
 
 HasVmwareSync returns a boolean if a field has been set.
-
-### GetProperties
-
-`func (o *ZfsSnapshotCreate0) GetProperties() map[string]interface{}`
-
-GetProperties returns the Properties field if non-nil, zero value otherwise.
-
-### GetPropertiesOk
-
-`func (o *ZfsSnapshotCreate0) GetPropertiesOk() (*map[string]interface{}, bool)`
-
-GetPropertiesOk returns a tuple with the Properties field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetProperties
-
-`func (o *ZfsSnapshotCreate0) SetProperties(v map[string]interface{})`
-
-SetProperties sets Properties field to given value.
-
-### HasProperties
-
-`func (o *ZfsSnapshotCreate0) HasProperties() bool`
-
-HasProperties returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Disabled** | Pointer to **bool** |  | [optional] 
-**Timeout** | Pointer to **int32** |  | [optional] 
 **Master** | Pointer to **NullableBool** |  | [optional] 
+**Timeout** | Pointer to **int32** |  | [optional] 
 
 ## Methods
 
@@ -52,31 +52,6 @@ SetDisabled sets Disabled field to given value.
 
 HasDisabled returns a boolean if a field has been set.
 
-### GetTimeout
-
-`func (o *FailoverUpdate0) GetTimeout() int32`
-
-GetTimeout returns the Timeout field if non-nil, zero value otherwise.
-
-### GetTimeoutOk
-
-`func (o *FailoverUpdate0) GetTimeoutOk() (*int32, bool)`
-
-GetTimeoutOk returns a tuple with the Timeout field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTimeout
-
-`func (o *FailoverUpdate0) SetTimeout(v int32)`
-
-SetTimeout sets Timeout field to given value.
-
-### HasTimeout
-
-`func (o *FailoverUpdate0) HasTimeout() bool`
-
-HasTimeout returns a boolean if a field has been set.
-
 ### GetMaster
 
 `func (o *FailoverUpdate0) GetMaster() bool`
@@ -112,6 +87,31 @@ HasMaster returns a boolean if a field has been set.
 `func (o *FailoverUpdate0) UnsetMaster()`
 
 UnsetMaster ensures that no value is present for Master, not even an explicit nil
+### GetTimeout
+
+`func (o *FailoverUpdate0) GetTimeout() int32`
+
+GetTimeout returns the Timeout field if non-nil, zero value otherwise.
+
+### GetTimeoutOk
+
+`func (o *FailoverUpdate0) GetTimeoutOk() (*int32, bool)`
+
+GetTimeoutOk returns a tuple with the Timeout field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTimeout
+
+`func (o *FailoverUpdate0) SetTimeout(v int32)`
+
+SetTimeout sets Timeout field to given value.
+
+### HasTimeout
+
+`func (o *FailoverUpdate0) HasTimeout() bool`
+
+HasTimeout returns a boolean if a field has been set.
+
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

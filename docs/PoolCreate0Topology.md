@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to **[]map[string]interface{}** |  | [optional] 
-**Special** | Pointer to **[]map[string]interface{}** |  | [optional] 
-**Dedup** | Pointer to **[]map[string]interface{}** |  | [optional] 
 **Cache** | Pointer to **[]map[string]interface{}** |  | [optional] 
+**Data** | Pointer to **[]map[string]interface{}** |  | [optional] 
+**Dedup** | Pointer to **[]map[string]interface{}** |  | [optional] 
 **Log** | Pointer to **[]map[string]interface{}** |  | [optional] 
 **Spares** | Pointer to **[]string** |  | [optional] 
+**Special** | Pointer to **[]map[string]interface{}** |  | [optional] 
 
 ## Methods
 
@@ -29,6 +29,31 @@ will change when the set of required properties is changed
 NewPoolCreate0TopologyWithDefaults instantiates a new PoolCreate0Topology object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetCache
+
+`func (o *PoolCreate0Topology) GetCache() []map[string]interface{}`
+
+GetCache returns the Cache field if non-nil, zero value otherwise.
+
+### GetCacheOk
+
+`func (o *PoolCreate0Topology) GetCacheOk() (*[]map[string]interface{}, bool)`
+
+GetCacheOk returns a tuple with the Cache field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCache
+
+`func (o *PoolCreate0Topology) SetCache(v []map[string]interface{})`
+
+SetCache sets Cache field to given value.
+
+### HasCache
+
+`func (o *PoolCreate0Topology) HasCache() bool`
+
+HasCache returns a boolean if a field has been set.
 
 ### GetData
 
@@ -55,31 +80,6 @@ SetData sets Data field to given value.
 
 HasData returns a boolean if a field has been set.
 
-### GetSpecial
-
-`func (o *PoolCreate0Topology) GetSpecial() []map[string]interface{}`
-
-GetSpecial returns the Special field if non-nil, zero value otherwise.
-
-### GetSpecialOk
-
-`func (o *PoolCreate0Topology) GetSpecialOk() (*[]map[string]interface{}, bool)`
-
-GetSpecialOk returns a tuple with the Special field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSpecial
-
-`func (o *PoolCreate0Topology) SetSpecial(v []map[string]interface{})`
-
-SetSpecial sets Special field to given value.
-
-### HasSpecial
-
-`func (o *PoolCreate0Topology) HasSpecial() bool`
-
-HasSpecial returns a boolean if a field has been set.
-
 ### GetDedup
 
 `func (o *PoolCreate0Topology) GetDedup() []map[string]interface{}`
@@ -104,31 +104,6 @@ SetDedup sets Dedup field to given value.
 `func (o *PoolCreate0Topology) HasDedup() bool`
 
 HasDedup returns a boolean if a field has been set.
-
-### GetCache
-
-`func (o *PoolCreate0Topology) GetCache() []map[string]interface{}`
-
-GetCache returns the Cache field if non-nil, zero value otherwise.
-
-### GetCacheOk
-
-`func (o *PoolCreate0Topology) GetCacheOk() (*[]map[string]interface{}, bool)`
-
-GetCacheOk returns a tuple with the Cache field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCache
-
-`func (o *PoolCreate0Topology) SetCache(v []map[string]interface{})`
-
-SetCache sets Cache field to given value.
-
-### HasCache
-
-`func (o *PoolCreate0Topology) HasCache() bool`
-
-HasCache returns a boolean if a field has been set.
 
 ### GetLog
 
@@ -179,6 +154,31 @@ SetSpares sets Spares field to given value.
 `func (o *PoolCreate0Topology) HasSpares() bool`
 
 HasSpares returns a boolean if a field has been set.
+
+### GetSpecial
+
+`func (o *PoolCreate0Topology) GetSpecial() []map[string]interface{}`
+
+GetSpecial returns the Special field if non-nil, zero value otherwise.
+
+### GetSpecialOk
+
+`func (o *PoolCreate0Topology) GetSpecialOk() (*[]map[string]interface{}, bool)`
+
+GetSpecialOk returns a tuple with the Special field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSpecial
+
+`func (o *PoolCreate0Topology) SetSpecial(v []map[string]interface{})`
+
+SetSpecial sets Special field to given value.
+
+### HasSpecial
+
+`func (o *PoolCreate0Topology) HasSpecial() bool`
+
+HasSpecial returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

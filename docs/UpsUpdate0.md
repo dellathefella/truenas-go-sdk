@@ -4,26 +4,26 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Emailnotify** | Pointer to **bool** |  | [optional] 
-**Powerdown** | Pointer to **bool** |  | [optional] 
-**Rmonitor** | Pointer to **bool** |  | [optional] 
-**Nocommwarntime** | Pointer to **NullableInt32** |  | [optional] 
-**Remoteport** | Pointer to **int32** |  | [optional] 
-**Shutdowntimer** | Pointer to **int32** |  | [optional] 
-**Hostsync** | Pointer to **int32** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Driver** | Pointer to **string** |  | [optional] 
+**Emailnotify** | Pointer to **bool** |  | [optional] 
 **Extrausers** | Pointer to **string** |  | [optional] 
+**Hostsync** | Pointer to **int32** |  | [optional] 
 **Identifier** | Pointer to **string** |  | [optional] 
 **Mode** | Pointer to **string** |  | [optional] 
 **Monpwd** | Pointer to **string** |  | [optional] 
 **Monuser** | Pointer to **string** |  | [optional] 
+**Nocommwarntime** | Pointer to **NullableInt32** |  | [optional] 
 **Options** | Pointer to **string** |  | [optional] 
 **Optionsupsd** | Pointer to **string** |  | [optional] 
 **Port** | Pointer to **string** |  | [optional] 
+**Powerdown** | Pointer to **bool** |  | [optional] 
 **Remotehost** | Pointer to **string** |  | [optional] 
+**Remoteport** | Pointer to **int32** |  | [optional] 
+**Rmonitor** | Pointer to **bool** |  | [optional] 
 **Shutdown** | Pointer to **string** |  | [optional] 
 **Shutdowncmd** | Pointer to **NullableString** |  | [optional] 
+**Shutdowntimer** | Pointer to **int32** |  | [optional] 
 **Subject** | Pointer to **string** |  | [optional] 
 **Toemail** | Pointer to **[]string** |  | [optional] 
 
@@ -45,191 +45,6 @@ will change when the set of required properties is changed
 NewUpsUpdate0WithDefaults instantiates a new UpsUpdate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetEmailnotify
-
-`func (o *UpsUpdate0) GetEmailnotify() bool`
-
-GetEmailnotify returns the Emailnotify field if non-nil, zero value otherwise.
-
-### GetEmailnotifyOk
-
-`func (o *UpsUpdate0) GetEmailnotifyOk() (*bool, bool)`
-
-GetEmailnotifyOk returns a tuple with the Emailnotify field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetEmailnotify
-
-`func (o *UpsUpdate0) SetEmailnotify(v bool)`
-
-SetEmailnotify sets Emailnotify field to given value.
-
-### HasEmailnotify
-
-`func (o *UpsUpdate0) HasEmailnotify() bool`
-
-HasEmailnotify returns a boolean if a field has been set.
-
-### GetPowerdown
-
-`func (o *UpsUpdate0) GetPowerdown() bool`
-
-GetPowerdown returns the Powerdown field if non-nil, zero value otherwise.
-
-### GetPowerdownOk
-
-`func (o *UpsUpdate0) GetPowerdownOk() (*bool, bool)`
-
-GetPowerdownOk returns a tuple with the Powerdown field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPowerdown
-
-`func (o *UpsUpdate0) SetPowerdown(v bool)`
-
-SetPowerdown sets Powerdown field to given value.
-
-### HasPowerdown
-
-`func (o *UpsUpdate0) HasPowerdown() bool`
-
-HasPowerdown returns a boolean if a field has been set.
-
-### GetRmonitor
-
-`func (o *UpsUpdate0) GetRmonitor() bool`
-
-GetRmonitor returns the Rmonitor field if non-nil, zero value otherwise.
-
-### GetRmonitorOk
-
-`func (o *UpsUpdate0) GetRmonitorOk() (*bool, bool)`
-
-GetRmonitorOk returns a tuple with the Rmonitor field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRmonitor
-
-`func (o *UpsUpdate0) SetRmonitor(v bool)`
-
-SetRmonitor sets Rmonitor field to given value.
-
-### HasRmonitor
-
-`func (o *UpsUpdate0) HasRmonitor() bool`
-
-HasRmonitor returns a boolean if a field has been set.
-
-### GetNocommwarntime
-
-`func (o *UpsUpdate0) GetNocommwarntime() int32`
-
-GetNocommwarntime returns the Nocommwarntime field if non-nil, zero value otherwise.
-
-### GetNocommwarntimeOk
-
-`func (o *UpsUpdate0) GetNocommwarntimeOk() (*int32, bool)`
-
-GetNocommwarntimeOk returns a tuple with the Nocommwarntime field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetNocommwarntime
-
-`func (o *UpsUpdate0) SetNocommwarntime(v int32)`
-
-SetNocommwarntime sets Nocommwarntime field to given value.
-
-### HasNocommwarntime
-
-`func (o *UpsUpdate0) HasNocommwarntime() bool`
-
-HasNocommwarntime returns a boolean if a field has been set.
-
-### SetNocommwarntimeNil
-
-`func (o *UpsUpdate0) SetNocommwarntimeNil(b bool)`
-
- SetNocommwarntimeNil sets the value for Nocommwarntime to be an explicit nil
-
-### UnsetNocommwarntime
-`func (o *UpsUpdate0) UnsetNocommwarntime()`
-
-UnsetNocommwarntime ensures that no value is present for Nocommwarntime, not even an explicit nil
-### GetRemoteport
-
-`func (o *UpsUpdate0) GetRemoteport() int32`
-
-GetRemoteport returns the Remoteport field if non-nil, zero value otherwise.
-
-### GetRemoteportOk
-
-`func (o *UpsUpdate0) GetRemoteportOk() (*int32, bool)`
-
-GetRemoteportOk returns a tuple with the Remoteport field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRemoteport
-
-`func (o *UpsUpdate0) SetRemoteport(v int32)`
-
-SetRemoteport sets Remoteport field to given value.
-
-### HasRemoteport
-
-`func (o *UpsUpdate0) HasRemoteport() bool`
-
-HasRemoteport returns a boolean if a field has been set.
-
-### GetShutdowntimer
-
-`func (o *UpsUpdate0) GetShutdowntimer() int32`
-
-GetShutdowntimer returns the Shutdowntimer field if non-nil, zero value otherwise.
-
-### GetShutdowntimerOk
-
-`func (o *UpsUpdate0) GetShutdowntimerOk() (*int32, bool)`
-
-GetShutdowntimerOk returns a tuple with the Shutdowntimer field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetShutdowntimer
-
-`func (o *UpsUpdate0) SetShutdowntimer(v int32)`
-
-SetShutdowntimer sets Shutdowntimer field to given value.
-
-### HasShutdowntimer
-
-`func (o *UpsUpdate0) HasShutdowntimer() bool`
-
-HasShutdowntimer returns a boolean if a field has been set.
-
-### GetHostsync
-
-`func (o *UpsUpdate0) GetHostsync() int32`
-
-GetHostsync returns the Hostsync field if non-nil, zero value otherwise.
-
-### GetHostsyncOk
-
-`func (o *UpsUpdate0) GetHostsyncOk() (*int32, bool)`
-
-GetHostsyncOk returns a tuple with the Hostsync field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetHostsync
-
-`func (o *UpsUpdate0) SetHostsync(v int32)`
-
-SetHostsync sets Hostsync field to given value.
-
-### HasHostsync
-
-`func (o *UpsUpdate0) HasHostsync() bool`
-
-HasHostsync returns a boolean if a field has been set.
 
 ### GetDescription
 
@@ -281,6 +96,31 @@ SetDriver sets Driver field to given value.
 
 HasDriver returns a boolean if a field has been set.
 
+### GetEmailnotify
+
+`func (o *UpsUpdate0) GetEmailnotify() bool`
+
+GetEmailnotify returns the Emailnotify field if non-nil, zero value otherwise.
+
+### GetEmailnotifyOk
+
+`func (o *UpsUpdate0) GetEmailnotifyOk() (*bool, bool)`
+
+GetEmailnotifyOk returns a tuple with the Emailnotify field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEmailnotify
+
+`func (o *UpsUpdate0) SetEmailnotify(v bool)`
+
+SetEmailnotify sets Emailnotify field to given value.
+
+### HasEmailnotify
+
+`func (o *UpsUpdate0) HasEmailnotify() bool`
+
+HasEmailnotify returns a boolean if a field has been set.
+
 ### GetExtrausers
 
 `func (o *UpsUpdate0) GetExtrausers() string`
@@ -305,6 +145,31 @@ SetExtrausers sets Extrausers field to given value.
 `func (o *UpsUpdate0) HasExtrausers() bool`
 
 HasExtrausers returns a boolean if a field has been set.
+
+### GetHostsync
+
+`func (o *UpsUpdate0) GetHostsync() int32`
+
+GetHostsync returns the Hostsync field if non-nil, zero value otherwise.
+
+### GetHostsyncOk
+
+`func (o *UpsUpdate0) GetHostsyncOk() (*int32, bool)`
+
+GetHostsyncOk returns a tuple with the Hostsync field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetHostsync
+
+`func (o *UpsUpdate0) SetHostsync(v int32)`
+
+SetHostsync sets Hostsync field to given value.
+
+### HasHostsync
+
+`func (o *UpsUpdate0) HasHostsync() bool`
+
+HasHostsync returns a boolean if a field has been set.
 
 ### GetIdentifier
 
@@ -406,6 +271,41 @@ SetMonuser sets Monuser field to given value.
 
 HasMonuser returns a boolean if a field has been set.
 
+### GetNocommwarntime
+
+`func (o *UpsUpdate0) GetNocommwarntime() int32`
+
+GetNocommwarntime returns the Nocommwarntime field if non-nil, zero value otherwise.
+
+### GetNocommwarntimeOk
+
+`func (o *UpsUpdate0) GetNocommwarntimeOk() (*int32, bool)`
+
+GetNocommwarntimeOk returns a tuple with the Nocommwarntime field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetNocommwarntime
+
+`func (o *UpsUpdate0) SetNocommwarntime(v int32)`
+
+SetNocommwarntime sets Nocommwarntime field to given value.
+
+### HasNocommwarntime
+
+`func (o *UpsUpdate0) HasNocommwarntime() bool`
+
+HasNocommwarntime returns a boolean if a field has been set.
+
+### SetNocommwarntimeNil
+
+`func (o *UpsUpdate0) SetNocommwarntimeNil(b bool)`
+
+ SetNocommwarntimeNil sets the value for Nocommwarntime to be an explicit nil
+
+### UnsetNocommwarntime
+`func (o *UpsUpdate0) UnsetNocommwarntime()`
+
+UnsetNocommwarntime ensures that no value is present for Nocommwarntime, not even an explicit nil
 ### GetOptions
 
 `func (o *UpsUpdate0) GetOptions() string`
@@ -481,6 +381,31 @@ SetPort sets Port field to given value.
 
 HasPort returns a boolean if a field has been set.
 
+### GetPowerdown
+
+`func (o *UpsUpdate0) GetPowerdown() bool`
+
+GetPowerdown returns the Powerdown field if non-nil, zero value otherwise.
+
+### GetPowerdownOk
+
+`func (o *UpsUpdate0) GetPowerdownOk() (*bool, bool)`
+
+GetPowerdownOk returns a tuple with the Powerdown field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPowerdown
+
+`func (o *UpsUpdate0) SetPowerdown(v bool)`
+
+SetPowerdown sets Powerdown field to given value.
+
+### HasPowerdown
+
+`func (o *UpsUpdate0) HasPowerdown() bool`
+
+HasPowerdown returns a boolean if a field has been set.
+
 ### GetRemotehost
 
 `func (o *UpsUpdate0) GetRemotehost() string`
@@ -505,6 +430,56 @@ SetRemotehost sets Remotehost field to given value.
 `func (o *UpsUpdate0) HasRemotehost() bool`
 
 HasRemotehost returns a boolean if a field has been set.
+
+### GetRemoteport
+
+`func (o *UpsUpdate0) GetRemoteport() int32`
+
+GetRemoteport returns the Remoteport field if non-nil, zero value otherwise.
+
+### GetRemoteportOk
+
+`func (o *UpsUpdate0) GetRemoteportOk() (*int32, bool)`
+
+GetRemoteportOk returns a tuple with the Remoteport field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRemoteport
+
+`func (o *UpsUpdate0) SetRemoteport(v int32)`
+
+SetRemoteport sets Remoteport field to given value.
+
+### HasRemoteport
+
+`func (o *UpsUpdate0) HasRemoteport() bool`
+
+HasRemoteport returns a boolean if a field has been set.
+
+### GetRmonitor
+
+`func (o *UpsUpdate0) GetRmonitor() bool`
+
+GetRmonitor returns the Rmonitor field if non-nil, zero value otherwise.
+
+### GetRmonitorOk
+
+`func (o *UpsUpdate0) GetRmonitorOk() (*bool, bool)`
+
+GetRmonitorOk returns a tuple with the Rmonitor field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRmonitor
+
+`func (o *UpsUpdate0) SetRmonitor(v bool)`
+
+SetRmonitor sets Rmonitor field to given value.
+
+### HasRmonitor
+
+`func (o *UpsUpdate0) HasRmonitor() bool`
+
+HasRmonitor returns a boolean if a field has been set.
 
 ### GetShutdown
 
@@ -566,6 +541,31 @@ HasShutdowncmd returns a boolean if a field has been set.
 `func (o *UpsUpdate0) UnsetShutdowncmd()`
 
 UnsetShutdowncmd ensures that no value is present for Shutdowncmd, not even an explicit nil
+### GetShutdowntimer
+
+`func (o *UpsUpdate0) GetShutdowntimer() int32`
+
+GetShutdowntimer returns the Shutdowntimer field if non-nil, zero value otherwise.
+
+### GetShutdowntimerOk
+
+`func (o *UpsUpdate0) GetShutdowntimerOk() (*int32, bool)`
+
+GetShutdowntimerOk returns a tuple with the Shutdowntimer field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetShutdowntimer
+
+`func (o *UpsUpdate0) SetShutdowntimer(v int32)`
+
+SetShutdowntimer sets Shutdowntimer field to given value.
+
+### HasShutdowntimer
+
+`func (o *UpsUpdate0) HasShutdowntimer() bool`
+
+HasShutdowntimer returns a boolean if a field has been set.
+
 ### GetSubject
 
 `func (o *UpsUpdate0) GetSubject() string`

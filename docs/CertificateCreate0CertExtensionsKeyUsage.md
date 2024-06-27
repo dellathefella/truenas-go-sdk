@@ -4,17 +4,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Enabled** | Pointer to **bool** |  | [optional] 
-**DigitalSignature** | Pointer to **bool** |  | [optional] 
 **ContentCommitment** | Pointer to **bool** |  | [optional] 
-**KeyEncipherment** | Pointer to **bool** |  | [optional] 
+**CrlSign** | Pointer to **bool** |  | [optional] 
 **DataEncipherment** | Pointer to **bool** |  | [optional] 
+**DecipherOnly** | Pointer to **bool** |  | [optional] 
+**DigitalSignature** | Pointer to **bool** |  | [optional] 
+**Enabled** | Pointer to **bool** |  | [optional] 
+**EncipherOnly** | Pointer to **bool** |  | [optional] 
+**ExtensionCritical** | Pointer to **bool** |  | [optional] 
 **KeyAgreement** | Pointer to **bool** |  | [optional] 
 **KeyCertSign** | Pointer to **bool** |  | [optional] 
-**CrlSign** | Pointer to **bool** |  | [optional] 
-**EncipherOnly** | Pointer to **bool** |  | [optional] 
-**DecipherOnly** | Pointer to **bool** |  | [optional] 
-**ExtensionCritical** | Pointer to **bool** |  | [optional] 
+**KeyEncipherment** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -34,56 +34,6 @@ will change when the set of required properties is changed
 NewCertificateCreate0CertExtensionsKeyUsageWithDefaults instantiates a new CertificateCreate0CertExtensionsKeyUsage object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetEnabled
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) GetEnabled() bool`
-
-GetEnabled returns the Enabled field if non-nil, zero value otherwise.
-
-### GetEnabledOk
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) GetEnabledOk() (*bool, bool)`
-
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetEnabled
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) SetEnabled(v bool)`
-
-SetEnabled sets Enabled field to given value.
-
-### HasEnabled
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) HasEnabled() bool`
-
-HasEnabled returns a boolean if a field has been set.
-
-### GetDigitalSignature
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) GetDigitalSignature() bool`
-
-GetDigitalSignature returns the DigitalSignature field if non-nil, zero value otherwise.
-
-### GetDigitalSignatureOk
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) GetDigitalSignatureOk() (*bool, bool)`
-
-GetDigitalSignatureOk returns a tuple with the DigitalSignature field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetDigitalSignature
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) SetDigitalSignature(v bool)`
-
-SetDigitalSignature sets DigitalSignature field to given value.
-
-### HasDigitalSignature
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) HasDigitalSignature() bool`
-
-HasDigitalSignature returns a boolean if a field has been set.
 
 ### GetContentCommitment
 
@@ -110,30 +60,30 @@ SetContentCommitment sets ContentCommitment field to given value.
 
 HasContentCommitment returns a boolean if a field has been set.
 
-### GetKeyEncipherment
+### GetCrlSign
 
-`func (o *CertificateCreate0CertExtensionsKeyUsage) GetKeyEncipherment() bool`
+`func (o *CertificateCreate0CertExtensionsKeyUsage) GetCrlSign() bool`
 
-GetKeyEncipherment returns the KeyEncipherment field if non-nil, zero value otherwise.
+GetCrlSign returns the CrlSign field if non-nil, zero value otherwise.
 
-### GetKeyEnciphermentOk
+### GetCrlSignOk
 
-`func (o *CertificateCreate0CertExtensionsKeyUsage) GetKeyEnciphermentOk() (*bool, bool)`
+`func (o *CertificateCreate0CertExtensionsKeyUsage) GetCrlSignOk() (*bool, bool)`
 
-GetKeyEnciphermentOk returns a tuple with the KeyEncipherment field if it's non-nil, zero value otherwise
+GetCrlSignOk returns a tuple with the CrlSign field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetKeyEncipherment
+### SetCrlSign
 
-`func (o *CertificateCreate0CertExtensionsKeyUsage) SetKeyEncipherment(v bool)`
+`func (o *CertificateCreate0CertExtensionsKeyUsage) SetCrlSign(v bool)`
 
-SetKeyEncipherment sets KeyEncipherment field to given value.
+SetCrlSign sets CrlSign field to given value.
 
-### HasKeyEncipherment
+### HasCrlSign
 
-`func (o *CertificateCreate0CertExtensionsKeyUsage) HasKeyEncipherment() bool`
+`func (o *CertificateCreate0CertExtensionsKeyUsage) HasCrlSign() bool`
 
-HasKeyEncipherment returns a boolean if a field has been set.
+HasCrlSign returns a boolean if a field has been set.
 
 ### GetDataEncipherment
 
@@ -159,6 +109,131 @@ SetDataEncipherment sets DataEncipherment field to given value.
 `func (o *CertificateCreate0CertExtensionsKeyUsage) HasDataEncipherment() bool`
 
 HasDataEncipherment returns a boolean if a field has been set.
+
+### GetDecipherOnly
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) GetDecipherOnly() bool`
+
+GetDecipherOnly returns the DecipherOnly field if non-nil, zero value otherwise.
+
+### GetDecipherOnlyOk
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) GetDecipherOnlyOk() (*bool, bool)`
+
+GetDecipherOnlyOk returns a tuple with the DecipherOnly field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDecipherOnly
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) SetDecipherOnly(v bool)`
+
+SetDecipherOnly sets DecipherOnly field to given value.
+
+### HasDecipherOnly
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) HasDecipherOnly() bool`
+
+HasDecipherOnly returns a boolean if a field has been set.
+
+### GetDigitalSignature
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) GetDigitalSignature() bool`
+
+GetDigitalSignature returns the DigitalSignature field if non-nil, zero value otherwise.
+
+### GetDigitalSignatureOk
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) GetDigitalSignatureOk() (*bool, bool)`
+
+GetDigitalSignatureOk returns a tuple with the DigitalSignature field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDigitalSignature
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) SetDigitalSignature(v bool)`
+
+SetDigitalSignature sets DigitalSignature field to given value.
+
+### HasDigitalSignature
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) HasDigitalSignature() bool`
+
+HasDigitalSignature returns a boolean if a field has been set.
+
+### GetEnabled
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) GetEnabled() bool`
+
+GetEnabled returns the Enabled field if non-nil, zero value otherwise.
+
+### GetEnabledOk
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) GetEnabledOk() (*bool, bool)`
+
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEnabled
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) SetEnabled(v bool)`
+
+SetEnabled sets Enabled field to given value.
+
+### HasEnabled
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) HasEnabled() bool`
+
+HasEnabled returns a boolean if a field has been set.
+
+### GetEncipherOnly
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) GetEncipherOnly() bool`
+
+GetEncipherOnly returns the EncipherOnly field if non-nil, zero value otherwise.
+
+### GetEncipherOnlyOk
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) GetEncipherOnlyOk() (*bool, bool)`
+
+GetEncipherOnlyOk returns a tuple with the EncipherOnly field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEncipherOnly
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) SetEncipherOnly(v bool)`
+
+SetEncipherOnly sets EncipherOnly field to given value.
+
+### HasEncipherOnly
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) HasEncipherOnly() bool`
+
+HasEncipherOnly returns a boolean if a field has been set.
+
+### GetExtensionCritical
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) GetExtensionCritical() bool`
+
+GetExtensionCritical returns the ExtensionCritical field if non-nil, zero value otherwise.
+
+### GetExtensionCriticalOk
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) GetExtensionCriticalOk() (*bool, bool)`
+
+GetExtensionCriticalOk returns a tuple with the ExtensionCritical field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetExtensionCritical
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) SetExtensionCritical(v bool)`
+
+SetExtensionCritical sets ExtensionCritical field to given value.
+
+### HasExtensionCritical
+
+`func (o *CertificateCreate0CertExtensionsKeyUsage) HasExtensionCritical() bool`
+
+HasExtensionCritical returns a boolean if a field has been set.
 
 ### GetKeyAgreement
 
@@ -210,105 +285,30 @@ SetKeyCertSign sets KeyCertSign field to given value.
 
 HasKeyCertSign returns a boolean if a field has been set.
 
-### GetCrlSign
+### GetKeyEncipherment
 
-`func (o *CertificateCreate0CertExtensionsKeyUsage) GetCrlSign() bool`
+`func (o *CertificateCreate0CertExtensionsKeyUsage) GetKeyEncipherment() bool`
 
-GetCrlSign returns the CrlSign field if non-nil, zero value otherwise.
+GetKeyEncipherment returns the KeyEncipherment field if non-nil, zero value otherwise.
 
-### GetCrlSignOk
+### GetKeyEnciphermentOk
 
-`func (o *CertificateCreate0CertExtensionsKeyUsage) GetCrlSignOk() (*bool, bool)`
+`func (o *CertificateCreate0CertExtensionsKeyUsage) GetKeyEnciphermentOk() (*bool, bool)`
 
-GetCrlSignOk returns a tuple with the CrlSign field if it's non-nil, zero value otherwise
+GetKeyEnciphermentOk returns a tuple with the KeyEncipherment field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetCrlSign
+### SetKeyEncipherment
 
-`func (o *CertificateCreate0CertExtensionsKeyUsage) SetCrlSign(v bool)`
+`func (o *CertificateCreate0CertExtensionsKeyUsage) SetKeyEncipherment(v bool)`
 
-SetCrlSign sets CrlSign field to given value.
+SetKeyEncipherment sets KeyEncipherment field to given value.
 
-### HasCrlSign
+### HasKeyEncipherment
 
-`func (o *CertificateCreate0CertExtensionsKeyUsage) HasCrlSign() bool`
+`func (o *CertificateCreate0CertExtensionsKeyUsage) HasKeyEncipherment() bool`
 
-HasCrlSign returns a boolean if a field has been set.
-
-### GetEncipherOnly
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) GetEncipherOnly() bool`
-
-GetEncipherOnly returns the EncipherOnly field if non-nil, zero value otherwise.
-
-### GetEncipherOnlyOk
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) GetEncipherOnlyOk() (*bool, bool)`
-
-GetEncipherOnlyOk returns a tuple with the EncipherOnly field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetEncipherOnly
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) SetEncipherOnly(v bool)`
-
-SetEncipherOnly sets EncipherOnly field to given value.
-
-### HasEncipherOnly
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) HasEncipherOnly() bool`
-
-HasEncipherOnly returns a boolean if a field has been set.
-
-### GetDecipherOnly
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) GetDecipherOnly() bool`
-
-GetDecipherOnly returns the DecipherOnly field if non-nil, zero value otherwise.
-
-### GetDecipherOnlyOk
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) GetDecipherOnlyOk() (*bool, bool)`
-
-GetDecipherOnlyOk returns a tuple with the DecipherOnly field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetDecipherOnly
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) SetDecipherOnly(v bool)`
-
-SetDecipherOnly sets DecipherOnly field to given value.
-
-### HasDecipherOnly
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) HasDecipherOnly() bool`
-
-HasDecipherOnly returns a boolean if a field has been set.
-
-### GetExtensionCritical
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) GetExtensionCritical() bool`
-
-GetExtensionCritical returns the ExtensionCritical field if non-nil, zero value otherwise.
-
-### GetExtensionCriticalOk
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) GetExtensionCriticalOk() (*bool, bool)`
-
-GetExtensionCriticalOk returns a tuple with the ExtensionCritical field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetExtensionCritical
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) SetExtensionCritical(v bool)`
-
-SetExtensionCritical sets ExtensionCritical field to given value.
-
-### HasExtensionCritical
-
-`func (o *CertificateCreate0CertExtensionsKeyUsage) HasExtensionCritical() bool`
-
-HasExtensionCritical returns a boolean if a field has been set.
+HasKeyEncipherment returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

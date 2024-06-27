@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Stripacl** | Pointer to **bool** |  | [optional] 
-**Recursive** | Pointer to **bool** |  | [optional] 
-**Traverse** | Pointer to **bool** |  | [optional] 
 **Canonicalize** | Pointer to **bool** |  | [optional] 
+**Recursive** | Pointer to **bool** |  | [optional] 
+**Stripacl** | Pointer to **bool** |  | [optional] 
+**Traverse** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -28,30 +28,30 @@ NewFilesystemSetacl0OptionsWithDefaults instantiates a new FilesystemSetacl0Opti
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetStripacl
+### GetCanonicalize
 
-`func (o *FilesystemSetacl0Options) GetStripacl() bool`
+`func (o *FilesystemSetacl0Options) GetCanonicalize() bool`
 
-GetStripacl returns the Stripacl field if non-nil, zero value otherwise.
+GetCanonicalize returns the Canonicalize field if non-nil, zero value otherwise.
 
-### GetStripaclOk
+### GetCanonicalizeOk
 
-`func (o *FilesystemSetacl0Options) GetStripaclOk() (*bool, bool)`
+`func (o *FilesystemSetacl0Options) GetCanonicalizeOk() (*bool, bool)`
 
-GetStripaclOk returns a tuple with the Stripacl field if it's non-nil, zero value otherwise
+GetCanonicalizeOk returns a tuple with the Canonicalize field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetStripacl
+### SetCanonicalize
 
-`func (o *FilesystemSetacl0Options) SetStripacl(v bool)`
+`func (o *FilesystemSetacl0Options) SetCanonicalize(v bool)`
 
-SetStripacl sets Stripacl field to given value.
+SetCanonicalize sets Canonicalize field to given value.
 
-### HasStripacl
+### HasCanonicalize
 
-`func (o *FilesystemSetacl0Options) HasStripacl() bool`
+`func (o *FilesystemSetacl0Options) HasCanonicalize() bool`
 
-HasStripacl returns a boolean if a field has been set.
+HasCanonicalize returns a boolean if a field has been set.
 
 ### GetRecursive
 
@@ -78,6 +78,31 @@ SetRecursive sets Recursive field to given value.
 
 HasRecursive returns a boolean if a field has been set.
 
+### GetStripacl
+
+`func (o *FilesystemSetacl0Options) GetStripacl() bool`
+
+GetStripacl returns the Stripacl field if non-nil, zero value otherwise.
+
+### GetStripaclOk
+
+`func (o *FilesystemSetacl0Options) GetStripaclOk() (*bool, bool)`
+
+GetStripaclOk returns a tuple with the Stripacl field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetStripacl
+
+`func (o *FilesystemSetacl0Options) SetStripacl(v bool)`
+
+SetStripacl sets Stripacl field to given value.
+
+### HasStripacl
+
+`func (o *FilesystemSetacl0Options) HasStripacl() bool`
+
+HasStripacl returns a boolean if a field has been set.
+
 ### GetTraverse
 
 `func (o *FilesystemSetacl0Options) GetTraverse() bool`
@@ -102,31 +127,6 @@ SetTraverse sets Traverse field to given value.
 `func (o *FilesystemSetacl0Options) HasTraverse() bool`
 
 HasTraverse returns a boolean if a field has been set.
-
-### GetCanonicalize
-
-`func (o *FilesystemSetacl0Options) GetCanonicalize() bool`
-
-GetCanonicalize returns the Canonicalize field if non-nil, zero value otherwise.
-
-### GetCanonicalizeOk
-
-`func (o *FilesystemSetacl0Options) GetCanonicalizeOk() (*bool, bool)`
-
-GetCanonicalizeOk returns a tuple with the Canonicalize field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCanonicalize
-
-`func (o *FilesystemSetacl0Options) SetCanonicalize(v bool)`
-
-SetCanonicalize sets Canonicalize field to given value.
-
-### HasCanonicalize
-
-`func (o *FilesystemSetacl0Options) HasCanonicalize() bool`
-
-HasCanonicalize returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

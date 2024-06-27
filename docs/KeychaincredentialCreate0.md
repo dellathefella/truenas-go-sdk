@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Attributes** | Pointer to **map[string]interface{}** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Type** | Pointer to **string** |  | [optional] 
-**Attributes** | Pointer to **map[string]interface{}** |  | [optional] 
 
 ## Methods
 
@@ -26,6 +26,31 @@ will change when the set of required properties is changed
 NewKeychaincredentialCreate0WithDefaults instantiates a new KeychaincredentialCreate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetAttributes
+
+`func (o *KeychaincredentialCreate0) GetAttributes() map[string]interface{}`
+
+GetAttributes returns the Attributes field if non-nil, zero value otherwise.
+
+### GetAttributesOk
+
+`func (o *KeychaincredentialCreate0) GetAttributesOk() (*map[string]interface{}, bool)`
+
+GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetAttributes
+
+`func (o *KeychaincredentialCreate0) SetAttributes(v map[string]interface{})`
+
+SetAttributes sets Attributes field to given value.
+
+### HasAttributes
+
+`func (o *KeychaincredentialCreate0) HasAttributes() bool`
+
+HasAttributes returns a boolean if a field has been set.
 
 ### GetName
 
@@ -76,31 +101,6 @@ SetType sets Type field to given value.
 `func (o *KeychaincredentialCreate0) HasType() bool`
 
 HasType returns a boolean if a field has been set.
-
-### GetAttributes
-
-`func (o *KeychaincredentialCreate0) GetAttributes() map[string]interface{}`
-
-GetAttributes returns the Attributes field if non-nil, zero value otherwise.
-
-### GetAttributesOk
-
-`func (o *KeychaincredentialCreate0) GetAttributesOk() (*map[string]interface{}, bool)`
-
-GetAttributesOk returns a tuple with the Attributes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetAttributes
-
-`func (o *KeychaincredentialCreate0) SetAttributes(v map[string]interface{})`
-
-SetAttributes sets Attributes field to given value.
-
-### HasAttributes
-
-`func (o *KeychaincredentialCreate0) HasAttributes() bool`
-
-HasAttributes returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

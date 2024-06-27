@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Options** | Pointer to [**SmbGetRemoteAcl0Options**](SmbGetRemoteAcl0Options.md) |  | [optional] 
+**Password** | Pointer to **string** |  | [optional] 
+**Path** | Pointer to **string** |  | [optional] 
 **Server** | Pointer to **string** |  | [optional] 
 **Share** | Pointer to **string** |  | [optional] 
-**Path** | Pointer to **string** |  | [optional] 
 **Username** | Pointer to **string** |  | [optional] 
-**Password** | Pointer to **string** |  | [optional] 
-**Options** | Pointer to [**SmbGetRemoteAcl0Options**](SmbGetRemoteAcl0Options.md) |  | [optional] 
 
 ## Methods
 
@@ -29,6 +29,81 @@ will change when the set of required properties is changed
 NewSmbGetRemoteAcl0WithDefaults instantiates a new SmbGetRemoteAcl0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetOptions
+
+`func (o *SmbGetRemoteAcl0) GetOptions() SmbGetRemoteAcl0Options`
+
+GetOptions returns the Options field if non-nil, zero value otherwise.
+
+### GetOptionsOk
+
+`func (o *SmbGetRemoteAcl0) GetOptionsOk() (*SmbGetRemoteAcl0Options, bool)`
+
+GetOptionsOk returns a tuple with the Options field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOptions
+
+`func (o *SmbGetRemoteAcl0) SetOptions(v SmbGetRemoteAcl0Options)`
+
+SetOptions sets Options field to given value.
+
+### HasOptions
+
+`func (o *SmbGetRemoteAcl0) HasOptions() bool`
+
+HasOptions returns a boolean if a field has been set.
+
+### GetPassword
+
+`func (o *SmbGetRemoteAcl0) GetPassword() string`
+
+GetPassword returns the Password field if non-nil, zero value otherwise.
+
+### GetPasswordOk
+
+`func (o *SmbGetRemoteAcl0) GetPasswordOk() (*string, bool)`
+
+GetPasswordOk returns a tuple with the Password field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPassword
+
+`func (o *SmbGetRemoteAcl0) SetPassword(v string)`
+
+SetPassword sets Password field to given value.
+
+### HasPassword
+
+`func (o *SmbGetRemoteAcl0) HasPassword() bool`
+
+HasPassword returns a boolean if a field has been set.
+
+### GetPath
+
+`func (o *SmbGetRemoteAcl0) GetPath() string`
+
+GetPath returns the Path field if non-nil, zero value otherwise.
+
+### GetPathOk
+
+`func (o *SmbGetRemoteAcl0) GetPathOk() (*string, bool)`
+
+GetPathOk returns a tuple with the Path field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPath
+
+`func (o *SmbGetRemoteAcl0) SetPath(v string)`
+
+SetPath sets Path field to given value.
+
+### HasPath
+
+`func (o *SmbGetRemoteAcl0) HasPath() bool`
+
+HasPath returns a boolean if a field has been set.
 
 ### GetServer
 
@@ -80,31 +155,6 @@ SetShare sets Share field to given value.
 
 HasShare returns a boolean if a field has been set.
 
-### GetPath
-
-`func (o *SmbGetRemoteAcl0) GetPath() string`
-
-GetPath returns the Path field if non-nil, zero value otherwise.
-
-### GetPathOk
-
-`func (o *SmbGetRemoteAcl0) GetPathOk() (*string, bool)`
-
-GetPathOk returns a tuple with the Path field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPath
-
-`func (o *SmbGetRemoteAcl0) SetPath(v string)`
-
-SetPath sets Path field to given value.
-
-### HasPath
-
-`func (o *SmbGetRemoteAcl0) HasPath() bool`
-
-HasPath returns a boolean if a field has been set.
-
 ### GetUsername
 
 `func (o *SmbGetRemoteAcl0) GetUsername() string`
@@ -129,56 +179,6 @@ SetUsername sets Username field to given value.
 `func (o *SmbGetRemoteAcl0) HasUsername() bool`
 
 HasUsername returns a boolean if a field has been set.
-
-### GetPassword
-
-`func (o *SmbGetRemoteAcl0) GetPassword() string`
-
-GetPassword returns the Password field if non-nil, zero value otherwise.
-
-### GetPasswordOk
-
-`func (o *SmbGetRemoteAcl0) GetPasswordOk() (*string, bool)`
-
-GetPasswordOk returns a tuple with the Password field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPassword
-
-`func (o *SmbGetRemoteAcl0) SetPassword(v string)`
-
-SetPassword sets Password field to given value.
-
-### HasPassword
-
-`func (o *SmbGetRemoteAcl0) HasPassword() bool`
-
-HasPassword returns a boolean if a field has been set.
-
-### GetOptions
-
-`func (o *SmbGetRemoteAcl0) GetOptions() SmbGetRemoteAcl0Options`
-
-GetOptions returns the Options field if non-nil, zero value otherwise.
-
-### GetOptionsOk
-
-`func (o *SmbGetRemoteAcl0) GetOptionsOk() (*SmbGetRemoteAcl0Options, bool)`
-
-GetOptionsOk returns a tuple with the Options field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetOptions
-
-`func (o *SmbGetRemoteAcl0) SetOptions(v SmbGetRemoteAcl0Options)`
-
-SetOptions sets Options field to given value.
-
-### HasOptions
-
-`func (o *SmbGetRemoteAcl0) HasOptions() bool`
-
-HasOptions returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

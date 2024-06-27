@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**ConfirmRrdDestroy** | Pointer to **bool** |  | [optional] 
 **CpuInPercentage** | Pointer to **bool** |  | [optional] 
-**Graphite** | Pointer to **string** |  | [optional] 
-**GraphiteSeparateinstances** | Pointer to **bool** |  | [optional] 
 **GraphAge** | Pointer to **int32** |  | [optional] 
 **GraphPoints** | Pointer to **int32** |  | [optional] 
-**ConfirmRrdDestroy** | Pointer to **bool** |  | [optional] 
+**Graphite** | Pointer to **string** |  | [optional] 
+**GraphiteSeparateinstances** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -29,6 +29,31 @@ will change when the set of required properties is changed
 NewReportingUpdate0WithDefaults instantiates a new ReportingUpdate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetConfirmRrdDestroy
+
+`func (o *ReportingUpdate0) GetConfirmRrdDestroy() bool`
+
+GetConfirmRrdDestroy returns the ConfirmRrdDestroy field if non-nil, zero value otherwise.
+
+### GetConfirmRrdDestroyOk
+
+`func (o *ReportingUpdate0) GetConfirmRrdDestroyOk() (*bool, bool)`
+
+GetConfirmRrdDestroyOk returns a tuple with the ConfirmRrdDestroy field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetConfirmRrdDestroy
+
+`func (o *ReportingUpdate0) SetConfirmRrdDestroy(v bool)`
+
+SetConfirmRrdDestroy sets ConfirmRrdDestroy field to given value.
+
+### HasConfirmRrdDestroy
+
+`func (o *ReportingUpdate0) HasConfirmRrdDestroy() bool`
+
+HasConfirmRrdDestroy returns a boolean if a field has been set.
 
 ### GetCpuInPercentage
 
@@ -54,56 +79,6 @@ SetCpuInPercentage sets CpuInPercentage field to given value.
 `func (o *ReportingUpdate0) HasCpuInPercentage() bool`
 
 HasCpuInPercentage returns a boolean if a field has been set.
-
-### GetGraphite
-
-`func (o *ReportingUpdate0) GetGraphite() string`
-
-GetGraphite returns the Graphite field if non-nil, zero value otherwise.
-
-### GetGraphiteOk
-
-`func (o *ReportingUpdate0) GetGraphiteOk() (*string, bool)`
-
-GetGraphiteOk returns a tuple with the Graphite field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetGraphite
-
-`func (o *ReportingUpdate0) SetGraphite(v string)`
-
-SetGraphite sets Graphite field to given value.
-
-### HasGraphite
-
-`func (o *ReportingUpdate0) HasGraphite() bool`
-
-HasGraphite returns a boolean if a field has been set.
-
-### GetGraphiteSeparateinstances
-
-`func (o *ReportingUpdate0) GetGraphiteSeparateinstances() bool`
-
-GetGraphiteSeparateinstances returns the GraphiteSeparateinstances field if non-nil, zero value otherwise.
-
-### GetGraphiteSeparateinstancesOk
-
-`func (o *ReportingUpdate0) GetGraphiteSeparateinstancesOk() (*bool, bool)`
-
-GetGraphiteSeparateinstancesOk returns a tuple with the GraphiteSeparateinstances field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetGraphiteSeparateinstances
-
-`func (o *ReportingUpdate0) SetGraphiteSeparateinstances(v bool)`
-
-SetGraphiteSeparateinstances sets GraphiteSeparateinstances field to given value.
-
-### HasGraphiteSeparateinstances
-
-`func (o *ReportingUpdate0) HasGraphiteSeparateinstances() bool`
-
-HasGraphiteSeparateinstances returns a boolean if a field has been set.
 
 ### GetGraphAge
 
@@ -155,30 +130,55 @@ SetGraphPoints sets GraphPoints field to given value.
 
 HasGraphPoints returns a boolean if a field has been set.
 
-### GetConfirmRrdDestroy
+### GetGraphite
 
-`func (o *ReportingUpdate0) GetConfirmRrdDestroy() bool`
+`func (o *ReportingUpdate0) GetGraphite() string`
 
-GetConfirmRrdDestroy returns the ConfirmRrdDestroy field if non-nil, zero value otherwise.
+GetGraphite returns the Graphite field if non-nil, zero value otherwise.
 
-### GetConfirmRrdDestroyOk
+### GetGraphiteOk
 
-`func (o *ReportingUpdate0) GetConfirmRrdDestroyOk() (*bool, bool)`
+`func (o *ReportingUpdate0) GetGraphiteOk() (*string, bool)`
 
-GetConfirmRrdDestroyOk returns a tuple with the ConfirmRrdDestroy field if it's non-nil, zero value otherwise
+GetGraphiteOk returns a tuple with the Graphite field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetConfirmRrdDestroy
+### SetGraphite
 
-`func (o *ReportingUpdate0) SetConfirmRrdDestroy(v bool)`
+`func (o *ReportingUpdate0) SetGraphite(v string)`
 
-SetConfirmRrdDestroy sets ConfirmRrdDestroy field to given value.
+SetGraphite sets Graphite field to given value.
 
-### HasConfirmRrdDestroy
+### HasGraphite
 
-`func (o *ReportingUpdate0) HasConfirmRrdDestroy() bool`
+`func (o *ReportingUpdate0) HasGraphite() bool`
 
-HasConfirmRrdDestroy returns a boolean if a field has been set.
+HasGraphite returns a boolean if a field has been set.
+
+### GetGraphiteSeparateinstances
+
+`func (o *ReportingUpdate0) GetGraphiteSeparateinstances() bool`
+
+GetGraphiteSeparateinstances returns the GraphiteSeparateinstances field if non-nil, zero value otherwise.
+
+### GetGraphiteSeparateinstancesOk
+
+`func (o *ReportingUpdate0) GetGraphiteSeparateinstancesOk() (*bool, bool)`
+
+GetGraphiteSeparateinstancesOk returns a tuple with the GraphiteSeparateinstances field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetGraphiteSeparateinstances
+
+`func (o *ReportingUpdate0) SetGraphiteSeparateinstances(v bool)`
+
+SetGraphiteSeparateinstances sets GraphiteSeparateinstances field to given value.
+
+### HasGraphiteSeparateinstances
+
+`func (o *ReportingUpdate0) HasGraphiteSeparateinstances() bool`
+
+HasGraphiteSeparateinstances returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

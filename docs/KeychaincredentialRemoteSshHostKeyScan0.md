@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**ConnectTimeout** | Pointer to **int32** |  | [optional] 
 **Host** | Pointer to **string** |  | [optional] 
 **Port** | Pointer to **string** |  | [optional] 
-**ConnectTimeout** | Pointer to **int32** |  | [optional] 
 
 ## Methods
 
@@ -26,6 +26,31 @@ will change when the set of required properties is changed
 NewKeychaincredentialRemoteSshHostKeyScan0WithDefaults instantiates a new KeychaincredentialRemoteSshHostKeyScan0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetConnectTimeout
+
+`func (o *KeychaincredentialRemoteSshHostKeyScan0) GetConnectTimeout() int32`
+
+GetConnectTimeout returns the ConnectTimeout field if non-nil, zero value otherwise.
+
+### GetConnectTimeoutOk
+
+`func (o *KeychaincredentialRemoteSshHostKeyScan0) GetConnectTimeoutOk() (*int32, bool)`
+
+GetConnectTimeoutOk returns a tuple with the ConnectTimeout field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetConnectTimeout
+
+`func (o *KeychaincredentialRemoteSshHostKeyScan0) SetConnectTimeout(v int32)`
+
+SetConnectTimeout sets ConnectTimeout field to given value.
+
+### HasConnectTimeout
+
+`func (o *KeychaincredentialRemoteSshHostKeyScan0) HasConnectTimeout() bool`
+
+HasConnectTimeout returns a boolean if a field has been set.
 
 ### GetHost
 
@@ -76,31 +101,6 @@ SetPort sets Port field to given value.
 `func (o *KeychaincredentialRemoteSshHostKeyScan0) HasPort() bool`
 
 HasPort returns a boolean if a field has been set.
-
-### GetConnectTimeout
-
-`func (o *KeychaincredentialRemoteSshHostKeyScan0) GetConnectTimeout() int32`
-
-GetConnectTimeout returns the ConnectTimeout field if non-nil, zero value otherwise.
-
-### GetConnectTimeoutOk
-
-`func (o *KeychaincredentialRemoteSshHostKeyScan0) GetConnectTimeoutOk() (*int32, bool)`
-
-GetConnectTimeoutOk returns a tuple with the ConnectTimeout field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetConnectTimeout
-
-`func (o *KeychaincredentialRemoteSshHostKeyScan0) SetConnectTimeout(v int32)`
-
-SetConnectTimeout sets ConnectTimeout field to given value.
-
-### HasConnectTimeout
-
-`func (o *KeychaincredentialRemoteSshHostKeyScan0) HasConnectTimeout() bool`
-
-HasConnectTimeout returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

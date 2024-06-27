@@ -5,10 +5,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Domain** | Pointer to **string** |  | [optional] 
-**Servers** | Pointer to **[]interface{}** |  | [optional] 
-**SecureMode** | Pointer to **bool** |  | [optional] 
-**Manycast** | Pointer to **bool** |  | [optional] 
 **Enable** | Pointer to **bool** |  | [optional] 
+**Manycast** | Pointer to **bool** |  | [optional] 
+**SecureMode** | Pointer to **bool** |  | [optional] 
+**Servers** | Pointer to **[]interface{}** |  | [optional] 
 
 ## Methods
 
@@ -54,55 +54,30 @@ SetDomain sets Domain field to given value.
 
 HasDomain returns a boolean if a field has been set.
 
-### GetServers
+### GetEnable
 
-`func (o *NisUpdate0) GetServers() []interface{}`
+`func (o *NisUpdate0) GetEnable() bool`
 
-GetServers returns the Servers field if non-nil, zero value otherwise.
+GetEnable returns the Enable field if non-nil, zero value otherwise.
 
-### GetServersOk
+### GetEnableOk
 
-`func (o *NisUpdate0) GetServersOk() (*[]interface{}, bool)`
+`func (o *NisUpdate0) GetEnableOk() (*bool, bool)`
 
-GetServersOk returns a tuple with the Servers field if it's non-nil, zero value otherwise
+GetEnableOk returns a tuple with the Enable field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetServers
+### SetEnable
 
-`func (o *NisUpdate0) SetServers(v []interface{})`
+`func (o *NisUpdate0) SetEnable(v bool)`
 
-SetServers sets Servers field to given value.
+SetEnable sets Enable field to given value.
 
-### HasServers
+### HasEnable
 
-`func (o *NisUpdate0) HasServers() bool`
+`func (o *NisUpdate0) HasEnable() bool`
 
-HasServers returns a boolean if a field has been set.
-
-### GetSecureMode
-
-`func (o *NisUpdate0) GetSecureMode() bool`
-
-GetSecureMode returns the SecureMode field if non-nil, zero value otherwise.
-
-### GetSecureModeOk
-
-`func (o *NisUpdate0) GetSecureModeOk() (*bool, bool)`
-
-GetSecureModeOk returns a tuple with the SecureMode field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSecureMode
-
-`func (o *NisUpdate0) SetSecureMode(v bool)`
-
-SetSecureMode sets SecureMode field to given value.
-
-### HasSecureMode
-
-`func (o *NisUpdate0) HasSecureMode() bool`
-
-HasSecureMode returns a boolean if a field has been set.
+HasEnable returns a boolean if a field has been set.
 
 ### GetManycast
 
@@ -129,30 +104,55 @@ SetManycast sets Manycast field to given value.
 
 HasManycast returns a boolean if a field has been set.
 
-### GetEnable
+### GetSecureMode
 
-`func (o *NisUpdate0) GetEnable() bool`
+`func (o *NisUpdate0) GetSecureMode() bool`
 
-GetEnable returns the Enable field if non-nil, zero value otherwise.
+GetSecureMode returns the SecureMode field if non-nil, zero value otherwise.
 
-### GetEnableOk
+### GetSecureModeOk
 
-`func (o *NisUpdate0) GetEnableOk() (*bool, bool)`
+`func (o *NisUpdate0) GetSecureModeOk() (*bool, bool)`
 
-GetEnableOk returns a tuple with the Enable field if it's non-nil, zero value otherwise
+GetSecureModeOk returns a tuple with the SecureMode field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetEnable
+### SetSecureMode
 
-`func (o *NisUpdate0) SetEnable(v bool)`
+`func (o *NisUpdate0) SetSecureMode(v bool)`
 
-SetEnable sets Enable field to given value.
+SetSecureMode sets SecureMode field to given value.
 
-### HasEnable
+### HasSecureMode
 
-`func (o *NisUpdate0) HasEnable() bool`
+`func (o *NisUpdate0) HasSecureMode() bool`
 
-HasEnable returns a boolean if a field has been set.
+HasSecureMode returns a boolean if a field has been set.
+
+### GetServers
+
+`func (o *NisUpdate0) GetServers() []interface{}`
+
+GetServers returns the Servers field if non-nil, zero value otherwise.
+
+### GetServersOk
+
+`func (o *NisUpdate0) GetServersOk() (*[]interface{}, bool)`
+
+GetServersOk returns a tuple with the Servers field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetServers
+
+`func (o *NisUpdate0) SetServers(v []interface{})`
+
+SetServers sets Servers field to given value.
+
+### HasServers
+
+`func (o *NisUpdate0) HasServers() bool`
+
+HasServers returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

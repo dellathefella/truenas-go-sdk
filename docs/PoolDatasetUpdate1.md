@@ -4,31 +4,31 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Volsize** | Pointer to **int32** |  | [optional] 
-**ForceSize** | Pointer to **bool** |  | [optional] 
-**Comments** | Pointer to **string** |  | [optional] 
-**Sync** | Pointer to **string** |  | [optional] 
-**Compression** | Pointer to **string** |  | [optional] 
-**Atime** | Pointer to **string** |  | [optional] 
-**Exec** | Pointer to **string** |  | [optional] 
-**Managedby** | Pointer to **string** |  | [optional] 
-**Quota** | Pointer to **NullableInt32** |  | [optional] 
-**QuotaWarning** | Pointer to [**PoolDatasetUpdate1QuotaWarning**](PoolDatasetUpdate1QuotaWarning.md) |  | [optional] 
-**QuotaCritical** | Pointer to [**PoolDatasetUpdate1QuotaWarning**](PoolDatasetUpdate1QuotaWarning.md) |  | [optional] 
-**Refquota** | Pointer to **NullableInt32** |  | [optional] 
-**RefquotaWarning** | Pointer to [**PoolDatasetUpdate1QuotaWarning**](PoolDatasetUpdate1QuotaWarning.md) |  | [optional] 
-**RefquotaCritical** | Pointer to [**PoolDatasetUpdate1QuotaWarning**](PoolDatasetUpdate1QuotaWarning.md) |  | [optional] 
-**Reservation** | Pointer to **int32** |  | [optional] 
-**Refreservation** | Pointer to **int32** |  | [optional] 
-**SpecialSmallBlockSize** | Pointer to [**PoolDatasetUpdate1QuotaWarning**](PoolDatasetUpdate1QuotaWarning.md) |  | [optional] 
-**Copies** | Pointer to **int32** |  | [optional] 
-**Snapdir** | Pointer to **string** |  | [optional] 
-**Deduplication** | Pointer to **string** |  | [optional] 
-**Checksum** | Pointer to **string** |  | [optional] 
-**Readonly** | Pointer to **string** |  | [optional] 
-**Recordsize** | Pointer to **string** |  | [optional] 
 **Aclmode** | Pointer to **string** |  | [optional] 
 **Acltype** | Pointer to **string** |  | [optional] 
+**Atime** | Pointer to **string** |  | [optional] 
+**Checksum** | Pointer to **string** |  | [optional] 
+**Comments** | Pointer to **string** |  | [optional] 
+**Compression** | Pointer to **string** |  | [optional] 
+**Copies** | Pointer to **int32** |  | [optional] 
+**Deduplication** | Pointer to **string** |  | [optional] 
+**Exec** | Pointer to **string** |  | [optional] 
+**ForceSize** | Pointer to **bool** |  | [optional] 
+**Managedby** | Pointer to **string** |  | [optional] 
+**Quota** | Pointer to **NullableInt32** |  | [optional] 
+**QuotaCritical** | Pointer to [**PoolDatasetUpdate1QuotaCritical**](PoolDatasetUpdate1QuotaCritical.md) |  | [optional] 
+**QuotaWarning** | Pointer to [**PoolDatasetUpdate1QuotaCritical**](PoolDatasetUpdate1QuotaCritical.md) |  | [optional] 
+**Readonly** | Pointer to **string** |  | [optional] 
+**Recordsize** | Pointer to **string** |  | [optional] 
+**Refquota** | Pointer to **NullableInt32** |  | [optional] 
+**RefquotaCritical** | Pointer to [**PoolDatasetUpdate1QuotaCritical**](PoolDatasetUpdate1QuotaCritical.md) |  | [optional] 
+**RefquotaWarning** | Pointer to [**PoolDatasetUpdate1QuotaCritical**](PoolDatasetUpdate1QuotaCritical.md) |  | [optional] 
+**Refreservation** | Pointer to **int32** |  | [optional] 
+**Reservation** | Pointer to **int32** |  | [optional] 
+**Snapdir** | Pointer to **string** |  | [optional] 
+**SpecialSmallBlockSize** | Pointer to [**PoolDatasetUpdate1QuotaCritical**](PoolDatasetUpdate1QuotaCritical.md) |  | [optional] 
+**Sync** | Pointer to **string** |  | [optional] 
+**Volsize** | Pointer to **int32** |  | [optional] 
 **Xattr** | Pointer to **string** |  | [optional] 
 
 ## Methods
@@ -50,130 +50,55 @@ NewPoolDatasetUpdate1WithDefaults instantiates a new PoolDatasetUpdate1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetVolsize
+### GetAclmode
 
-`func (o *PoolDatasetUpdate1) GetVolsize() int32`
+`func (o *PoolDatasetUpdate1) GetAclmode() string`
 
-GetVolsize returns the Volsize field if non-nil, zero value otherwise.
+GetAclmode returns the Aclmode field if non-nil, zero value otherwise.
 
-### GetVolsizeOk
+### GetAclmodeOk
 
-`func (o *PoolDatasetUpdate1) GetVolsizeOk() (*int32, bool)`
+`func (o *PoolDatasetUpdate1) GetAclmodeOk() (*string, bool)`
 
-GetVolsizeOk returns a tuple with the Volsize field if it's non-nil, zero value otherwise
+GetAclmodeOk returns a tuple with the Aclmode field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetVolsize
+### SetAclmode
 
-`func (o *PoolDatasetUpdate1) SetVolsize(v int32)`
+`func (o *PoolDatasetUpdate1) SetAclmode(v string)`
 
-SetVolsize sets Volsize field to given value.
+SetAclmode sets Aclmode field to given value.
 
-### HasVolsize
+### HasAclmode
 
-`func (o *PoolDatasetUpdate1) HasVolsize() bool`
+`func (o *PoolDatasetUpdate1) HasAclmode() bool`
 
-HasVolsize returns a boolean if a field has been set.
+HasAclmode returns a boolean if a field has been set.
 
-### GetForceSize
+### GetAcltype
 
-`func (o *PoolDatasetUpdate1) GetForceSize() bool`
+`func (o *PoolDatasetUpdate1) GetAcltype() string`
 
-GetForceSize returns the ForceSize field if non-nil, zero value otherwise.
+GetAcltype returns the Acltype field if non-nil, zero value otherwise.
 
-### GetForceSizeOk
+### GetAcltypeOk
 
-`func (o *PoolDatasetUpdate1) GetForceSizeOk() (*bool, bool)`
+`func (o *PoolDatasetUpdate1) GetAcltypeOk() (*string, bool)`
 
-GetForceSizeOk returns a tuple with the ForceSize field if it's non-nil, zero value otherwise
+GetAcltypeOk returns a tuple with the Acltype field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetForceSize
+### SetAcltype
 
-`func (o *PoolDatasetUpdate1) SetForceSize(v bool)`
+`func (o *PoolDatasetUpdate1) SetAcltype(v string)`
 
-SetForceSize sets ForceSize field to given value.
+SetAcltype sets Acltype field to given value.
 
-### HasForceSize
+### HasAcltype
 
-`func (o *PoolDatasetUpdate1) HasForceSize() bool`
+`func (o *PoolDatasetUpdate1) HasAcltype() bool`
 
-HasForceSize returns a boolean if a field has been set.
-
-### GetComments
-
-`func (o *PoolDatasetUpdate1) GetComments() string`
-
-GetComments returns the Comments field if non-nil, zero value otherwise.
-
-### GetCommentsOk
-
-`func (o *PoolDatasetUpdate1) GetCommentsOk() (*string, bool)`
-
-GetCommentsOk returns a tuple with the Comments field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetComments
-
-`func (o *PoolDatasetUpdate1) SetComments(v string)`
-
-SetComments sets Comments field to given value.
-
-### HasComments
-
-`func (o *PoolDatasetUpdate1) HasComments() bool`
-
-HasComments returns a boolean if a field has been set.
-
-### GetSync
-
-`func (o *PoolDatasetUpdate1) GetSync() string`
-
-GetSync returns the Sync field if non-nil, zero value otherwise.
-
-### GetSyncOk
-
-`func (o *PoolDatasetUpdate1) GetSyncOk() (*string, bool)`
-
-GetSyncOk returns a tuple with the Sync field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSync
-
-`func (o *PoolDatasetUpdate1) SetSync(v string)`
-
-SetSync sets Sync field to given value.
-
-### HasSync
-
-`func (o *PoolDatasetUpdate1) HasSync() bool`
-
-HasSync returns a boolean if a field has been set.
-
-### GetCompression
-
-`func (o *PoolDatasetUpdate1) GetCompression() string`
-
-GetCompression returns the Compression field if non-nil, zero value otherwise.
-
-### GetCompressionOk
-
-`func (o *PoolDatasetUpdate1) GetCompressionOk() (*string, bool)`
-
-GetCompressionOk returns a tuple with the Compression field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCompression
-
-`func (o *PoolDatasetUpdate1) SetCompression(v string)`
-
-SetCompression sets Compression field to given value.
-
-### HasCompression
-
-`func (o *PoolDatasetUpdate1) HasCompression() bool`
-
-HasCompression returns a boolean if a field has been set.
+HasAcltype returns a boolean if a field has been set.
 
 ### GetAtime
 
@@ -200,6 +125,131 @@ SetAtime sets Atime field to given value.
 
 HasAtime returns a boolean if a field has been set.
 
+### GetChecksum
+
+`func (o *PoolDatasetUpdate1) GetChecksum() string`
+
+GetChecksum returns the Checksum field if non-nil, zero value otherwise.
+
+### GetChecksumOk
+
+`func (o *PoolDatasetUpdate1) GetChecksumOk() (*string, bool)`
+
+GetChecksumOk returns a tuple with the Checksum field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetChecksum
+
+`func (o *PoolDatasetUpdate1) SetChecksum(v string)`
+
+SetChecksum sets Checksum field to given value.
+
+### HasChecksum
+
+`func (o *PoolDatasetUpdate1) HasChecksum() bool`
+
+HasChecksum returns a boolean if a field has been set.
+
+### GetComments
+
+`func (o *PoolDatasetUpdate1) GetComments() string`
+
+GetComments returns the Comments field if non-nil, zero value otherwise.
+
+### GetCommentsOk
+
+`func (o *PoolDatasetUpdate1) GetCommentsOk() (*string, bool)`
+
+GetCommentsOk returns a tuple with the Comments field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetComments
+
+`func (o *PoolDatasetUpdate1) SetComments(v string)`
+
+SetComments sets Comments field to given value.
+
+### HasComments
+
+`func (o *PoolDatasetUpdate1) HasComments() bool`
+
+HasComments returns a boolean if a field has been set.
+
+### GetCompression
+
+`func (o *PoolDatasetUpdate1) GetCompression() string`
+
+GetCompression returns the Compression field if non-nil, zero value otherwise.
+
+### GetCompressionOk
+
+`func (o *PoolDatasetUpdate1) GetCompressionOk() (*string, bool)`
+
+GetCompressionOk returns a tuple with the Compression field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCompression
+
+`func (o *PoolDatasetUpdate1) SetCompression(v string)`
+
+SetCompression sets Compression field to given value.
+
+### HasCompression
+
+`func (o *PoolDatasetUpdate1) HasCompression() bool`
+
+HasCompression returns a boolean if a field has been set.
+
+### GetCopies
+
+`func (o *PoolDatasetUpdate1) GetCopies() int32`
+
+GetCopies returns the Copies field if non-nil, zero value otherwise.
+
+### GetCopiesOk
+
+`func (o *PoolDatasetUpdate1) GetCopiesOk() (*int32, bool)`
+
+GetCopiesOk returns a tuple with the Copies field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCopies
+
+`func (o *PoolDatasetUpdate1) SetCopies(v int32)`
+
+SetCopies sets Copies field to given value.
+
+### HasCopies
+
+`func (o *PoolDatasetUpdate1) HasCopies() bool`
+
+HasCopies returns a boolean if a field has been set.
+
+### GetDeduplication
+
+`func (o *PoolDatasetUpdate1) GetDeduplication() string`
+
+GetDeduplication returns the Deduplication field if non-nil, zero value otherwise.
+
+### GetDeduplicationOk
+
+`func (o *PoolDatasetUpdate1) GetDeduplicationOk() (*string, bool)`
+
+GetDeduplicationOk returns a tuple with the Deduplication field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDeduplication
+
+`func (o *PoolDatasetUpdate1) SetDeduplication(v string)`
+
+SetDeduplication sets Deduplication field to given value.
+
+### HasDeduplication
+
+`func (o *PoolDatasetUpdate1) HasDeduplication() bool`
+
+HasDeduplication returns a boolean if a field has been set.
+
 ### GetExec
 
 `func (o *PoolDatasetUpdate1) GetExec() string`
@@ -224,6 +274,31 @@ SetExec sets Exec field to given value.
 `func (o *PoolDatasetUpdate1) HasExec() bool`
 
 HasExec returns a boolean if a field has been set.
+
+### GetForceSize
+
+`func (o *PoolDatasetUpdate1) GetForceSize() bool`
+
+GetForceSize returns the ForceSize field if non-nil, zero value otherwise.
+
+### GetForceSizeOk
+
+`func (o *PoolDatasetUpdate1) GetForceSizeOk() (*bool, bool)`
+
+GetForceSizeOk returns a tuple with the ForceSize field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetForceSize
+
+`func (o *PoolDatasetUpdate1) SetForceSize(v bool)`
+
+SetForceSize sets ForceSize field to given value.
+
+### HasForceSize
+
+`func (o *PoolDatasetUpdate1) HasForceSize() bool`
+
+HasForceSize returns a boolean if a field has been set.
 
 ### GetManagedby
 
@@ -285,47 +360,22 @@ HasQuota returns a boolean if a field has been set.
 `func (o *PoolDatasetUpdate1) UnsetQuota()`
 
 UnsetQuota ensures that no value is present for Quota, not even an explicit nil
-### GetQuotaWarning
-
-`func (o *PoolDatasetUpdate1) GetQuotaWarning() PoolDatasetUpdate1QuotaWarning`
-
-GetQuotaWarning returns the QuotaWarning field if non-nil, zero value otherwise.
-
-### GetQuotaWarningOk
-
-`func (o *PoolDatasetUpdate1) GetQuotaWarningOk() (*PoolDatasetUpdate1QuotaWarning, bool)`
-
-GetQuotaWarningOk returns a tuple with the QuotaWarning field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetQuotaWarning
-
-`func (o *PoolDatasetUpdate1) SetQuotaWarning(v PoolDatasetUpdate1QuotaWarning)`
-
-SetQuotaWarning sets QuotaWarning field to given value.
-
-### HasQuotaWarning
-
-`func (o *PoolDatasetUpdate1) HasQuotaWarning() bool`
-
-HasQuotaWarning returns a boolean if a field has been set.
-
 ### GetQuotaCritical
 
-`func (o *PoolDatasetUpdate1) GetQuotaCritical() PoolDatasetUpdate1QuotaWarning`
+`func (o *PoolDatasetUpdate1) GetQuotaCritical() PoolDatasetUpdate1QuotaCritical`
 
 GetQuotaCritical returns the QuotaCritical field if non-nil, zero value otherwise.
 
 ### GetQuotaCriticalOk
 
-`func (o *PoolDatasetUpdate1) GetQuotaCriticalOk() (*PoolDatasetUpdate1QuotaWarning, bool)`
+`func (o *PoolDatasetUpdate1) GetQuotaCriticalOk() (*PoolDatasetUpdate1QuotaCritical, bool)`
 
 GetQuotaCriticalOk returns a tuple with the QuotaCritical field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetQuotaCritical
 
-`func (o *PoolDatasetUpdate1) SetQuotaCritical(v PoolDatasetUpdate1QuotaWarning)`
+`func (o *PoolDatasetUpdate1) SetQuotaCritical(v PoolDatasetUpdate1QuotaCritical)`
 
 SetQuotaCritical sets QuotaCritical field to given value.
 
@@ -335,265 +385,30 @@ SetQuotaCritical sets QuotaCritical field to given value.
 
 HasQuotaCritical returns a boolean if a field has been set.
 
-### GetRefquota
+### GetQuotaWarning
 
-`func (o *PoolDatasetUpdate1) GetRefquota() int32`
+`func (o *PoolDatasetUpdate1) GetQuotaWarning() PoolDatasetUpdate1QuotaCritical`
 
-GetRefquota returns the Refquota field if non-nil, zero value otherwise.
+GetQuotaWarning returns the QuotaWarning field if non-nil, zero value otherwise.
 
-### GetRefquotaOk
+### GetQuotaWarningOk
 
-`func (o *PoolDatasetUpdate1) GetRefquotaOk() (*int32, bool)`
+`func (o *PoolDatasetUpdate1) GetQuotaWarningOk() (*PoolDatasetUpdate1QuotaCritical, bool)`
 
-GetRefquotaOk returns a tuple with the Refquota field if it's non-nil, zero value otherwise
+GetQuotaWarningOk returns a tuple with the QuotaWarning field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetRefquota
+### SetQuotaWarning
 
-`func (o *PoolDatasetUpdate1) SetRefquota(v int32)`
+`func (o *PoolDatasetUpdate1) SetQuotaWarning(v PoolDatasetUpdate1QuotaCritical)`
 
-SetRefquota sets Refquota field to given value.
+SetQuotaWarning sets QuotaWarning field to given value.
 
-### HasRefquota
+### HasQuotaWarning
 
-`func (o *PoolDatasetUpdate1) HasRefquota() bool`
+`func (o *PoolDatasetUpdate1) HasQuotaWarning() bool`
 
-HasRefquota returns a boolean if a field has been set.
-
-### SetRefquotaNil
-
-`func (o *PoolDatasetUpdate1) SetRefquotaNil(b bool)`
-
- SetRefquotaNil sets the value for Refquota to be an explicit nil
-
-### UnsetRefquota
-`func (o *PoolDatasetUpdate1) UnsetRefquota()`
-
-UnsetRefquota ensures that no value is present for Refquota, not even an explicit nil
-### GetRefquotaWarning
-
-`func (o *PoolDatasetUpdate1) GetRefquotaWarning() PoolDatasetUpdate1QuotaWarning`
-
-GetRefquotaWarning returns the RefquotaWarning field if non-nil, zero value otherwise.
-
-### GetRefquotaWarningOk
-
-`func (o *PoolDatasetUpdate1) GetRefquotaWarningOk() (*PoolDatasetUpdate1QuotaWarning, bool)`
-
-GetRefquotaWarningOk returns a tuple with the RefquotaWarning field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRefquotaWarning
-
-`func (o *PoolDatasetUpdate1) SetRefquotaWarning(v PoolDatasetUpdate1QuotaWarning)`
-
-SetRefquotaWarning sets RefquotaWarning field to given value.
-
-### HasRefquotaWarning
-
-`func (o *PoolDatasetUpdate1) HasRefquotaWarning() bool`
-
-HasRefquotaWarning returns a boolean if a field has been set.
-
-### GetRefquotaCritical
-
-`func (o *PoolDatasetUpdate1) GetRefquotaCritical() PoolDatasetUpdate1QuotaWarning`
-
-GetRefquotaCritical returns the RefquotaCritical field if non-nil, zero value otherwise.
-
-### GetRefquotaCriticalOk
-
-`func (o *PoolDatasetUpdate1) GetRefquotaCriticalOk() (*PoolDatasetUpdate1QuotaWarning, bool)`
-
-GetRefquotaCriticalOk returns a tuple with the RefquotaCritical field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRefquotaCritical
-
-`func (o *PoolDatasetUpdate1) SetRefquotaCritical(v PoolDatasetUpdate1QuotaWarning)`
-
-SetRefquotaCritical sets RefquotaCritical field to given value.
-
-### HasRefquotaCritical
-
-`func (o *PoolDatasetUpdate1) HasRefquotaCritical() bool`
-
-HasRefquotaCritical returns a boolean if a field has been set.
-
-### GetReservation
-
-`func (o *PoolDatasetUpdate1) GetReservation() int32`
-
-GetReservation returns the Reservation field if non-nil, zero value otherwise.
-
-### GetReservationOk
-
-`func (o *PoolDatasetUpdate1) GetReservationOk() (*int32, bool)`
-
-GetReservationOk returns a tuple with the Reservation field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetReservation
-
-`func (o *PoolDatasetUpdate1) SetReservation(v int32)`
-
-SetReservation sets Reservation field to given value.
-
-### HasReservation
-
-`func (o *PoolDatasetUpdate1) HasReservation() bool`
-
-HasReservation returns a boolean if a field has been set.
-
-### GetRefreservation
-
-`func (o *PoolDatasetUpdate1) GetRefreservation() int32`
-
-GetRefreservation returns the Refreservation field if non-nil, zero value otherwise.
-
-### GetRefreservationOk
-
-`func (o *PoolDatasetUpdate1) GetRefreservationOk() (*int32, bool)`
-
-GetRefreservationOk returns a tuple with the Refreservation field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRefreservation
-
-`func (o *PoolDatasetUpdate1) SetRefreservation(v int32)`
-
-SetRefreservation sets Refreservation field to given value.
-
-### HasRefreservation
-
-`func (o *PoolDatasetUpdate1) HasRefreservation() bool`
-
-HasRefreservation returns a boolean if a field has been set.
-
-### GetSpecialSmallBlockSize
-
-`func (o *PoolDatasetUpdate1) GetSpecialSmallBlockSize() PoolDatasetUpdate1QuotaWarning`
-
-GetSpecialSmallBlockSize returns the SpecialSmallBlockSize field if non-nil, zero value otherwise.
-
-### GetSpecialSmallBlockSizeOk
-
-`func (o *PoolDatasetUpdate1) GetSpecialSmallBlockSizeOk() (*PoolDatasetUpdate1QuotaWarning, bool)`
-
-GetSpecialSmallBlockSizeOk returns a tuple with the SpecialSmallBlockSize field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSpecialSmallBlockSize
-
-`func (o *PoolDatasetUpdate1) SetSpecialSmallBlockSize(v PoolDatasetUpdate1QuotaWarning)`
-
-SetSpecialSmallBlockSize sets SpecialSmallBlockSize field to given value.
-
-### HasSpecialSmallBlockSize
-
-`func (o *PoolDatasetUpdate1) HasSpecialSmallBlockSize() bool`
-
-HasSpecialSmallBlockSize returns a boolean if a field has been set.
-
-### GetCopies
-
-`func (o *PoolDatasetUpdate1) GetCopies() int32`
-
-GetCopies returns the Copies field if non-nil, zero value otherwise.
-
-### GetCopiesOk
-
-`func (o *PoolDatasetUpdate1) GetCopiesOk() (*int32, bool)`
-
-GetCopiesOk returns a tuple with the Copies field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCopies
-
-`func (o *PoolDatasetUpdate1) SetCopies(v int32)`
-
-SetCopies sets Copies field to given value.
-
-### HasCopies
-
-`func (o *PoolDatasetUpdate1) HasCopies() bool`
-
-HasCopies returns a boolean if a field has been set.
-
-### GetSnapdir
-
-`func (o *PoolDatasetUpdate1) GetSnapdir() string`
-
-GetSnapdir returns the Snapdir field if non-nil, zero value otherwise.
-
-### GetSnapdirOk
-
-`func (o *PoolDatasetUpdate1) GetSnapdirOk() (*string, bool)`
-
-GetSnapdirOk returns a tuple with the Snapdir field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSnapdir
-
-`func (o *PoolDatasetUpdate1) SetSnapdir(v string)`
-
-SetSnapdir sets Snapdir field to given value.
-
-### HasSnapdir
-
-`func (o *PoolDatasetUpdate1) HasSnapdir() bool`
-
-HasSnapdir returns a boolean if a field has been set.
-
-### GetDeduplication
-
-`func (o *PoolDatasetUpdate1) GetDeduplication() string`
-
-GetDeduplication returns the Deduplication field if non-nil, zero value otherwise.
-
-### GetDeduplicationOk
-
-`func (o *PoolDatasetUpdate1) GetDeduplicationOk() (*string, bool)`
-
-GetDeduplicationOk returns a tuple with the Deduplication field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetDeduplication
-
-`func (o *PoolDatasetUpdate1) SetDeduplication(v string)`
-
-SetDeduplication sets Deduplication field to given value.
-
-### HasDeduplication
-
-`func (o *PoolDatasetUpdate1) HasDeduplication() bool`
-
-HasDeduplication returns a boolean if a field has been set.
-
-### GetChecksum
-
-`func (o *PoolDatasetUpdate1) GetChecksum() string`
-
-GetChecksum returns the Checksum field if non-nil, zero value otherwise.
-
-### GetChecksumOk
-
-`func (o *PoolDatasetUpdate1) GetChecksumOk() (*string, bool)`
-
-GetChecksumOk returns a tuple with the Checksum field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetChecksum
-
-`func (o *PoolDatasetUpdate1) SetChecksum(v string)`
-
-SetChecksum sets Checksum field to given value.
-
-### HasChecksum
-
-`func (o *PoolDatasetUpdate1) HasChecksum() bool`
-
-HasChecksum returns a boolean if a field has been set.
+HasQuotaWarning returns a boolean if a field has been set.
 
 ### GetReadonly
 
@@ -645,55 +460,240 @@ SetRecordsize sets Recordsize field to given value.
 
 HasRecordsize returns a boolean if a field has been set.
 
-### GetAclmode
+### GetRefquota
 
-`func (o *PoolDatasetUpdate1) GetAclmode() string`
+`func (o *PoolDatasetUpdate1) GetRefquota() int32`
 
-GetAclmode returns the Aclmode field if non-nil, zero value otherwise.
+GetRefquota returns the Refquota field if non-nil, zero value otherwise.
 
-### GetAclmodeOk
+### GetRefquotaOk
 
-`func (o *PoolDatasetUpdate1) GetAclmodeOk() (*string, bool)`
+`func (o *PoolDatasetUpdate1) GetRefquotaOk() (*int32, bool)`
 
-GetAclmodeOk returns a tuple with the Aclmode field if it's non-nil, zero value otherwise
+GetRefquotaOk returns a tuple with the Refquota field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetAclmode
+### SetRefquota
 
-`func (o *PoolDatasetUpdate1) SetAclmode(v string)`
+`func (o *PoolDatasetUpdate1) SetRefquota(v int32)`
 
-SetAclmode sets Aclmode field to given value.
+SetRefquota sets Refquota field to given value.
 
-### HasAclmode
+### HasRefquota
 
-`func (o *PoolDatasetUpdate1) HasAclmode() bool`
+`func (o *PoolDatasetUpdate1) HasRefquota() bool`
 
-HasAclmode returns a boolean if a field has been set.
+HasRefquota returns a boolean if a field has been set.
 
-### GetAcltype
+### SetRefquotaNil
 
-`func (o *PoolDatasetUpdate1) GetAcltype() string`
+`func (o *PoolDatasetUpdate1) SetRefquotaNil(b bool)`
 
-GetAcltype returns the Acltype field if non-nil, zero value otherwise.
+ SetRefquotaNil sets the value for Refquota to be an explicit nil
 
-### GetAcltypeOk
+### UnsetRefquota
+`func (o *PoolDatasetUpdate1) UnsetRefquota()`
 
-`func (o *PoolDatasetUpdate1) GetAcltypeOk() (*string, bool)`
+UnsetRefquota ensures that no value is present for Refquota, not even an explicit nil
+### GetRefquotaCritical
 
-GetAcltypeOk returns a tuple with the Acltype field if it's non-nil, zero value otherwise
+`func (o *PoolDatasetUpdate1) GetRefquotaCritical() PoolDatasetUpdate1QuotaCritical`
+
+GetRefquotaCritical returns the RefquotaCritical field if non-nil, zero value otherwise.
+
+### GetRefquotaCriticalOk
+
+`func (o *PoolDatasetUpdate1) GetRefquotaCriticalOk() (*PoolDatasetUpdate1QuotaCritical, bool)`
+
+GetRefquotaCriticalOk returns a tuple with the RefquotaCritical field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetAcltype
+### SetRefquotaCritical
 
-`func (o *PoolDatasetUpdate1) SetAcltype(v string)`
+`func (o *PoolDatasetUpdate1) SetRefquotaCritical(v PoolDatasetUpdate1QuotaCritical)`
 
-SetAcltype sets Acltype field to given value.
+SetRefquotaCritical sets RefquotaCritical field to given value.
 
-### HasAcltype
+### HasRefquotaCritical
 
-`func (o *PoolDatasetUpdate1) HasAcltype() bool`
+`func (o *PoolDatasetUpdate1) HasRefquotaCritical() bool`
 
-HasAcltype returns a boolean if a field has been set.
+HasRefquotaCritical returns a boolean if a field has been set.
+
+### GetRefquotaWarning
+
+`func (o *PoolDatasetUpdate1) GetRefquotaWarning() PoolDatasetUpdate1QuotaCritical`
+
+GetRefquotaWarning returns the RefquotaWarning field if non-nil, zero value otherwise.
+
+### GetRefquotaWarningOk
+
+`func (o *PoolDatasetUpdate1) GetRefquotaWarningOk() (*PoolDatasetUpdate1QuotaCritical, bool)`
+
+GetRefquotaWarningOk returns a tuple with the RefquotaWarning field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRefquotaWarning
+
+`func (o *PoolDatasetUpdate1) SetRefquotaWarning(v PoolDatasetUpdate1QuotaCritical)`
+
+SetRefquotaWarning sets RefquotaWarning field to given value.
+
+### HasRefquotaWarning
+
+`func (o *PoolDatasetUpdate1) HasRefquotaWarning() bool`
+
+HasRefquotaWarning returns a boolean if a field has been set.
+
+### GetRefreservation
+
+`func (o *PoolDatasetUpdate1) GetRefreservation() int32`
+
+GetRefreservation returns the Refreservation field if non-nil, zero value otherwise.
+
+### GetRefreservationOk
+
+`func (o *PoolDatasetUpdate1) GetRefreservationOk() (*int32, bool)`
+
+GetRefreservationOk returns a tuple with the Refreservation field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRefreservation
+
+`func (o *PoolDatasetUpdate1) SetRefreservation(v int32)`
+
+SetRefreservation sets Refreservation field to given value.
+
+### HasRefreservation
+
+`func (o *PoolDatasetUpdate1) HasRefreservation() bool`
+
+HasRefreservation returns a boolean if a field has been set.
+
+### GetReservation
+
+`func (o *PoolDatasetUpdate1) GetReservation() int32`
+
+GetReservation returns the Reservation field if non-nil, zero value otherwise.
+
+### GetReservationOk
+
+`func (o *PoolDatasetUpdate1) GetReservationOk() (*int32, bool)`
+
+GetReservationOk returns a tuple with the Reservation field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetReservation
+
+`func (o *PoolDatasetUpdate1) SetReservation(v int32)`
+
+SetReservation sets Reservation field to given value.
+
+### HasReservation
+
+`func (o *PoolDatasetUpdate1) HasReservation() bool`
+
+HasReservation returns a boolean if a field has been set.
+
+### GetSnapdir
+
+`func (o *PoolDatasetUpdate1) GetSnapdir() string`
+
+GetSnapdir returns the Snapdir field if non-nil, zero value otherwise.
+
+### GetSnapdirOk
+
+`func (o *PoolDatasetUpdate1) GetSnapdirOk() (*string, bool)`
+
+GetSnapdirOk returns a tuple with the Snapdir field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSnapdir
+
+`func (o *PoolDatasetUpdate1) SetSnapdir(v string)`
+
+SetSnapdir sets Snapdir field to given value.
+
+### HasSnapdir
+
+`func (o *PoolDatasetUpdate1) HasSnapdir() bool`
+
+HasSnapdir returns a boolean if a field has been set.
+
+### GetSpecialSmallBlockSize
+
+`func (o *PoolDatasetUpdate1) GetSpecialSmallBlockSize() PoolDatasetUpdate1QuotaCritical`
+
+GetSpecialSmallBlockSize returns the SpecialSmallBlockSize field if non-nil, zero value otherwise.
+
+### GetSpecialSmallBlockSizeOk
+
+`func (o *PoolDatasetUpdate1) GetSpecialSmallBlockSizeOk() (*PoolDatasetUpdate1QuotaCritical, bool)`
+
+GetSpecialSmallBlockSizeOk returns a tuple with the SpecialSmallBlockSize field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSpecialSmallBlockSize
+
+`func (o *PoolDatasetUpdate1) SetSpecialSmallBlockSize(v PoolDatasetUpdate1QuotaCritical)`
+
+SetSpecialSmallBlockSize sets SpecialSmallBlockSize field to given value.
+
+### HasSpecialSmallBlockSize
+
+`func (o *PoolDatasetUpdate1) HasSpecialSmallBlockSize() bool`
+
+HasSpecialSmallBlockSize returns a boolean if a field has been set.
+
+### GetSync
+
+`func (o *PoolDatasetUpdate1) GetSync() string`
+
+GetSync returns the Sync field if non-nil, zero value otherwise.
+
+### GetSyncOk
+
+`func (o *PoolDatasetUpdate1) GetSyncOk() (*string, bool)`
+
+GetSyncOk returns a tuple with the Sync field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSync
+
+`func (o *PoolDatasetUpdate1) SetSync(v string)`
+
+SetSync sets Sync field to given value.
+
+### HasSync
+
+`func (o *PoolDatasetUpdate1) HasSync() bool`
+
+HasSync returns a boolean if a field has been set.
+
+### GetVolsize
+
+`func (o *PoolDatasetUpdate1) GetVolsize() int32`
+
+GetVolsize returns the Volsize field if non-nil, zero value otherwise.
+
+### GetVolsizeOk
+
+`func (o *PoolDatasetUpdate1) GetVolsizeOk() (*int32, bool)`
+
+GetVolsizeOk returns a tuple with the Volsize field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetVolsize
+
+`func (o *PoolDatasetUpdate1) SetVolsize(v int32)`
+
+SetVolsize sets Volsize field to given value.
+
+### HasVolsize
+
+`func (o *PoolDatasetUpdate1) HasVolsize() bool`
+
+HasVolsize returns a boolean if a field has been set.
 
 ### GetXattr
 

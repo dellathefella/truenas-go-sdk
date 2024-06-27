@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Jail** | Pointer to **string** |  | [optional] 
 **Force** | Pointer to **bool** |  | [optional] [default to false]
+**Jail** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -25,31 +25,6 @@ will change when the set of required properties is changed
 NewJailStopWithDefaults instantiates a new JailStop object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetJail
-
-`func (o *JailStop) GetJail() string`
-
-GetJail returns the Jail field if non-nil, zero value otherwise.
-
-### GetJailOk
-
-`func (o *JailStop) GetJailOk() (*string, bool)`
-
-GetJailOk returns a tuple with the Jail field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetJail
-
-`func (o *JailStop) SetJail(v string)`
-
-SetJail sets Jail field to given value.
-
-### HasJail
-
-`func (o *JailStop) HasJail() bool`
-
-HasJail returns a boolean if a field has been set.
 
 ### GetForce
 
@@ -75,6 +50,31 @@ SetForce sets Force field to given value.
 `func (o *JailStop) HasForce() bool`
 
 HasForce returns a boolean if a field has been set.
+
+### GetJail
+
+`func (o *JailStop) GetJail() string`
+
+GetJail returns the Jail field if non-nil, zero value otherwise.
+
+### GetJailOk
+
+`func (o *JailStop) GetJailOk() (*string, bool)`
+
+GetJailOk returns a tuple with the Jail field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetJail
+
+`func (o *JailStop) SetJail(v string)`
+
+SetJail sets Jail field to given value.
+
+### HasJail
+
+`func (o *JailStop) HasJail() bool`
+
+HasJail returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

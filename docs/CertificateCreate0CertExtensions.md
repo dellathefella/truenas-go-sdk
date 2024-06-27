@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**BasicConstraints** | Pointer to [**CertificateCreate0CertExtensionsBasicConstraints**](CertificateCreate0CertExtensionsBasicConstraints.md) |  | [optional] 
 **AuthorityKeyIdentifier** | Pointer to [**CertificateCreate0CertExtensionsAuthorityKeyIdentifier**](CertificateCreate0CertExtensionsAuthorityKeyIdentifier.md) |  | [optional] 
+**BasicConstraints** | Pointer to [**CertificateCreate0CertExtensionsBasicConstraints**](CertificateCreate0CertExtensionsBasicConstraints.md) |  | [optional] 
 **ExtendedKeyUsage** | Pointer to [**CertificateCreate0CertExtensionsExtendedKeyUsage**](CertificateCreate0CertExtensionsExtendedKeyUsage.md) |  | [optional] 
 **KeyUsage** | Pointer to [**CertificateCreate0CertExtensionsKeyUsage**](CertificateCreate0CertExtensionsKeyUsage.md) |  | [optional] 
 
@@ -27,31 +27,6 @@ will change when the set of required properties is changed
 NewCertificateCreate0CertExtensionsWithDefaults instantiates a new CertificateCreate0CertExtensions object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetBasicConstraints
-
-`func (o *CertificateCreate0CertExtensions) GetBasicConstraints() CertificateCreate0CertExtensionsBasicConstraints`
-
-GetBasicConstraints returns the BasicConstraints field if non-nil, zero value otherwise.
-
-### GetBasicConstraintsOk
-
-`func (o *CertificateCreate0CertExtensions) GetBasicConstraintsOk() (*CertificateCreate0CertExtensionsBasicConstraints, bool)`
-
-GetBasicConstraintsOk returns a tuple with the BasicConstraints field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetBasicConstraints
-
-`func (o *CertificateCreate0CertExtensions) SetBasicConstraints(v CertificateCreate0CertExtensionsBasicConstraints)`
-
-SetBasicConstraints sets BasicConstraints field to given value.
-
-### HasBasicConstraints
-
-`func (o *CertificateCreate0CertExtensions) HasBasicConstraints() bool`
-
-HasBasicConstraints returns a boolean if a field has been set.
 
 ### GetAuthorityKeyIdentifier
 
@@ -77,6 +52,31 @@ SetAuthorityKeyIdentifier sets AuthorityKeyIdentifier field to given value.
 `func (o *CertificateCreate0CertExtensions) HasAuthorityKeyIdentifier() bool`
 
 HasAuthorityKeyIdentifier returns a boolean if a field has been set.
+
+### GetBasicConstraints
+
+`func (o *CertificateCreate0CertExtensions) GetBasicConstraints() CertificateCreate0CertExtensionsBasicConstraints`
+
+GetBasicConstraints returns the BasicConstraints field if non-nil, zero value otherwise.
+
+### GetBasicConstraintsOk
+
+`func (o *CertificateCreate0CertExtensions) GetBasicConstraintsOk() (*CertificateCreate0CertExtensionsBasicConstraints, bool)`
+
+GetBasicConstraintsOk returns a tuple with the BasicConstraints field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetBasicConstraints
+
+`func (o *CertificateCreate0CertExtensions) SetBasicConstraints(v CertificateCreate0CertExtensionsBasicConstraints)`
+
+SetBasicConstraints sets BasicConstraints field to given value.
+
+### HasBasicConstraints
+
+`func (o *CertificateCreate0CertExtensions) HasBasicConstraints() bool`
+
+HasBasicConstraints returns a boolean if a field has been set.
 
 ### GetExtendedKeyUsage
 

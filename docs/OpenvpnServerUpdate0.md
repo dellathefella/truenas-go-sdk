@@ -4,19 +4,19 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**TlsCryptAuthEnabled** | Pointer to **bool** |  | [optional] 
-**Netmask** | Pointer to **int32** |  | [optional] 
-**ServerCertificate** | Pointer to **NullableInt32** |  | [optional] 
-**Port** | Pointer to **int32** |  | [optional] 
-**RootCa** | Pointer to **NullableInt32** |  | [optional] 
-**Server** | Pointer to **string** |  | [optional] 
 **AdditionalParameters** | Pointer to **string** |  | [optional] 
 **AuthenticationAlgorithm** | Pointer to **NullableString** |  | [optional] 
 **Cipher** | Pointer to **NullableString** |  | [optional] 
 **Compression** | Pointer to **NullableString** |  | [optional] 
 **DeviceType** | Pointer to **string** |  | [optional] 
+**Netmask** | Pointer to **int32** |  | [optional] 
+**Port** | Pointer to **int32** |  | [optional] 
 **Protocol** | Pointer to **string** |  | [optional] 
+**RootCa** | Pointer to **NullableInt32** |  | [optional] 
+**Server** | Pointer to **string** |  | [optional] 
+**ServerCertificate** | Pointer to **NullableInt32** |  | [optional] 
 **TlsCryptAuth** | Pointer to **NullableString** |  | [optional] 
+**TlsCryptAuthEnabled** | Pointer to **bool** |  | [optional] 
 **Topology** | Pointer to **NullableString** |  | [optional] 
 
 ## Methods
@@ -37,176 +37,6 @@ will change when the set of required properties is changed
 NewOpenvpnServerUpdate0WithDefaults instantiates a new OpenvpnServerUpdate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetTlsCryptAuthEnabled
-
-`func (o *OpenvpnServerUpdate0) GetTlsCryptAuthEnabled() bool`
-
-GetTlsCryptAuthEnabled returns the TlsCryptAuthEnabled field if non-nil, zero value otherwise.
-
-### GetTlsCryptAuthEnabledOk
-
-`func (o *OpenvpnServerUpdate0) GetTlsCryptAuthEnabledOk() (*bool, bool)`
-
-GetTlsCryptAuthEnabledOk returns a tuple with the TlsCryptAuthEnabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTlsCryptAuthEnabled
-
-`func (o *OpenvpnServerUpdate0) SetTlsCryptAuthEnabled(v bool)`
-
-SetTlsCryptAuthEnabled sets TlsCryptAuthEnabled field to given value.
-
-### HasTlsCryptAuthEnabled
-
-`func (o *OpenvpnServerUpdate0) HasTlsCryptAuthEnabled() bool`
-
-HasTlsCryptAuthEnabled returns a boolean if a field has been set.
-
-### GetNetmask
-
-`func (o *OpenvpnServerUpdate0) GetNetmask() int32`
-
-GetNetmask returns the Netmask field if non-nil, zero value otherwise.
-
-### GetNetmaskOk
-
-`func (o *OpenvpnServerUpdate0) GetNetmaskOk() (*int32, bool)`
-
-GetNetmaskOk returns a tuple with the Netmask field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetNetmask
-
-`func (o *OpenvpnServerUpdate0) SetNetmask(v int32)`
-
-SetNetmask sets Netmask field to given value.
-
-### HasNetmask
-
-`func (o *OpenvpnServerUpdate0) HasNetmask() bool`
-
-HasNetmask returns a boolean if a field has been set.
-
-### GetServerCertificate
-
-`func (o *OpenvpnServerUpdate0) GetServerCertificate() int32`
-
-GetServerCertificate returns the ServerCertificate field if non-nil, zero value otherwise.
-
-### GetServerCertificateOk
-
-`func (o *OpenvpnServerUpdate0) GetServerCertificateOk() (*int32, bool)`
-
-GetServerCertificateOk returns a tuple with the ServerCertificate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetServerCertificate
-
-`func (o *OpenvpnServerUpdate0) SetServerCertificate(v int32)`
-
-SetServerCertificate sets ServerCertificate field to given value.
-
-### HasServerCertificate
-
-`func (o *OpenvpnServerUpdate0) HasServerCertificate() bool`
-
-HasServerCertificate returns a boolean if a field has been set.
-
-### SetServerCertificateNil
-
-`func (o *OpenvpnServerUpdate0) SetServerCertificateNil(b bool)`
-
- SetServerCertificateNil sets the value for ServerCertificate to be an explicit nil
-
-### UnsetServerCertificate
-`func (o *OpenvpnServerUpdate0) UnsetServerCertificate()`
-
-UnsetServerCertificate ensures that no value is present for ServerCertificate, not even an explicit nil
-### GetPort
-
-`func (o *OpenvpnServerUpdate0) GetPort() int32`
-
-GetPort returns the Port field if non-nil, zero value otherwise.
-
-### GetPortOk
-
-`func (o *OpenvpnServerUpdate0) GetPortOk() (*int32, bool)`
-
-GetPortOk returns a tuple with the Port field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPort
-
-`func (o *OpenvpnServerUpdate0) SetPort(v int32)`
-
-SetPort sets Port field to given value.
-
-### HasPort
-
-`func (o *OpenvpnServerUpdate0) HasPort() bool`
-
-HasPort returns a boolean if a field has been set.
-
-### GetRootCa
-
-`func (o *OpenvpnServerUpdate0) GetRootCa() int32`
-
-GetRootCa returns the RootCa field if non-nil, zero value otherwise.
-
-### GetRootCaOk
-
-`func (o *OpenvpnServerUpdate0) GetRootCaOk() (*int32, bool)`
-
-GetRootCaOk returns a tuple with the RootCa field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRootCa
-
-`func (o *OpenvpnServerUpdate0) SetRootCa(v int32)`
-
-SetRootCa sets RootCa field to given value.
-
-### HasRootCa
-
-`func (o *OpenvpnServerUpdate0) HasRootCa() bool`
-
-HasRootCa returns a boolean if a field has been set.
-
-### SetRootCaNil
-
-`func (o *OpenvpnServerUpdate0) SetRootCaNil(b bool)`
-
- SetRootCaNil sets the value for RootCa to be an explicit nil
-
-### UnsetRootCa
-`func (o *OpenvpnServerUpdate0) UnsetRootCa()`
-
-UnsetRootCa ensures that no value is present for RootCa, not even an explicit nil
-### GetServer
-
-`func (o *OpenvpnServerUpdate0) GetServer() string`
-
-GetServer returns the Server field if non-nil, zero value otherwise.
-
-### GetServerOk
-
-`func (o *OpenvpnServerUpdate0) GetServerOk() (*string, bool)`
-
-GetServerOk returns a tuple with the Server field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetServer
-
-`func (o *OpenvpnServerUpdate0) SetServer(v string)`
-
-SetServer sets Server field to given value.
-
-### HasServer
-
-`func (o *OpenvpnServerUpdate0) HasServer() bool`
-
-HasServer returns a boolean if a field has been set.
 
 ### GetAdditionalParameters
 
@@ -363,6 +193,56 @@ SetDeviceType sets DeviceType field to given value.
 
 HasDeviceType returns a boolean if a field has been set.
 
+### GetNetmask
+
+`func (o *OpenvpnServerUpdate0) GetNetmask() int32`
+
+GetNetmask returns the Netmask field if non-nil, zero value otherwise.
+
+### GetNetmaskOk
+
+`func (o *OpenvpnServerUpdate0) GetNetmaskOk() (*int32, bool)`
+
+GetNetmaskOk returns a tuple with the Netmask field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetNetmask
+
+`func (o *OpenvpnServerUpdate0) SetNetmask(v int32)`
+
+SetNetmask sets Netmask field to given value.
+
+### HasNetmask
+
+`func (o *OpenvpnServerUpdate0) HasNetmask() bool`
+
+HasNetmask returns a boolean if a field has been set.
+
+### GetPort
+
+`func (o *OpenvpnServerUpdate0) GetPort() int32`
+
+GetPort returns the Port field if non-nil, zero value otherwise.
+
+### GetPortOk
+
+`func (o *OpenvpnServerUpdate0) GetPortOk() (*int32, bool)`
+
+GetPortOk returns a tuple with the Port field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPort
+
+`func (o *OpenvpnServerUpdate0) SetPort(v int32)`
+
+SetPort sets Port field to given value.
+
+### HasPort
+
+`func (o *OpenvpnServerUpdate0) HasPort() bool`
+
+HasPort returns a boolean if a field has been set.
+
 ### GetProtocol
 
 `func (o *OpenvpnServerUpdate0) GetProtocol() string`
@@ -388,6 +268,101 @@ SetProtocol sets Protocol field to given value.
 
 HasProtocol returns a boolean if a field has been set.
 
+### GetRootCa
+
+`func (o *OpenvpnServerUpdate0) GetRootCa() int32`
+
+GetRootCa returns the RootCa field if non-nil, zero value otherwise.
+
+### GetRootCaOk
+
+`func (o *OpenvpnServerUpdate0) GetRootCaOk() (*int32, bool)`
+
+GetRootCaOk returns a tuple with the RootCa field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRootCa
+
+`func (o *OpenvpnServerUpdate0) SetRootCa(v int32)`
+
+SetRootCa sets RootCa field to given value.
+
+### HasRootCa
+
+`func (o *OpenvpnServerUpdate0) HasRootCa() bool`
+
+HasRootCa returns a boolean if a field has been set.
+
+### SetRootCaNil
+
+`func (o *OpenvpnServerUpdate0) SetRootCaNil(b bool)`
+
+ SetRootCaNil sets the value for RootCa to be an explicit nil
+
+### UnsetRootCa
+`func (o *OpenvpnServerUpdate0) UnsetRootCa()`
+
+UnsetRootCa ensures that no value is present for RootCa, not even an explicit nil
+### GetServer
+
+`func (o *OpenvpnServerUpdate0) GetServer() string`
+
+GetServer returns the Server field if non-nil, zero value otherwise.
+
+### GetServerOk
+
+`func (o *OpenvpnServerUpdate0) GetServerOk() (*string, bool)`
+
+GetServerOk returns a tuple with the Server field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetServer
+
+`func (o *OpenvpnServerUpdate0) SetServer(v string)`
+
+SetServer sets Server field to given value.
+
+### HasServer
+
+`func (o *OpenvpnServerUpdate0) HasServer() bool`
+
+HasServer returns a boolean if a field has been set.
+
+### GetServerCertificate
+
+`func (o *OpenvpnServerUpdate0) GetServerCertificate() int32`
+
+GetServerCertificate returns the ServerCertificate field if non-nil, zero value otherwise.
+
+### GetServerCertificateOk
+
+`func (o *OpenvpnServerUpdate0) GetServerCertificateOk() (*int32, bool)`
+
+GetServerCertificateOk returns a tuple with the ServerCertificate field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetServerCertificate
+
+`func (o *OpenvpnServerUpdate0) SetServerCertificate(v int32)`
+
+SetServerCertificate sets ServerCertificate field to given value.
+
+### HasServerCertificate
+
+`func (o *OpenvpnServerUpdate0) HasServerCertificate() bool`
+
+HasServerCertificate returns a boolean if a field has been set.
+
+### SetServerCertificateNil
+
+`func (o *OpenvpnServerUpdate0) SetServerCertificateNil(b bool)`
+
+ SetServerCertificateNil sets the value for ServerCertificate to be an explicit nil
+
+### UnsetServerCertificate
+`func (o *OpenvpnServerUpdate0) UnsetServerCertificate()`
+
+UnsetServerCertificate ensures that no value is present for ServerCertificate, not even an explicit nil
 ### GetTlsCryptAuth
 
 `func (o *OpenvpnServerUpdate0) GetTlsCryptAuth() string`
@@ -423,6 +398,31 @@ HasTlsCryptAuth returns a boolean if a field has been set.
 `func (o *OpenvpnServerUpdate0) UnsetTlsCryptAuth()`
 
 UnsetTlsCryptAuth ensures that no value is present for TlsCryptAuth, not even an explicit nil
+### GetTlsCryptAuthEnabled
+
+`func (o *OpenvpnServerUpdate0) GetTlsCryptAuthEnabled() bool`
+
+GetTlsCryptAuthEnabled returns the TlsCryptAuthEnabled field if non-nil, zero value otherwise.
+
+### GetTlsCryptAuthEnabledOk
+
+`func (o *OpenvpnServerUpdate0) GetTlsCryptAuthEnabledOk() (*bool, bool)`
+
+GetTlsCryptAuthEnabledOk returns a tuple with the TlsCryptAuthEnabled field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTlsCryptAuthEnabled
+
+`func (o *OpenvpnServerUpdate0) SetTlsCryptAuthEnabled(v bool)`
+
+SetTlsCryptAuthEnabled sets TlsCryptAuthEnabled field to given value.
+
+### HasTlsCryptAuthEnabled
+
+`func (o *OpenvpnServerUpdate0) HasTlsCryptAuthEnabled() bool`
+
+HasTlsCryptAuthEnabled returns a boolean if a field has been set.
+
 ### GetTopology
 
 `func (o *OpenvpnServerUpdate0) GetTopology() string`

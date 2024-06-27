@@ -5,13 +5,13 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Action** | Pointer to **string** |  | [optional] 
-**Source** | Pointer to **string** |  | [optional] 
 **Destination** | Pointer to **string** |  | [optional] 
-**Fstype** | Pointer to **string** |  | [optional] 
-**Fsoptions** | Pointer to **string** |  | [optional] 
 **Dump** | Pointer to **string** |  | [optional] 
-**Pass** | Pointer to **string** |  | [optional] 
+**Fsoptions** | Pointer to **string** |  | [optional] 
+**Fstype** | Pointer to **string** |  | [optional] 
 **Index** | Pointer to **int32** |  | [optional] 
+**Pass** | Pointer to **string** |  | [optional] 
+**Source** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -57,31 +57,6 @@ SetAction sets Action field to given value.
 
 HasAction returns a boolean if a field has been set.
 
-### GetSource
-
-`func (o *JailFstab1) GetSource() string`
-
-GetSource returns the Source field if non-nil, zero value otherwise.
-
-### GetSourceOk
-
-`func (o *JailFstab1) GetSourceOk() (*string, bool)`
-
-GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSource
-
-`func (o *JailFstab1) SetSource(v string)`
-
-SetSource sets Source field to given value.
-
-### HasSource
-
-`func (o *JailFstab1) HasSource() bool`
-
-HasSource returns a boolean if a field has been set.
-
 ### GetDestination
 
 `func (o *JailFstab1) GetDestination() string`
@@ -106,56 +81,6 @@ SetDestination sets Destination field to given value.
 `func (o *JailFstab1) HasDestination() bool`
 
 HasDestination returns a boolean if a field has been set.
-
-### GetFstype
-
-`func (o *JailFstab1) GetFstype() string`
-
-GetFstype returns the Fstype field if non-nil, zero value otherwise.
-
-### GetFstypeOk
-
-`func (o *JailFstab1) GetFstypeOk() (*string, bool)`
-
-GetFstypeOk returns a tuple with the Fstype field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetFstype
-
-`func (o *JailFstab1) SetFstype(v string)`
-
-SetFstype sets Fstype field to given value.
-
-### HasFstype
-
-`func (o *JailFstab1) HasFstype() bool`
-
-HasFstype returns a boolean if a field has been set.
-
-### GetFsoptions
-
-`func (o *JailFstab1) GetFsoptions() string`
-
-GetFsoptions returns the Fsoptions field if non-nil, zero value otherwise.
-
-### GetFsoptionsOk
-
-`func (o *JailFstab1) GetFsoptionsOk() (*string, bool)`
-
-GetFsoptionsOk returns a tuple with the Fsoptions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetFsoptions
-
-`func (o *JailFstab1) SetFsoptions(v string)`
-
-SetFsoptions sets Fsoptions field to given value.
-
-### HasFsoptions
-
-`func (o *JailFstab1) HasFsoptions() bool`
-
-HasFsoptions returns a boolean if a field has been set.
 
 ### GetDump
 
@@ -182,30 +107,55 @@ SetDump sets Dump field to given value.
 
 HasDump returns a boolean if a field has been set.
 
-### GetPass
+### GetFsoptions
 
-`func (o *JailFstab1) GetPass() string`
+`func (o *JailFstab1) GetFsoptions() string`
 
-GetPass returns the Pass field if non-nil, zero value otherwise.
+GetFsoptions returns the Fsoptions field if non-nil, zero value otherwise.
 
-### GetPassOk
+### GetFsoptionsOk
 
-`func (o *JailFstab1) GetPassOk() (*string, bool)`
+`func (o *JailFstab1) GetFsoptionsOk() (*string, bool)`
 
-GetPassOk returns a tuple with the Pass field if it's non-nil, zero value otherwise
+GetFsoptionsOk returns a tuple with the Fsoptions field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetPass
+### SetFsoptions
 
-`func (o *JailFstab1) SetPass(v string)`
+`func (o *JailFstab1) SetFsoptions(v string)`
 
-SetPass sets Pass field to given value.
+SetFsoptions sets Fsoptions field to given value.
 
-### HasPass
+### HasFsoptions
 
-`func (o *JailFstab1) HasPass() bool`
+`func (o *JailFstab1) HasFsoptions() bool`
 
-HasPass returns a boolean if a field has been set.
+HasFsoptions returns a boolean if a field has been set.
+
+### GetFstype
+
+`func (o *JailFstab1) GetFstype() string`
+
+GetFstype returns the Fstype field if non-nil, zero value otherwise.
+
+### GetFstypeOk
+
+`func (o *JailFstab1) GetFstypeOk() (*string, bool)`
+
+GetFstypeOk returns a tuple with the Fstype field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetFstype
+
+`func (o *JailFstab1) SetFstype(v string)`
+
+SetFstype sets Fstype field to given value.
+
+### HasFstype
+
+`func (o *JailFstab1) HasFstype() bool`
+
+HasFstype returns a boolean if a field has been set.
 
 ### GetIndex
 
@@ -231,6 +181,56 @@ SetIndex sets Index field to given value.
 `func (o *JailFstab1) HasIndex() bool`
 
 HasIndex returns a boolean if a field has been set.
+
+### GetPass
+
+`func (o *JailFstab1) GetPass() string`
+
+GetPass returns the Pass field if non-nil, zero value otherwise.
+
+### GetPassOk
+
+`func (o *JailFstab1) GetPassOk() (*string, bool)`
+
+GetPassOk returns a tuple with the Pass field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPass
+
+`func (o *JailFstab1) SetPass(v string)`
+
+SetPass sets Pass field to given value.
+
+### HasPass
+
+`func (o *JailFstab1) HasPass() bool`
+
+HasPass returns a boolean if a field has been set.
+
+### GetSource
+
+`func (o *JailFstab1) GetSource() string`
+
+GetSource returns the Source field if non-nil, zero value otherwise.
+
+### GetSourceOk
+
+`func (o *JailFstab1) GetSourceOk() (*string, bool)`
+
+GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSource
+
+`func (o *JailFstab1) SetSource(v string)`
+
+SetSource sets Source field to given value.
+
+### HasSource
+
+`func (o *JailFstab1) HasSource() bool`
+
+HasSource returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

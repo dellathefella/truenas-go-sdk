@@ -4,19 +4,19 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**UiCertificate** | Pointer to **NullableInt32** |  | [optional] 
-**UiHttpsport** | Pointer to **int32** |  | [optional] 
-**UiHttpsredirect** | Pointer to **bool** |  | [optional] 
-**UiHttpsprotocols** | Pointer to **[]string** |  | [optional] 
-**UiPort** | Pointer to **int32** |  | [optional] 
-**UiAddress** | Pointer to **[]string** |  | [optional] 
-**UiV6address** | Pointer to **[]string** |  | [optional] 
+**CrashReporting** | Pointer to **NullableBool** |  | [optional] 
 **Kbdmap** | Pointer to **string** |  | [optional] 
 **Language** | Pointer to **string** |  | [optional] 
 **Sysloglevel** | Pointer to **string** |  | [optional] 
 **Syslogserver** | Pointer to **string** |  | [optional] 
 **Timezone** | Pointer to **string** |  | [optional] 
-**CrashReporting** | Pointer to **NullableBool** |  | [optional] 
+**UiAddress** | Pointer to **[]string** |  | [optional] 
+**UiCertificate** | Pointer to **NullableInt32** |  | [optional] 
+**UiHttpsport** | Pointer to **int32** |  | [optional] 
+**UiHttpsprotocols** | Pointer to **[]string** |  | [optional] 
+**UiHttpsredirect** | Pointer to **bool** |  | [optional] 
+**UiPort** | Pointer to **int32** |  | [optional] 
+**UiV6address** | Pointer to **[]string** |  | [optional] 
 **UsageCollection** | Pointer to **NullableBool** |  | [optional] 
 
 ## Methods
@@ -38,191 +38,41 @@ NewSystemGeneralUpdate0WithDefaults instantiates a new SystemGeneralUpdate0 obje
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetUiCertificate
+### GetCrashReporting
 
-`func (o *SystemGeneralUpdate0) GetUiCertificate() int32`
+`func (o *SystemGeneralUpdate0) GetCrashReporting() bool`
 
-GetUiCertificate returns the UiCertificate field if non-nil, zero value otherwise.
+GetCrashReporting returns the CrashReporting field if non-nil, zero value otherwise.
 
-### GetUiCertificateOk
+### GetCrashReportingOk
 
-`func (o *SystemGeneralUpdate0) GetUiCertificateOk() (*int32, bool)`
+`func (o *SystemGeneralUpdate0) GetCrashReportingOk() (*bool, bool)`
 
-GetUiCertificateOk returns a tuple with the UiCertificate field if it's non-nil, zero value otherwise
+GetCrashReportingOk returns a tuple with the CrashReporting field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetUiCertificate
+### SetCrashReporting
 
-`func (o *SystemGeneralUpdate0) SetUiCertificate(v int32)`
+`func (o *SystemGeneralUpdate0) SetCrashReporting(v bool)`
 
-SetUiCertificate sets UiCertificate field to given value.
+SetCrashReporting sets CrashReporting field to given value.
 
-### HasUiCertificate
+### HasCrashReporting
 
-`func (o *SystemGeneralUpdate0) HasUiCertificate() bool`
+`func (o *SystemGeneralUpdate0) HasCrashReporting() bool`
 
-HasUiCertificate returns a boolean if a field has been set.
+HasCrashReporting returns a boolean if a field has been set.
 
-### SetUiCertificateNil
+### SetCrashReportingNil
 
-`func (o *SystemGeneralUpdate0) SetUiCertificateNil(b bool)`
+`func (o *SystemGeneralUpdate0) SetCrashReportingNil(b bool)`
 
- SetUiCertificateNil sets the value for UiCertificate to be an explicit nil
+ SetCrashReportingNil sets the value for CrashReporting to be an explicit nil
 
-### UnsetUiCertificate
-`func (o *SystemGeneralUpdate0) UnsetUiCertificate()`
+### UnsetCrashReporting
+`func (o *SystemGeneralUpdate0) UnsetCrashReporting()`
 
-UnsetUiCertificate ensures that no value is present for UiCertificate, not even an explicit nil
-### GetUiHttpsport
-
-`func (o *SystemGeneralUpdate0) GetUiHttpsport() int32`
-
-GetUiHttpsport returns the UiHttpsport field if non-nil, zero value otherwise.
-
-### GetUiHttpsportOk
-
-`func (o *SystemGeneralUpdate0) GetUiHttpsportOk() (*int32, bool)`
-
-GetUiHttpsportOk returns a tuple with the UiHttpsport field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetUiHttpsport
-
-`func (o *SystemGeneralUpdate0) SetUiHttpsport(v int32)`
-
-SetUiHttpsport sets UiHttpsport field to given value.
-
-### HasUiHttpsport
-
-`func (o *SystemGeneralUpdate0) HasUiHttpsport() bool`
-
-HasUiHttpsport returns a boolean if a field has been set.
-
-### GetUiHttpsredirect
-
-`func (o *SystemGeneralUpdate0) GetUiHttpsredirect() bool`
-
-GetUiHttpsredirect returns the UiHttpsredirect field if non-nil, zero value otherwise.
-
-### GetUiHttpsredirectOk
-
-`func (o *SystemGeneralUpdate0) GetUiHttpsredirectOk() (*bool, bool)`
-
-GetUiHttpsredirectOk returns a tuple with the UiHttpsredirect field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetUiHttpsredirect
-
-`func (o *SystemGeneralUpdate0) SetUiHttpsredirect(v bool)`
-
-SetUiHttpsredirect sets UiHttpsredirect field to given value.
-
-### HasUiHttpsredirect
-
-`func (o *SystemGeneralUpdate0) HasUiHttpsredirect() bool`
-
-HasUiHttpsredirect returns a boolean if a field has been set.
-
-### GetUiHttpsprotocols
-
-`func (o *SystemGeneralUpdate0) GetUiHttpsprotocols() []string`
-
-GetUiHttpsprotocols returns the UiHttpsprotocols field if non-nil, zero value otherwise.
-
-### GetUiHttpsprotocolsOk
-
-`func (o *SystemGeneralUpdate0) GetUiHttpsprotocolsOk() (*[]string, bool)`
-
-GetUiHttpsprotocolsOk returns a tuple with the UiHttpsprotocols field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetUiHttpsprotocols
-
-`func (o *SystemGeneralUpdate0) SetUiHttpsprotocols(v []string)`
-
-SetUiHttpsprotocols sets UiHttpsprotocols field to given value.
-
-### HasUiHttpsprotocols
-
-`func (o *SystemGeneralUpdate0) HasUiHttpsprotocols() bool`
-
-HasUiHttpsprotocols returns a boolean if a field has been set.
-
-### GetUiPort
-
-`func (o *SystemGeneralUpdate0) GetUiPort() int32`
-
-GetUiPort returns the UiPort field if non-nil, zero value otherwise.
-
-### GetUiPortOk
-
-`func (o *SystemGeneralUpdate0) GetUiPortOk() (*int32, bool)`
-
-GetUiPortOk returns a tuple with the UiPort field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetUiPort
-
-`func (o *SystemGeneralUpdate0) SetUiPort(v int32)`
-
-SetUiPort sets UiPort field to given value.
-
-### HasUiPort
-
-`func (o *SystemGeneralUpdate0) HasUiPort() bool`
-
-HasUiPort returns a boolean if a field has been set.
-
-### GetUiAddress
-
-`func (o *SystemGeneralUpdate0) GetUiAddress() []string`
-
-GetUiAddress returns the UiAddress field if non-nil, zero value otherwise.
-
-### GetUiAddressOk
-
-`func (o *SystemGeneralUpdate0) GetUiAddressOk() (*[]string, bool)`
-
-GetUiAddressOk returns a tuple with the UiAddress field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetUiAddress
-
-`func (o *SystemGeneralUpdate0) SetUiAddress(v []string)`
-
-SetUiAddress sets UiAddress field to given value.
-
-### HasUiAddress
-
-`func (o *SystemGeneralUpdate0) HasUiAddress() bool`
-
-HasUiAddress returns a boolean if a field has been set.
-
-### GetUiV6address
-
-`func (o *SystemGeneralUpdate0) GetUiV6address() []string`
-
-GetUiV6address returns the UiV6address field if non-nil, zero value otherwise.
-
-### GetUiV6addressOk
-
-`func (o *SystemGeneralUpdate0) GetUiV6addressOk() (*[]string, bool)`
-
-GetUiV6addressOk returns a tuple with the UiV6address field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetUiV6address
-
-`func (o *SystemGeneralUpdate0) SetUiV6address(v []string)`
-
-SetUiV6address sets UiV6address field to given value.
-
-### HasUiV6address
-
-`func (o *SystemGeneralUpdate0) HasUiV6address() bool`
-
-HasUiV6address returns a boolean if a field has been set.
-
+UnsetCrashReporting ensures that no value is present for CrashReporting, not even an explicit nil
 ### GetKbdmap
 
 `func (o *SystemGeneralUpdate0) GetKbdmap() string`
@@ -348,41 +198,191 @@ SetTimezone sets Timezone field to given value.
 
 HasTimezone returns a boolean if a field has been set.
 
-### GetCrashReporting
+### GetUiAddress
 
-`func (o *SystemGeneralUpdate0) GetCrashReporting() bool`
+`func (o *SystemGeneralUpdate0) GetUiAddress() []string`
 
-GetCrashReporting returns the CrashReporting field if non-nil, zero value otherwise.
+GetUiAddress returns the UiAddress field if non-nil, zero value otherwise.
 
-### GetCrashReportingOk
+### GetUiAddressOk
 
-`func (o *SystemGeneralUpdate0) GetCrashReportingOk() (*bool, bool)`
+`func (o *SystemGeneralUpdate0) GetUiAddressOk() (*[]string, bool)`
 
-GetCrashReportingOk returns a tuple with the CrashReporting field if it's non-nil, zero value otherwise
+GetUiAddressOk returns a tuple with the UiAddress field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetCrashReporting
+### SetUiAddress
 
-`func (o *SystemGeneralUpdate0) SetCrashReporting(v bool)`
+`func (o *SystemGeneralUpdate0) SetUiAddress(v []string)`
 
-SetCrashReporting sets CrashReporting field to given value.
+SetUiAddress sets UiAddress field to given value.
 
-### HasCrashReporting
+### HasUiAddress
 
-`func (o *SystemGeneralUpdate0) HasCrashReporting() bool`
+`func (o *SystemGeneralUpdate0) HasUiAddress() bool`
 
-HasCrashReporting returns a boolean if a field has been set.
+HasUiAddress returns a boolean if a field has been set.
 
-### SetCrashReportingNil
+### GetUiCertificate
 
-`func (o *SystemGeneralUpdate0) SetCrashReportingNil(b bool)`
+`func (o *SystemGeneralUpdate0) GetUiCertificate() int32`
 
- SetCrashReportingNil sets the value for CrashReporting to be an explicit nil
+GetUiCertificate returns the UiCertificate field if non-nil, zero value otherwise.
 
-### UnsetCrashReporting
-`func (o *SystemGeneralUpdate0) UnsetCrashReporting()`
+### GetUiCertificateOk
 
-UnsetCrashReporting ensures that no value is present for CrashReporting, not even an explicit nil
+`func (o *SystemGeneralUpdate0) GetUiCertificateOk() (*int32, bool)`
+
+GetUiCertificateOk returns a tuple with the UiCertificate field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUiCertificate
+
+`func (o *SystemGeneralUpdate0) SetUiCertificate(v int32)`
+
+SetUiCertificate sets UiCertificate field to given value.
+
+### HasUiCertificate
+
+`func (o *SystemGeneralUpdate0) HasUiCertificate() bool`
+
+HasUiCertificate returns a boolean if a field has been set.
+
+### SetUiCertificateNil
+
+`func (o *SystemGeneralUpdate0) SetUiCertificateNil(b bool)`
+
+ SetUiCertificateNil sets the value for UiCertificate to be an explicit nil
+
+### UnsetUiCertificate
+`func (o *SystemGeneralUpdate0) UnsetUiCertificate()`
+
+UnsetUiCertificate ensures that no value is present for UiCertificate, not even an explicit nil
+### GetUiHttpsport
+
+`func (o *SystemGeneralUpdate0) GetUiHttpsport() int32`
+
+GetUiHttpsport returns the UiHttpsport field if non-nil, zero value otherwise.
+
+### GetUiHttpsportOk
+
+`func (o *SystemGeneralUpdate0) GetUiHttpsportOk() (*int32, bool)`
+
+GetUiHttpsportOk returns a tuple with the UiHttpsport field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUiHttpsport
+
+`func (o *SystemGeneralUpdate0) SetUiHttpsport(v int32)`
+
+SetUiHttpsport sets UiHttpsport field to given value.
+
+### HasUiHttpsport
+
+`func (o *SystemGeneralUpdate0) HasUiHttpsport() bool`
+
+HasUiHttpsport returns a boolean if a field has been set.
+
+### GetUiHttpsprotocols
+
+`func (o *SystemGeneralUpdate0) GetUiHttpsprotocols() []string`
+
+GetUiHttpsprotocols returns the UiHttpsprotocols field if non-nil, zero value otherwise.
+
+### GetUiHttpsprotocolsOk
+
+`func (o *SystemGeneralUpdate0) GetUiHttpsprotocolsOk() (*[]string, bool)`
+
+GetUiHttpsprotocolsOk returns a tuple with the UiHttpsprotocols field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUiHttpsprotocols
+
+`func (o *SystemGeneralUpdate0) SetUiHttpsprotocols(v []string)`
+
+SetUiHttpsprotocols sets UiHttpsprotocols field to given value.
+
+### HasUiHttpsprotocols
+
+`func (o *SystemGeneralUpdate0) HasUiHttpsprotocols() bool`
+
+HasUiHttpsprotocols returns a boolean if a field has been set.
+
+### GetUiHttpsredirect
+
+`func (o *SystemGeneralUpdate0) GetUiHttpsredirect() bool`
+
+GetUiHttpsredirect returns the UiHttpsredirect field if non-nil, zero value otherwise.
+
+### GetUiHttpsredirectOk
+
+`func (o *SystemGeneralUpdate0) GetUiHttpsredirectOk() (*bool, bool)`
+
+GetUiHttpsredirectOk returns a tuple with the UiHttpsredirect field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUiHttpsredirect
+
+`func (o *SystemGeneralUpdate0) SetUiHttpsredirect(v bool)`
+
+SetUiHttpsredirect sets UiHttpsredirect field to given value.
+
+### HasUiHttpsredirect
+
+`func (o *SystemGeneralUpdate0) HasUiHttpsredirect() bool`
+
+HasUiHttpsredirect returns a boolean if a field has been set.
+
+### GetUiPort
+
+`func (o *SystemGeneralUpdate0) GetUiPort() int32`
+
+GetUiPort returns the UiPort field if non-nil, zero value otherwise.
+
+### GetUiPortOk
+
+`func (o *SystemGeneralUpdate0) GetUiPortOk() (*int32, bool)`
+
+GetUiPortOk returns a tuple with the UiPort field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUiPort
+
+`func (o *SystemGeneralUpdate0) SetUiPort(v int32)`
+
+SetUiPort sets UiPort field to given value.
+
+### HasUiPort
+
+`func (o *SystemGeneralUpdate0) HasUiPort() bool`
+
+HasUiPort returns a boolean if a field has been set.
+
+### GetUiV6address
+
+`func (o *SystemGeneralUpdate0) GetUiV6address() []string`
+
+GetUiV6address returns the UiV6address field if non-nil, zero value otherwise.
+
+### GetUiV6addressOk
+
+`func (o *SystemGeneralUpdate0) GetUiV6addressOk() (*[]string, bool)`
+
+GetUiV6addressOk returns a tuple with the UiV6address field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUiV6address
+
+`func (o *SystemGeneralUpdate0) SetUiV6address(v []string)`
+
+SetUiV6address sets UiV6address field to given value.
+
+### HasUiV6address
+
+`func (o *SystemGeneralUpdate0) HasUiV6address() bool`
+
+HasUiV6address returns a boolean if a field has been set.
+
 ### GetUsageCollection
 
 `func (o *SystemGeneralUpdate0) GetUsageCollection() bool`

@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Dhcp** | Pointer to **bool** |  | [optional] 
+**Gateway** | Pointer to **string** |  | [optional] 
 **Ipaddress** | Pointer to **string** |  | [optional] 
 **Netmask** | Pointer to **string** |  | [optional] 
-**Gateway** | Pointer to **string** |  | [optional] 
 **Password** | Pointer to **string** |  | [optional] 
-**Dhcp** | Pointer to **bool** |  | [optional] 
 **Vlan** | Pointer to **NullableInt32** |  | [optional] 
 
 ## Methods
@@ -29,6 +29,56 @@ will change when the set of required properties is changed
 NewIpmiUpdate1WithDefaults instantiates a new IpmiUpdate1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetDhcp
+
+`func (o *IpmiUpdate1) GetDhcp() bool`
+
+GetDhcp returns the Dhcp field if non-nil, zero value otherwise.
+
+### GetDhcpOk
+
+`func (o *IpmiUpdate1) GetDhcpOk() (*bool, bool)`
+
+GetDhcpOk returns a tuple with the Dhcp field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDhcp
+
+`func (o *IpmiUpdate1) SetDhcp(v bool)`
+
+SetDhcp sets Dhcp field to given value.
+
+### HasDhcp
+
+`func (o *IpmiUpdate1) HasDhcp() bool`
+
+HasDhcp returns a boolean if a field has been set.
+
+### GetGateway
+
+`func (o *IpmiUpdate1) GetGateway() string`
+
+GetGateway returns the Gateway field if non-nil, zero value otherwise.
+
+### GetGatewayOk
+
+`func (o *IpmiUpdate1) GetGatewayOk() (*string, bool)`
+
+GetGatewayOk returns a tuple with the Gateway field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetGateway
+
+`func (o *IpmiUpdate1) SetGateway(v string)`
+
+SetGateway sets Gateway field to given value.
+
+### HasGateway
+
+`func (o *IpmiUpdate1) HasGateway() bool`
+
+HasGateway returns a boolean if a field has been set.
 
 ### GetIpaddress
 
@@ -80,31 +130,6 @@ SetNetmask sets Netmask field to given value.
 
 HasNetmask returns a boolean if a field has been set.
 
-### GetGateway
-
-`func (o *IpmiUpdate1) GetGateway() string`
-
-GetGateway returns the Gateway field if non-nil, zero value otherwise.
-
-### GetGatewayOk
-
-`func (o *IpmiUpdate1) GetGatewayOk() (*string, bool)`
-
-GetGatewayOk returns a tuple with the Gateway field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetGateway
-
-`func (o *IpmiUpdate1) SetGateway(v string)`
-
-SetGateway sets Gateway field to given value.
-
-### HasGateway
-
-`func (o *IpmiUpdate1) HasGateway() bool`
-
-HasGateway returns a boolean if a field has been set.
-
 ### GetPassword
 
 `func (o *IpmiUpdate1) GetPassword() string`
@@ -129,31 +154,6 @@ SetPassword sets Password field to given value.
 `func (o *IpmiUpdate1) HasPassword() bool`
 
 HasPassword returns a boolean if a field has been set.
-
-### GetDhcp
-
-`func (o *IpmiUpdate1) GetDhcp() bool`
-
-GetDhcp returns the Dhcp field if non-nil, zero value otherwise.
-
-### GetDhcpOk
-
-`func (o *IpmiUpdate1) GetDhcpOk() (*bool, bool)`
-
-GetDhcpOk returns a tuple with the Dhcp field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetDhcp
-
-`func (o *IpmiUpdate1) SetDhcp(v bool)`
-
-SetDhcp sets Dhcp field to given value.
-
-### HasDhcp
-
-`func (o *IpmiUpdate1) HasDhcp() bool`
-
-HasDhcp returns a boolean if a field has been set.
 
 ### GetVlan
 

@@ -1,3 +1,6 @@
-remove_path_regex_expressions:
+regex_remove_expressions:
 # - ^\/core\/.*$
 # - ^\/activedirectory.*$
+  - ^.*jail.*$
+  - ^\/boot\/.*$
+  - ^\/failover\/.*$

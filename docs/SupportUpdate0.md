@@ -4,15 +4,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Email** | Pointer to **string** |  | [optional] 
 **Enabled** | Pointer to **NullableBool** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
-**Title** | Pointer to **string** |  | [optional] 
-**Email** | Pointer to **string** |  | [optional] 
 **Phone** | Pointer to **string** |  | [optional] 
-**SecondaryName** | Pointer to **string** |  | [optional] 
-**SecondaryTitle** | Pointer to **string** |  | [optional] 
 **SecondaryEmail** | Pointer to **string** |  | [optional] 
+**SecondaryName** | Pointer to **string** |  | [optional] 
 **SecondaryPhone** | Pointer to **string** |  | [optional] 
+**SecondaryTitle** | Pointer to **string** |  | [optional] 
+**Title** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -32,6 +32,31 @@ will change when the set of required properties is changed
 NewSupportUpdate0WithDefaults instantiates a new SupportUpdate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetEmail
+
+`func (o *SupportUpdate0) GetEmail() string`
+
+GetEmail returns the Email field if non-nil, zero value otherwise.
+
+### GetEmailOk
+
+`func (o *SupportUpdate0) GetEmailOk() (*string, bool)`
+
+GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEmail
+
+`func (o *SupportUpdate0) SetEmail(v string)`
+
+SetEmail sets Email field to given value.
+
+### HasEmail
+
+`func (o *SupportUpdate0) HasEmail() bool`
+
+HasEmail returns a boolean if a field has been set.
 
 ### GetEnabled
 
@@ -93,56 +118,6 @@ SetName sets Name field to given value.
 
 HasName returns a boolean if a field has been set.
 
-### GetTitle
-
-`func (o *SupportUpdate0) GetTitle() string`
-
-GetTitle returns the Title field if non-nil, zero value otherwise.
-
-### GetTitleOk
-
-`func (o *SupportUpdate0) GetTitleOk() (*string, bool)`
-
-GetTitleOk returns a tuple with the Title field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTitle
-
-`func (o *SupportUpdate0) SetTitle(v string)`
-
-SetTitle sets Title field to given value.
-
-### HasTitle
-
-`func (o *SupportUpdate0) HasTitle() bool`
-
-HasTitle returns a boolean if a field has been set.
-
-### GetEmail
-
-`func (o *SupportUpdate0) GetEmail() string`
-
-GetEmail returns the Email field if non-nil, zero value otherwise.
-
-### GetEmailOk
-
-`func (o *SupportUpdate0) GetEmailOk() (*string, bool)`
-
-GetEmailOk returns a tuple with the Email field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetEmail
-
-`func (o *SupportUpdate0) SetEmail(v string)`
-
-SetEmail sets Email field to given value.
-
-### HasEmail
-
-`func (o *SupportUpdate0) HasEmail() bool`
-
-HasEmail returns a boolean if a field has been set.
-
 ### GetPhone
 
 `func (o *SupportUpdate0) GetPhone() string`
@@ -167,56 +142,6 @@ SetPhone sets Phone field to given value.
 `func (o *SupportUpdate0) HasPhone() bool`
 
 HasPhone returns a boolean if a field has been set.
-
-### GetSecondaryName
-
-`func (o *SupportUpdate0) GetSecondaryName() string`
-
-GetSecondaryName returns the SecondaryName field if non-nil, zero value otherwise.
-
-### GetSecondaryNameOk
-
-`func (o *SupportUpdate0) GetSecondaryNameOk() (*string, bool)`
-
-GetSecondaryNameOk returns a tuple with the SecondaryName field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSecondaryName
-
-`func (o *SupportUpdate0) SetSecondaryName(v string)`
-
-SetSecondaryName sets SecondaryName field to given value.
-
-### HasSecondaryName
-
-`func (o *SupportUpdate0) HasSecondaryName() bool`
-
-HasSecondaryName returns a boolean if a field has been set.
-
-### GetSecondaryTitle
-
-`func (o *SupportUpdate0) GetSecondaryTitle() string`
-
-GetSecondaryTitle returns the SecondaryTitle field if non-nil, zero value otherwise.
-
-### GetSecondaryTitleOk
-
-`func (o *SupportUpdate0) GetSecondaryTitleOk() (*string, bool)`
-
-GetSecondaryTitleOk returns a tuple with the SecondaryTitle field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSecondaryTitle
-
-`func (o *SupportUpdate0) SetSecondaryTitle(v string)`
-
-SetSecondaryTitle sets SecondaryTitle field to given value.
-
-### HasSecondaryTitle
-
-`func (o *SupportUpdate0) HasSecondaryTitle() bool`
-
-HasSecondaryTitle returns a boolean if a field has been set.
 
 ### GetSecondaryEmail
 
@@ -243,6 +168,31 @@ SetSecondaryEmail sets SecondaryEmail field to given value.
 
 HasSecondaryEmail returns a boolean if a field has been set.
 
+### GetSecondaryName
+
+`func (o *SupportUpdate0) GetSecondaryName() string`
+
+GetSecondaryName returns the SecondaryName field if non-nil, zero value otherwise.
+
+### GetSecondaryNameOk
+
+`func (o *SupportUpdate0) GetSecondaryNameOk() (*string, bool)`
+
+GetSecondaryNameOk returns a tuple with the SecondaryName field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSecondaryName
+
+`func (o *SupportUpdate0) SetSecondaryName(v string)`
+
+SetSecondaryName sets SecondaryName field to given value.
+
+### HasSecondaryName
+
+`func (o *SupportUpdate0) HasSecondaryName() bool`
+
+HasSecondaryName returns a boolean if a field has been set.
+
 ### GetSecondaryPhone
 
 `func (o *SupportUpdate0) GetSecondaryPhone() string`
@@ -267,6 +217,56 @@ SetSecondaryPhone sets SecondaryPhone field to given value.
 `func (o *SupportUpdate0) HasSecondaryPhone() bool`
 
 HasSecondaryPhone returns a boolean if a field has been set.
+
+### GetSecondaryTitle
+
+`func (o *SupportUpdate0) GetSecondaryTitle() string`
+
+GetSecondaryTitle returns the SecondaryTitle field if non-nil, zero value otherwise.
+
+### GetSecondaryTitleOk
+
+`func (o *SupportUpdate0) GetSecondaryTitleOk() (*string, bool)`
+
+GetSecondaryTitleOk returns a tuple with the SecondaryTitle field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSecondaryTitle
+
+`func (o *SupportUpdate0) SetSecondaryTitle(v string)`
+
+SetSecondaryTitle sets SecondaryTitle field to given value.
+
+### HasSecondaryTitle
+
+`func (o *SupportUpdate0) HasSecondaryTitle() bool`
+
+HasSecondaryTitle returns a boolean if a field has been set.
+
+### GetTitle
+
+`func (o *SupportUpdate0) GetTitle() string`
+
+GetTitle returns the Title field if non-nil, zero value otherwise.
+
+### GetTitleOk
+
+`func (o *SupportUpdate0) GetTitleOk() (*string, bool)`
+
+GetTitleOk returns a tuple with the Title field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTitle
+
+`func (o *SupportUpdate0) SetTitle(v string)`
+
+SetTitle sets Title field to given value.
+
+### HasTitle
+
+`func (o *SupportUpdate0) HasTitle() bool`
+
+HasTitle returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Advancedmode** | Pointer to **bool** |  | [optional] 
+**Anonstats** | Pointer to **bool** |  | [optional] 
 **Autotune** | Pointer to **bool** |  | [optional] 
 **BootScrub** | Pointer to **int32** |  | [optional] 
 **Consolemenu** | Pointer to **bool** |  | [optional] 
@@ -12,22 +13,21 @@ Name | Type | Description | Notes
 **Debugkernel** | Pointer to **bool** |  | [optional] 
 **FqdnSyslog** | Pointer to **bool** |  | [optional] 
 **Motd** | Pointer to **string** |  | [optional] 
+**Overprovision** | Pointer to **NullableInt32** |  | [optional] 
 **Powerdaemon** | Pointer to **bool** |  | [optional] 
+**SedPasswd** | Pointer to **string** |  | [optional] 
+**SedUser** | Pointer to **string** |  | [optional] 
 **Serialconsole** | Pointer to **bool** |  | [optional] 
 **Serialport** | Pointer to **string** |  | [optional] 
 **Serialspeed** | Pointer to **string** |  | [optional] 
 **Swapondrive** | Pointer to **int32** |  | [optional] 
-**Overprovision** | Pointer to **NullableInt32** |  | [optional] 
-**Traceback** | Pointer to **bool** |  | [optional] 
-**Uploadcrash** | Pointer to **bool** |  | [optional] 
-**Anonstats** | Pointer to **bool** |  | [optional] 
-**SedUser** | Pointer to **string** |  | [optional] 
-**SedPasswd** | Pointer to **string** |  | [optional] 
-**Sysloglevel** | Pointer to **string** |  | [optional] 
-**Syslogserver** | Pointer to **string** |  | [optional] 
-**SyslogTransport** | Pointer to **string** |  | [optional] 
 **SyslogTlsCertificate** | Pointer to **NullableInt32** |  | [optional] 
 **SyslogTlsCertificateAuthority** | Pointer to **NullableInt32** |  | [optional] 
+**SyslogTransport** | Pointer to **string** |  | [optional] 
+**Sysloglevel** | Pointer to **string** |  | [optional] 
+**Syslogserver** | Pointer to **string** |  | [optional] 
+**Traceback** | Pointer to **bool** |  | [optional] 
+**Uploadcrash** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -72,6 +72,31 @@ SetAdvancedmode sets Advancedmode field to given value.
 `func (o *SystemAdvancedUpdate0) HasAdvancedmode() bool`
 
 HasAdvancedmode returns a boolean if a field has been set.
+
+### GetAnonstats
+
+`func (o *SystemAdvancedUpdate0) GetAnonstats() bool`
+
+GetAnonstats returns the Anonstats field if non-nil, zero value otherwise.
+
+### GetAnonstatsOk
+
+`func (o *SystemAdvancedUpdate0) GetAnonstatsOk() (*bool, bool)`
+
+GetAnonstatsOk returns a tuple with the Anonstats field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetAnonstats
+
+`func (o *SystemAdvancedUpdate0) SetAnonstats(v bool)`
+
+SetAnonstats sets Anonstats field to given value.
+
+### HasAnonstats
+
+`func (o *SystemAdvancedUpdate0) HasAnonstats() bool`
+
+HasAnonstats returns a boolean if a field has been set.
 
 ### GetAutotune
 
@@ -248,6 +273,41 @@ SetMotd sets Motd field to given value.
 
 HasMotd returns a boolean if a field has been set.
 
+### GetOverprovision
+
+`func (o *SystemAdvancedUpdate0) GetOverprovision() int32`
+
+GetOverprovision returns the Overprovision field if non-nil, zero value otherwise.
+
+### GetOverprovisionOk
+
+`func (o *SystemAdvancedUpdate0) GetOverprovisionOk() (*int32, bool)`
+
+GetOverprovisionOk returns a tuple with the Overprovision field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOverprovision
+
+`func (o *SystemAdvancedUpdate0) SetOverprovision(v int32)`
+
+SetOverprovision sets Overprovision field to given value.
+
+### HasOverprovision
+
+`func (o *SystemAdvancedUpdate0) HasOverprovision() bool`
+
+HasOverprovision returns a boolean if a field has been set.
+
+### SetOverprovisionNil
+
+`func (o *SystemAdvancedUpdate0) SetOverprovisionNil(b bool)`
+
+ SetOverprovisionNil sets the value for Overprovision to be an explicit nil
+
+### UnsetOverprovision
+`func (o *SystemAdvancedUpdate0) UnsetOverprovision()`
+
+UnsetOverprovision ensures that no value is present for Overprovision, not even an explicit nil
 ### GetPowerdaemon
 
 `func (o *SystemAdvancedUpdate0) GetPowerdaemon() bool`
@@ -272,6 +332,56 @@ SetPowerdaemon sets Powerdaemon field to given value.
 `func (o *SystemAdvancedUpdate0) HasPowerdaemon() bool`
 
 HasPowerdaemon returns a boolean if a field has been set.
+
+### GetSedPasswd
+
+`func (o *SystemAdvancedUpdate0) GetSedPasswd() string`
+
+GetSedPasswd returns the SedPasswd field if non-nil, zero value otherwise.
+
+### GetSedPasswdOk
+
+`func (o *SystemAdvancedUpdate0) GetSedPasswdOk() (*string, bool)`
+
+GetSedPasswdOk returns a tuple with the SedPasswd field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSedPasswd
+
+`func (o *SystemAdvancedUpdate0) SetSedPasswd(v string)`
+
+SetSedPasswd sets SedPasswd field to given value.
+
+### HasSedPasswd
+
+`func (o *SystemAdvancedUpdate0) HasSedPasswd() bool`
+
+HasSedPasswd returns a boolean if a field has been set.
+
+### GetSedUser
+
+`func (o *SystemAdvancedUpdate0) GetSedUser() string`
+
+GetSedUser returns the SedUser field if non-nil, zero value otherwise.
+
+### GetSedUserOk
+
+`func (o *SystemAdvancedUpdate0) GetSedUserOk() (*string, bool)`
+
+GetSedUserOk returns a tuple with the SedUser field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSedUser
+
+`func (o *SystemAdvancedUpdate0) SetSedUser(v string)`
+
+SetSedUser sets SedUser field to given value.
+
+### HasSedUser
+
+`func (o *SystemAdvancedUpdate0) HasSedUser() bool`
+
+HasSedUser returns a boolean if a field has been set.
 
 ### GetSerialconsole
 
@@ -373,241 +483,6 @@ SetSwapondrive sets Swapondrive field to given value.
 
 HasSwapondrive returns a boolean if a field has been set.
 
-### GetOverprovision
-
-`func (o *SystemAdvancedUpdate0) GetOverprovision() int32`
-
-GetOverprovision returns the Overprovision field if non-nil, zero value otherwise.
-
-### GetOverprovisionOk
-
-`func (o *SystemAdvancedUpdate0) GetOverprovisionOk() (*int32, bool)`
-
-GetOverprovisionOk returns a tuple with the Overprovision field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetOverprovision
-
-`func (o *SystemAdvancedUpdate0) SetOverprovision(v int32)`
-
-SetOverprovision sets Overprovision field to given value.
-
-### HasOverprovision
-
-`func (o *SystemAdvancedUpdate0) HasOverprovision() bool`
-
-HasOverprovision returns a boolean if a field has been set.
-
-### SetOverprovisionNil
-
-`func (o *SystemAdvancedUpdate0) SetOverprovisionNil(b bool)`
-
- SetOverprovisionNil sets the value for Overprovision to be an explicit nil
-
-### UnsetOverprovision
-`func (o *SystemAdvancedUpdate0) UnsetOverprovision()`
-
-UnsetOverprovision ensures that no value is present for Overprovision, not even an explicit nil
-### GetTraceback
-
-`func (o *SystemAdvancedUpdate0) GetTraceback() bool`
-
-GetTraceback returns the Traceback field if non-nil, zero value otherwise.
-
-### GetTracebackOk
-
-`func (o *SystemAdvancedUpdate0) GetTracebackOk() (*bool, bool)`
-
-GetTracebackOk returns a tuple with the Traceback field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTraceback
-
-`func (o *SystemAdvancedUpdate0) SetTraceback(v bool)`
-
-SetTraceback sets Traceback field to given value.
-
-### HasTraceback
-
-`func (o *SystemAdvancedUpdate0) HasTraceback() bool`
-
-HasTraceback returns a boolean if a field has been set.
-
-### GetUploadcrash
-
-`func (o *SystemAdvancedUpdate0) GetUploadcrash() bool`
-
-GetUploadcrash returns the Uploadcrash field if non-nil, zero value otherwise.
-
-### GetUploadcrashOk
-
-`func (o *SystemAdvancedUpdate0) GetUploadcrashOk() (*bool, bool)`
-
-GetUploadcrashOk returns a tuple with the Uploadcrash field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetUploadcrash
-
-`func (o *SystemAdvancedUpdate0) SetUploadcrash(v bool)`
-
-SetUploadcrash sets Uploadcrash field to given value.
-
-### HasUploadcrash
-
-`func (o *SystemAdvancedUpdate0) HasUploadcrash() bool`
-
-HasUploadcrash returns a boolean if a field has been set.
-
-### GetAnonstats
-
-`func (o *SystemAdvancedUpdate0) GetAnonstats() bool`
-
-GetAnonstats returns the Anonstats field if non-nil, zero value otherwise.
-
-### GetAnonstatsOk
-
-`func (o *SystemAdvancedUpdate0) GetAnonstatsOk() (*bool, bool)`
-
-GetAnonstatsOk returns a tuple with the Anonstats field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetAnonstats
-
-`func (o *SystemAdvancedUpdate0) SetAnonstats(v bool)`
-
-SetAnonstats sets Anonstats field to given value.
-
-### HasAnonstats
-
-`func (o *SystemAdvancedUpdate0) HasAnonstats() bool`
-
-HasAnonstats returns a boolean if a field has been set.
-
-### GetSedUser
-
-`func (o *SystemAdvancedUpdate0) GetSedUser() string`
-
-GetSedUser returns the SedUser field if non-nil, zero value otherwise.
-
-### GetSedUserOk
-
-`func (o *SystemAdvancedUpdate0) GetSedUserOk() (*string, bool)`
-
-GetSedUserOk returns a tuple with the SedUser field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSedUser
-
-`func (o *SystemAdvancedUpdate0) SetSedUser(v string)`
-
-SetSedUser sets SedUser field to given value.
-
-### HasSedUser
-
-`func (o *SystemAdvancedUpdate0) HasSedUser() bool`
-
-HasSedUser returns a boolean if a field has been set.
-
-### GetSedPasswd
-
-`func (o *SystemAdvancedUpdate0) GetSedPasswd() string`
-
-GetSedPasswd returns the SedPasswd field if non-nil, zero value otherwise.
-
-### GetSedPasswdOk
-
-`func (o *SystemAdvancedUpdate0) GetSedPasswdOk() (*string, bool)`
-
-GetSedPasswdOk returns a tuple with the SedPasswd field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSedPasswd
-
-`func (o *SystemAdvancedUpdate0) SetSedPasswd(v string)`
-
-SetSedPasswd sets SedPasswd field to given value.
-
-### HasSedPasswd
-
-`func (o *SystemAdvancedUpdate0) HasSedPasswd() bool`
-
-HasSedPasswd returns a boolean if a field has been set.
-
-### GetSysloglevel
-
-`func (o *SystemAdvancedUpdate0) GetSysloglevel() string`
-
-GetSysloglevel returns the Sysloglevel field if non-nil, zero value otherwise.
-
-### GetSysloglevelOk
-
-`func (o *SystemAdvancedUpdate0) GetSysloglevelOk() (*string, bool)`
-
-GetSysloglevelOk returns a tuple with the Sysloglevel field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSysloglevel
-
-`func (o *SystemAdvancedUpdate0) SetSysloglevel(v string)`
-
-SetSysloglevel sets Sysloglevel field to given value.
-
-### HasSysloglevel
-
-`func (o *SystemAdvancedUpdate0) HasSysloglevel() bool`
-
-HasSysloglevel returns a boolean if a field has been set.
-
-### GetSyslogserver
-
-`func (o *SystemAdvancedUpdate0) GetSyslogserver() string`
-
-GetSyslogserver returns the Syslogserver field if non-nil, zero value otherwise.
-
-### GetSyslogserverOk
-
-`func (o *SystemAdvancedUpdate0) GetSyslogserverOk() (*string, bool)`
-
-GetSyslogserverOk returns a tuple with the Syslogserver field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSyslogserver
-
-`func (o *SystemAdvancedUpdate0) SetSyslogserver(v string)`
-
-SetSyslogserver sets Syslogserver field to given value.
-
-### HasSyslogserver
-
-`func (o *SystemAdvancedUpdate0) HasSyslogserver() bool`
-
-HasSyslogserver returns a boolean if a field has been set.
-
-### GetSyslogTransport
-
-`func (o *SystemAdvancedUpdate0) GetSyslogTransport() string`
-
-GetSyslogTransport returns the SyslogTransport field if non-nil, zero value otherwise.
-
-### GetSyslogTransportOk
-
-`func (o *SystemAdvancedUpdate0) GetSyslogTransportOk() (*string, bool)`
-
-GetSyslogTransportOk returns a tuple with the SyslogTransport field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSyslogTransport
-
-`func (o *SystemAdvancedUpdate0) SetSyslogTransport(v string)`
-
-SetSyslogTransport sets SyslogTransport field to given value.
-
-### HasSyslogTransport
-
-`func (o *SystemAdvancedUpdate0) HasSyslogTransport() bool`
-
-HasSyslogTransport returns a boolean if a field has been set.
-
 ### GetSyslogTlsCertificate
 
 `func (o *SystemAdvancedUpdate0) GetSyslogTlsCertificate() int32`
@@ -678,6 +553,131 @@ HasSyslogTlsCertificateAuthority returns a boolean if a field has been set.
 `func (o *SystemAdvancedUpdate0) UnsetSyslogTlsCertificateAuthority()`
 
 UnsetSyslogTlsCertificateAuthority ensures that no value is present for SyslogTlsCertificateAuthority, not even an explicit nil
+### GetSyslogTransport
+
+`func (o *SystemAdvancedUpdate0) GetSyslogTransport() string`
+
+GetSyslogTransport returns the SyslogTransport field if non-nil, zero value otherwise.
+
+### GetSyslogTransportOk
+
+`func (o *SystemAdvancedUpdate0) GetSyslogTransportOk() (*string, bool)`
+
+GetSyslogTransportOk returns a tuple with the SyslogTransport field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSyslogTransport
+
+`func (o *SystemAdvancedUpdate0) SetSyslogTransport(v string)`
+
+SetSyslogTransport sets SyslogTransport field to given value.
+
+### HasSyslogTransport
+
+`func (o *SystemAdvancedUpdate0) HasSyslogTransport() bool`
+
+HasSyslogTransport returns a boolean if a field has been set.
+
+### GetSysloglevel
+
+`func (o *SystemAdvancedUpdate0) GetSysloglevel() string`
+
+GetSysloglevel returns the Sysloglevel field if non-nil, zero value otherwise.
+
+### GetSysloglevelOk
+
+`func (o *SystemAdvancedUpdate0) GetSysloglevelOk() (*string, bool)`
+
+GetSysloglevelOk returns a tuple with the Sysloglevel field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSysloglevel
+
+`func (o *SystemAdvancedUpdate0) SetSysloglevel(v string)`
+
+SetSysloglevel sets Sysloglevel field to given value.
+
+### HasSysloglevel
+
+`func (o *SystemAdvancedUpdate0) HasSysloglevel() bool`
+
+HasSysloglevel returns a boolean if a field has been set.
+
+### GetSyslogserver
+
+`func (o *SystemAdvancedUpdate0) GetSyslogserver() string`
+
+GetSyslogserver returns the Syslogserver field if non-nil, zero value otherwise.
+
+### GetSyslogserverOk
+
+`func (o *SystemAdvancedUpdate0) GetSyslogserverOk() (*string, bool)`
+
+GetSyslogserverOk returns a tuple with the Syslogserver field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSyslogserver
+
+`func (o *SystemAdvancedUpdate0) SetSyslogserver(v string)`
+
+SetSyslogserver sets Syslogserver field to given value.
+
+### HasSyslogserver
+
+`func (o *SystemAdvancedUpdate0) HasSyslogserver() bool`
+
+HasSyslogserver returns a boolean if a field has been set.
+
+### GetTraceback
+
+`func (o *SystemAdvancedUpdate0) GetTraceback() bool`
+
+GetTraceback returns the Traceback field if non-nil, zero value otherwise.
+
+### GetTracebackOk
+
+`func (o *SystemAdvancedUpdate0) GetTracebackOk() (*bool, bool)`
+
+GetTracebackOk returns a tuple with the Traceback field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTraceback
+
+`func (o *SystemAdvancedUpdate0) SetTraceback(v bool)`
+
+SetTraceback sets Traceback field to given value.
+
+### HasTraceback
+
+`func (o *SystemAdvancedUpdate0) HasTraceback() bool`
+
+HasTraceback returns a boolean if a field has been set.
+
+### GetUploadcrash
+
+`func (o *SystemAdvancedUpdate0) GetUploadcrash() bool`
+
+GetUploadcrash returns the Uploadcrash field if non-nil, zero value otherwise.
+
+### GetUploadcrashOk
+
+`func (o *SystemAdvancedUpdate0) GetUploadcrashOk() (*bool, bool)`
+
+GetUploadcrashOk returns a tuple with the Uploadcrash field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUploadcrash
+
+`func (o *SystemAdvancedUpdate0) SetUploadcrash(v bool)`
+
+SetUploadcrash sets Uploadcrash field to given value.
+
+### HasUploadcrash
+
+`func (o *SystemAdvancedUpdate0) HasUploadcrash() bool`
+
+HasUploadcrash returns a boolean if a field has been set.
+
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

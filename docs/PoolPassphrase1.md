@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Passphrase** | Pointer to **NullableString** |  | [optional] 
 **AdminPassword** | Pointer to **string** |  | [optional] 
+**Passphrase** | Pointer to **NullableString** |  | [optional] 
 
 ## Methods
 
@@ -25,6 +25,31 @@ will change when the set of required properties is changed
 NewPoolPassphrase1WithDefaults instantiates a new PoolPassphrase1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetAdminPassword
+
+`func (o *PoolPassphrase1) GetAdminPassword() string`
+
+GetAdminPassword returns the AdminPassword field if non-nil, zero value otherwise.
+
+### GetAdminPasswordOk
+
+`func (o *PoolPassphrase1) GetAdminPasswordOk() (*string, bool)`
+
+GetAdminPasswordOk returns a tuple with the AdminPassword field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetAdminPassword
+
+`func (o *PoolPassphrase1) SetAdminPassword(v string)`
+
+SetAdminPassword sets AdminPassword field to given value.
+
+### HasAdminPassword
+
+`func (o *PoolPassphrase1) HasAdminPassword() bool`
+
+HasAdminPassword returns a boolean if a field has been set.
 
 ### GetPassphrase
 
@@ -61,31 +86,6 @@ HasPassphrase returns a boolean if a field has been set.
 `func (o *PoolPassphrase1) UnsetPassphrase()`
 
 UnsetPassphrase ensures that no value is present for Passphrase, not even an explicit nil
-### GetAdminPassword
-
-`func (o *PoolPassphrase1) GetAdminPassword() string`
-
-GetAdminPassword returns the AdminPassword field if non-nil, zero value otherwise.
-
-### GetAdminPasswordOk
-
-`func (o *PoolPassphrase1) GetAdminPasswordOk() (*string, bool)`
-
-GetAdminPasswordOk returns a tuple with the AdminPassword field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetAdminPassword
-
-`func (o *PoolPassphrase1) SetAdminPassword(v string)`
-
-SetAdminPassword sets AdminPassword field to given value.
-
-### HasAdminPassword
-
-`func (o *PoolPassphrase1) HasAdminPassword() bool`
-
-HasAdminPassword returns a boolean if a field has been set.
-
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

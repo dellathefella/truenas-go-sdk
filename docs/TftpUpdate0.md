@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Newfiles** | Pointer to **bool** |  | [optional] 
 **Directory** | Pointer to **string** |  | [optional] 
 **Host** | Pointer to **string** |  | [optional] 
-**Port** | Pointer to **int32** |  | [optional] 
+**Newfiles** | Pointer to **bool** |  | [optional] 
 **Options** | Pointer to **string** |  | [optional] 
+**Port** | Pointer to **int32** |  | [optional] 
 **Umask** | Pointer to **string** |  | [optional] 
 **Username** | Pointer to **string** |  | [optional] 
 
@@ -30,31 +30,6 @@ will change when the set of required properties is changed
 NewTftpUpdate0WithDefaults instantiates a new TftpUpdate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetNewfiles
-
-`func (o *TftpUpdate0) GetNewfiles() bool`
-
-GetNewfiles returns the Newfiles field if non-nil, zero value otherwise.
-
-### GetNewfilesOk
-
-`func (o *TftpUpdate0) GetNewfilesOk() (*bool, bool)`
-
-GetNewfilesOk returns a tuple with the Newfiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetNewfiles
-
-`func (o *TftpUpdate0) SetNewfiles(v bool)`
-
-SetNewfiles sets Newfiles field to given value.
-
-### HasNewfiles
-
-`func (o *TftpUpdate0) HasNewfiles() bool`
-
-HasNewfiles returns a boolean if a field has been set.
 
 ### GetDirectory
 
@@ -106,30 +81,30 @@ SetHost sets Host field to given value.
 
 HasHost returns a boolean if a field has been set.
 
-### GetPort
+### GetNewfiles
 
-`func (o *TftpUpdate0) GetPort() int32`
+`func (o *TftpUpdate0) GetNewfiles() bool`
 
-GetPort returns the Port field if non-nil, zero value otherwise.
+GetNewfiles returns the Newfiles field if non-nil, zero value otherwise.
 
-### GetPortOk
+### GetNewfilesOk
 
-`func (o *TftpUpdate0) GetPortOk() (*int32, bool)`
+`func (o *TftpUpdate0) GetNewfilesOk() (*bool, bool)`
 
-GetPortOk returns a tuple with the Port field if it's non-nil, zero value otherwise
+GetNewfilesOk returns a tuple with the Newfiles field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetPort
+### SetNewfiles
 
-`func (o *TftpUpdate0) SetPort(v int32)`
+`func (o *TftpUpdate0) SetNewfiles(v bool)`
 
-SetPort sets Port field to given value.
+SetNewfiles sets Newfiles field to given value.
 
-### HasPort
+### HasNewfiles
 
-`func (o *TftpUpdate0) HasPort() bool`
+`func (o *TftpUpdate0) HasNewfiles() bool`
 
-HasPort returns a boolean if a field has been set.
+HasNewfiles returns a boolean if a field has been set.
 
 ### GetOptions
 
@@ -155,6 +130,31 @@ SetOptions sets Options field to given value.
 `func (o *TftpUpdate0) HasOptions() bool`
 
 HasOptions returns a boolean if a field has been set.
+
+### GetPort
+
+`func (o *TftpUpdate0) GetPort() int32`
+
+GetPort returns the Port field if non-nil, zero value otherwise.
+
+### GetPortOk
+
+`func (o *TftpUpdate0) GetPortOk() (*int32, bool)`
+
+GetPortOk returns a tuple with the Port field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPort
+
+`func (o *TftpUpdate0) SetPort(v int32)`
+
+SetPort sets Port field to given value.
+
+### HasPort
+
+`func (o *TftpUpdate0) HasPort() bool`
+
+HasPort returns a boolean if a field has been set.
 
 ### GetUmask
 

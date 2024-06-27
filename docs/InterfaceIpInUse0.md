@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Any** | Pointer to **bool** |  | [optional] 
 **Ipv4** | Pointer to **bool** |  | [optional] 
 **Ipv6** | Pointer to **bool** |  | [optional] 
 **Ipv6LinkLocal** | Pointer to **bool** |  | [optional] 
 **Loopback** | Pointer to **bool** |  | [optional] 
-**Any** | Pointer to **bool** |  | [optional] 
 **Static** | Pointer to **bool** |  | [optional] 
 
 ## Methods
@@ -29,6 +29,31 @@ will change when the set of required properties is changed
 NewInterfaceIpInUse0WithDefaults instantiates a new InterfaceIpInUse0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetAny
+
+`func (o *InterfaceIpInUse0) GetAny() bool`
+
+GetAny returns the Any field if non-nil, zero value otherwise.
+
+### GetAnyOk
+
+`func (o *InterfaceIpInUse0) GetAnyOk() (*bool, bool)`
+
+GetAnyOk returns a tuple with the Any field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetAny
+
+`func (o *InterfaceIpInUse0) SetAny(v bool)`
+
+SetAny sets Any field to given value.
+
+### HasAny
+
+`func (o *InterfaceIpInUse0) HasAny() bool`
+
+HasAny returns a boolean if a field has been set.
 
 ### GetIpv4
 
@@ -129,31 +154,6 @@ SetLoopback sets Loopback field to given value.
 `func (o *InterfaceIpInUse0) HasLoopback() bool`
 
 HasLoopback returns a boolean if a field has been set.
-
-### GetAny
-
-`func (o *InterfaceIpInUse0) GetAny() bool`
-
-GetAny returns the Any field if non-nil, zero value otherwise.
-
-### GetAnyOk
-
-`func (o *InterfaceIpInUse0) GetAnyOk() (*bool, bool)`
-
-GetAnyOk returns a tuple with the Any field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetAny
-
-`func (o *InterfaceIpInUse0) SetAny(v bool)`
-
-SetAny sets Any field to given value.
-
-### HasAny
-
-`func (o *InterfaceIpInUse0) HasAny() bool`
-
-HasAny returns a boolean if a field has been set.
 
 ### GetStatic
 

@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Zvol** | Pointer to **bool** |  | [optional] 
 **RawFile** | Pointer to **bool** |  | [optional] 
+**Zvol** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -25,31 +25,6 @@ will change when the set of required properties is changed
 NewVmDeviceDelete1WithDefaults instantiates a new VmDeviceDelete1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetZvol
-
-`func (o *VmDeviceDelete1) GetZvol() bool`
-
-GetZvol returns the Zvol field if non-nil, zero value otherwise.
-
-### GetZvolOk
-
-`func (o *VmDeviceDelete1) GetZvolOk() (*bool, bool)`
-
-GetZvolOk returns a tuple with the Zvol field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetZvol
-
-`func (o *VmDeviceDelete1) SetZvol(v bool)`
-
-SetZvol sets Zvol field to given value.
-
-### HasZvol
-
-`func (o *VmDeviceDelete1) HasZvol() bool`
-
-HasZvol returns a boolean if a field has been set.
 
 ### GetRawFile
 
@@ -75,6 +50,31 @@ SetRawFile sets RawFile field to given value.
 `func (o *VmDeviceDelete1) HasRawFile() bool`
 
 HasRawFile returns a boolean if a field has been set.
+
+### GetZvol
+
+`func (o *VmDeviceDelete1) GetZvol() bool`
+
+GetZvol returns the Zvol field if non-nil, zero value otherwise.
+
+### GetZvolOk
+
+`func (o *VmDeviceDelete1) GetZvolOk() (*bool, bool)`
+
+GetZvolOk returns a tuple with the Zvol field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetZvol
+
+`func (o *VmDeviceDelete1) SetZvol(v bool)`
+
+SetZvol sets Zvol field to given value.
+
+### HasZvol
+
+`func (o *VmDeviceDelete1) HasZvol() bool`
+
+HasZvol returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

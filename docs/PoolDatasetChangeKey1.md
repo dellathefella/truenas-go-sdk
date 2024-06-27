@@ -5,10 +5,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **GenerateKey** | Pointer to **bool** |  | [optional] 
-**KeyFile** | Pointer to **bool** |  | [optional] 
-**Pbkdf2iters** | Pointer to **int32** |  | [optional] 
-**Passphrase** | Pointer to **NullableString** |  | [optional] 
 **Key** | Pointer to **NullableString** |  | [optional] 
+**KeyFile** | Pointer to **bool** |  | [optional] 
+**Passphrase** | Pointer to **NullableString** |  | [optional] 
+**Pbkdf2iters** | Pointer to **int32** |  | [optional] 
 
 ## Methods
 
@@ -54,6 +54,41 @@ SetGenerateKey sets GenerateKey field to given value.
 
 HasGenerateKey returns a boolean if a field has been set.
 
+### GetKey
+
+`func (o *PoolDatasetChangeKey1) GetKey() string`
+
+GetKey returns the Key field if non-nil, zero value otherwise.
+
+### GetKeyOk
+
+`func (o *PoolDatasetChangeKey1) GetKeyOk() (*string, bool)`
+
+GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetKey
+
+`func (o *PoolDatasetChangeKey1) SetKey(v string)`
+
+SetKey sets Key field to given value.
+
+### HasKey
+
+`func (o *PoolDatasetChangeKey1) HasKey() bool`
+
+HasKey returns a boolean if a field has been set.
+
+### SetKeyNil
+
+`func (o *PoolDatasetChangeKey1) SetKeyNil(b bool)`
+
+ SetKeyNil sets the value for Key to be an explicit nil
+
+### UnsetKey
+`func (o *PoolDatasetChangeKey1) UnsetKey()`
+
+UnsetKey ensures that no value is present for Key, not even an explicit nil
 ### GetKeyFile
 
 `func (o *PoolDatasetChangeKey1) GetKeyFile() bool`
@@ -78,31 +113,6 @@ SetKeyFile sets KeyFile field to given value.
 `func (o *PoolDatasetChangeKey1) HasKeyFile() bool`
 
 HasKeyFile returns a boolean if a field has been set.
-
-### GetPbkdf2iters
-
-`func (o *PoolDatasetChangeKey1) GetPbkdf2iters() int32`
-
-GetPbkdf2iters returns the Pbkdf2iters field if non-nil, zero value otherwise.
-
-### GetPbkdf2itersOk
-
-`func (o *PoolDatasetChangeKey1) GetPbkdf2itersOk() (*int32, bool)`
-
-GetPbkdf2itersOk returns a tuple with the Pbkdf2iters field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPbkdf2iters
-
-`func (o *PoolDatasetChangeKey1) SetPbkdf2iters(v int32)`
-
-SetPbkdf2iters sets Pbkdf2iters field to given value.
-
-### HasPbkdf2iters
-
-`func (o *PoolDatasetChangeKey1) HasPbkdf2iters() bool`
-
-HasPbkdf2iters returns a boolean if a field has been set.
 
 ### GetPassphrase
 
@@ -139,41 +149,31 @@ HasPassphrase returns a boolean if a field has been set.
 `func (o *PoolDatasetChangeKey1) UnsetPassphrase()`
 
 UnsetPassphrase ensures that no value is present for Passphrase, not even an explicit nil
-### GetKey
+### GetPbkdf2iters
 
-`func (o *PoolDatasetChangeKey1) GetKey() string`
+`func (o *PoolDatasetChangeKey1) GetPbkdf2iters() int32`
 
-GetKey returns the Key field if non-nil, zero value otherwise.
+GetPbkdf2iters returns the Pbkdf2iters field if non-nil, zero value otherwise.
 
-### GetKeyOk
+### GetPbkdf2itersOk
 
-`func (o *PoolDatasetChangeKey1) GetKeyOk() (*string, bool)`
+`func (o *PoolDatasetChangeKey1) GetPbkdf2itersOk() (*int32, bool)`
 
-GetKeyOk returns a tuple with the Key field if it's non-nil, zero value otherwise
+GetPbkdf2itersOk returns a tuple with the Pbkdf2iters field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetKey
+### SetPbkdf2iters
 
-`func (o *PoolDatasetChangeKey1) SetKey(v string)`
+`func (o *PoolDatasetChangeKey1) SetPbkdf2iters(v int32)`
 
-SetKey sets Key field to given value.
+SetPbkdf2iters sets Pbkdf2iters field to given value.
 
-### HasKey
+### HasPbkdf2iters
 
-`func (o *PoolDatasetChangeKey1) HasKey() bool`
+`func (o *PoolDatasetChangeKey1) HasPbkdf2iters() bool`
 
-HasKey returns a boolean if a field has been set.
+HasPbkdf2iters returns a boolean if a field has been set.
 
-### SetKeyNil
-
-`func (o *PoolDatasetChangeKey1) SetKeyNil(b bool)`
-
- SetKeyNil sets the value for Key to be an explicit nil
-
-### UnsetKey
-`func (o *PoolDatasetChangeKey1) UnsetKey()`
-
-UnsetKey ensures that no value is present for Key, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

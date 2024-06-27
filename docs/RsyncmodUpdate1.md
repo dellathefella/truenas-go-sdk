@@ -4,17 +4,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Enabled** | Pointer to **bool** |  | [optional] 
-**Name** | Pointer to **string** |  | [optional] 
+**Auxiliary** | Pointer to **string** |  | [optional] 
 **Comment** | Pointer to **string** |  | [optional] 
-**Path** | Pointer to **string** |  | [optional] 
-**Mode** | Pointer to **string** |  | [optional] 
-**Maxconn** | Pointer to **int32** |  | [optional] 
-**User** | Pointer to **string** |  | [optional] 
+**Enabled** | Pointer to **bool** |  | [optional] 
 **Group** | Pointer to **string** |  | [optional] 
 **Hostsallow** | Pointer to **[]string** |  | [optional] 
 **Hostsdeny** | Pointer to **[]string** |  | [optional] 
-**Auxiliary** | Pointer to **string** |  | [optional] 
+**Maxconn** | Pointer to **int32** |  | [optional] 
+**Mode** | Pointer to **string** |  | [optional] 
+**Name** | Pointer to **string** |  | [optional] 
+**Path** | Pointer to **string** |  | [optional] 
+**User** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -35,55 +35,30 @@ NewRsyncmodUpdate1WithDefaults instantiates a new RsyncmodUpdate1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetEnabled
+### GetAuxiliary
 
-`func (o *RsyncmodUpdate1) GetEnabled() bool`
+`func (o *RsyncmodUpdate1) GetAuxiliary() string`
 
-GetEnabled returns the Enabled field if non-nil, zero value otherwise.
+GetAuxiliary returns the Auxiliary field if non-nil, zero value otherwise.
 
-### GetEnabledOk
+### GetAuxiliaryOk
 
-`func (o *RsyncmodUpdate1) GetEnabledOk() (*bool, bool)`
+`func (o *RsyncmodUpdate1) GetAuxiliaryOk() (*string, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
+GetAuxiliaryOk returns a tuple with the Auxiliary field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetEnabled
+### SetAuxiliary
 
-`func (o *RsyncmodUpdate1) SetEnabled(v bool)`
+`func (o *RsyncmodUpdate1) SetAuxiliary(v string)`
 
-SetEnabled sets Enabled field to given value.
+SetAuxiliary sets Auxiliary field to given value.
 
-### HasEnabled
+### HasAuxiliary
 
-`func (o *RsyncmodUpdate1) HasEnabled() bool`
+`func (o *RsyncmodUpdate1) HasAuxiliary() bool`
 
-HasEnabled returns a boolean if a field has been set.
-
-### GetName
-
-`func (o *RsyncmodUpdate1) GetName() string`
-
-GetName returns the Name field if non-nil, zero value otherwise.
-
-### GetNameOk
-
-`func (o *RsyncmodUpdate1) GetNameOk() (*string, bool)`
-
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetName
-
-`func (o *RsyncmodUpdate1) SetName(v string)`
-
-SetName sets Name field to given value.
-
-### HasName
-
-`func (o *RsyncmodUpdate1) HasName() bool`
-
-HasName returns a boolean if a field has been set.
+HasAuxiliary returns a boolean if a field has been set.
 
 ### GetComment
 
@@ -110,105 +85,30 @@ SetComment sets Comment field to given value.
 
 HasComment returns a boolean if a field has been set.
 
-### GetPath
+### GetEnabled
 
-`func (o *RsyncmodUpdate1) GetPath() string`
+`func (o *RsyncmodUpdate1) GetEnabled() bool`
 
-GetPath returns the Path field if non-nil, zero value otherwise.
+GetEnabled returns the Enabled field if non-nil, zero value otherwise.
 
-### GetPathOk
+### GetEnabledOk
 
-`func (o *RsyncmodUpdate1) GetPathOk() (*string, bool)`
+`func (o *RsyncmodUpdate1) GetEnabledOk() (*bool, bool)`
 
-GetPathOk returns a tuple with the Path field if it's non-nil, zero value otherwise
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetPath
+### SetEnabled
 
-`func (o *RsyncmodUpdate1) SetPath(v string)`
+`func (o *RsyncmodUpdate1) SetEnabled(v bool)`
 
-SetPath sets Path field to given value.
+SetEnabled sets Enabled field to given value.
 
-### HasPath
+### HasEnabled
 
-`func (o *RsyncmodUpdate1) HasPath() bool`
+`func (o *RsyncmodUpdate1) HasEnabled() bool`
 
-HasPath returns a boolean if a field has been set.
-
-### GetMode
-
-`func (o *RsyncmodUpdate1) GetMode() string`
-
-GetMode returns the Mode field if non-nil, zero value otherwise.
-
-### GetModeOk
-
-`func (o *RsyncmodUpdate1) GetModeOk() (*string, bool)`
-
-GetModeOk returns a tuple with the Mode field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetMode
-
-`func (o *RsyncmodUpdate1) SetMode(v string)`
-
-SetMode sets Mode field to given value.
-
-### HasMode
-
-`func (o *RsyncmodUpdate1) HasMode() bool`
-
-HasMode returns a boolean if a field has been set.
-
-### GetMaxconn
-
-`func (o *RsyncmodUpdate1) GetMaxconn() int32`
-
-GetMaxconn returns the Maxconn field if non-nil, zero value otherwise.
-
-### GetMaxconnOk
-
-`func (o *RsyncmodUpdate1) GetMaxconnOk() (*int32, bool)`
-
-GetMaxconnOk returns a tuple with the Maxconn field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetMaxconn
-
-`func (o *RsyncmodUpdate1) SetMaxconn(v int32)`
-
-SetMaxconn sets Maxconn field to given value.
-
-### HasMaxconn
-
-`func (o *RsyncmodUpdate1) HasMaxconn() bool`
-
-HasMaxconn returns a boolean if a field has been set.
-
-### GetUser
-
-`func (o *RsyncmodUpdate1) GetUser() string`
-
-GetUser returns the User field if non-nil, zero value otherwise.
-
-### GetUserOk
-
-`func (o *RsyncmodUpdate1) GetUserOk() (*string, bool)`
-
-GetUserOk returns a tuple with the User field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetUser
-
-`func (o *RsyncmodUpdate1) SetUser(v string)`
-
-SetUser sets User field to given value.
-
-### HasUser
-
-`func (o *RsyncmodUpdate1) HasUser() bool`
-
-HasUser returns a boolean if a field has been set.
+HasEnabled returns a boolean if a field has been set.
 
 ### GetGroup
 
@@ -285,30 +185,130 @@ SetHostsdeny sets Hostsdeny field to given value.
 
 HasHostsdeny returns a boolean if a field has been set.
 
-### GetAuxiliary
+### GetMaxconn
 
-`func (o *RsyncmodUpdate1) GetAuxiliary() string`
+`func (o *RsyncmodUpdate1) GetMaxconn() int32`
 
-GetAuxiliary returns the Auxiliary field if non-nil, zero value otherwise.
+GetMaxconn returns the Maxconn field if non-nil, zero value otherwise.
 
-### GetAuxiliaryOk
+### GetMaxconnOk
 
-`func (o *RsyncmodUpdate1) GetAuxiliaryOk() (*string, bool)`
+`func (o *RsyncmodUpdate1) GetMaxconnOk() (*int32, bool)`
 
-GetAuxiliaryOk returns a tuple with the Auxiliary field if it's non-nil, zero value otherwise
+GetMaxconnOk returns a tuple with the Maxconn field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetAuxiliary
+### SetMaxconn
 
-`func (o *RsyncmodUpdate1) SetAuxiliary(v string)`
+`func (o *RsyncmodUpdate1) SetMaxconn(v int32)`
 
-SetAuxiliary sets Auxiliary field to given value.
+SetMaxconn sets Maxconn field to given value.
 
-### HasAuxiliary
+### HasMaxconn
 
-`func (o *RsyncmodUpdate1) HasAuxiliary() bool`
+`func (o *RsyncmodUpdate1) HasMaxconn() bool`
 
-HasAuxiliary returns a boolean if a field has been set.
+HasMaxconn returns a boolean if a field has been set.
+
+### GetMode
+
+`func (o *RsyncmodUpdate1) GetMode() string`
+
+GetMode returns the Mode field if non-nil, zero value otherwise.
+
+### GetModeOk
+
+`func (o *RsyncmodUpdate1) GetModeOk() (*string, bool)`
+
+GetModeOk returns a tuple with the Mode field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMode
+
+`func (o *RsyncmodUpdate1) SetMode(v string)`
+
+SetMode sets Mode field to given value.
+
+### HasMode
+
+`func (o *RsyncmodUpdate1) HasMode() bool`
+
+HasMode returns a boolean if a field has been set.
+
+### GetName
+
+`func (o *RsyncmodUpdate1) GetName() string`
+
+GetName returns the Name field if non-nil, zero value otherwise.
+
+### GetNameOk
+
+`func (o *RsyncmodUpdate1) GetNameOk() (*string, bool)`
+
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetName
+
+`func (o *RsyncmodUpdate1) SetName(v string)`
+
+SetName sets Name field to given value.
+
+### HasName
+
+`func (o *RsyncmodUpdate1) HasName() bool`
+
+HasName returns a boolean if a field has been set.
+
+### GetPath
+
+`func (o *RsyncmodUpdate1) GetPath() string`
+
+GetPath returns the Path field if non-nil, zero value otherwise.
+
+### GetPathOk
+
+`func (o *RsyncmodUpdate1) GetPathOk() (*string, bool)`
+
+GetPathOk returns a tuple with the Path field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPath
+
+`func (o *RsyncmodUpdate1) SetPath(v string)`
+
+SetPath sets Path field to given value.
+
+### HasPath
+
+`func (o *RsyncmodUpdate1) HasPath() bool`
+
+HasPath returns a boolean if a field has been set.
+
+### GetUser
+
+`func (o *RsyncmodUpdate1) GetUser() string`
+
+GetUser returns the User field if non-nil, zero value otherwise.
+
+### GetUserOk
+
+`func (o *RsyncmodUpdate1) GetUserOk() (*string, bool)`
+
+GetUserOk returns a tuple with the User field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUser
+
+`func (o *RsyncmodUpdate1) SetUser(v string)`
+
+SetUser sets User field to given value.
+
+### HasUser
+
+`func (o *RsyncmodUpdate1) HasUser() bool`
+
+HasUser returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

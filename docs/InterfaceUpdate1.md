@@ -4,25 +4,25 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | Pointer to **string** |  | [optional] 
+**Aliases** | Pointer to **[]map[string]interface{}** |  | [optional] 
+**BridgeMembers** | Pointer to **[]interface{}** |  | [optional] 
 **Description** | Pointer to **NullableString** |  | [optional] 
 **DisableOffloadCapabilities** | Pointer to **bool** |  | [optional] 
-**Ipv4Dhcp** | Pointer to **bool** |  | [optional] 
-**Ipv6Auto** | Pointer to **bool** |  | [optional] 
-**Aliases** | Pointer to **[]map[string]interface{}** |  | [optional] 
+**FailoverAliases** | Pointer to **[]map[string]interface{}** |  | [optional] 
 **FailoverCritical** | Pointer to **bool** |  | [optional] 
 **FailoverGroup** | Pointer to **NullableInt32** |  | [optional] 
 **FailoverVhid** | Pointer to **NullableInt32** |  | [optional] 
-**FailoverAliases** | Pointer to **[]map[string]interface{}** |  | [optional] 
 **FailoverVirtualAliases** | Pointer to **[]map[string]interface{}** |  | [optional] 
-**BridgeMembers** | Pointer to **[]interface{}** |  | [optional] 
-**LagProtocol** | Pointer to **string** |  | [optional] 
+**Ipv4Dhcp** | Pointer to **bool** |  | [optional] 
+**Ipv6Auto** | Pointer to **bool** |  | [optional] 
 **LagPorts** | Pointer to **[]string** |  | [optional] 
-**VlanParentInterface** | Pointer to **string** |  | [optional] 
-**VlanTag** | Pointer to **int32** |  | [optional] 
-**VlanPcp** | Pointer to **NullableInt32** |  | [optional] 
+**LagProtocol** | Pointer to **string** |  | [optional] 
 **Mtu** | Pointer to **NullableInt32** |  | [optional] 
+**Name** | Pointer to **string** |  | [optional] 
 **Options** | Pointer to **string** |  | [optional] 
+**VlanParentInterface** | Pointer to **string** |  | [optional] 
+**VlanPcp** | Pointer to **NullableInt32** |  | [optional] 
+**VlanTag** | Pointer to **int32** |  | [optional] 
 
 ## Methods
 
@@ -43,30 +43,55 @@ NewInterfaceUpdate1WithDefaults instantiates a new InterfaceUpdate1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetName
+### GetAliases
 
-`func (o *InterfaceUpdate1) GetName() string`
+`func (o *InterfaceUpdate1) GetAliases() []map[string]interface{}`
 
-GetName returns the Name field if non-nil, zero value otherwise.
+GetAliases returns the Aliases field if non-nil, zero value otherwise.
 
-### GetNameOk
+### GetAliasesOk
 
-`func (o *InterfaceUpdate1) GetNameOk() (*string, bool)`
+`func (o *InterfaceUpdate1) GetAliasesOk() (*[]map[string]interface{}, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
+GetAliasesOk returns a tuple with the Aliases field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetName
+### SetAliases
 
-`func (o *InterfaceUpdate1) SetName(v string)`
+`func (o *InterfaceUpdate1) SetAliases(v []map[string]interface{})`
 
-SetName sets Name field to given value.
+SetAliases sets Aliases field to given value.
 
-### HasName
+### HasAliases
 
-`func (o *InterfaceUpdate1) HasName() bool`
+`func (o *InterfaceUpdate1) HasAliases() bool`
 
-HasName returns a boolean if a field has been set.
+HasAliases returns a boolean if a field has been set.
+
+### GetBridgeMembers
+
+`func (o *InterfaceUpdate1) GetBridgeMembers() []interface{}`
+
+GetBridgeMembers returns the BridgeMembers field if non-nil, zero value otherwise.
+
+### GetBridgeMembersOk
+
+`func (o *InterfaceUpdate1) GetBridgeMembersOk() (*[]interface{}, bool)`
+
+GetBridgeMembersOk returns a tuple with the BridgeMembers field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetBridgeMembers
+
+`func (o *InterfaceUpdate1) SetBridgeMembers(v []interface{})`
+
+SetBridgeMembers sets BridgeMembers field to given value.
+
+### HasBridgeMembers
+
+`func (o *InterfaceUpdate1) HasBridgeMembers() bool`
+
+HasBridgeMembers returns a boolean if a field has been set.
 
 ### GetDescription
 
@@ -128,80 +153,30 @@ SetDisableOffloadCapabilities sets DisableOffloadCapabilities field to given val
 
 HasDisableOffloadCapabilities returns a boolean if a field has been set.
 
-### GetIpv4Dhcp
+### GetFailoverAliases
 
-`func (o *InterfaceUpdate1) GetIpv4Dhcp() bool`
+`func (o *InterfaceUpdate1) GetFailoverAliases() []map[string]interface{}`
 
-GetIpv4Dhcp returns the Ipv4Dhcp field if non-nil, zero value otherwise.
+GetFailoverAliases returns the FailoverAliases field if non-nil, zero value otherwise.
 
-### GetIpv4DhcpOk
+### GetFailoverAliasesOk
 
-`func (o *InterfaceUpdate1) GetIpv4DhcpOk() (*bool, bool)`
+`func (o *InterfaceUpdate1) GetFailoverAliasesOk() (*[]map[string]interface{}, bool)`
 
-GetIpv4DhcpOk returns a tuple with the Ipv4Dhcp field if it's non-nil, zero value otherwise
+GetFailoverAliasesOk returns a tuple with the FailoverAliases field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetIpv4Dhcp
+### SetFailoverAliases
 
-`func (o *InterfaceUpdate1) SetIpv4Dhcp(v bool)`
+`func (o *InterfaceUpdate1) SetFailoverAliases(v []map[string]interface{})`
 
-SetIpv4Dhcp sets Ipv4Dhcp field to given value.
+SetFailoverAliases sets FailoverAliases field to given value.
 
-### HasIpv4Dhcp
+### HasFailoverAliases
 
-`func (o *InterfaceUpdate1) HasIpv4Dhcp() bool`
+`func (o *InterfaceUpdate1) HasFailoverAliases() bool`
 
-HasIpv4Dhcp returns a boolean if a field has been set.
-
-### GetIpv6Auto
-
-`func (o *InterfaceUpdate1) GetIpv6Auto() bool`
-
-GetIpv6Auto returns the Ipv6Auto field if non-nil, zero value otherwise.
-
-### GetIpv6AutoOk
-
-`func (o *InterfaceUpdate1) GetIpv6AutoOk() (*bool, bool)`
-
-GetIpv6AutoOk returns a tuple with the Ipv6Auto field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetIpv6Auto
-
-`func (o *InterfaceUpdate1) SetIpv6Auto(v bool)`
-
-SetIpv6Auto sets Ipv6Auto field to given value.
-
-### HasIpv6Auto
-
-`func (o *InterfaceUpdate1) HasIpv6Auto() bool`
-
-HasIpv6Auto returns a boolean if a field has been set.
-
-### GetAliases
-
-`func (o *InterfaceUpdate1) GetAliases() []map[string]interface{}`
-
-GetAliases returns the Aliases field if non-nil, zero value otherwise.
-
-### GetAliasesOk
-
-`func (o *InterfaceUpdate1) GetAliasesOk() (*[]map[string]interface{}, bool)`
-
-GetAliasesOk returns a tuple with the Aliases field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetAliases
-
-`func (o *InterfaceUpdate1) SetAliases(v []map[string]interface{})`
-
-SetAliases sets Aliases field to given value.
-
-### HasAliases
-
-`func (o *InterfaceUpdate1) HasAliases() bool`
-
-HasAliases returns a boolean if a field has been set.
+HasFailoverAliases returns a boolean if a field has been set.
 
 ### GetFailoverCritical
 
@@ -298,31 +273,6 @@ HasFailoverVhid returns a boolean if a field has been set.
 `func (o *InterfaceUpdate1) UnsetFailoverVhid()`
 
 UnsetFailoverVhid ensures that no value is present for FailoverVhid, not even an explicit nil
-### GetFailoverAliases
-
-`func (o *InterfaceUpdate1) GetFailoverAliases() []map[string]interface{}`
-
-GetFailoverAliases returns the FailoverAliases field if non-nil, zero value otherwise.
-
-### GetFailoverAliasesOk
-
-`func (o *InterfaceUpdate1) GetFailoverAliasesOk() (*[]map[string]interface{}, bool)`
-
-GetFailoverAliasesOk returns a tuple with the FailoverAliases field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetFailoverAliases
-
-`func (o *InterfaceUpdate1) SetFailoverAliases(v []map[string]interface{})`
-
-SetFailoverAliases sets FailoverAliases field to given value.
-
-### HasFailoverAliases
-
-`func (o *InterfaceUpdate1) HasFailoverAliases() bool`
-
-HasFailoverAliases returns a boolean if a field has been set.
-
 ### GetFailoverVirtualAliases
 
 `func (o *InterfaceUpdate1) GetFailoverVirtualAliases() []map[string]interface{}`
@@ -348,55 +298,55 @@ SetFailoverVirtualAliases sets FailoverVirtualAliases field to given value.
 
 HasFailoverVirtualAliases returns a boolean if a field has been set.
 
-### GetBridgeMembers
+### GetIpv4Dhcp
 
-`func (o *InterfaceUpdate1) GetBridgeMembers() []interface{}`
+`func (o *InterfaceUpdate1) GetIpv4Dhcp() bool`
 
-GetBridgeMembers returns the BridgeMembers field if non-nil, zero value otherwise.
+GetIpv4Dhcp returns the Ipv4Dhcp field if non-nil, zero value otherwise.
 
-### GetBridgeMembersOk
+### GetIpv4DhcpOk
 
-`func (o *InterfaceUpdate1) GetBridgeMembersOk() (*[]interface{}, bool)`
+`func (o *InterfaceUpdate1) GetIpv4DhcpOk() (*bool, bool)`
 
-GetBridgeMembersOk returns a tuple with the BridgeMembers field if it's non-nil, zero value otherwise
+GetIpv4DhcpOk returns a tuple with the Ipv4Dhcp field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetBridgeMembers
+### SetIpv4Dhcp
 
-`func (o *InterfaceUpdate1) SetBridgeMembers(v []interface{})`
+`func (o *InterfaceUpdate1) SetIpv4Dhcp(v bool)`
 
-SetBridgeMembers sets BridgeMembers field to given value.
+SetIpv4Dhcp sets Ipv4Dhcp field to given value.
 
-### HasBridgeMembers
+### HasIpv4Dhcp
 
-`func (o *InterfaceUpdate1) HasBridgeMembers() bool`
+`func (o *InterfaceUpdate1) HasIpv4Dhcp() bool`
 
-HasBridgeMembers returns a boolean if a field has been set.
+HasIpv4Dhcp returns a boolean if a field has been set.
 
-### GetLagProtocol
+### GetIpv6Auto
 
-`func (o *InterfaceUpdate1) GetLagProtocol() string`
+`func (o *InterfaceUpdate1) GetIpv6Auto() bool`
 
-GetLagProtocol returns the LagProtocol field if non-nil, zero value otherwise.
+GetIpv6Auto returns the Ipv6Auto field if non-nil, zero value otherwise.
 
-### GetLagProtocolOk
+### GetIpv6AutoOk
 
-`func (o *InterfaceUpdate1) GetLagProtocolOk() (*string, bool)`
+`func (o *InterfaceUpdate1) GetIpv6AutoOk() (*bool, bool)`
 
-GetLagProtocolOk returns a tuple with the LagProtocol field if it's non-nil, zero value otherwise
+GetIpv6AutoOk returns a tuple with the Ipv6Auto field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetLagProtocol
+### SetIpv6Auto
 
-`func (o *InterfaceUpdate1) SetLagProtocol(v string)`
+`func (o *InterfaceUpdate1) SetIpv6Auto(v bool)`
 
-SetLagProtocol sets LagProtocol field to given value.
+SetIpv6Auto sets Ipv6Auto field to given value.
 
-### HasLagProtocol
+### HasIpv6Auto
 
-`func (o *InterfaceUpdate1) HasLagProtocol() bool`
+`func (o *InterfaceUpdate1) HasIpv6Auto() bool`
 
-HasLagProtocol returns a boolean if a field has been set.
+HasIpv6Auto returns a boolean if a field has been set.
 
 ### GetLagPorts
 
@@ -423,6 +373,116 @@ SetLagPorts sets LagPorts field to given value.
 
 HasLagPorts returns a boolean if a field has been set.
 
+### GetLagProtocol
+
+`func (o *InterfaceUpdate1) GetLagProtocol() string`
+
+GetLagProtocol returns the LagProtocol field if non-nil, zero value otherwise.
+
+### GetLagProtocolOk
+
+`func (o *InterfaceUpdate1) GetLagProtocolOk() (*string, bool)`
+
+GetLagProtocolOk returns a tuple with the LagProtocol field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLagProtocol
+
+`func (o *InterfaceUpdate1) SetLagProtocol(v string)`
+
+SetLagProtocol sets LagProtocol field to given value.
+
+### HasLagProtocol
+
+`func (o *InterfaceUpdate1) HasLagProtocol() bool`
+
+HasLagProtocol returns a boolean if a field has been set.
+
+### GetMtu
+
+`func (o *InterfaceUpdate1) GetMtu() int32`
+
+GetMtu returns the Mtu field if non-nil, zero value otherwise.
+
+### GetMtuOk
+
+`func (o *InterfaceUpdate1) GetMtuOk() (*int32, bool)`
+
+GetMtuOk returns a tuple with the Mtu field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMtu
+
+`func (o *InterfaceUpdate1) SetMtu(v int32)`
+
+SetMtu sets Mtu field to given value.
+
+### HasMtu
+
+`func (o *InterfaceUpdate1) HasMtu() bool`
+
+HasMtu returns a boolean if a field has been set.
+
+### SetMtuNil
+
+`func (o *InterfaceUpdate1) SetMtuNil(b bool)`
+
+ SetMtuNil sets the value for Mtu to be an explicit nil
+
+### UnsetMtu
+`func (o *InterfaceUpdate1) UnsetMtu()`
+
+UnsetMtu ensures that no value is present for Mtu, not even an explicit nil
+### GetName
+
+`func (o *InterfaceUpdate1) GetName() string`
+
+GetName returns the Name field if non-nil, zero value otherwise.
+
+### GetNameOk
+
+`func (o *InterfaceUpdate1) GetNameOk() (*string, bool)`
+
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetName
+
+`func (o *InterfaceUpdate1) SetName(v string)`
+
+SetName sets Name field to given value.
+
+### HasName
+
+`func (o *InterfaceUpdate1) HasName() bool`
+
+HasName returns a boolean if a field has been set.
+
+### GetOptions
+
+`func (o *InterfaceUpdate1) GetOptions() string`
+
+GetOptions returns the Options field if non-nil, zero value otherwise.
+
+### GetOptionsOk
+
+`func (o *InterfaceUpdate1) GetOptionsOk() (*string, bool)`
+
+GetOptionsOk returns a tuple with the Options field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOptions
+
+`func (o *InterfaceUpdate1) SetOptions(v string)`
+
+SetOptions sets Options field to given value.
+
+### HasOptions
+
+`func (o *InterfaceUpdate1) HasOptions() bool`
+
+HasOptions returns a boolean if a field has been set.
+
 ### GetVlanParentInterface
 
 `func (o *InterfaceUpdate1) GetVlanParentInterface() string`
@@ -447,31 +507,6 @@ SetVlanParentInterface sets VlanParentInterface field to given value.
 `func (o *InterfaceUpdate1) HasVlanParentInterface() bool`
 
 HasVlanParentInterface returns a boolean if a field has been set.
-
-### GetVlanTag
-
-`func (o *InterfaceUpdate1) GetVlanTag() int32`
-
-GetVlanTag returns the VlanTag field if non-nil, zero value otherwise.
-
-### GetVlanTagOk
-
-`func (o *InterfaceUpdate1) GetVlanTagOk() (*int32, bool)`
-
-GetVlanTagOk returns a tuple with the VlanTag field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetVlanTag
-
-`func (o *InterfaceUpdate1) SetVlanTag(v int32)`
-
-SetVlanTag sets VlanTag field to given value.
-
-### HasVlanTag
-
-`func (o *InterfaceUpdate1) HasVlanTag() bool`
-
-HasVlanTag returns a boolean if a field has been set.
 
 ### GetVlanPcp
 
@@ -508,65 +543,30 @@ HasVlanPcp returns a boolean if a field has been set.
 `func (o *InterfaceUpdate1) UnsetVlanPcp()`
 
 UnsetVlanPcp ensures that no value is present for VlanPcp, not even an explicit nil
-### GetMtu
+### GetVlanTag
 
-`func (o *InterfaceUpdate1) GetMtu() int32`
+`func (o *InterfaceUpdate1) GetVlanTag() int32`
 
-GetMtu returns the Mtu field if non-nil, zero value otherwise.
+GetVlanTag returns the VlanTag field if non-nil, zero value otherwise.
 
-### GetMtuOk
+### GetVlanTagOk
 
-`func (o *InterfaceUpdate1) GetMtuOk() (*int32, bool)`
+`func (o *InterfaceUpdate1) GetVlanTagOk() (*int32, bool)`
 
-GetMtuOk returns a tuple with the Mtu field if it's non-nil, zero value otherwise
+GetVlanTagOk returns a tuple with the VlanTag field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetMtu
+### SetVlanTag
 
-`func (o *InterfaceUpdate1) SetMtu(v int32)`
+`func (o *InterfaceUpdate1) SetVlanTag(v int32)`
 
-SetMtu sets Mtu field to given value.
+SetVlanTag sets VlanTag field to given value.
 
-### HasMtu
+### HasVlanTag
 
-`func (o *InterfaceUpdate1) HasMtu() bool`
+`func (o *InterfaceUpdate1) HasVlanTag() bool`
 
-HasMtu returns a boolean if a field has been set.
-
-### SetMtuNil
-
-`func (o *InterfaceUpdate1) SetMtuNil(b bool)`
-
- SetMtuNil sets the value for Mtu to be an explicit nil
-
-### UnsetMtu
-`func (o *InterfaceUpdate1) UnsetMtu()`
-
-UnsetMtu ensures that no value is present for Mtu, not even an explicit nil
-### GetOptions
-
-`func (o *InterfaceUpdate1) GetOptions() string`
-
-GetOptions returns the Options field if non-nil, zero value otherwise.
-
-### GetOptionsOk
-
-`func (o *InterfaceUpdate1) GetOptionsOk() (*string, bool)`
-
-GetOptionsOk returns a tuple with the Options field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetOptions
-
-`func (o *InterfaceUpdate1) SetOptions(v string)`
-
-SetOptions sets Options field to given value.
-
-### HasOptions
-
-`func (o *InterfaceUpdate1) HasOptions() bool`
-
-HasOptions returns a boolean if a field has been set.
+HasVlanTag returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

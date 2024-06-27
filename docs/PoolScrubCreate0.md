@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Pool** | Pointer to **int32** |  | [optional] 
-**Threshold** | Pointer to **int32** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Schedule** | Pointer to [**CloudsyncCreate0Schedule**](CloudsyncCreate0Schedule.md) |  | [optional] 
 **Enabled** | Pointer to **bool** |  | [optional] 
+**Pool** | Pointer to **int32** |  | [optional] 
+**Schedule** | Pointer to [**CloudsyncCreate0Schedule**](CloudsyncCreate0Schedule.md) |  | [optional] 
+**Threshold** | Pointer to **int32** |  | [optional] 
 
 ## Methods
 
@@ -28,56 +28,6 @@ will change when the set of required properties is changed
 NewPoolScrubCreate0WithDefaults instantiates a new PoolScrubCreate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetPool
-
-`func (o *PoolScrubCreate0) GetPool() int32`
-
-GetPool returns the Pool field if non-nil, zero value otherwise.
-
-### GetPoolOk
-
-`func (o *PoolScrubCreate0) GetPoolOk() (*int32, bool)`
-
-GetPoolOk returns a tuple with the Pool field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPool
-
-`func (o *PoolScrubCreate0) SetPool(v int32)`
-
-SetPool sets Pool field to given value.
-
-### HasPool
-
-`func (o *PoolScrubCreate0) HasPool() bool`
-
-HasPool returns a boolean if a field has been set.
-
-### GetThreshold
-
-`func (o *PoolScrubCreate0) GetThreshold() int32`
-
-GetThreshold returns the Threshold field if non-nil, zero value otherwise.
-
-### GetThresholdOk
-
-`func (o *PoolScrubCreate0) GetThresholdOk() (*int32, bool)`
-
-GetThresholdOk returns a tuple with the Threshold field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetThreshold
-
-`func (o *PoolScrubCreate0) SetThreshold(v int32)`
-
-SetThreshold sets Threshold field to given value.
-
-### HasThreshold
-
-`func (o *PoolScrubCreate0) HasThreshold() bool`
-
-HasThreshold returns a boolean if a field has been set.
 
 ### GetDescription
 
@@ -104,6 +54,56 @@ SetDescription sets Description field to given value.
 
 HasDescription returns a boolean if a field has been set.
 
+### GetEnabled
+
+`func (o *PoolScrubCreate0) GetEnabled() bool`
+
+GetEnabled returns the Enabled field if non-nil, zero value otherwise.
+
+### GetEnabledOk
+
+`func (o *PoolScrubCreate0) GetEnabledOk() (*bool, bool)`
+
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEnabled
+
+`func (o *PoolScrubCreate0) SetEnabled(v bool)`
+
+SetEnabled sets Enabled field to given value.
+
+### HasEnabled
+
+`func (o *PoolScrubCreate0) HasEnabled() bool`
+
+HasEnabled returns a boolean if a field has been set.
+
+### GetPool
+
+`func (o *PoolScrubCreate0) GetPool() int32`
+
+GetPool returns the Pool field if non-nil, zero value otherwise.
+
+### GetPoolOk
+
+`func (o *PoolScrubCreate0) GetPoolOk() (*int32, bool)`
+
+GetPoolOk returns a tuple with the Pool field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPool
+
+`func (o *PoolScrubCreate0) SetPool(v int32)`
+
+SetPool sets Pool field to given value.
+
+### HasPool
+
+`func (o *PoolScrubCreate0) HasPool() bool`
+
+HasPool returns a boolean if a field has been set.
+
 ### GetSchedule
 
 `func (o *PoolScrubCreate0) GetSchedule() CloudsyncCreate0Schedule`
@@ -129,30 +129,30 @@ SetSchedule sets Schedule field to given value.
 
 HasSchedule returns a boolean if a field has been set.
 
-### GetEnabled
+### GetThreshold
 
-`func (o *PoolScrubCreate0) GetEnabled() bool`
+`func (o *PoolScrubCreate0) GetThreshold() int32`
 
-GetEnabled returns the Enabled field if non-nil, zero value otherwise.
+GetThreshold returns the Threshold field if non-nil, zero value otherwise.
 
-### GetEnabledOk
+### GetThresholdOk
 
-`func (o *PoolScrubCreate0) GetEnabledOk() (*bool, bool)`
+`func (o *PoolScrubCreate0) GetThresholdOk() (*int32, bool)`
 
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
+GetThresholdOk returns a tuple with the Threshold field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetEnabled
+### SetThreshold
 
-`func (o *PoolScrubCreate0) SetEnabled(v bool)`
+`func (o *PoolScrubCreate0) SetThreshold(v int32)`
 
-SetEnabled sets Enabled field to given value.
+SetThreshold sets Threshold field to given value.
 
-### HasEnabled
+### HasThreshold
 
-`func (o *PoolScrubCreate0) HasEnabled() bool`
+`func (o *PoolScrubCreate0) HasThreshold() bool`
 
-HasEnabled returns a boolean if a field has been set.
+HasThreshold returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

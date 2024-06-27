@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Interval** | Pointer to **int32** |  | [optional] 
-**Powermode** | Pointer to **string** |  | [optional] 
+**Critical** | Pointer to **int32** |  | [optional] 
 **Difference** | Pointer to **int32** |  | [optional] 
 **Informational** | Pointer to **int32** |  | [optional] 
-**Critical** | Pointer to **int32** |  | [optional] 
+**Interval** | Pointer to **int32** |  | [optional] 
+**Powermode** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -29,55 +29,30 @@ NewSmartUpdate0WithDefaults instantiates a new SmartUpdate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetInterval
+### GetCritical
 
-`func (o *SmartUpdate0) GetInterval() int32`
+`func (o *SmartUpdate0) GetCritical() int32`
 
-GetInterval returns the Interval field if non-nil, zero value otherwise.
+GetCritical returns the Critical field if non-nil, zero value otherwise.
 
-### GetIntervalOk
+### GetCriticalOk
 
-`func (o *SmartUpdate0) GetIntervalOk() (*int32, bool)`
+`func (o *SmartUpdate0) GetCriticalOk() (*int32, bool)`
 
-GetIntervalOk returns a tuple with the Interval field if it's non-nil, zero value otherwise
+GetCriticalOk returns a tuple with the Critical field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetInterval
+### SetCritical
 
-`func (o *SmartUpdate0) SetInterval(v int32)`
+`func (o *SmartUpdate0) SetCritical(v int32)`
 
-SetInterval sets Interval field to given value.
+SetCritical sets Critical field to given value.
 
-### HasInterval
+### HasCritical
 
-`func (o *SmartUpdate0) HasInterval() bool`
+`func (o *SmartUpdate0) HasCritical() bool`
 
-HasInterval returns a boolean if a field has been set.
-
-### GetPowermode
-
-`func (o *SmartUpdate0) GetPowermode() string`
-
-GetPowermode returns the Powermode field if non-nil, zero value otherwise.
-
-### GetPowermodeOk
-
-`func (o *SmartUpdate0) GetPowermodeOk() (*string, bool)`
-
-GetPowermodeOk returns a tuple with the Powermode field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPowermode
-
-`func (o *SmartUpdate0) SetPowermode(v string)`
-
-SetPowermode sets Powermode field to given value.
-
-### HasPowermode
-
-`func (o *SmartUpdate0) HasPowermode() bool`
-
-HasPowermode returns a boolean if a field has been set.
+HasCritical returns a boolean if a field has been set.
 
 ### GetDifference
 
@@ -129,30 +104,55 @@ SetInformational sets Informational field to given value.
 
 HasInformational returns a boolean if a field has been set.
 
-### GetCritical
+### GetInterval
 
-`func (o *SmartUpdate0) GetCritical() int32`
+`func (o *SmartUpdate0) GetInterval() int32`
 
-GetCritical returns the Critical field if non-nil, zero value otherwise.
+GetInterval returns the Interval field if non-nil, zero value otherwise.
 
-### GetCriticalOk
+### GetIntervalOk
 
-`func (o *SmartUpdate0) GetCriticalOk() (*int32, bool)`
+`func (o *SmartUpdate0) GetIntervalOk() (*int32, bool)`
 
-GetCriticalOk returns a tuple with the Critical field if it's non-nil, zero value otherwise
+GetIntervalOk returns a tuple with the Interval field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetCritical
+### SetInterval
 
-`func (o *SmartUpdate0) SetCritical(v int32)`
+`func (o *SmartUpdate0) SetInterval(v int32)`
 
-SetCritical sets Critical field to given value.
+SetInterval sets Interval field to given value.
 
-### HasCritical
+### HasInterval
 
-`func (o *SmartUpdate0) HasCritical() bool`
+`func (o *SmartUpdate0) HasInterval() bool`
 
-HasCritical returns a boolean if a field has been set.
+HasInterval returns a boolean if a field has been set.
+
+### GetPowermode
+
+`func (o *SmartUpdate0) GetPowermode() string`
+
+GetPowermode returns the Powermode field if non-nil, zero value otherwise.
+
+### GetPowermodeOk
+
+`func (o *SmartUpdate0) GetPowermodeOk() (*string, bool)`
+
+GetPowermodeOk returns a tuple with the Powermode field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPowermode
+
+`func (o *SmartUpdate0) SetPowermode(v string)`
+
+SetPowermode sets Powermode field to given value.
+
+### HasPowermode
+
+`func (o *SmartUpdate0) HasPowermode() bool`
+
+HasPowermode returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Uuid** | Pointer to **string** |  | [optional] 
 **Pkglist** | Pointer to **[]string** |  | [optional] 
-**Thickjail** | Pointer to **bool** |  | [optional] 
 **Props** | Pointer to **[]interface{}** |  | [optional] 
+**Thickjail** | Pointer to **bool** |  | [optional] 
+**Uuid** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -27,31 +27,6 @@ will change when the set of required properties is changed
 NewJailClone1WithDefaults instantiates a new JailClone1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetUuid
-
-`func (o *JailClone1) GetUuid() string`
-
-GetUuid returns the Uuid field if non-nil, zero value otherwise.
-
-### GetUuidOk
-
-`func (o *JailClone1) GetUuidOk() (*string, bool)`
-
-GetUuidOk returns a tuple with the Uuid field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetUuid
-
-`func (o *JailClone1) SetUuid(v string)`
-
-SetUuid sets Uuid field to given value.
-
-### HasUuid
-
-`func (o *JailClone1) HasUuid() bool`
-
-HasUuid returns a boolean if a field has been set.
 
 ### GetPkglist
 
@@ -78,6 +53,31 @@ SetPkglist sets Pkglist field to given value.
 
 HasPkglist returns a boolean if a field has been set.
 
+### GetProps
+
+`func (o *JailClone1) GetProps() []interface{}`
+
+GetProps returns the Props field if non-nil, zero value otherwise.
+
+### GetPropsOk
+
+`func (o *JailClone1) GetPropsOk() (*[]interface{}, bool)`
+
+GetPropsOk returns a tuple with the Props field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetProps
+
+`func (o *JailClone1) SetProps(v []interface{})`
+
+SetProps sets Props field to given value.
+
+### HasProps
+
+`func (o *JailClone1) HasProps() bool`
+
+HasProps returns a boolean if a field has been set.
+
 ### GetThickjail
 
 `func (o *JailClone1) GetThickjail() bool`
@@ -103,30 +103,30 @@ SetThickjail sets Thickjail field to given value.
 
 HasThickjail returns a boolean if a field has been set.
 
-### GetProps
+### GetUuid
 
-`func (o *JailClone1) GetProps() []interface{}`
+`func (o *JailClone1) GetUuid() string`
 
-GetProps returns the Props field if non-nil, zero value otherwise.
+GetUuid returns the Uuid field if non-nil, zero value otherwise.
 
-### GetPropsOk
+### GetUuidOk
 
-`func (o *JailClone1) GetPropsOk() (*[]interface{}, bool)`
+`func (o *JailClone1) GetUuidOk() (*string, bool)`
 
-GetPropsOk returns a tuple with the Props field if it's non-nil, zero value otherwise
+GetUuidOk returns a tuple with the Uuid field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetProps
+### SetUuid
 
-`func (o *JailClone1) SetProps(v []interface{})`
+`func (o *JailClone1) SetUuid(v string)`
 
-SetProps sets Props field to given value.
+SetUuid sets Uuid field to given value.
 
-### HasProps
+### HasUuid
 
-`func (o *JailClone1) HasProps() bool`
+`func (o *JailClone1) HasUuid() bool`
 
-HasProps returns a boolean if a field has been set.
+HasUuid returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

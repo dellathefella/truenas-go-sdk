@@ -345,30 +345,6 @@ Class | Method | HTTP request | Description
 *IscsiTargetextentApi* | [**IscsiTargetextentIdIdGet**](docs/IscsiTargetextentApi.md#iscsitargetextentididget) | **Get** /iscsi/targetextent/id/{id} | 
 *IscsiTargetextentApi* | [**IscsiTargetextentIdIdPut**](docs/IscsiTargetextentApi.md#iscsitargetextentididput) | **Put** /iscsi/targetextent/id/{id} | 
 *IscsiTargetextentApi* | [**IscsiTargetextentPost**](docs/IscsiTargetextentApi.md#iscsitargetextentpost) | **Post** /iscsi/targetextent | 
-*JailApi* | [**JailActivatePost**](docs/JailApi.md#jailactivatepost) | **Post** /jail/activate | 
-*JailApi* | [**JailCleanPost**](docs/JailApi.md#jailcleanpost) | **Post** /jail/clean | 
-*JailApi* | [**JailDefaultConfigurationGet**](docs/JailApi.md#jaildefaultconfigurationget) | **Get** /jail/default_configuration | 
-*JailApi* | [**JailExecPost**](docs/JailApi.md#jailexecpost) | **Post** /jail/exec | 
-*JailApi* | [**JailExportPost**](docs/JailApi.md#jailexportpost) | **Post** /jail/export | 
-*JailApi* | [**JailFetchPost**](docs/JailApi.md#jailfetchpost) | **Post** /jail/fetch | 
-*JailApi* | [**JailFstabPost**](docs/JailApi.md#jailfstabpost) | **Post** /jail/fstab | 
-*JailApi* | [**JailGet**](docs/JailApi.md#jailget) | **Get** /jail | 
-*JailApi* | [**JailGetActivatedPoolGet**](docs/JailApi.md#jailgetactivatedpoolget) | **Get** /jail/get_activated_pool | 
-*JailApi* | [**JailIdIdClonePost**](docs/JailApi.md#jailididclonepost) | **Post** /jail/id/{id}/clone | 
-*JailApi* | [**JailIdIdDelete**](docs/JailApi.md#jailididdelete) | **Delete** /jail/id/{id} | 
-*JailApi* | [**JailIdIdGet**](docs/JailApi.md#jailididget) | **Get** /jail/id/{id} | 
-*JailApi* | [**JailIdIdPut**](docs/JailApi.md#jailididput) | **Put** /jail/id/{id} | 
-*JailApi* | [**JailImportImagePost**](docs/JailApi.md#jailimportimagepost) | **Post** /jail/import_image | 
-*JailApi* | [**JailInterfaceChoicesGet**](docs/JailApi.md#jailinterfacechoicesget) | **Get** /jail/interface_choices | 
-*JailApi* | [**JailPost**](docs/JailApi.md#jailpost) | **Post** /jail | 
-*JailApi* | [**JailRcActionPost**](docs/JailApi.md#jailrcactionpost) | **Post** /jail/rc_action | 
-*JailApi* | [**JailReleasesChoicesPost**](docs/JailApi.md#jailreleaseschoicespost) | **Post** /jail/releases_choices | 
-*JailApi* | [**JailRestartPost**](docs/JailApi.md#jailrestartpost) | **Post** /jail/restart | 
-*JailApi* | [**JailStartPost**](docs/JailApi.md#jailstartpost) | **Post** /jail/start | 
-*JailApi* | [**JailStopPost**](docs/JailApi.md#jailstoppost) | **Post** /jail/stop | 
-*JailApi* | [**JailUpdateDefaultsPost**](docs/JailApi.md#jailupdatedefaultspost) | **Post** /jail/update_defaults | 
-*JailApi* | [**JailUpdateToLatestPatchPost**](docs/JailApi.md#jailupdatetolatestpatchpost) | **Post** /jail/update_to_latest_patch | 
-*JailApi* | [**JailVnetDefaultInterfaceChoicesGet**](docs/JailApi.md#jailvnetdefaultinterfacechoicesget) | **Get** /jail/vnet_default_interface_choices | 
 *KerberosApi* | [**KerberosGet**](docs/KerberosApi.md#kerberosget) | **Get** /kerberos | 
 *KerberosApi* | [**KerberosPut**](docs/KerberosApi.md#kerberosput) | **Put** /kerberos | 
 *KerberosKeytabApi* | [**KerberosKeytabGet**](docs/KerberosKeytabApi.md#kerberoskeytabget) | **Get** /kerberos/keytab | 
@@ -829,9 +805,7 @@ Class | Method | HTTP request | Description
  - [DiskGetEncrypted0](docs/DiskGetEncrypted0.md)
  - [DiskOverprovision](docs/DiskOverprovision.md)
  - [DiskTemperature](docs/DiskTemperature.md)
- - [DiskTemperature1](docs/DiskTemperature1.md)
  - [DiskTemperatures](docs/DiskTemperatures.md)
- - [DiskTemperatures1](docs/DiskTemperatures1.md)
  - [DiskUpdate1](docs/DiskUpdate1.md)
  - [DiskUpdate1Enclosure](docs/DiskUpdate1Enclosure.md)
  - [DiskWipe](docs/DiskWipe.md)
@@ -928,8 +902,8 @@ Class | Method | HTTP request | Description
  - [MailSend](docs/MailSend.md)
  - [MailSend0](docs/MailSend0.md)
  - [MailSend1](docs/MailSend1.md)
+ - [MailSend1Oauth](docs/MailSend1Oauth.md)
  - [MailUpdate0](docs/MailUpdate0.md)
- - [MailUpdate0Oauth](docs/MailUpdate0Oauth.md)
  - [NetworkConfigurationUpdate0](docs/NetworkConfigurationUpdate0.md)
  - [NetworkConfigurationUpdate0ServiceAnnouncement](docs/NetworkConfigurationUpdate0ServiceAnnouncement.md)
  - [NfsAddPrincipal0](docs/NfsAddPrincipal0.md)
@@ -964,7 +938,7 @@ Class | Method | HTTP request | Description
  - [PoolDatasetUnlock](docs/PoolDatasetUnlock.md)
  - [PoolDatasetUnlock1](docs/PoolDatasetUnlock1.md)
  - [PoolDatasetUpdate1](docs/PoolDatasetUpdate1.md)
- - [PoolDatasetUpdate1QuotaWarning](docs/PoolDatasetUpdate1QuotaWarning.md)
+ - [PoolDatasetUpdate1QuotaCritical](docs/PoolDatasetUpdate1QuotaCritical.md)
  - [PoolDatasetUserpropCreate0](docs/PoolDatasetUserpropCreate0.md)
  - [PoolDatasetUserpropCreate0Property](docs/PoolDatasetUserpropCreate0Property.md)
  - [PoolDatasetUserpropDelete1](docs/PoolDatasetUserpropDelete1.md)

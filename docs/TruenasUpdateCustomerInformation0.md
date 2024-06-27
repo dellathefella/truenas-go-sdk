@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Company** | Pointer to **string** |  | [optional] 
 **AdministrativeUser** | Pointer to [**TruenasUpdateCustomerInformation0AdministrativeUser**](TruenasUpdateCustomerInformation0AdministrativeUser.md) |  | [optional] 
-**TechnicalUser** | Pointer to [**TruenasUpdateCustomerInformation0AdministrativeUser**](TruenasUpdateCustomerInformation0AdministrativeUser.md) |  | [optional] 
-**Reseller** | Pointer to [**TruenasUpdateCustomerInformation0Reseller**](TruenasUpdateCustomerInformation0Reseller.md) |  | [optional] 
+**Company** | Pointer to **string** |  | [optional] 
+**OtherPrimaryUseCase** | Pointer to **string** |  | [optional] 
 **PhysicalLocation** | Pointer to [**TruenasUpdateCustomerInformation0PhysicalLocation**](TruenasUpdateCustomerInformation0PhysicalLocation.md) |  | [optional] 
 **PrimaryUseCase** | Pointer to **string** |  | [optional] 
-**OtherPrimaryUseCase** | Pointer to **string** |  | [optional] 
+**Reseller** | Pointer to [**TruenasUpdateCustomerInformation0Reseller**](TruenasUpdateCustomerInformation0Reseller.md) |  | [optional] 
+**TechnicalUser** | Pointer to [**TruenasUpdateCustomerInformation0AdministrativeUser**](TruenasUpdateCustomerInformation0AdministrativeUser.md) |  | [optional] 
 
 ## Methods
 
@@ -30,31 +30,6 @@ will change when the set of required properties is changed
 NewTruenasUpdateCustomerInformation0WithDefaults instantiates a new TruenasUpdateCustomerInformation0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetCompany
-
-`func (o *TruenasUpdateCustomerInformation0) GetCompany() string`
-
-GetCompany returns the Company field if non-nil, zero value otherwise.
-
-### GetCompanyOk
-
-`func (o *TruenasUpdateCustomerInformation0) GetCompanyOk() (*string, bool)`
-
-GetCompanyOk returns a tuple with the Company field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCompany
-
-`func (o *TruenasUpdateCustomerInformation0) SetCompany(v string)`
-
-SetCompany sets Company field to given value.
-
-### HasCompany
-
-`func (o *TruenasUpdateCustomerInformation0) HasCompany() bool`
-
-HasCompany returns a boolean if a field has been set.
 
 ### GetAdministrativeUser
 
@@ -81,55 +56,55 @@ SetAdministrativeUser sets AdministrativeUser field to given value.
 
 HasAdministrativeUser returns a boolean if a field has been set.
 
-### GetTechnicalUser
+### GetCompany
 
-`func (o *TruenasUpdateCustomerInformation0) GetTechnicalUser() TruenasUpdateCustomerInformation0AdministrativeUser`
+`func (o *TruenasUpdateCustomerInformation0) GetCompany() string`
 
-GetTechnicalUser returns the TechnicalUser field if non-nil, zero value otherwise.
+GetCompany returns the Company field if non-nil, zero value otherwise.
 
-### GetTechnicalUserOk
+### GetCompanyOk
 
-`func (o *TruenasUpdateCustomerInformation0) GetTechnicalUserOk() (*TruenasUpdateCustomerInformation0AdministrativeUser, bool)`
+`func (o *TruenasUpdateCustomerInformation0) GetCompanyOk() (*string, bool)`
 
-GetTechnicalUserOk returns a tuple with the TechnicalUser field if it's non-nil, zero value otherwise
+GetCompanyOk returns a tuple with the Company field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetTechnicalUser
+### SetCompany
 
-`func (o *TruenasUpdateCustomerInformation0) SetTechnicalUser(v TruenasUpdateCustomerInformation0AdministrativeUser)`
+`func (o *TruenasUpdateCustomerInformation0) SetCompany(v string)`
 
-SetTechnicalUser sets TechnicalUser field to given value.
+SetCompany sets Company field to given value.
 
-### HasTechnicalUser
+### HasCompany
 
-`func (o *TruenasUpdateCustomerInformation0) HasTechnicalUser() bool`
+`func (o *TruenasUpdateCustomerInformation0) HasCompany() bool`
 
-HasTechnicalUser returns a boolean if a field has been set.
+HasCompany returns a boolean if a field has been set.
 
-### GetReseller
+### GetOtherPrimaryUseCase
 
-`func (o *TruenasUpdateCustomerInformation0) GetReseller() TruenasUpdateCustomerInformation0Reseller`
+`func (o *TruenasUpdateCustomerInformation0) GetOtherPrimaryUseCase() string`
 
-GetReseller returns the Reseller field if non-nil, zero value otherwise.
+GetOtherPrimaryUseCase returns the OtherPrimaryUseCase field if non-nil, zero value otherwise.
 
-### GetResellerOk
+### GetOtherPrimaryUseCaseOk
 
-`func (o *TruenasUpdateCustomerInformation0) GetResellerOk() (*TruenasUpdateCustomerInformation0Reseller, bool)`
+`func (o *TruenasUpdateCustomerInformation0) GetOtherPrimaryUseCaseOk() (*string, bool)`
 
-GetResellerOk returns a tuple with the Reseller field if it's non-nil, zero value otherwise
+GetOtherPrimaryUseCaseOk returns a tuple with the OtherPrimaryUseCase field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetReseller
+### SetOtherPrimaryUseCase
 
-`func (o *TruenasUpdateCustomerInformation0) SetReseller(v TruenasUpdateCustomerInformation0Reseller)`
+`func (o *TruenasUpdateCustomerInformation0) SetOtherPrimaryUseCase(v string)`
 
-SetReseller sets Reseller field to given value.
+SetOtherPrimaryUseCase sets OtherPrimaryUseCase field to given value.
 
-### HasReseller
+### HasOtherPrimaryUseCase
 
-`func (o *TruenasUpdateCustomerInformation0) HasReseller() bool`
+`func (o *TruenasUpdateCustomerInformation0) HasOtherPrimaryUseCase() bool`
 
-HasReseller returns a boolean if a field has been set.
+HasOtherPrimaryUseCase returns a boolean if a field has been set.
 
 ### GetPhysicalLocation
 
@@ -181,30 +156,55 @@ SetPrimaryUseCase sets PrimaryUseCase field to given value.
 
 HasPrimaryUseCase returns a boolean if a field has been set.
 
-### GetOtherPrimaryUseCase
+### GetReseller
 
-`func (o *TruenasUpdateCustomerInformation0) GetOtherPrimaryUseCase() string`
+`func (o *TruenasUpdateCustomerInformation0) GetReseller() TruenasUpdateCustomerInformation0Reseller`
 
-GetOtherPrimaryUseCase returns the OtherPrimaryUseCase field if non-nil, zero value otherwise.
+GetReseller returns the Reseller field if non-nil, zero value otherwise.
 
-### GetOtherPrimaryUseCaseOk
+### GetResellerOk
 
-`func (o *TruenasUpdateCustomerInformation0) GetOtherPrimaryUseCaseOk() (*string, bool)`
+`func (o *TruenasUpdateCustomerInformation0) GetResellerOk() (*TruenasUpdateCustomerInformation0Reseller, bool)`
 
-GetOtherPrimaryUseCaseOk returns a tuple with the OtherPrimaryUseCase field if it's non-nil, zero value otherwise
+GetResellerOk returns a tuple with the Reseller field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetOtherPrimaryUseCase
+### SetReseller
 
-`func (o *TruenasUpdateCustomerInformation0) SetOtherPrimaryUseCase(v string)`
+`func (o *TruenasUpdateCustomerInformation0) SetReseller(v TruenasUpdateCustomerInformation0Reseller)`
 
-SetOtherPrimaryUseCase sets OtherPrimaryUseCase field to given value.
+SetReseller sets Reseller field to given value.
 
-### HasOtherPrimaryUseCase
+### HasReseller
 
-`func (o *TruenasUpdateCustomerInformation0) HasOtherPrimaryUseCase() bool`
+`func (o *TruenasUpdateCustomerInformation0) HasReseller() bool`
 
-HasOtherPrimaryUseCase returns a boolean if a field has been set.
+HasReseller returns a boolean if a field has been set.
+
+### GetTechnicalUser
+
+`func (o *TruenasUpdateCustomerInformation0) GetTechnicalUser() TruenasUpdateCustomerInformation0AdministrativeUser`
+
+GetTechnicalUser returns the TechnicalUser field if non-nil, zero value otherwise.
+
+### GetTechnicalUserOk
+
+`func (o *TruenasUpdateCustomerInformation0) GetTechnicalUserOk() (*TruenasUpdateCustomerInformation0AdministrativeUser, bool)`
+
+GetTechnicalUserOk returns a tuple with the TechnicalUser field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTechnicalUser
+
+`func (o *TruenasUpdateCustomerInformation0) SetTechnicalUser(v TruenasUpdateCustomerInformation0AdministrativeUser)`
+
+SetTechnicalUser sets TechnicalUser field to given value.
+
+### HasTechnicalUser
+
+`func (o *TruenasUpdateCustomerInformation0) HasTechnicalUser() bool`
+
+HasTechnicalUser returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

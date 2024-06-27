@@ -4,21 +4,21 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Domain** | Pointer to **string** |  | [optional] 
+**Domains** | Pointer to **[]string** |  | [optional] 
 **Hostname** | Pointer to **string** |  | [optional] 
 **HostnameB** | Pointer to **string** |  | [optional] 
 **HostnameVirtual** | Pointer to **string** |  | [optional] 
-**Domain** | Pointer to **string** |  | [optional] 
-**Domains** | Pointer to **[]string** |  | [optional] 
-**ServiceAnnouncement** | Pointer to [**NetworkConfigurationUpdate0ServiceAnnouncement**](NetworkConfigurationUpdate0ServiceAnnouncement.md) |  | [optional] 
+**Hosts** | Pointer to **string** |  | [optional] 
+**Httpproxy** | Pointer to **string** |  | [optional] 
 **Ipv4gateway** | Pointer to **string** |  | [optional] 
 **Ipv6gateway** | Pointer to **string** |  | [optional] 
 **Nameserver1** | Pointer to **string** |  | [optional] 
 **Nameserver2** | Pointer to **string** |  | [optional] 
 **Nameserver3** | Pointer to **string** |  | [optional] 
-**Httpproxy** | Pointer to **string** |  | [optional] 
 **NetwaitEnabled** | Pointer to **bool** |  | [optional] 
 **NetwaitIp** | Pointer to **[]string** |  | [optional] 
-**Hosts** | Pointer to **string** |  | [optional] 
+**ServiceAnnouncement** | Pointer to [**NetworkConfigurationUpdate0ServiceAnnouncement**](NetworkConfigurationUpdate0ServiceAnnouncement.md) |  | [optional] 
 
 ## Methods
 
@@ -38,6 +38,56 @@ will change when the set of required properties is changed
 NewNetworkConfigurationUpdate0WithDefaults instantiates a new NetworkConfigurationUpdate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetDomain
+
+`func (o *NetworkConfigurationUpdate0) GetDomain() string`
+
+GetDomain returns the Domain field if non-nil, zero value otherwise.
+
+### GetDomainOk
+
+`func (o *NetworkConfigurationUpdate0) GetDomainOk() (*string, bool)`
+
+GetDomainOk returns a tuple with the Domain field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDomain
+
+`func (o *NetworkConfigurationUpdate0) SetDomain(v string)`
+
+SetDomain sets Domain field to given value.
+
+### HasDomain
+
+`func (o *NetworkConfigurationUpdate0) HasDomain() bool`
+
+HasDomain returns a boolean if a field has been set.
+
+### GetDomains
+
+`func (o *NetworkConfigurationUpdate0) GetDomains() []string`
+
+GetDomains returns the Domains field if non-nil, zero value otherwise.
+
+### GetDomainsOk
+
+`func (o *NetworkConfigurationUpdate0) GetDomainsOk() (*[]string, bool)`
+
+GetDomainsOk returns a tuple with the Domains field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDomains
+
+`func (o *NetworkConfigurationUpdate0) SetDomains(v []string)`
+
+SetDomains sets Domains field to given value.
+
+### HasDomains
+
+`func (o *NetworkConfigurationUpdate0) HasDomains() bool`
+
+HasDomains returns a boolean if a field has been set.
 
 ### GetHostname
 
@@ -114,80 +164,55 @@ SetHostnameVirtual sets HostnameVirtual field to given value.
 
 HasHostnameVirtual returns a boolean if a field has been set.
 
-### GetDomain
+### GetHosts
 
-`func (o *NetworkConfigurationUpdate0) GetDomain() string`
+`func (o *NetworkConfigurationUpdate0) GetHosts() string`
 
-GetDomain returns the Domain field if non-nil, zero value otherwise.
+GetHosts returns the Hosts field if non-nil, zero value otherwise.
 
-### GetDomainOk
+### GetHostsOk
 
-`func (o *NetworkConfigurationUpdate0) GetDomainOk() (*string, bool)`
+`func (o *NetworkConfigurationUpdate0) GetHostsOk() (*string, bool)`
 
-GetDomainOk returns a tuple with the Domain field if it's non-nil, zero value otherwise
+GetHostsOk returns a tuple with the Hosts field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetDomain
+### SetHosts
 
-`func (o *NetworkConfigurationUpdate0) SetDomain(v string)`
+`func (o *NetworkConfigurationUpdate0) SetHosts(v string)`
 
-SetDomain sets Domain field to given value.
+SetHosts sets Hosts field to given value.
 
-### HasDomain
+### HasHosts
 
-`func (o *NetworkConfigurationUpdate0) HasDomain() bool`
+`func (o *NetworkConfigurationUpdate0) HasHosts() bool`
 
-HasDomain returns a boolean if a field has been set.
+HasHosts returns a boolean if a field has been set.
 
-### GetDomains
+### GetHttpproxy
 
-`func (o *NetworkConfigurationUpdate0) GetDomains() []string`
+`func (o *NetworkConfigurationUpdate0) GetHttpproxy() string`
 
-GetDomains returns the Domains field if non-nil, zero value otherwise.
+GetHttpproxy returns the Httpproxy field if non-nil, zero value otherwise.
 
-### GetDomainsOk
+### GetHttpproxyOk
 
-`func (o *NetworkConfigurationUpdate0) GetDomainsOk() (*[]string, bool)`
+`func (o *NetworkConfigurationUpdate0) GetHttpproxyOk() (*string, bool)`
 
-GetDomainsOk returns a tuple with the Domains field if it's non-nil, zero value otherwise
+GetHttpproxyOk returns a tuple with the Httpproxy field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetDomains
+### SetHttpproxy
 
-`func (o *NetworkConfigurationUpdate0) SetDomains(v []string)`
+`func (o *NetworkConfigurationUpdate0) SetHttpproxy(v string)`
 
-SetDomains sets Domains field to given value.
+SetHttpproxy sets Httpproxy field to given value.
 
-### HasDomains
+### HasHttpproxy
 
-`func (o *NetworkConfigurationUpdate0) HasDomains() bool`
+`func (o *NetworkConfigurationUpdate0) HasHttpproxy() bool`
 
-HasDomains returns a boolean if a field has been set.
-
-### GetServiceAnnouncement
-
-`func (o *NetworkConfigurationUpdate0) GetServiceAnnouncement() NetworkConfigurationUpdate0ServiceAnnouncement`
-
-GetServiceAnnouncement returns the ServiceAnnouncement field if non-nil, zero value otherwise.
-
-### GetServiceAnnouncementOk
-
-`func (o *NetworkConfigurationUpdate0) GetServiceAnnouncementOk() (*NetworkConfigurationUpdate0ServiceAnnouncement, bool)`
-
-GetServiceAnnouncementOk returns a tuple with the ServiceAnnouncement field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetServiceAnnouncement
-
-`func (o *NetworkConfigurationUpdate0) SetServiceAnnouncement(v NetworkConfigurationUpdate0ServiceAnnouncement)`
-
-SetServiceAnnouncement sets ServiceAnnouncement field to given value.
-
-### HasServiceAnnouncement
-
-`func (o *NetworkConfigurationUpdate0) HasServiceAnnouncement() bool`
-
-HasServiceAnnouncement returns a boolean if a field has been set.
+HasHttpproxy returns a boolean if a field has been set.
 
 ### GetIpv4gateway
 
@@ -314,31 +339,6 @@ SetNameserver3 sets Nameserver3 field to given value.
 
 HasNameserver3 returns a boolean if a field has been set.
 
-### GetHttpproxy
-
-`func (o *NetworkConfigurationUpdate0) GetHttpproxy() string`
-
-GetHttpproxy returns the Httpproxy field if non-nil, zero value otherwise.
-
-### GetHttpproxyOk
-
-`func (o *NetworkConfigurationUpdate0) GetHttpproxyOk() (*string, bool)`
-
-GetHttpproxyOk returns a tuple with the Httpproxy field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetHttpproxy
-
-`func (o *NetworkConfigurationUpdate0) SetHttpproxy(v string)`
-
-SetHttpproxy sets Httpproxy field to given value.
-
-### HasHttpproxy
-
-`func (o *NetworkConfigurationUpdate0) HasHttpproxy() bool`
-
-HasHttpproxy returns a boolean if a field has been set.
-
 ### GetNetwaitEnabled
 
 `func (o *NetworkConfigurationUpdate0) GetNetwaitEnabled() bool`
@@ -389,30 +389,30 @@ SetNetwaitIp sets NetwaitIp field to given value.
 
 HasNetwaitIp returns a boolean if a field has been set.
 
-### GetHosts
+### GetServiceAnnouncement
 
-`func (o *NetworkConfigurationUpdate0) GetHosts() string`
+`func (o *NetworkConfigurationUpdate0) GetServiceAnnouncement() NetworkConfigurationUpdate0ServiceAnnouncement`
 
-GetHosts returns the Hosts field if non-nil, zero value otherwise.
+GetServiceAnnouncement returns the ServiceAnnouncement field if non-nil, zero value otherwise.
 
-### GetHostsOk
+### GetServiceAnnouncementOk
 
-`func (o *NetworkConfigurationUpdate0) GetHostsOk() (*string, bool)`
+`func (o *NetworkConfigurationUpdate0) GetServiceAnnouncementOk() (*NetworkConfigurationUpdate0ServiceAnnouncement, bool)`
 
-GetHostsOk returns a tuple with the Hosts field if it's non-nil, zero value otherwise
+GetServiceAnnouncementOk returns a tuple with the ServiceAnnouncement field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetHosts
+### SetServiceAnnouncement
 
-`func (o *NetworkConfigurationUpdate0) SetHosts(v string)`
+`func (o *NetworkConfigurationUpdate0) SetServiceAnnouncement(v NetworkConfigurationUpdate0ServiceAnnouncement)`
 
-SetHosts sets Hosts field to given value.
+SetServiceAnnouncement sets ServiceAnnouncement field to given value.
 
-### HasHosts
+### HasServiceAnnouncement
 
-`func (o *NetworkConfigurationUpdate0) HasHosts() bool`
+`func (o *NetworkConfigurationUpdate0) HasServiceAnnouncement() bool`
 
-HasHosts returns a boolean if a field has been set.
+HasServiceAnnouncement returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Description** | Pointer to **string** |  | [optional] 
 **Destination** | Pointer to **string** |  | [optional] 
 **Gateway** | Pointer to **string** |  | [optional] 
-**Description** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -26,6 +26,31 @@ will change when the set of required properties is changed
 NewStaticrouteCreate0WithDefaults instantiates a new StaticrouteCreate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetDescription
+
+`func (o *StaticrouteCreate0) GetDescription() string`
+
+GetDescription returns the Description field if non-nil, zero value otherwise.
+
+### GetDescriptionOk
+
+`func (o *StaticrouteCreate0) GetDescriptionOk() (*string, bool)`
+
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDescription
+
+`func (o *StaticrouteCreate0) SetDescription(v string)`
+
+SetDescription sets Description field to given value.
+
+### HasDescription
+
+`func (o *StaticrouteCreate0) HasDescription() bool`
+
+HasDescription returns a boolean if a field has been set.
 
 ### GetDestination
 
@@ -76,31 +101,6 @@ SetGateway sets Gateway field to given value.
 `func (o *StaticrouteCreate0) HasGateway() bool`
 
 HasGateway returns a boolean if a field has been set.
-
-### GetDescription
-
-`func (o *StaticrouteCreate0) GetDescription() string`
-
-GetDescription returns the Description field if non-nil, zero value otherwise.
-
-### GetDescriptionOk
-
-`func (o *StaticrouteCreate0) GetDescriptionOk() (*string, bool)`
-
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetDescription
-
-`func (o *StaticrouteCreate0) SetDescription(v string)`
-
-SetDescription sets Description field to given value.
-
-### HasDescription
-
-`func (o *StaticrouteCreate0) HasDescription() bool`
-
-HasDescription returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

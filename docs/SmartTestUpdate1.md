@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Schedule** | Pointer to [**SmartTestCreate0Schedule**](SmartTestCreate0Schedule.md) |  | [optional] 
-**Desc** | Pointer to **string** |  | [optional] 
 **AllDisks** | Pointer to **bool** |  | [optional] 
+**Desc** | Pointer to **string** |  | [optional] 
 **Disks** | Pointer to **[]string** |  | [optional] 
+**Schedule** | Pointer to [**SmartTestCreate0Schedule**](SmartTestCreate0Schedule.md) |  | [optional] 
 **Type** | Pointer to **string** |  | [optional] 
 
 ## Methods
@@ -28,56 +28,6 @@ will change when the set of required properties is changed
 NewSmartTestUpdate1WithDefaults instantiates a new SmartTestUpdate1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetSchedule
-
-`func (o *SmartTestUpdate1) GetSchedule() SmartTestCreate0Schedule`
-
-GetSchedule returns the Schedule field if non-nil, zero value otherwise.
-
-### GetScheduleOk
-
-`func (o *SmartTestUpdate1) GetScheduleOk() (*SmartTestCreate0Schedule, bool)`
-
-GetScheduleOk returns a tuple with the Schedule field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSchedule
-
-`func (o *SmartTestUpdate1) SetSchedule(v SmartTestCreate0Schedule)`
-
-SetSchedule sets Schedule field to given value.
-
-### HasSchedule
-
-`func (o *SmartTestUpdate1) HasSchedule() bool`
-
-HasSchedule returns a boolean if a field has been set.
-
-### GetDesc
-
-`func (o *SmartTestUpdate1) GetDesc() string`
-
-GetDesc returns the Desc field if non-nil, zero value otherwise.
-
-### GetDescOk
-
-`func (o *SmartTestUpdate1) GetDescOk() (*string, bool)`
-
-GetDescOk returns a tuple with the Desc field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetDesc
-
-`func (o *SmartTestUpdate1) SetDesc(v string)`
-
-SetDesc sets Desc field to given value.
-
-### HasDesc
-
-`func (o *SmartTestUpdate1) HasDesc() bool`
-
-HasDesc returns a boolean if a field has been set.
 
 ### GetAllDisks
 
@@ -104,6 +54,31 @@ SetAllDisks sets AllDisks field to given value.
 
 HasAllDisks returns a boolean if a field has been set.
 
+### GetDesc
+
+`func (o *SmartTestUpdate1) GetDesc() string`
+
+GetDesc returns the Desc field if non-nil, zero value otherwise.
+
+### GetDescOk
+
+`func (o *SmartTestUpdate1) GetDescOk() (*string, bool)`
+
+GetDescOk returns a tuple with the Desc field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDesc
+
+`func (o *SmartTestUpdate1) SetDesc(v string)`
+
+SetDesc sets Desc field to given value.
+
+### HasDesc
+
+`func (o *SmartTestUpdate1) HasDesc() bool`
+
+HasDesc returns a boolean if a field has been set.
+
 ### GetDisks
 
 `func (o *SmartTestUpdate1) GetDisks() []string`
@@ -128,6 +103,31 @@ SetDisks sets Disks field to given value.
 `func (o *SmartTestUpdate1) HasDisks() bool`
 
 HasDisks returns a boolean if a field has been set.
+
+### GetSchedule
+
+`func (o *SmartTestUpdate1) GetSchedule() SmartTestCreate0Schedule`
+
+GetSchedule returns the Schedule field if non-nil, zero value otherwise.
+
+### GetScheduleOk
+
+`func (o *SmartTestUpdate1) GetScheduleOk() (*SmartTestCreate0Schedule, bool)`
+
+GetScheduleOk returns a tuple with the Schedule field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSchedule
+
+`func (o *SmartTestUpdate1) SetSchedule(v SmartTestCreate0Schedule)`
+
+SetSchedule sets Schedule field to given value.
+
+### HasSchedule
+
+`func (o *SmartTestUpdate1) HasSchedule() bool`
+
+HasSchedule returns a boolean if a field has been set.
 
 ### GetType
 

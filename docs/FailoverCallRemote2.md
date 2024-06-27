@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Timeout** | Pointer to **int32** |  | [optional] 
+**Callback** | Pointer to [**Callback**](Callback.md) |  | [optional] 
 **Job** | Pointer to **bool** |  | [optional] 
 **JobReturn** | Pointer to **NullableBool** |  | [optional] 
-**Callback** | Pointer to [**Callback**](Callback.md) |  | [optional] 
+**Timeout** | Pointer to **int32** |  | [optional] 
 
 ## Methods
 
@@ -28,30 +28,30 @@ NewFailoverCallRemote2WithDefaults instantiates a new FailoverCallRemote2 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetTimeout
+### GetCallback
 
-`func (o *FailoverCallRemote2) GetTimeout() int32`
+`func (o *FailoverCallRemote2) GetCallback() Callback`
 
-GetTimeout returns the Timeout field if non-nil, zero value otherwise.
+GetCallback returns the Callback field if non-nil, zero value otherwise.
 
-### GetTimeoutOk
+### GetCallbackOk
 
-`func (o *FailoverCallRemote2) GetTimeoutOk() (*int32, bool)`
+`func (o *FailoverCallRemote2) GetCallbackOk() (*Callback, bool)`
 
-GetTimeoutOk returns a tuple with the Timeout field if it's non-nil, zero value otherwise
+GetCallbackOk returns a tuple with the Callback field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetTimeout
+### SetCallback
 
-`func (o *FailoverCallRemote2) SetTimeout(v int32)`
+`func (o *FailoverCallRemote2) SetCallback(v Callback)`
 
-SetTimeout sets Timeout field to given value.
+SetCallback sets Callback field to given value.
 
-### HasTimeout
+### HasCallback
 
-`func (o *FailoverCallRemote2) HasTimeout() bool`
+`func (o *FailoverCallRemote2) HasCallback() bool`
 
-HasTimeout returns a boolean if a field has been set.
+HasCallback returns a boolean if a field has been set.
 
 ### GetJob
 
@@ -113,30 +113,30 @@ HasJobReturn returns a boolean if a field has been set.
 `func (o *FailoverCallRemote2) UnsetJobReturn()`
 
 UnsetJobReturn ensures that no value is present for JobReturn, not even an explicit nil
-### GetCallback
+### GetTimeout
 
-`func (o *FailoverCallRemote2) GetCallback() Callback`
+`func (o *FailoverCallRemote2) GetTimeout() int32`
 
-GetCallback returns the Callback field if non-nil, zero value otherwise.
+GetTimeout returns the Timeout field if non-nil, zero value otherwise.
 
-### GetCallbackOk
+### GetTimeoutOk
 
-`func (o *FailoverCallRemote2) GetCallbackOk() (*Callback, bool)`
+`func (o *FailoverCallRemote2) GetTimeoutOk() (*int32, bool)`
 
-GetCallbackOk returns a tuple with the Callback field if it's non-nil, zero value otherwise
+GetTimeoutOk returns a tuple with the Timeout field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetCallback
+### SetTimeout
 
-`func (o *FailoverCallRemote2) SetCallback(v Callback)`
+`func (o *FailoverCallRemote2) SetTimeout(v int32)`
 
-SetCallback sets Callback field to given value.
+SetTimeout sets Timeout field to given value.
 
-### HasCallback
+### HasTimeout
 
-`func (o *FailoverCallRemote2) HasCallback() bool`
+`func (o *FailoverCallRemote2) HasTimeout() bool`
 
-HasCallback returns a boolean if a field has been set.
+HasTimeout returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

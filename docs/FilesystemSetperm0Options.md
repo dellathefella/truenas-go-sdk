@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Stripacl** | Pointer to **bool** |  | [optional] 
 **Recursive** | Pointer to **bool** |  | [optional] 
+**Stripacl** | Pointer to **bool** |  | [optional] 
 **Traverse** | Pointer to **bool** |  | [optional] 
 
 ## Methods
@@ -26,31 +26,6 @@ will change when the set of required properties is changed
 NewFilesystemSetperm0OptionsWithDefaults instantiates a new FilesystemSetperm0Options object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetStripacl
-
-`func (o *FilesystemSetperm0Options) GetStripacl() bool`
-
-GetStripacl returns the Stripacl field if non-nil, zero value otherwise.
-
-### GetStripaclOk
-
-`func (o *FilesystemSetperm0Options) GetStripaclOk() (*bool, bool)`
-
-GetStripaclOk returns a tuple with the Stripacl field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetStripacl
-
-`func (o *FilesystemSetperm0Options) SetStripacl(v bool)`
-
-SetStripacl sets Stripacl field to given value.
-
-### HasStripacl
-
-`func (o *FilesystemSetperm0Options) HasStripacl() bool`
-
-HasStripacl returns a boolean if a field has been set.
 
 ### GetRecursive
 
@@ -76,6 +51,31 @@ SetRecursive sets Recursive field to given value.
 `func (o *FilesystemSetperm0Options) HasRecursive() bool`
 
 HasRecursive returns a boolean if a field has been set.
+
+### GetStripacl
+
+`func (o *FilesystemSetperm0Options) GetStripacl() bool`
+
+GetStripacl returns the Stripacl field if non-nil, zero value otherwise.
+
+### GetStripaclOk
+
+`func (o *FilesystemSetperm0Options) GetStripaclOk() (*bool, bool)`
+
+GetStripaclOk returns a tuple with the Stripacl field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetStripacl
+
+`func (o *FilesystemSetperm0Options) SetStripacl(v bool)`
+
+SetStripacl sets Stripacl field to given value.
+
+### HasStripacl
+
+`func (o *FilesystemSetperm0Options) HasStripacl() bool`
+
+HasStripacl returns a boolean if a field has been set.
 
 ### GetTraverse
 

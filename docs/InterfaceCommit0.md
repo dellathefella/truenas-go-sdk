@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Rollback** | Pointer to **bool** |  | [optional] 
 **CheckinTimeout** | Pointer to **int32** |  | [optional] 
+**Rollback** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -25,31 +25,6 @@ will change when the set of required properties is changed
 NewInterfaceCommit0WithDefaults instantiates a new InterfaceCommit0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetRollback
-
-`func (o *InterfaceCommit0) GetRollback() bool`
-
-GetRollback returns the Rollback field if non-nil, zero value otherwise.
-
-### GetRollbackOk
-
-`func (o *InterfaceCommit0) GetRollbackOk() (*bool, bool)`
-
-GetRollbackOk returns a tuple with the Rollback field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRollback
-
-`func (o *InterfaceCommit0) SetRollback(v bool)`
-
-SetRollback sets Rollback field to given value.
-
-### HasRollback
-
-`func (o *InterfaceCommit0) HasRollback() bool`
-
-HasRollback returns a boolean if a field has been set.
 
 ### GetCheckinTimeout
 
@@ -75,6 +50,31 @@ SetCheckinTimeout sets CheckinTimeout field to given value.
 `func (o *InterfaceCommit0) HasCheckinTimeout() bool`
 
 HasCheckinTimeout returns a boolean if a field has been set.
+
+### GetRollback
+
+`func (o *InterfaceCommit0) GetRollback() bool`
+
+GetRollback returns the Rollback field if non-nil, zero value otherwise.
+
+### GetRollbackOk
+
+`func (o *InterfaceCommit0) GetRollbackOk() (*bool, bool)`
+
+GetRollbackOk returns a tuple with the Rollback field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRollback
+
+`func (o *InterfaceCommit0) SetRollback(v bool)`
+
+SetRollback sets Rollback field to given value.
+
+### HasRollback
+
+`func (o *InterfaceCommit0) HasRollback() bool`
+
+HasRollback returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

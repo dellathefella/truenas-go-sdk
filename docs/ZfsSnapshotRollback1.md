@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Force** | Pointer to **bool** |  | [optional] 
 **Recursive** | Pointer to **bool** |  | [optional] 
 **RecursiveClones** | Pointer to **bool** |  | [optional] 
-**Force** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -26,6 +26,31 @@ will change when the set of required properties is changed
 NewZfsSnapshotRollback1WithDefaults instantiates a new ZfsSnapshotRollback1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetForce
+
+`func (o *ZfsSnapshotRollback1) GetForce() bool`
+
+GetForce returns the Force field if non-nil, zero value otherwise.
+
+### GetForceOk
+
+`func (o *ZfsSnapshotRollback1) GetForceOk() (*bool, bool)`
+
+GetForceOk returns a tuple with the Force field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetForce
+
+`func (o *ZfsSnapshotRollback1) SetForce(v bool)`
+
+SetForce sets Force field to given value.
+
+### HasForce
+
+`func (o *ZfsSnapshotRollback1) HasForce() bool`
+
+HasForce returns a boolean if a field has been set.
 
 ### GetRecursive
 
@@ -76,31 +101,6 @@ SetRecursiveClones sets RecursiveClones field to given value.
 `func (o *ZfsSnapshotRollback1) HasRecursiveClones() bool`
 
 HasRecursiveClones returns a boolean if a field has been set.
-
-### GetForce
-
-`func (o *ZfsSnapshotRollback1) GetForce() bool`
-
-GetForce returns the Force field if non-nil, zero value otherwise.
-
-### GetForceOk
-
-`func (o *ZfsSnapshotRollback1) GetForceOk() (*bool, bool)`
-
-GetForceOk returns a tuple with the Force field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetForce
-
-`func (o *ZfsSnapshotRollback1) SetForce(v bool)`
-
-SetForce sets Force field to given value.
-
-### HasForce
-
-`func (o *ZfsSnapshotRollback1) HasForce() bool`
-
-HasForce returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

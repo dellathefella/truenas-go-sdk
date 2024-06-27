@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Realm** | Pointer to **string** |  | [optional] 
-**Kdc** | Pointer to **[]interface{}** |  | [optional] 
 **AdminServer** | Pointer to **[]interface{}** |  | [optional] 
+**Kdc** | Pointer to **[]interface{}** |  | [optional] 
 **KpasswdServer** | Pointer to **[]interface{}** |  | [optional] 
+**Realm** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -27,56 +27,6 @@ will change when the set of required properties is changed
 NewKerberosRealmUpdate1WithDefaults instantiates a new KerberosRealmUpdate1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetRealm
-
-`func (o *KerberosRealmUpdate1) GetRealm() string`
-
-GetRealm returns the Realm field if non-nil, zero value otherwise.
-
-### GetRealmOk
-
-`func (o *KerberosRealmUpdate1) GetRealmOk() (*string, bool)`
-
-GetRealmOk returns a tuple with the Realm field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRealm
-
-`func (o *KerberosRealmUpdate1) SetRealm(v string)`
-
-SetRealm sets Realm field to given value.
-
-### HasRealm
-
-`func (o *KerberosRealmUpdate1) HasRealm() bool`
-
-HasRealm returns a boolean if a field has been set.
-
-### GetKdc
-
-`func (o *KerberosRealmUpdate1) GetKdc() []interface{}`
-
-GetKdc returns the Kdc field if non-nil, zero value otherwise.
-
-### GetKdcOk
-
-`func (o *KerberosRealmUpdate1) GetKdcOk() (*[]interface{}, bool)`
-
-GetKdcOk returns a tuple with the Kdc field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetKdc
-
-`func (o *KerberosRealmUpdate1) SetKdc(v []interface{})`
-
-SetKdc sets Kdc field to given value.
-
-### HasKdc
-
-`func (o *KerberosRealmUpdate1) HasKdc() bool`
-
-HasKdc returns a boolean if a field has been set.
 
 ### GetAdminServer
 
@@ -103,6 +53,31 @@ SetAdminServer sets AdminServer field to given value.
 
 HasAdminServer returns a boolean if a field has been set.
 
+### GetKdc
+
+`func (o *KerberosRealmUpdate1) GetKdc() []interface{}`
+
+GetKdc returns the Kdc field if non-nil, zero value otherwise.
+
+### GetKdcOk
+
+`func (o *KerberosRealmUpdate1) GetKdcOk() (*[]interface{}, bool)`
+
+GetKdcOk returns a tuple with the Kdc field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetKdc
+
+`func (o *KerberosRealmUpdate1) SetKdc(v []interface{})`
+
+SetKdc sets Kdc field to given value.
+
+### HasKdc
+
+`func (o *KerberosRealmUpdate1) HasKdc() bool`
+
+HasKdc returns a boolean if a field has been set.
+
 ### GetKpasswdServer
 
 `func (o *KerberosRealmUpdate1) GetKpasswdServer() []interface{}`
@@ -127,6 +102,31 @@ SetKpasswdServer sets KpasswdServer field to given value.
 `func (o *KerberosRealmUpdate1) HasKpasswdServer() bool`
 
 HasKpasswdServer returns a boolean if a field has been set.
+
+### GetRealm
+
+`func (o *KerberosRealmUpdate1) GetRealm() string`
+
+GetRealm returns the Realm field if non-nil, zero value otherwise.
+
+### GetRealmOk
+
+`func (o *KerberosRealmUpdate1) GetRealmOk() (*string, bool)`
+
+GetRealmOk returns a tuple with the Realm field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRealm
+
+`func (o *KerberosRealmUpdate1) SetRealm(v string)`
+
+SetRealm sets Realm field to given value.
+
+### HasRealm
+
+`func (o *KerberosRealmUpdate1) HasRealm() bool`
+
+HasRealm returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

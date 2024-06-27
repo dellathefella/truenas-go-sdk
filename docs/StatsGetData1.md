@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Step** | Pointer to **int32** |  | [optional] 
-**Start** | Pointer to **string** |  | [optional] 
 **End** | Pointer to **string** |  | [optional] 
+**Start** | Pointer to **string** |  | [optional] 
+**Step** | Pointer to **int32** |  | [optional] 
 
 ## Methods
 
@@ -27,30 +27,30 @@ NewStatsGetData1WithDefaults instantiates a new StatsGetData1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetStep
+### GetEnd
 
-`func (o *StatsGetData1) GetStep() int32`
+`func (o *StatsGetData1) GetEnd() string`
 
-GetStep returns the Step field if non-nil, zero value otherwise.
+GetEnd returns the End field if non-nil, zero value otherwise.
 
-### GetStepOk
+### GetEndOk
 
-`func (o *StatsGetData1) GetStepOk() (*int32, bool)`
+`func (o *StatsGetData1) GetEndOk() (*string, bool)`
 
-GetStepOk returns a tuple with the Step field if it's non-nil, zero value otherwise
+GetEndOk returns a tuple with the End field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetStep
+### SetEnd
 
-`func (o *StatsGetData1) SetStep(v int32)`
+`func (o *StatsGetData1) SetEnd(v string)`
 
-SetStep sets Step field to given value.
+SetEnd sets End field to given value.
 
-### HasStep
+### HasEnd
 
-`func (o *StatsGetData1) HasStep() bool`
+`func (o *StatsGetData1) HasEnd() bool`
 
-HasStep returns a boolean if a field has been set.
+HasEnd returns a boolean if a field has been set.
 
 ### GetStart
 
@@ -77,30 +77,30 @@ SetStart sets Start field to given value.
 
 HasStart returns a boolean if a field has been set.
 
-### GetEnd
+### GetStep
 
-`func (o *StatsGetData1) GetEnd() string`
+`func (o *StatsGetData1) GetStep() int32`
 
-GetEnd returns the End field if non-nil, zero value otherwise.
+GetStep returns the Step field if non-nil, zero value otherwise.
 
-### GetEndOk
+### GetStepOk
 
-`func (o *StatsGetData1) GetEndOk() (*string, bool)`
+`func (o *StatsGetData1) GetStepOk() (*int32, bool)`
 
-GetEndOk returns a tuple with the End field if it's non-nil, zero value otherwise
+GetStepOk returns a tuple with the Step field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetEnd
+### SetStep
 
-`func (o *StatsGetData1) SetEnd(v string)`
+`func (o *StatsGetData1) SetStep(v int32)`
 
-SetEnd sets End field to given value.
+SetStep sets Step field to given value.
 
-### HasEnd
+### HasStep
 
-`func (o *StatsGetData1) HasEnd() bool`
+`func (o *StatsGetData1) HasStep() bool`
 
-HasEnd returns a boolean if a field has been set.
+HasStep returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Names** | Pointer to **[]string** |  | [optional] 
-**Powermode** | Pointer to [**DiskTemperatures1**](DiskTemperatures1.md) |  | [optional] [default to NEVER]
+**Powermode** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -53,20 +53,20 @@ HasNames returns a boolean if a field has been set.
 
 ### GetPowermode
 
-`func (o *DiskTemperatures) GetPowermode() DiskTemperatures1`
+`func (o *DiskTemperatures) GetPowermode() string`
 
 GetPowermode returns the Powermode field if non-nil, zero value otherwise.
 
 ### GetPowermodeOk
 
-`func (o *DiskTemperatures) GetPowermodeOk() (*DiskTemperatures1, bool)`
+`func (o *DiskTemperatures) GetPowermodeOk() (*string, bool)`
 
 GetPowermodeOk returns a tuple with the Powermode field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPowermode
 
-`func (o *DiskTemperatures) SetPowermode(v DiskTemperatures1)`
+`func (o *DiskTemperatures) SetPowermode(v string)`
 
 SetPowermode sets Powermode field to given value.
 

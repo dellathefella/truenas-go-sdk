@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**AccessKey** | Pointer to **string** |  | [optional] 
 **Bindip** | Pointer to **string** |  | [optional] 
 **Bindport** | Pointer to **int32** |  | [optional] 
-**ConsoleBindport** | Pointer to **int32** |  | [optional] 
-**AccessKey** | Pointer to **string** |  | [optional] 
-**SecretKey** | Pointer to **string** |  | [optional] 
 **Browser** | Pointer to **bool** |  | [optional] 
-**StoragePath** | Pointer to **string** |  | [optional] 
 **Certificate** | Pointer to **NullableInt32** |  | [optional] 
+**ConsoleBindport** | Pointer to **int32** |  | [optional] 
+**SecretKey** | Pointer to **string** |  | [optional] 
+**StoragePath** | Pointer to **string** |  | [optional] 
 **TlsServerUri** | Pointer to **NullableString** |  | [optional] 
 
 ## Methods
@@ -32,6 +32,31 @@ will change when the set of required properties is changed
 NewS3Update0WithDefaults instantiates a new S3Update0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetAccessKey
+
+`func (o *S3Update0) GetAccessKey() string`
+
+GetAccessKey returns the AccessKey field if non-nil, zero value otherwise.
+
+### GetAccessKeyOk
+
+`func (o *S3Update0) GetAccessKeyOk() (*string, bool)`
+
+GetAccessKeyOk returns a tuple with the AccessKey field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetAccessKey
+
+`func (o *S3Update0) SetAccessKey(v string)`
+
+SetAccessKey sets AccessKey field to given value.
+
+### HasAccessKey
+
+`func (o *S3Update0) HasAccessKey() bool`
+
+HasAccessKey returns a boolean if a field has been set.
 
 ### GetBindip
 
@@ -83,81 +108,6 @@ SetBindport sets Bindport field to given value.
 
 HasBindport returns a boolean if a field has been set.
 
-### GetConsoleBindport
-
-`func (o *S3Update0) GetConsoleBindport() int32`
-
-GetConsoleBindport returns the ConsoleBindport field if non-nil, zero value otherwise.
-
-### GetConsoleBindportOk
-
-`func (o *S3Update0) GetConsoleBindportOk() (*int32, bool)`
-
-GetConsoleBindportOk returns a tuple with the ConsoleBindport field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetConsoleBindport
-
-`func (o *S3Update0) SetConsoleBindport(v int32)`
-
-SetConsoleBindport sets ConsoleBindport field to given value.
-
-### HasConsoleBindport
-
-`func (o *S3Update0) HasConsoleBindport() bool`
-
-HasConsoleBindport returns a boolean if a field has been set.
-
-### GetAccessKey
-
-`func (o *S3Update0) GetAccessKey() string`
-
-GetAccessKey returns the AccessKey field if non-nil, zero value otherwise.
-
-### GetAccessKeyOk
-
-`func (o *S3Update0) GetAccessKeyOk() (*string, bool)`
-
-GetAccessKeyOk returns a tuple with the AccessKey field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetAccessKey
-
-`func (o *S3Update0) SetAccessKey(v string)`
-
-SetAccessKey sets AccessKey field to given value.
-
-### HasAccessKey
-
-`func (o *S3Update0) HasAccessKey() bool`
-
-HasAccessKey returns a boolean if a field has been set.
-
-### GetSecretKey
-
-`func (o *S3Update0) GetSecretKey() string`
-
-GetSecretKey returns the SecretKey field if non-nil, zero value otherwise.
-
-### GetSecretKeyOk
-
-`func (o *S3Update0) GetSecretKeyOk() (*string, bool)`
-
-GetSecretKeyOk returns a tuple with the SecretKey field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSecretKey
-
-`func (o *S3Update0) SetSecretKey(v string)`
-
-SetSecretKey sets SecretKey field to given value.
-
-### HasSecretKey
-
-`func (o *S3Update0) HasSecretKey() bool`
-
-HasSecretKey returns a boolean if a field has been set.
-
 ### GetBrowser
 
 `func (o *S3Update0) GetBrowser() bool`
@@ -182,31 +132,6 @@ SetBrowser sets Browser field to given value.
 `func (o *S3Update0) HasBrowser() bool`
 
 HasBrowser returns a boolean if a field has been set.
-
-### GetStoragePath
-
-`func (o *S3Update0) GetStoragePath() string`
-
-GetStoragePath returns the StoragePath field if non-nil, zero value otherwise.
-
-### GetStoragePathOk
-
-`func (o *S3Update0) GetStoragePathOk() (*string, bool)`
-
-GetStoragePathOk returns a tuple with the StoragePath field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetStoragePath
-
-`func (o *S3Update0) SetStoragePath(v string)`
-
-SetStoragePath sets StoragePath field to given value.
-
-### HasStoragePath
-
-`func (o *S3Update0) HasStoragePath() bool`
-
-HasStoragePath returns a boolean if a field has been set.
 
 ### GetCertificate
 
@@ -243,6 +168,81 @@ HasCertificate returns a boolean if a field has been set.
 `func (o *S3Update0) UnsetCertificate()`
 
 UnsetCertificate ensures that no value is present for Certificate, not even an explicit nil
+### GetConsoleBindport
+
+`func (o *S3Update0) GetConsoleBindport() int32`
+
+GetConsoleBindport returns the ConsoleBindport field if non-nil, zero value otherwise.
+
+### GetConsoleBindportOk
+
+`func (o *S3Update0) GetConsoleBindportOk() (*int32, bool)`
+
+GetConsoleBindportOk returns a tuple with the ConsoleBindport field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetConsoleBindport
+
+`func (o *S3Update0) SetConsoleBindport(v int32)`
+
+SetConsoleBindport sets ConsoleBindport field to given value.
+
+### HasConsoleBindport
+
+`func (o *S3Update0) HasConsoleBindport() bool`
+
+HasConsoleBindport returns a boolean if a field has been set.
+
+### GetSecretKey
+
+`func (o *S3Update0) GetSecretKey() string`
+
+GetSecretKey returns the SecretKey field if non-nil, zero value otherwise.
+
+### GetSecretKeyOk
+
+`func (o *S3Update0) GetSecretKeyOk() (*string, bool)`
+
+GetSecretKeyOk returns a tuple with the SecretKey field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSecretKey
+
+`func (o *S3Update0) SetSecretKey(v string)`
+
+SetSecretKey sets SecretKey field to given value.
+
+### HasSecretKey
+
+`func (o *S3Update0) HasSecretKey() bool`
+
+HasSecretKey returns a boolean if a field has been set.
+
+### GetStoragePath
+
+`func (o *S3Update0) GetStoragePath() string`
+
+GetStoragePath returns the StoragePath field if non-nil, zero value otherwise.
+
+### GetStoragePathOk
+
+`func (o *S3Update0) GetStoragePathOk() (*string, bool)`
+
+GetStoragePathOk returns a tuple with the StoragePath field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetStoragePath
+
+`func (o *S3Update0) SetStoragePath(v string)`
+
+SetStoragePath sets StoragePath field to given value.
+
+### HasStoragePath
+
+`func (o *S3Update0) HasStoragePath() bool`
+
+HasStoragePath returns a boolean if a field has been set.
+
 ### GetTlsServerUri
 
 `func (o *S3Update0) GetTlsServerUri() string`

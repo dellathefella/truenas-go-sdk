@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Peersecret** | Pointer to **string** |  | [optional] 
+**Peeruser** | Pointer to **string** |  | [optional] 
+**Secret** | Pointer to **string** |  | [optional] 
 **Tag** | Pointer to **int32** |  | [optional] 
 **User** | Pointer to **string** |  | [optional] 
-**Secret** | Pointer to **string** |  | [optional] 
-**Peeruser** | Pointer to **string** |  | [optional] 
-**Peersecret** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -28,6 +28,81 @@ will change when the set of required properties is changed
 NewIscsiAuthCreate0WithDefaults instantiates a new IscsiAuthCreate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetPeersecret
+
+`func (o *IscsiAuthCreate0) GetPeersecret() string`
+
+GetPeersecret returns the Peersecret field if non-nil, zero value otherwise.
+
+### GetPeersecretOk
+
+`func (o *IscsiAuthCreate0) GetPeersecretOk() (*string, bool)`
+
+GetPeersecretOk returns a tuple with the Peersecret field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPeersecret
+
+`func (o *IscsiAuthCreate0) SetPeersecret(v string)`
+
+SetPeersecret sets Peersecret field to given value.
+
+### HasPeersecret
+
+`func (o *IscsiAuthCreate0) HasPeersecret() bool`
+
+HasPeersecret returns a boolean if a field has been set.
+
+### GetPeeruser
+
+`func (o *IscsiAuthCreate0) GetPeeruser() string`
+
+GetPeeruser returns the Peeruser field if non-nil, zero value otherwise.
+
+### GetPeeruserOk
+
+`func (o *IscsiAuthCreate0) GetPeeruserOk() (*string, bool)`
+
+GetPeeruserOk returns a tuple with the Peeruser field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPeeruser
+
+`func (o *IscsiAuthCreate0) SetPeeruser(v string)`
+
+SetPeeruser sets Peeruser field to given value.
+
+### HasPeeruser
+
+`func (o *IscsiAuthCreate0) HasPeeruser() bool`
+
+HasPeeruser returns a boolean if a field has been set.
+
+### GetSecret
+
+`func (o *IscsiAuthCreate0) GetSecret() string`
+
+GetSecret returns the Secret field if non-nil, zero value otherwise.
+
+### GetSecretOk
+
+`func (o *IscsiAuthCreate0) GetSecretOk() (*string, bool)`
+
+GetSecretOk returns a tuple with the Secret field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSecret
+
+`func (o *IscsiAuthCreate0) SetSecret(v string)`
+
+SetSecret sets Secret field to given value.
+
+### HasSecret
+
+`func (o *IscsiAuthCreate0) HasSecret() bool`
+
+HasSecret returns a boolean if a field has been set.
 
 ### GetTag
 
@@ -78,81 +153,6 @@ SetUser sets User field to given value.
 `func (o *IscsiAuthCreate0) HasUser() bool`
 
 HasUser returns a boolean if a field has been set.
-
-### GetSecret
-
-`func (o *IscsiAuthCreate0) GetSecret() string`
-
-GetSecret returns the Secret field if non-nil, zero value otherwise.
-
-### GetSecretOk
-
-`func (o *IscsiAuthCreate0) GetSecretOk() (*string, bool)`
-
-GetSecretOk returns a tuple with the Secret field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSecret
-
-`func (o *IscsiAuthCreate0) SetSecret(v string)`
-
-SetSecret sets Secret field to given value.
-
-### HasSecret
-
-`func (o *IscsiAuthCreate0) HasSecret() bool`
-
-HasSecret returns a boolean if a field has been set.
-
-### GetPeeruser
-
-`func (o *IscsiAuthCreate0) GetPeeruser() string`
-
-GetPeeruser returns the Peeruser field if non-nil, zero value otherwise.
-
-### GetPeeruserOk
-
-`func (o *IscsiAuthCreate0) GetPeeruserOk() (*string, bool)`
-
-GetPeeruserOk returns a tuple with the Peeruser field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPeeruser
-
-`func (o *IscsiAuthCreate0) SetPeeruser(v string)`
-
-SetPeeruser sets Peeruser field to given value.
-
-### HasPeeruser
-
-`func (o *IscsiAuthCreate0) HasPeeruser() bool`
-
-HasPeeruser returns a boolean if a field has been set.
-
-### GetPeersecret
-
-`func (o *IscsiAuthCreate0) GetPeersecret() string`
-
-GetPeersecret returns the Peersecret field if non-nil, zero value otherwise.
-
-### GetPeersecretOk
-
-`func (o *IscsiAuthCreate0) GetPeersecretOk() (*string, bool)`
-
-GetPeersecretOk returns a tuple with the Peersecret field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPeersecret
-
-`func (o *IscsiAuthCreate0) SetPeersecret(v string)`
-
-SetPeersecret sets Peersecret field to given value.
-
-### HasPeersecret
-
-`func (o *IscsiAuthCreate0) HasPeersecret() bool`
-
-HasPeersecret returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

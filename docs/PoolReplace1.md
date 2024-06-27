@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Label** | Pointer to **string** |  | [optional] 
 **Disk** | Pointer to **string** |  | [optional] 
 **Force** | Pointer to **bool** |  | [optional] 
+**Label** | Pointer to **string** |  | [optional] 
 **Passphrase** | Pointer to **string** |  | [optional] 
 
 ## Methods
@@ -27,31 +27,6 @@ will change when the set of required properties is changed
 NewPoolReplace1WithDefaults instantiates a new PoolReplace1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetLabel
-
-`func (o *PoolReplace1) GetLabel() string`
-
-GetLabel returns the Label field if non-nil, zero value otherwise.
-
-### GetLabelOk
-
-`func (o *PoolReplace1) GetLabelOk() (*string, bool)`
-
-GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetLabel
-
-`func (o *PoolReplace1) SetLabel(v string)`
-
-SetLabel sets Label field to given value.
-
-### HasLabel
-
-`func (o *PoolReplace1) HasLabel() bool`
-
-HasLabel returns a boolean if a field has been set.
 
 ### GetDisk
 
@@ -102,6 +77,31 @@ SetForce sets Force field to given value.
 `func (o *PoolReplace1) HasForce() bool`
 
 HasForce returns a boolean if a field has been set.
+
+### GetLabel
+
+`func (o *PoolReplace1) GetLabel() string`
+
+GetLabel returns the Label field if non-nil, zero value otherwise.
+
+### GetLabelOk
+
+`func (o *PoolReplace1) GetLabelOk() (*string, bool)`
+
+GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLabel
+
+`func (o *PoolReplace1) SetLabel(v string)`
+
+SetLabel sets Label field to given value.
+
+### HasLabel
+
+`func (o *PoolReplace1) HasLabel() bool`
+
+HasLabel returns a boolean if a field has been set.
 
 ### GetPassphrase
 

@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Unit** | Pointer to **string** |  | [optional] 
+**Aggregate** | Pointer to **bool** |  | [optional] 
+**End** | Pointer to **string** |  | [optional] 
 **Page** | Pointer to **int32** |  | [optional] 
 **Start** | Pointer to **string** |  | [optional] 
-**End** | Pointer to **string** |  | [optional] 
-**Aggregate** | Pointer to **bool** |  | [optional] 
+**Unit** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -29,30 +29,55 @@ NewReportingGetData1WithDefaults instantiates a new ReportingGetData1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetUnit
+### GetAggregate
 
-`func (o *ReportingGetData1) GetUnit() string`
+`func (o *ReportingGetData1) GetAggregate() bool`
 
-GetUnit returns the Unit field if non-nil, zero value otherwise.
+GetAggregate returns the Aggregate field if non-nil, zero value otherwise.
 
-### GetUnitOk
+### GetAggregateOk
 
-`func (o *ReportingGetData1) GetUnitOk() (*string, bool)`
+`func (o *ReportingGetData1) GetAggregateOk() (*bool, bool)`
 
-GetUnitOk returns a tuple with the Unit field if it's non-nil, zero value otherwise
+GetAggregateOk returns a tuple with the Aggregate field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetUnit
+### SetAggregate
 
-`func (o *ReportingGetData1) SetUnit(v string)`
+`func (o *ReportingGetData1) SetAggregate(v bool)`
 
-SetUnit sets Unit field to given value.
+SetAggregate sets Aggregate field to given value.
 
-### HasUnit
+### HasAggregate
 
-`func (o *ReportingGetData1) HasUnit() bool`
+`func (o *ReportingGetData1) HasAggregate() bool`
 
-HasUnit returns a boolean if a field has been set.
+HasAggregate returns a boolean if a field has been set.
+
+### GetEnd
+
+`func (o *ReportingGetData1) GetEnd() string`
+
+GetEnd returns the End field if non-nil, zero value otherwise.
+
+### GetEndOk
+
+`func (o *ReportingGetData1) GetEndOk() (*string, bool)`
+
+GetEndOk returns a tuple with the End field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEnd
+
+`func (o *ReportingGetData1) SetEnd(v string)`
+
+SetEnd sets End field to given value.
+
+### HasEnd
+
+`func (o *ReportingGetData1) HasEnd() bool`
+
+HasEnd returns a boolean if a field has been set.
 
 ### GetPage
 
@@ -104,55 +129,30 @@ SetStart sets Start field to given value.
 
 HasStart returns a boolean if a field has been set.
 
-### GetEnd
+### GetUnit
 
-`func (o *ReportingGetData1) GetEnd() string`
+`func (o *ReportingGetData1) GetUnit() string`
 
-GetEnd returns the End field if non-nil, zero value otherwise.
+GetUnit returns the Unit field if non-nil, zero value otherwise.
 
-### GetEndOk
+### GetUnitOk
 
-`func (o *ReportingGetData1) GetEndOk() (*string, bool)`
+`func (o *ReportingGetData1) GetUnitOk() (*string, bool)`
 
-GetEndOk returns a tuple with the End field if it's non-nil, zero value otherwise
+GetUnitOk returns a tuple with the Unit field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetEnd
+### SetUnit
 
-`func (o *ReportingGetData1) SetEnd(v string)`
+`func (o *ReportingGetData1) SetUnit(v string)`
 
-SetEnd sets End field to given value.
+SetUnit sets Unit field to given value.
 
-### HasEnd
+### HasUnit
 
-`func (o *ReportingGetData1) HasEnd() bool`
+`func (o *ReportingGetData1) HasUnit() bool`
 
-HasEnd returns a boolean if a field has been set.
-
-### GetAggregate
-
-`func (o *ReportingGetData1) GetAggregate() bool`
-
-GetAggregate returns the Aggregate field if non-nil, zero value otherwise.
-
-### GetAggregateOk
-
-`func (o *ReportingGetData1) GetAggregateOk() (*bool, bool)`
-
-GetAggregateOk returns a tuple with the Aggregate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetAggregate
-
-`func (o *ReportingGetData1) SetAggregate(v bool)`
-
-SetAggregate sets Aggregate field to given value.
-
-### HasAggregate
-
-`func (o *ReportingGetData1) HasAggregate() bool`
-
-HasAggregate returns a boolean if a field has been set.
+HasUnit returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

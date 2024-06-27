@@ -6,13 +6,13 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Fromemail** | Pointer to **string** |  | [optional] 
 **Fromname** | Pointer to **string** |  | [optional] 
+**Oauth** | Pointer to [**MailSend1Oauth**](MailSend1Oauth.md) |  | [optional] 
 **Outgoingserver** | Pointer to **string** |  | [optional] 
+**Pass** | Pointer to **string** |  | [optional] 
 **Port** | Pointer to **int32** |  | [optional] 
 **Security** | Pointer to **string** |  | [optional] 
 **Smtp** | Pointer to **bool** |  | [optional] 
 **User** | Pointer to **string** |  | [optional] 
-**Pass** | Pointer to **string** |  | [optional] 
-**Oauth** | Pointer to [**MailUpdate0Oauth**](MailUpdate0Oauth.md) |  | [optional] 
 
 ## Methods
 
@@ -83,6 +83,31 @@ SetFromname sets Fromname field to given value.
 
 HasFromname returns a boolean if a field has been set.
 
+### GetOauth
+
+`func (o *MailSend1) GetOauth() MailSend1Oauth`
+
+GetOauth returns the Oauth field if non-nil, zero value otherwise.
+
+### GetOauthOk
+
+`func (o *MailSend1) GetOauthOk() (*MailSend1Oauth, bool)`
+
+GetOauthOk returns a tuple with the Oauth field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOauth
+
+`func (o *MailSend1) SetOauth(v MailSend1Oauth)`
+
+SetOauth sets Oauth field to given value.
+
+### HasOauth
+
+`func (o *MailSend1) HasOauth() bool`
+
+HasOauth returns a boolean if a field has been set.
+
 ### GetOutgoingserver
 
 `func (o *MailSend1) GetOutgoingserver() string`
@@ -107,6 +132,31 @@ SetOutgoingserver sets Outgoingserver field to given value.
 `func (o *MailSend1) HasOutgoingserver() bool`
 
 HasOutgoingserver returns a boolean if a field has been set.
+
+### GetPass
+
+`func (o *MailSend1) GetPass() string`
+
+GetPass returns the Pass field if non-nil, zero value otherwise.
+
+### GetPassOk
+
+`func (o *MailSend1) GetPassOk() (*string, bool)`
+
+GetPassOk returns a tuple with the Pass field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPass
+
+`func (o *MailSend1) SetPass(v string)`
+
+SetPass sets Pass field to given value.
+
+### HasPass
+
+`func (o *MailSend1) HasPass() bool`
+
+HasPass returns a boolean if a field has been set.
 
 ### GetPort
 
@@ -207,56 +257,6 @@ SetUser sets User field to given value.
 `func (o *MailSend1) HasUser() bool`
 
 HasUser returns a boolean if a field has been set.
-
-### GetPass
-
-`func (o *MailSend1) GetPass() string`
-
-GetPass returns the Pass field if non-nil, zero value otherwise.
-
-### GetPassOk
-
-`func (o *MailSend1) GetPassOk() (*string, bool)`
-
-GetPassOk returns a tuple with the Pass field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPass
-
-`func (o *MailSend1) SetPass(v string)`
-
-SetPass sets Pass field to given value.
-
-### HasPass
-
-`func (o *MailSend1) HasPass() bool`
-
-HasPass returns a boolean if a field has been set.
-
-### GetOauth
-
-`func (o *MailSend1) GetOauth() MailUpdate0Oauth`
-
-GetOauth returns the Oauth field if non-nil, zero value otherwise.
-
-### GetOauthOk
-
-`func (o *MailSend1) GetOauthOk() (*MailUpdate0Oauth, bool)`
-
-GetOauthOk returns a tuple with the Oauth field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetOauth
-
-`func (o *MailSend1) SetOauth(v MailUpdate0Oauth)`
-
-SetOauth sets Oauth field to given value.
-
-### HasOauth
-
-`func (o *MailSend1) HasOauth() bool`
-
-HasOauth returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

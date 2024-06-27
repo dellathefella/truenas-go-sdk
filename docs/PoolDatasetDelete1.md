@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Recursive** | Pointer to **bool** |  | [optional] 
 **Force** | Pointer to **bool** |  | [optional] 
+**Recursive** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -25,31 +25,6 @@ will change when the set of required properties is changed
 NewPoolDatasetDelete1WithDefaults instantiates a new PoolDatasetDelete1 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetRecursive
-
-`func (o *PoolDatasetDelete1) GetRecursive() bool`
-
-GetRecursive returns the Recursive field if non-nil, zero value otherwise.
-
-### GetRecursiveOk
-
-`func (o *PoolDatasetDelete1) GetRecursiveOk() (*bool, bool)`
-
-GetRecursiveOk returns a tuple with the Recursive field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRecursive
-
-`func (o *PoolDatasetDelete1) SetRecursive(v bool)`
-
-SetRecursive sets Recursive field to given value.
-
-### HasRecursive
-
-`func (o *PoolDatasetDelete1) HasRecursive() bool`
-
-HasRecursive returns a boolean if a field has been set.
 
 ### GetForce
 
@@ -75,6 +50,31 @@ SetForce sets Force field to given value.
 `func (o *PoolDatasetDelete1) HasForce() bool`
 
 HasForce returns a boolean if a field has been set.
+
+### GetRecursive
+
+`func (o *PoolDatasetDelete1) GetRecursive() bool`
+
+GetRecursive returns the Recursive field if non-nil, zero value otherwise.
+
+### GetRecursiveOk
+
+`func (o *PoolDatasetDelete1) GetRecursiveOk() (*bool, bool)`
+
+GetRecursiveOk returns a tuple with the Recursive field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRecursive
+
+`func (o *PoolDatasetDelete1) SetRecursive(v bool)`
+
+SetRecursive sets Recursive field to given value.
+
+### HasRecursive
+
+`func (o *PoolDatasetDelete1) HasRecursive() bool`
+
+HasRecursive returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

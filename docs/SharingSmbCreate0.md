@@ -4,28 +4,28 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Purpose** | Pointer to **string** |  | [optional] 
-**Path** | Pointer to **string** |  | [optional] 
-**PathSuffix** | Pointer to **string** |  | [optional] 
-**Home** | Pointer to **bool** |  | [optional] 
-**Name** | Pointer to **string** |  | [optional] 
-**Comment** | Pointer to **string** |  | [optional] 
-**Ro** | Pointer to **bool** |  | [optional] 
-**Browsable** | Pointer to **bool** |  | [optional] 
-**Timemachine** | Pointer to **bool** |  | [optional] 
-**Recyclebin** | Pointer to **bool** |  | [optional] 
-**Guestok** | Pointer to **bool** |  | [optional] 
+**AaplNameMangling** | Pointer to **bool** |  | [optional] 
 **Abe** | Pointer to **bool** |  | [optional] 
+**Acl** | Pointer to **bool** |  | [optional] 
+**Auxsmbconf** | Pointer to **string** |  | [optional] 
+**Browsable** | Pointer to **bool** |  | [optional] 
+**Comment** | Pointer to **string** |  | [optional] 
+**Durablehandle** | Pointer to **bool** |  | [optional] 
+**Enabled** | Pointer to **bool** |  | [optional] 
+**Fsrvp** | Pointer to **bool** |  | [optional] 
+**Guestok** | Pointer to **bool** |  | [optional] 
+**Home** | Pointer to **bool** |  | [optional] 
 **Hostsallow** | Pointer to **[]interface{}** |  | [optional] 
 **Hostsdeny** | Pointer to **[]interface{}** |  | [optional] 
-**AaplNameMangling** | Pointer to **bool** |  | [optional] 
-**Acl** | Pointer to **bool** |  | [optional] 
-**Durablehandle** | Pointer to **bool** |  | [optional] 
+**Name** | Pointer to **string** |  | [optional] 
+**Path** | Pointer to **string** |  | [optional] 
+**PathSuffix** | Pointer to **string** |  | [optional] 
+**Purpose** | Pointer to **string** |  | [optional] 
+**Recyclebin** | Pointer to **bool** |  | [optional] 
+**Ro** | Pointer to **bool** |  | [optional] 
 **Shadowcopy** | Pointer to **bool** |  | [optional] 
 **Streams** | Pointer to **bool** |  | [optional] 
-**Fsrvp** | Pointer to **bool** |  | [optional] 
-**Auxsmbconf** | Pointer to **string** |  | [optional] 
-**Enabled** | Pointer to **bool** |  | [optional] 
+**Timemachine** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -46,180 +46,105 @@ NewSharingSmbCreate0WithDefaults instantiates a new SharingSmbCreate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetPurpose
+### GetAaplNameMangling
 
-`func (o *SharingSmbCreate0) GetPurpose() string`
+`func (o *SharingSmbCreate0) GetAaplNameMangling() bool`
 
-GetPurpose returns the Purpose field if non-nil, zero value otherwise.
+GetAaplNameMangling returns the AaplNameMangling field if non-nil, zero value otherwise.
 
-### GetPurposeOk
+### GetAaplNameManglingOk
 
-`func (o *SharingSmbCreate0) GetPurposeOk() (*string, bool)`
+`func (o *SharingSmbCreate0) GetAaplNameManglingOk() (*bool, bool)`
 
-GetPurposeOk returns a tuple with the Purpose field if it's non-nil, zero value otherwise
+GetAaplNameManglingOk returns a tuple with the AaplNameMangling field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetPurpose
+### SetAaplNameMangling
 
-`func (o *SharingSmbCreate0) SetPurpose(v string)`
+`func (o *SharingSmbCreate0) SetAaplNameMangling(v bool)`
 
-SetPurpose sets Purpose field to given value.
+SetAaplNameMangling sets AaplNameMangling field to given value.
 
-### HasPurpose
+### HasAaplNameMangling
 
-`func (o *SharingSmbCreate0) HasPurpose() bool`
+`func (o *SharingSmbCreate0) HasAaplNameMangling() bool`
 
-HasPurpose returns a boolean if a field has been set.
+HasAaplNameMangling returns a boolean if a field has been set.
 
-### GetPath
+### GetAbe
 
-`func (o *SharingSmbCreate0) GetPath() string`
+`func (o *SharingSmbCreate0) GetAbe() bool`
 
-GetPath returns the Path field if non-nil, zero value otherwise.
+GetAbe returns the Abe field if non-nil, zero value otherwise.
 
-### GetPathOk
+### GetAbeOk
 
-`func (o *SharingSmbCreate0) GetPathOk() (*string, bool)`
+`func (o *SharingSmbCreate0) GetAbeOk() (*bool, bool)`
 
-GetPathOk returns a tuple with the Path field if it's non-nil, zero value otherwise
+GetAbeOk returns a tuple with the Abe field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetPath
+### SetAbe
 
-`func (o *SharingSmbCreate0) SetPath(v string)`
+`func (o *SharingSmbCreate0) SetAbe(v bool)`
 
-SetPath sets Path field to given value.
+SetAbe sets Abe field to given value.
 
-### HasPath
+### HasAbe
 
-`func (o *SharingSmbCreate0) HasPath() bool`
+`func (o *SharingSmbCreate0) HasAbe() bool`
 
-HasPath returns a boolean if a field has been set.
+HasAbe returns a boolean if a field has been set.
 
-### GetPathSuffix
+### GetAcl
 
-`func (o *SharingSmbCreate0) GetPathSuffix() string`
+`func (o *SharingSmbCreate0) GetAcl() bool`
 
-GetPathSuffix returns the PathSuffix field if non-nil, zero value otherwise.
+GetAcl returns the Acl field if non-nil, zero value otherwise.
 
-### GetPathSuffixOk
+### GetAclOk
 
-`func (o *SharingSmbCreate0) GetPathSuffixOk() (*string, bool)`
+`func (o *SharingSmbCreate0) GetAclOk() (*bool, bool)`
 
-GetPathSuffixOk returns a tuple with the PathSuffix field if it's non-nil, zero value otherwise
+GetAclOk returns a tuple with the Acl field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetPathSuffix
+### SetAcl
 
-`func (o *SharingSmbCreate0) SetPathSuffix(v string)`
+`func (o *SharingSmbCreate0) SetAcl(v bool)`
 
-SetPathSuffix sets PathSuffix field to given value.
+SetAcl sets Acl field to given value.
 
-### HasPathSuffix
+### HasAcl
 
-`func (o *SharingSmbCreate0) HasPathSuffix() bool`
+`func (o *SharingSmbCreate0) HasAcl() bool`
 
-HasPathSuffix returns a boolean if a field has been set.
+HasAcl returns a boolean if a field has been set.
 
-### GetHome
+### GetAuxsmbconf
 
-`func (o *SharingSmbCreate0) GetHome() bool`
+`func (o *SharingSmbCreate0) GetAuxsmbconf() string`
 
-GetHome returns the Home field if non-nil, zero value otherwise.
+GetAuxsmbconf returns the Auxsmbconf field if non-nil, zero value otherwise.
 
-### GetHomeOk
+### GetAuxsmbconfOk
 
-`func (o *SharingSmbCreate0) GetHomeOk() (*bool, bool)`
+`func (o *SharingSmbCreate0) GetAuxsmbconfOk() (*string, bool)`
 
-GetHomeOk returns a tuple with the Home field if it's non-nil, zero value otherwise
+GetAuxsmbconfOk returns a tuple with the Auxsmbconf field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetHome
+### SetAuxsmbconf
 
-`func (o *SharingSmbCreate0) SetHome(v bool)`
+`func (o *SharingSmbCreate0) SetAuxsmbconf(v string)`
 
-SetHome sets Home field to given value.
+SetAuxsmbconf sets Auxsmbconf field to given value.
 
-### HasHome
+### HasAuxsmbconf
 
-`func (o *SharingSmbCreate0) HasHome() bool`
+`func (o *SharingSmbCreate0) HasAuxsmbconf() bool`
 
-HasHome returns a boolean if a field has been set.
-
-### GetName
-
-`func (o *SharingSmbCreate0) GetName() string`
-
-GetName returns the Name field if non-nil, zero value otherwise.
-
-### GetNameOk
-
-`func (o *SharingSmbCreate0) GetNameOk() (*string, bool)`
-
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetName
-
-`func (o *SharingSmbCreate0) SetName(v string)`
-
-SetName sets Name field to given value.
-
-### HasName
-
-`func (o *SharingSmbCreate0) HasName() bool`
-
-HasName returns a boolean if a field has been set.
-
-### GetComment
-
-`func (o *SharingSmbCreate0) GetComment() string`
-
-GetComment returns the Comment field if non-nil, zero value otherwise.
-
-### GetCommentOk
-
-`func (o *SharingSmbCreate0) GetCommentOk() (*string, bool)`
-
-GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetComment
-
-`func (o *SharingSmbCreate0) SetComment(v string)`
-
-SetComment sets Comment field to given value.
-
-### HasComment
-
-`func (o *SharingSmbCreate0) HasComment() bool`
-
-HasComment returns a boolean if a field has been set.
-
-### GetRo
-
-`func (o *SharingSmbCreate0) GetRo() bool`
-
-GetRo returns the Ro field if non-nil, zero value otherwise.
-
-### GetRoOk
-
-`func (o *SharingSmbCreate0) GetRoOk() (*bool, bool)`
-
-GetRoOk returns a tuple with the Ro field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRo
-
-`func (o *SharingSmbCreate0) SetRo(v bool)`
-
-SetRo sets Ro field to given value.
-
-### HasRo
-
-`func (o *SharingSmbCreate0) HasRo() bool`
-
-HasRo returns a boolean if a field has been set.
+HasAuxsmbconf returns a boolean if a field has been set.
 
 ### GetBrowsable
 
@@ -246,55 +171,105 @@ SetBrowsable sets Browsable field to given value.
 
 HasBrowsable returns a boolean if a field has been set.
 
-### GetTimemachine
+### GetComment
 
-`func (o *SharingSmbCreate0) GetTimemachine() bool`
+`func (o *SharingSmbCreate0) GetComment() string`
 
-GetTimemachine returns the Timemachine field if non-nil, zero value otherwise.
+GetComment returns the Comment field if non-nil, zero value otherwise.
 
-### GetTimemachineOk
+### GetCommentOk
 
-`func (o *SharingSmbCreate0) GetTimemachineOk() (*bool, bool)`
+`func (o *SharingSmbCreate0) GetCommentOk() (*string, bool)`
 
-GetTimemachineOk returns a tuple with the Timemachine field if it's non-nil, zero value otherwise
+GetCommentOk returns a tuple with the Comment field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetTimemachine
+### SetComment
 
-`func (o *SharingSmbCreate0) SetTimemachine(v bool)`
+`func (o *SharingSmbCreate0) SetComment(v string)`
 
-SetTimemachine sets Timemachine field to given value.
+SetComment sets Comment field to given value.
 
-### HasTimemachine
+### HasComment
 
-`func (o *SharingSmbCreate0) HasTimemachine() bool`
+`func (o *SharingSmbCreate0) HasComment() bool`
 
-HasTimemachine returns a boolean if a field has been set.
+HasComment returns a boolean if a field has been set.
 
-### GetRecyclebin
+### GetDurablehandle
 
-`func (o *SharingSmbCreate0) GetRecyclebin() bool`
+`func (o *SharingSmbCreate0) GetDurablehandle() bool`
 
-GetRecyclebin returns the Recyclebin field if non-nil, zero value otherwise.
+GetDurablehandle returns the Durablehandle field if non-nil, zero value otherwise.
 
-### GetRecyclebinOk
+### GetDurablehandleOk
 
-`func (o *SharingSmbCreate0) GetRecyclebinOk() (*bool, bool)`
+`func (o *SharingSmbCreate0) GetDurablehandleOk() (*bool, bool)`
 
-GetRecyclebinOk returns a tuple with the Recyclebin field if it's non-nil, zero value otherwise
+GetDurablehandleOk returns a tuple with the Durablehandle field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetRecyclebin
+### SetDurablehandle
 
-`func (o *SharingSmbCreate0) SetRecyclebin(v bool)`
+`func (o *SharingSmbCreate0) SetDurablehandle(v bool)`
 
-SetRecyclebin sets Recyclebin field to given value.
+SetDurablehandle sets Durablehandle field to given value.
 
-### HasRecyclebin
+### HasDurablehandle
 
-`func (o *SharingSmbCreate0) HasRecyclebin() bool`
+`func (o *SharingSmbCreate0) HasDurablehandle() bool`
 
-HasRecyclebin returns a boolean if a field has been set.
+HasDurablehandle returns a boolean if a field has been set.
+
+### GetEnabled
+
+`func (o *SharingSmbCreate0) GetEnabled() bool`
+
+GetEnabled returns the Enabled field if non-nil, zero value otherwise.
+
+### GetEnabledOk
+
+`func (o *SharingSmbCreate0) GetEnabledOk() (*bool, bool)`
+
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEnabled
+
+`func (o *SharingSmbCreate0) SetEnabled(v bool)`
+
+SetEnabled sets Enabled field to given value.
+
+### HasEnabled
+
+`func (o *SharingSmbCreate0) HasEnabled() bool`
+
+HasEnabled returns a boolean if a field has been set.
+
+### GetFsrvp
+
+`func (o *SharingSmbCreate0) GetFsrvp() bool`
+
+GetFsrvp returns the Fsrvp field if non-nil, zero value otherwise.
+
+### GetFsrvpOk
+
+`func (o *SharingSmbCreate0) GetFsrvpOk() (*bool, bool)`
+
+GetFsrvpOk returns a tuple with the Fsrvp field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetFsrvp
+
+`func (o *SharingSmbCreate0) SetFsrvp(v bool)`
+
+SetFsrvp sets Fsrvp field to given value.
+
+### HasFsrvp
+
+`func (o *SharingSmbCreate0) HasFsrvp() bool`
+
+HasFsrvp returns a boolean if a field has been set.
 
 ### GetGuestok
 
@@ -321,30 +296,30 @@ SetGuestok sets Guestok field to given value.
 
 HasGuestok returns a boolean if a field has been set.
 
-### GetAbe
+### GetHome
 
-`func (o *SharingSmbCreate0) GetAbe() bool`
+`func (o *SharingSmbCreate0) GetHome() bool`
 
-GetAbe returns the Abe field if non-nil, zero value otherwise.
+GetHome returns the Home field if non-nil, zero value otherwise.
 
-### GetAbeOk
+### GetHomeOk
 
-`func (o *SharingSmbCreate0) GetAbeOk() (*bool, bool)`
+`func (o *SharingSmbCreate0) GetHomeOk() (*bool, bool)`
 
-GetAbeOk returns a tuple with the Abe field if it's non-nil, zero value otherwise
+GetHomeOk returns a tuple with the Home field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetAbe
+### SetHome
 
-`func (o *SharingSmbCreate0) SetAbe(v bool)`
+`func (o *SharingSmbCreate0) SetHome(v bool)`
 
-SetAbe sets Abe field to given value.
+SetHome sets Home field to given value.
 
-### HasAbe
+### HasHome
 
-`func (o *SharingSmbCreate0) HasAbe() bool`
+`func (o *SharingSmbCreate0) HasHome() bool`
 
-HasAbe returns a boolean if a field has been set.
+HasHome returns a boolean if a field has been set.
 
 ### GetHostsallow
 
@@ -396,80 +371,155 @@ SetHostsdeny sets Hostsdeny field to given value.
 
 HasHostsdeny returns a boolean if a field has been set.
 
-### GetAaplNameMangling
+### GetName
 
-`func (o *SharingSmbCreate0) GetAaplNameMangling() bool`
+`func (o *SharingSmbCreate0) GetName() string`
 
-GetAaplNameMangling returns the AaplNameMangling field if non-nil, zero value otherwise.
+GetName returns the Name field if non-nil, zero value otherwise.
 
-### GetAaplNameManglingOk
+### GetNameOk
 
-`func (o *SharingSmbCreate0) GetAaplNameManglingOk() (*bool, bool)`
+`func (o *SharingSmbCreate0) GetNameOk() (*string, bool)`
 
-GetAaplNameManglingOk returns a tuple with the AaplNameMangling field if it's non-nil, zero value otherwise
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetAaplNameMangling
+### SetName
 
-`func (o *SharingSmbCreate0) SetAaplNameMangling(v bool)`
+`func (o *SharingSmbCreate0) SetName(v string)`
 
-SetAaplNameMangling sets AaplNameMangling field to given value.
+SetName sets Name field to given value.
 
-### HasAaplNameMangling
+### HasName
 
-`func (o *SharingSmbCreate0) HasAaplNameMangling() bool`
+`func (o *SharingSmbCreate0) HasName() bool`
 
-HasAaplNameMangling returns a boolean if a field has been set.
+HasName returns a boolean if a field has been set.
 
-### GetAcl
+### GetPath
 
-`func (o *SharingSmbCreate0) GetAcl() bool`
+`func (o *SharingSmbCreate0) GetPath() string`
 
-GetAcl returns the Acl field if non-nil, zero value otherwise.
+GetPath returns the Path field if non-nil, zero value otherwise.
 
-### GetAclOk
+### GetPathOk
 
-`func (o *SharingSmbCreate0) GetAclOk() (*bool, bool)`
+`func (o *SharingSmbCreate0) GetPathOk() (*string, bool)`
 
-GetAclOk returns a tuple with the Acl field if it's non-nil, zero value otherwise
+GetPathOk returns a tuple with the Path field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetAcl
+### SetPath
 
-`func (o *SharingSmbCreate0) SetAcl(v bool)`
+`func (o *SharingSmbCreate0) SetPath(v string)`
 
-SetAcl sets Acl field to given value.
+SetPath sets Path field to given value.
 
-### HasAcl
+### HasPath
 
-`func (o *SharingSmbCreate0) HasAcl() bool`
+`func (o *SharingSmbCreate0) HasPath() bool`
 
-HasAcl returns a boolean if a field has been set.
+HasPath returns a boolean if a field has been set.
 
-### GetDurablehandle
+### GetPathSuffix
 
-`func (o *SharingSmbCreate0) GetDurablehandle() bool`
+`func (o *SharingSmbCreate0) GetPathSuffix() string`
 
-GetDurablehandle returns the Durablehandle field if non-nil, zero value otherwise.
+GetPathSuffix returns the PathSuffix field if non-nil, zero value otherwise.
 
-### GetDurablehandleOk
+### GetPathSuffixOk
 
-`func (o *SharingSmbCreate0) GetDurablehandleOk() (*bool, bool)`
+`func (o *SharingSmbCreate0) GetPathSuffixOk() (*string, bool)`
 
-GetDurablehandleOk returns a tuple with the Durablehandle field if it's non-nil, zero value otherwise
+GetPathSuffixOk returns a tuple with the PathSuffix field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetDurablehandle
+### SetPathSuffix
 
-`func (o *SharingSmbCreate0) SetDurablehandle(v bool)`
+`func (o *SharingSmbCreate0) SetPathSuffix(v string)`
 
-SetDurablehandle sets Durablehandle field to given value.
+SetPathSuffix sets PathSuffix field to given value.
 
-### HasDurablehandle
+### HasPathSuffix
 
-`func (o *SharingSmbCreate0) HasDurablehandle() bool`
+`func (o *SharingSmbCreate0) HasPathSuffix() bool`
 
-HasDurablehandle returns a boolean if a field has been set.
+HasPathSuffix returns a boolean if a field has been set.
+
+### GetPurpose
+
+`func (o *SharingSmbCreate0) GetPurpose() string`
+
+GetPurpose returns the Purpose field if non-nil, zero value otherwise.
+
+### GetPurposeOk
+
+`func (o *SharingSmbCreate0) GetPurposeOk() (*string, bool)`
+
+GetPurposeOk returns a tuple with the Purpose field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPurpose
+
+`func (o *SharingSmbCreate0) SetPurpose(v string)`
+
+SetPurpose sets Purpose field to given value.
+
+### HasPurpose
+
+`func (o *SharingSmbCreate0) HasPurpose() bool`
+
+HasPurpose returns a boolean if a field has been set.
+
+### GetRecyclebin
+
+`func (o *SharingSmbCreate0) GetRecyclebin() bool`
+
+GetRecyclebin returns the Recyclebin field if non-nil, zero value otherwise.
+
+### GetRecyclebinOk
+
+`func (o *SharingSmbCreate0) GetRecyclebinOk() (*bool, bool)`
+
+GetRecyclebinOk returns a tuple with the Recyclebin field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRecyclebin
+
+`func (o *SharingSmbCreate0) SetRecyclebin(v bool)`
+
+SetRecyclebin sets Recyclebin field to given value.
+
+### HasRecyclebin
+
+`func (o *SharingSmbCreate0) HasRecyclebin() bool`
+
+HasRecyclebin returns a boolean if a field has been set.
+
+### GetRo
+
+`func (o *SharingSmbCreate0) GetRo() bool`
+
+GetRo returns the Ro field if non-nil, zero value otherwise.
+
+### GetRoOk
+
+`func (o *SharingSmbCreate0) GetRoOk() (*bool, bool)`
+
+GetRoOk returns a tuple with the Ro field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRo
+
+`func (o *SharingSmbCreate0) SetRo(v bool)`
+
+SetRo sets Ro field to given value.
+
+### HasRo
+
+`func (o *SharingSmbCreate0) HasRo() bool`
+
+HasRo returns a boolean if a field has been set.
 
 ### GetShadowcopy
 
@@ -521,80 +571,30 @@ SetStreams sets Streams field to given value.
 
 HasStreams returns a boolean if a field has been set.
 
-### GetFsrvp
+### GetTimemachine
 
-`func (o *SharingSmbCreate0) GetFsrvp() bool`
+`func (o *SharingSmbCreate0) GetTimemachine() bool`
 
-GetFsrvp returns the Fsrvp field if non-nil, zero value otherwise.
+GetTimemachine returns the Timemachine field if non-nil, zero value otherwise.
 
-### GetFsrvpOk
+### GetTimemachineOk
 
-`func (o *SharingSmbCreate0) GetFsrvpOk() (*bool, bool)`
+`func (o *SharingSmbCreate0) GetTimemachineOk() (*bool, bool)`
 
-GetFsrvpOk returns a tuple with the Fsrvp field if it's non-nil, zero value otherwise
+GetTimemachineOk returns a tuple with the Timemachine field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetFsrvp
+### SetTimemachine
 
-`func (o *SharingSmbCreate0) SetFsrvp(v bool)`
+`func (o *SharingSmbCreate0) SetTimemachine(v bool)`
 
-SetFsrvp sets Fsrvp field to given value.
+SetTimemachine sets Timemachine field to given value.
 
-### HasFsrvp
+### HasTimemachine
 
-`func (o *SharingSmbCreate0) HasFsrvp() bool`
+`func (o *SharingSmbCreate0) HasTimemachine() bool`
 
-HasFsrvp returns a boolean if a field has been set.
-
-### GetAuxsmbconf
-
-`func (o *SharingSmbCreate0) GetAuxsmbconf() string`
-
-GetAuxsmbconf returns the Auxsmbconf field if non-nil, zero value otherwise.
-
-### GetAuxsmbconfOk
-
-`func (o *SharingSmbCreate0) GetAuxsmbconfOk() (*string, bool)`
-
-GetAuxsmbconfOk returns a tuple with the Auxsmbconf field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetAuxsmbconf
-
-`func (o *SharingSmbCreate0) SetAuxsmbconf(v string)`
-
-SetAuxsmbconf sets Auxsmbconf field to given value.
-
-### HasAuxsmbconf
-
-`func (o *SharingSmbCreate0) HasAuxsmbconf() bool`
-
-HasAuxsmbconf returns a boolean if a field has been set.
-
-### GetEnabled
-
-`func (o *SharingSmbCreate0) GetEnabled() bool`
-
-GetEnabled returns the Enabled field if non-nil, zero value otherwise.
-
-### GetEnabledOk
-
-`func (o *SharingSmbCreate0) GetEnabledOk() (*bool, bool)`
-
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetEnabled
-
-`func (o *SharingSmbCreate0) SetEnabled(v bool)`
-
-SetEnabled sets Enabled field to given value.
-
-### HasEnabled
-
-`func (o *SharingSmbCreate0) HasEnabled() bool`
-
-HasEnabled returns a boolean if a field has been set.
+HasTimemachine returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

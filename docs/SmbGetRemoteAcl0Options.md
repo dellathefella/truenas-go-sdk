@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**UseKerberos** | Pointer to **bool** |  | [optional] 
 **OutputFormat** | Pointer to **string** |  | [optional] 
+**UseKerberos** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -25,31 +25,6 @@ will change when the set of required properties is changed
 NewSmbGetRemoteAcl0OptionsWithDefaults instantiates a new SmbGetRemoteAcl0Options object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetUseKerberos
-
-`func (o *SmbGetRemoteAcl0Options) GetUseKerberos() bool`
-
-GetUseKerberos returns the UseKerberos field if non-nil, zero value otherwise.
-
-### GetUseKerberosOk
-
-`func (o *SmbGetRemoteAcl0Options) GetUseKerberosOk() (*bool, bool)`
-
-GetUseKerberosOk returns a tuple with the UseKerberos field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetUseKerberos
-
-`func (o *SmbGetRemoteAcl0Options) SetUseKerberos(v bool)`
-
-SetUseKerberos sets UseKerberos field to given value.
-
-### HasUseKerberos
-
-`func (o *SmbGetRemoteAcl0Options) HasUseKerberos() bool`
-
-HasUseKerberos returns a boolean if a field has been set.
 
 ### GetOutputFormat
 
@@ -75,6 +50,31 @@ SetOutputFormat sets OutputFormat field to given value.
 `func (o *SmbGetRemoteAcl0Options) HasOutputFormat() bool`
 
 HasOutputFormat returns a boolean if a field has been set.
+
+### GetUseKerberos
+
+`func (o *SmbGetRemoteAcl0Options) GetUseKerberos() bool`
+
+GetUseKerberos returns the UseKerberos field if non-nil, zero value otherwise.
+
+### GetUseKerberosOk
+
+`func (o *SmbGetRemoteAcl0Options) GetUseKerberosOk() (*bool, bool)`
+
+GetUseKerberosOk returns a tuple with the UseKerberos field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUseKerberos
+
+`func (o *SmbGetRemoteAcl0Options) SetUseKerberos(v bool)`
+
+SetUseKerberos sets UseKerberos field to given value.
+
+### HasUseKerberos
+
+`func (o *SmbGetRemoteAcl0Options) HasUseKerberos() bool`
+
+HasUseKerberos returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

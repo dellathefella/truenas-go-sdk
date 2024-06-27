@@ -4,18 +4,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | Pointer to **string** |  | [optional] 
-**Description** | Pointer to **string** |  | [optional] 
-**Vcpus** | Pointer to **int32** |  | [optional] 
-**Cores** | Pointer to **int32** |  | [optional] 
-**Threads** | Pointer to **int32** |  | [optional] 
-**Memory** | Pointer to **int32** |  | [optional] 
-**Bootloader** | Pointer to **string** |  | [optional] 
-**Grubconfig** | Pointer to **NullableString** |  | [optional] 
-**Devices** | Pointer to **[]map[string]interface{}** |  | [optional] 
 **Autostart** | Pointer to **bool** |  | [optional] 
-**Time** | Pointer to **string** |  | [optional] 
+**Bootloader** | Pointer to **string** |  | [optional] 
+**Cores** | Pointer to **int32** |  | [optional] 
+**Description** | Pointer to **string** |  | [optional] 
+**Devices** | Pointer to **[]map[string]interface{}** |  | [optional] 
+**Grubconfig** | Pointer to **NullableString** |  | [optional] 
+**Memory** | Pointer to **int32** |  | [optional] 
+**Name** | Pointer to **string** |  | [optional] 
 **ShutdownTimeout** | Pointer to **int32** |  | [optional] 
+**Threads** | Pointer to **int32** |  | [optional] 
+**Time** | Pointer to **string** |  | [optional] 
+**Vcpus** | Pointer to **int32** |  | [optional] 
 
 ## Methods
 
@@ -36,80 +36,55 @@ NewVmCreate0WithDefaults instantiates a new VmCreate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetName
+### GetAutostart
 
-`func (o *VmCreate0) GetName() string`
+`func (o *VmCreate0) GetAutostart() bool`
 
-GetName returns the Name field if non-nil, zero value otherwise.
+GetAutostart returns the Autostart field if non-nil, zero value otherwise.
 
-### GetNameOk
+### GetAutostartOk
 
-`func (o *VmCreate0) GetNameOk() (*string, bool)`
+`func (o *VmCreate0) GetAutostartOk() (*bool, bool)`
 
-GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
+GetAutostartOk returns a tuple with the Autostart field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetName
+### SetAutostart
 
-`func (o *VmCreate0) SetName(v string)`
+`func (o *VmCreate0) SetAutostart(v bool)`
 
-SetName sets Name field to given value.
+SetAutostart sets Autostart field to given value.
 
-### HasName
+### HasAutostart
 
-`func (o *VmCreate0) HasName() bool`
+`func (o *VmCreate0) HasAutostart() bool`
 
-HasName returns a boolean if a field has been set.
+HasAutostart returns a boolean if a field has been set.
 
-### GetDescription
+### GetBootloader
 
-`func (o *VmCreate0) GetDescription() string`
+`func (o *VmCreate0) GetBootloader() string`
 
-GetDescription returns the Description field if non-nil, zero value otherwise.
+GetBootloader returns the Bootloader field if non-nil, zero value otherwise.
 
-### GetDescriptionOk
+### GetBootloaderOk
 
-`func (o *VmCreate0) GetDescriptionOk() (*string, bool)`
+`func (o *VmCreate0) GetBootloaderOk() (*string, bool)`
 
-GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
+GetBootloaderOk returns a tuple with the Bootloader field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetDescription
+### SetBootloader
 
-`func (o *VmCreate0) SetDescription(v string)`
+`func (o *VmCreate0) SetBootloader(v string)`
 
-SetDescription sets Description field to given value.
+SetBootloader sets Bootloader field to given value.
 
-### HasDescription
+### HasBootloader
 
-`func (o *VmCreate0) HasDescription() bool`
+`func (o *VmCreate0) HasBootloader() bool`
 
-HasDescription returns a boolean if a field has been set.
-
-### GetVcpus
-
-`func (o *VmCreate0) GetVcpus() int32`
-
-GetVcpus returns the Vcpus field if non-nil, zero value otherwise.
-
-### GetVcpusOk
-
-`func (o *VmCreate0) GetVcpusOk() (*int32, bool)`
-
-GetVcpusOk returns a tuple with the Vcpus field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetVcpus
-
-`func (o *VmCreate0) SetVcpus(v int32)`
-
-SetVcpus sets Vcpus field to given value.
-
-### HasVcpus
-
-`func (o *VmCreate0) HasVcpus() bool`
-
-HasVcpus returns a boolean if a field has been set.
+HasBootloader returns a boolean if a field has been set.
 
 ### GetCores
 
@@ -136,80 +111,55 @@ SetCores sets Cores field to given value.
 
 HasCores returns a boolean if a field has been set.
 
-### GetThreads
+### GetDescription
 
-`func (o *VmCreate0) GetThreads() int32`
+`func (o *VmCreate0) GetDescription() string`
 
-GetThreads returns the Threads field if non-nil, zero value otherwise.
+GetDescription returns the Description field if non-nil, zero value otherwise.
 
-### GetThreadsOk
+### GetDescriptionOk
 
-`func (o *VmCreate0) GetThreadsOk() (*int32, bool)`
+`func (o *VmCreate0) GetDescriptionOk() (*string, bool)`
 
-GetThreadsOk returns a tuple with the Threads field if it's non-nil, zero value otherwise
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetThreads
+### SetDescription
 
-`func (o *VmCreate0) SetThreads(v int32)`
+`func (o *VmCreate0) SetDescription(v string)`
 
-SetThreads sets Threads field to given value.
+SetDescription sets Description field to given value.
 
-### HasThreads
+### HasDescription
 
-`func (o *VmCreate0) HasThreads() bool`
+`func (o *VmCreate0) HasDescription() bool`
 
-HasThreads returns a boolean if a field has been set.
+HasDescription returns a boolean if a field has been set.
 
-### GetMemory
+### GetDevices
 
-`func (o *VmCreate0) GetMemory() int32`
+`func (o *VmCreate0) GetDevices() []map[string]interface{}`
 
-GetMemory returns the Memory field if non-nil, zero value otherwise.
+GetDevices returns the Devices field if non-nil, zero value otherwise.
 
-### GetMemoryOk
+### GetDevicesOk
 
-`func (o *VmCreate0) GetMemoryOk() (*int32, bool)`
+`func (o *VmCreate0) GetDevicesOk() (*[]map[string]interface{}, bool)`
 
-GetMemoryOk returns a tuple with the Memory field if it's non-nil, zero value otherwise
+GetDevicesOk returns a tuple with the Devices field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetMemory
+### SetDevices
 
-`func (o *VmCreate0) SetMemory(v int32)`
+`func (o *VmCreate0) SetDevices(v []map[string]interface{})`
 
-SetMemory sets Memory field to given value.
+SetDevices sets Devices field to given value.
 
-### HasMemory
+### HasDevices
 
-`func (o *VmCreate0) HasMemory() bool`
+`func (o *VmCreate0) HasDevices() bool`
 
-HasMemory returns a boolean if a field has been set.
-
-### GetBootloader
-
-`func (o *VmCreate0) GetBootloader() string`
-
-GetBootloader returns the Bootloader field if non-nil, zero value otherwise.
-
-### GetBootloaderOk
-
-`func (o *VmCreate0) GetBootloaderOk() (*string, bool)`
-
-GetBootloaderOk returns a tuple with the Bootloader field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetBootloader
-
-`func (o *VmCreate0) SetBootloader(v string)`
-
-SetBootloader sets Bootloader field to given value.
-
-### HasBootloader
-
-`func (o *VmCreate0) HasBootloader() bool`
-
-HasBootloader returns a boolean if a field has been set.
+HasDevices returns a boolean if a field has been set.
 
 ### GetGrubconfig
 
@@ -246,55 +196,105 @@ HasGrubconfig returns a boolean if a field has been set.
 `func (o *VmCreate0) UnsetGrubconfig()`
 
 UnsetGrubconfig ensures that no value is present for Grubconfig, not even an explicit nil
-### GetDevices
+### GetMemory
 
-`func (o *VmCreate0) GetDevices() []map[string]interface{}`
+`func (o *VmCreate0) GetMemory() int32`
 
-GetDevices returns the Devices field if non-nil, zero value otherwise.
+GetMemory returns the Memory field if non-nil, zero value otherwise.
 
-### GetDevicesOk
+### GetMemoryOk
 
-`func (o *VmCreate0) GetDevicesOk() (*[]map[string]interface{}, bool)`
+`func (o *VmCreate0) GetMemoryOk() (*int32, bool)`
 
-GetDevicesOk returns a tuple with the Devices field if it's non-nil, zero value otherwise
+GetMemoryOk returns a tuple with the Memory field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetDevices
+### SetMemory
 
-`func (o *VmCreate0) SetDevices(v []map[string]interface{})`
+`func (o *VmCreate0) SetMemory(v int32)`
 
-SetDevices sets Devices field to given value.
+SetMemory sets Memory field to given value.
 
-### HasDevices
+### HasMemory
 
-`func (o *VmCreate0) HasDevices() bool`
+`func (o *VmCreate0) HasMemory() bool`
 
-HasDevices returns a boolean if a field has been set.
+HasMemory returns a boolean if a field has been set.
 
-### GetAutostart
+### GetName
 
-`func (o *VmCreate0) GetAutostart() bool`
+`func (o *VmCreate0) GetName() string`
 
-GetAutostart returns the Autostart field if non-nil, zero value otherwise.
+GetName returns the Name field if non-nil, zero value otherwise.
 
-### GetAutostartOk
+### GetNameOk
 
-`func (o *VmCreate0) GetAutostartOk() (*bool, bool)`
+`func (o *VmCreate0) GetNameOk() (*string, bool)`
 
-GetAutostartOk returns a tuple with the Autostart field if it's non-nil, zero value otherwise
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetAutostart
+### SetName
 
-`func (o *VmCreate0) SetAutostart(v bool)`
+`func (o *VmCreate0) SetName(v string)`
 
-SetAutostart sets Autostart field to given value.
+SetName sets Name field to given value.
 
-### HasAutostart
+### HasName
 
-`func (o *VmCreate0) HasAutostart() bool`
+`func (o *VmCreate0) HasName() bool`
 
-HasAutostart returns a boolean if a field has been set.
+HasName returns a boolean if a field has been set.
+
+### GetShutdownTimeout
+
+`func (o *VmCreate0) GetShutdownTimeout() int32`
+
+GetShutdownTimeout returns the ShutdownTimeout field if non-nil, zero value otherwise.
+
+### GetShutdownTimeoutOk
+
+`func (o *VmCreate0) GetShutdownTimeoutOk() (*int32, bool)`
+
+GetShutdownTimeoutOk returns a tuple with the ShutdownTimeout field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetShutdownTimeout
+
+`func (o *VmCreate0) SetShutdownTimeout(v int32)`
+
+SetShutdownTimeout sets ShutdownTimeout field to given value.
+
+### HasShutdownTimeout
+
+`func (o *VmCreate0) HasShutdownTimeout() bool`
+
+HasShutdownTimeout returns a boolean if a field has been set.
+
+### GetThreads
+
+`func (o *VmCreate0) GetThreads() int32`
+
+GetThreads returns the Threads field if non-nil, zero value otherwise.
+
+### GetThreadsOk
+
+`func (o *VmCreate0) GetThreadsOk() (*int32, bool)`
+
+GetThreadsOk returns a tuple with the Threads field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetThreads
+
+`func (o *VmCreate0) SetThreads(v int32)`
+
+SetThreads sets Threads field to given value.
+
+### HasThreads
+
+`func (o *VmCreate0) HasThreads() bool`
+
+HasThreads returns a boolean if a field has been set.
 
 ### GetTime
 
@@ -321,30 +321,30 @@ SetTime sets Time field to given value.
 
 HasTime returns a boolean if a field has been set.
 
-### GetShutdownTimeout
+### GetVcpus
 
-`func (o *VmCreate0) GetShutdownTimeout() int32`
+`func (o *VmCreate0) GetVcpus() int32`
 
-GetShutdownTimeout returns the ShutdownTimeout field if non-nil, zero value otherwise.
+GetVcpus returns the Vcpus field if non-nil, zero value otherwise.
 
-### GetShutdownTimeoutOk
+### GetVcpusOk
 
-`func (o *VmCreate0) GetShutdownTimeoutOk() (*int32, bool)`
+`func (o *VmCreate0) GetVcpusOk() (*int32, bool)`
 
-GetShutdownTimeoutOk returns a tuple with the ShutdownTimeout field if it's non-nil, zero value otherwise
+GetVcpusOk returns a tuple with the Vcpus field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetShutdownTimeout
+### SetVcpus
 
-`func (o *VmCreate0) SetShutdownTimeout(v int32)`
+`func (o *VmCreate0) SetVcpus(v int32)`
 
-SetShutdownTimeout sets ShutdownTimeout field to given value.
+SetVcpus sets Vcpus field to given value.
 
-### HasShutdownTimeout
+### HasVcpus
 
-`func (o *VmCreate0) HasShutdownTimeout() bool`
+`func (o *VmCreate0) HasVcpus() bool`
 
-HasShutdownTimeout returns a boolean if a field has been set.
+HasVcpus returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Certssl** | Pointer to **NullableInt32** |  | [optional] 
+**Htauth** | Pointer to **string** |  | [optional] 
+**Password** | Pointer to **string** |  | [optional] 
 **Protocol** | Pointer to **string** |  | [optional] 
 **Tcpport** | Pointer to **int32** |  | [optional] 
 **Tcpportssl** | Pointer to **int32** |  | [optional] 
-**Password** | Pointer to **string** |  | [optional] 
-**Htauth** | Pointer to **string** |  | [optional] 
-**Certssl** | Pointer to **NullableInt32** |  | [optional] 
 
 ## Methods
 
@@ -29,6 +29,91 @@ will change when the set of required properties is changed
 NewWebdavUpdate0WithDefaults instantiates a new WebdavUpdate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetCertssl
+
+`func (o *WebdavUpdate0) GetCertssl() int32`
+
+GetCertssl returns the Certssl field if non-nil, zero value otherwise.
+
+### GetCertsslOk
+
+`func (o *WebdavUpdate0) GetCertsslOk() (*int32, bool)`
+
+GetCertsslOk returns a tuple with the Certssl field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCertssl
+
+`func (o *WebdavUpdate0) SetCertssl(v int32)`
+
+SetCertssl sets Certssl field to given value.
+
+### HasCertssl
+
+`func (o *WebdavUpdate0) HasCertssl() bool`
+
+HasCertssl returns a boolean if a field has been set.
+
+### SetCertsslNil
+
+`func (o *WebdavUpdate0) SetCertsslNil(b bool)`
+
+ SetCertsslNil sets the value for Certssl to be an explicit nil
+
+### UnsetCertssl
+`func (o *WebdavUpdate0) UnsetCertssl()`
+
+UnsetCertssl ensures that no value is present for Certssl, not even an explicit nil
+### GetHtauth
+
+`func (o *WebdavUpdate0) GetHtauth() string`
+
+GetHtauth returns the Htauth field if non-nil, zero value otherwise.
+
+### GetHtauthOk
+
+`func (o *WebdavUpdate0) GetHtauthOk() (*string, bool)`
+
+GetHtauthOk returns a tuple with the Htauth field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetHtauth
+
+`func (o *WebdavUpdate0) SetHtauth(v string)`
+
+SetHtauth sets Htauth field to given value.
+
+### HasHtauth
+
+`func (o *WebdavUpdate0) HasHtauth() bool`
+
+HasHtauth returns a boolean if a field has been set.
+
+### GetPassword
+
+`func (o *WebdavUpdate0) GetPassword() string`
+
+GetPassword returns the Password field if non-nil, zero value otherwise.
+
+### GetPasswordOk
+
+`func (o *WebdavUpdate0) GetPasswordOk() (*string, bool)`
+
+GetPasswordOk returns a tuple with the Password field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPassword
+
+`func (o *WebdavUpdate0) SetPassword(v string)`
+
+SetPassword sets Password field to given value.
+
+### HasPassword
+
+`func (o *WebdavUpdate0) HasPassword() bool`
+
+HasPassword returns a boolean if a field has been set.
 
 ### GetProtocol
 
@@ -105,91 +190,6 @@ SetTcpportssl sets Tcpportssl field to given value.
 
 HasTcpportssl returns a boolean if a field has been set.
 
-### GetPassword
-
-`func (o *WebdavUpdate0) GetPassword() string`
-
-GetPassword returns the Password field if non-nil, zero value otherwise.
-
-### GetPasswordOk
-
-`func (o *WebdavUpdate0) GetPasswordOk() (*string, bool)`
-
-GetPasswordOk returns a tuple with the Password field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPassword
-
-`func (o *WebdavUpdate0) SetPassword(v string)`
-
-SetPassword sets Password field to given value.
-
-### HasPassword
-
-`func (o *WebdavUpdate0) HasPassword() bool`
-
-HasPassword returns a boolean if a field has been set.
-
-### GetHtauth
-
-`func (o *WebdavUpdate0) GetHtauth() string`
-
-GetHtauth returns the Htauth field if non-nil, zero value otherwise.
-
-### GetHtauthOk
-
-`func (o *WebdavUpdate0) GetHtauthOk() (*string, bool)`
-
-GetHtauthOk returns a tuple with the Htauth field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetHtauth
-
-`func (o *WebdavUpdate0) SetHtauth(v string)`
-
-SetHtauth sets Htauth field to given value.
-
-### HasHtauth
-
-`func (o *WebdavUpdate0) HasHtauth() bool`
-
-HasHtauth returns a boolean if a field has been set.
-
-### GetCertssl
-
-`func (o *WebdavUpdate0) GetCertssl() int32`
-
-GetCertssl returns the Certssl field if non-nil, zero value otherwise.
-
-### GetCertsslOk
-
-`func (o *WebdavUpdate0) GetCertsslOk() (*int32, bool)`
-
-GetCertsslOk returns a tuple with the Certssl field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCertssl
-
-`func (o *WebdavUpdate0) SetCertssl(v int32)`
-
-SetCertssl sets Certssl field to given value.
-
-### HasCertssl
-
-`func (o *WebdavUpdate0) HasCertssl() bool`
-
-HasCertssl returns a boolean if a field has been set.
-
-### SetCertsslNil
-
-`func (o *WebdavUpdate0) SetCertsslNil(b bool)`
-
- SetCertsslNil sets the value for Certssl to be an explicit nil
-
-### UnsetCertssl
-`func (o *WebdavUpdate0) UnsetCertssl()`
-
-UnsetCertssl ensures that no value is present for Certssl, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

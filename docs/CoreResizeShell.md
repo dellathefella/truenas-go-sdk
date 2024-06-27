@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | Pointer to **string** |  | [optional] 
 **Cols** | Pointer to **int32** |  | [optional] 
+**Id** | Pointer to **string** |  | [optional] 
 **Rows** | Pointer to **int32** |  | [optional] 
 
 ## Methods
@@ -26,31 +26,6 @@ will change when the set of required properties is changed
 NewCoreResizeShellWithDefaults instantiates a new CoreResizeShell object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetId
-
-`func (o *CoreResizeShell) GetId() string`
-
-GetId returns the Id field if non-nil, zero value otherwise.
-
-### GetIdOk
-
-`func (o *CoreResizeShell) GetIdOk() (*string, bool)`
-
-GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetId
-
-`func (o *CoreResizeShell) SetId(v string)`
-
-SetId sets Id field to given value.
-
-### HasId
-
-`func (o *CoreResizeShell) HasId() bool`
-
-HasId returns a boolean if a field has been set.
 
 ### GetCols
 
@@ -76,6 +51,31 @@ SetCols sets Cols field to given value.
 `func (o *CoreResizeShell) HasCols() bool`
 
 HasCols returns a boolean if a field has been set.
+
+### GetId
+
+`func (o *CoreResizeShell) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *CoreResizeShell) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *CoreResizeShell) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *CoreResizeShell) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetRows
 

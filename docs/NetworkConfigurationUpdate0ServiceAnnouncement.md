@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Netbios** | Pointer to **bool** |  | [optional] 
 **Mdns** | Pointer to **bool** |  | [optional] 
+**Netbios** | Pointer to **bool** |  | [optional] 
 **Wsd** | Pointer to **bool** |  | [optional] 
 
 ## Methods
@@ -26,31 +26,6 @@ will change when the set of required properties is changed
 NewNetworkConfigurationUpdate0ServiceAnnouncementWithDefaults instantiates a new NetworkConfigurationUpdate0ServiceAnnouncement object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetNetbios
-
-`func (o *NetworkConfigurationUpdate0ServiceAnnouncement) GetNetbios() bool`
-
-GetNetbios returns the Netbios field if non-nil, zero value otherwise.
-
-### GetNetbiosOk
-
-`func (o *NetworkConfigurationUpdate0ServiceAnnouncement) GetNetbiosOk() (*bool, bool)`
-
-GetNetbiosOk returns a tuple with the Netbios field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetNetbios
-
-`func (o *NetworkConfigurationUpdate0ServiceAnnouncement) SetNetbios(v bool)`
-
-SetNetbios sets Netbios field to given value.
-
-### HasNetbios
-
-`func (o *NetworkConfigurationUpdate0ServiceAnnouncement) HasNetbios() bool`
-
-HasNetbios returns a boolean if a field has been set.
 
 ### GetMdns
 
@@ -76,6 +51,31 @@ SetMdns sets Mdns field to given value.
 `func (o *NetworkConfigurationUpdate0ServiceAnnouncement) HasMdns() bool`
 
 HasMdns returns a boolean if a field has been set.
+
+### GetNetbios
+
+`func (o *NetworkConfigurationUpdate0ServiceAnnouncement) GetNetbios() bool`
+
+GetNetbios returns the Netbios field if non-nil, zero value otherwise.
+
+### GetNetbiosOk
+
+`func (o *NetworkConfigurationUpdate0ServiceAnnouncement) GetNetbiosOk() (*bool, bool)`
+
+GetNetbiosOk returns a tuple with the Netbios field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetNetbios
+
+`func (o *NetworkConfigurationUpdate0ServiceAnnouncement) SetNetbios(v bool)`
+
+SetNetbios sets Netbios field to given value.
+
+### HasNetbios
+
+`func (o *NetworkConfigurationUpdate0ServiceAnnouncement) HasNetbios() bool`
+
+HasNetbios returns a boolean if a field has been set.
 
 ### GetWsd
 

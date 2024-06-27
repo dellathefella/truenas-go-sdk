@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Intdesc** | Pointer to **bool** |  | [optional] 
 **Country** | Pointer to **string** |  | [optional] 
+**Intdesc** | Pointer to **bool** |  | [optional] 
 **Location** | Pointer to **string** |  | [optional] 
 
 ## Methods
@@ -26,31 +26,6 @@ will change when the set of required properties is changed
 NewLldpUpdate0WithDefaults instantiates a new LldpUpdate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetIntdesc
-
-`func (o *LldpUpdate0) GetIntdesc() bool`
-
-GetIntdesc returns the Intdesc field if non-nil, zero value otherwise.
-
-### GetIntdescOk
-
-`func (o *LldpUpdate0) GetIntdescOk() (*bool, bool)`
-
-GetIntdescOk returns a tuple with the Intdesc field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetIntdesc
-
-`func (o *LldpUpdate0) SetIntdesc(v bool)`
-
-SetIntdesc sets Intdesc field to given value.
-
-### HasIntdesc
-
-`func (o *LldpUpdate0) HasIntdesc() bool`
-
-HasIntdesc returns a boolean if a field has been set.
 
 ### GetCountry
 
@@ -76,6 +51,31 @@ SetCountry sets Country field to given value.
 `func (o *LldpUpdate0) HasCountry() bool`
 
 HasCountry returns a boolean if a field has been set.
+
+### GetIntdesc
+
+`func (o *LldpUpdate0) GetIntdesc() bool`
+
+GetIntdesc returns the Intdesc field if non-nil, zero value otherwise.
+
+### GetIntdescOk
+
+`func (o *LldpUpdate0) GetIntdescOk() (*bool, bool)`
+
+GetIntdescOk returns a tuple with the Intdesc field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetIntdesc
+
+`func (o *LldpUpdate0) SetIntdesc(v bool)`
+
+SetIntdesc sets Intdesc field to given value.
+
+### HasIntdesc
+
+`func (o *LldpUpdate0) HasIntdesc() bool`
+
+HasIntdesc returns a boolean if a field has been set.
 
 ### GetLocation
 

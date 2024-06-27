@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Enabled** | Pointer to **bool** |  | [optional] 
 **ApiKey** | Pointer to **NullableString** |  | [optional] 
+**Enabled** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -25,31 +25,6 @@ will change when the set of required properties is changed
 NewTruecommandUpdate0WithDefaults instantiates a new TruecommandUpdate0 object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetEnabled
-
-`func (o *TruecommandUpdate0) GetEnabled() bool`
-
-GetEnabled returns the Enabled field if non-nil, zero value otherwise.
-
-### GetEnabledOk
-
-`func (o *TruecommandUpdate0) GetEnabledOk() (*bool, bool)`
-
-GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetEnabled
-
-`func (o *TruecommandUpdate0) SetEnabled(v bool)`
-
-SetEnabled sets Enabled field to given value.
-
-### HasEnabled
-
-`func (o *TruecommandUpdate0) HasEnabled() bool`
-
-HasEnabled returns a boolean if a field has been set.
 
 ### GetApiKey
 
@@ -86,6 +61,31 @@ HasApiKey returns a boolean if a field has been set.
 `func (o *TruecommandUpdate0) UnsetApiKey()`
 
 UnsetApiKey ensures that no value is present for ApiKey, not even an explicit nil
+### GetEnabled
+
+`func (o *TruecommandUpdate0) GetEnabled() bool`
+
+GetEnabled returns the Enabled field if non-nil, zero value otherwise.
+
+### GetEnabledOk
+
+`func (o *TruecommandUpdate0) GetEnabledOk() (*bool, bool)`
+
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEnabled
+
+`func (o *TruecommandUpdate0) SetEnabled(v bool)`
+
+SetEnabled sets Enabled field to given value.
+
+### HasEnabled
+
+`func (o *TruecommandUpdate0) HasEnabled() bool`
+
+HasEnabled returns a boolean if a field has been set.
+
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

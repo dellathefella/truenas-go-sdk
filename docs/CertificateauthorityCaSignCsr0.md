@@ -5,9 +5,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CaId** | Pointer to **int32** |  | [optional] 
+**CertExtensions** | Pointer to [**CertificateCreate0CertExtensions**](CertificateCreate0CertExtensions.md) |  | [optional] 
 **CsrCertId** | Pointer to **int32** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
-**CertExtensions** | Pointer to [**CertificateCreate0CertExtensions**](CertificateCreate0CertExtensions.md) |  | [optional] 
 
 ## Methods
 
@@ -52,6 +52,31 @@ SetCaId sets CaId field to given value.
 `func (o *CertificateauthorityCaSignCsr0) HasCaId() bool`
 
 HasCaId returns a boolean if a field has been set.
+
+### GetCertExtensions
+
+`func (o *CertificateauthorityCaSignCsr0) GetCertExtensions() CertificateCreate0CertExtensions`
+
+GetCertExtensions returns the CertExtensions field if non-nil, zero value otherwise.
+
+### GetCertExtensionsOk
+
+`func (o *CertificateauthorityCaSignCsr0) GetCertExtensionsOk() (*CertificateCreate0CertExtensions, bool)`
+
+GetCertExtensionsOk returns a tuple with the CertExtensions field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCertExtensions
+
+`func (o *CertificateauthorityCaSignCsr0) SetCertExtensions(v CertificateCreate0CertExtensions)`
+
+SetCertExtensions sets CertExtensions field to given value.
+
+### HasCertExtensions
+
+`func (o *CertificateauthorityCaSignCsr0) HasCertExtensions() bool`
+
+HasCertExtensions returns a boolean if a field has been set.
 
 ### GetCsrCertId
 
@@ -102,31 +127,6 @@ SetName sets Name field to given value.
 `func (o *CertificateauthorityCaSignCsr0) HasName() bool`
 
 HasName returns a boolean if a field has been set.
-
-### GetCertExtensions
-
-`func (o *CertificateauthorityCaSignCsr0) GetCertExtensions() CertificateCreate0CertExtensions`
-
-GetCertExtensions returns the CertExtensions field if non-nil, zero value otherwise.
-
-### GetCertExtensionsOk
-
-`func (o *CertificateauthorityCaSignCsr0) GetCertExtensionsOk() (*CertificateCreate0CertExtensions, bool)`
-
-GetCertExtensionsOk returns a tuple with the CertExtensions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCertExtensions
-
-`func (o *CertificateauthorityCaSignCsr0) SetCertExtensions(v CertificateCreate0CertExtensions)`
-
-SetCertExtensions sets CertExtensions field to given value.
-
-### HasCertExtensions
-
-`func (o *CertificateauthorityCaSignCsr0) HasCertExtensions() bool`
-
-HasCertExtensions returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

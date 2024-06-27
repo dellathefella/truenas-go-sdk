@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Transport** | Pointer to [**ReplicationListDatasets0**](ReplicationListDatasets0.md) |  | [optional] 
 **SshCredentials** | Pointer to **NullableInt32** |  | [optional] 
+**Transport** | Pointer to [**ReplicationListDatasets0**](ReplicationListDatasets0.md) |  | [optional] 
 
 ## Methods
 
@@ -25,31 +25,6 @@ will change when the set of required properties is changed
 NewReplicationListDatasetsWithDefaults instantiates a new ReplicationListDatasets object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetTransport
-
-`func (o *ReplicationListDatasets) GetTransport() ReplicationListDatasets0`
-
-GetTransport returns the Transport field if non-nil, zero value otherwise.
-
-### GetTransportOk
-
-`func (o *ReplicationListDatasets) GetTransportOk() (*ReplicationListDatasets0, bool)`
-
-GetTransportOk returns a tuple with the Transport field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTransport
-
-`func (o *ReplicationListDatasets) SetTransport(v ReplicationListDatasets0)`
-
-SetTransport sets Transport field to given value.
-
-### HasTransport
-
-`func (o *ReplicationListDatasets) HasTransport() bool`
-
-HasTransport returns a boolean if a field has been set.
 
 ### GetSshCredentials
 
@@ -86,6 +61,31 @@ HasSshCredentials returns a boolean if a field has been set.
 `func (o *ReplicationListDatasets) UnsetSshCredentials()`
 
 UnsetSshCredentials ensures that no value is present for SshCredentials, not even an explicit nil
+### GetTransport
+
+`func (o *ReplicationListDatasets) GetTransport() ReplicationListDatasets0`
+
+GetTransport returns the Transport field if non-nil, zero value otherwise.
+
+### GetTransportOk
+
+`func (o *ReplicationListDatasets) GetTransportOk() (*ReplicationListDatasets0, bool)`
+
+GetTransportOk returns a tuple with the Transport field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTransport
+
+`func (o *ReplicationListDatasets) SetTransport(v ReplicationListDatasets0)`
+
+SetTransport sets Transport field to given value.
+
+### HasTransport
+
+`func (o *ReplicationListDatasets) HasTransport() bool`
+
+HasTransport returns a boolean if a field has been set.
+
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

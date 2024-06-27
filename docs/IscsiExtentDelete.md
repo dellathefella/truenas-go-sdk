@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Remove** | Pointer to **bool** |  | [optional] [default to false]
 **Force** | Pointer to **bool** |  | [optional] [default to false]
+**Remove** | Pointer to **bool** |  | [optional] [default to false]
 
 ## Methods
 
@@ -25,31 +25,6 @@ will change when the set of required properties is changed
 NewIscsiExtentDeleteWithDefaults instantiates a new IscsiExtentDelete object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
-
-### GetRemove
-
-`func (o *IscsiExtentDelete) GetRemove() bool`
-
-GetRemove returns the Remove field if non-nil, zero value otherwise.
-
-### GetRemoveOk
-
-`func (o *IscsiExtentDelete) GetRemoveOk() (*bool, bool)`
-
-GetRemoveOk returns a tuple with the Remove field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetRemove
-
-`func (o *IscsiExtentDelete) SetRemove(v bool)`
-
-SetRemove sets Remove field to given value.
-
-### HasRemove
-
-`func (o *IscsiExtentDelete) HasRemove() bool`
-
-HasRemove returns a boolean if a field has been set.
 
 ### GetForce
 
@@ -75,6 +50,31 @@ SetForce sets Force field to given value.
 `func (o *IscsiExtentDelete) HasForce() bool`
 
 HasForce returns a boolean if a field has been set.
+
+### GetRemove
+
+`func (o *IscsiExtentDelete) GetRemove() bool`
+
+GetRemove returns the Remove field if non-nil, zero value otherwise.
+
+### GetRemoveOk
+
+`func (o *IscsiExtentDelete) GetRemoveOk() (*bool, bool)`
+
+GetRemoveOk returns a tuple with the Remove field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRemove
+
+`func (o *IscsiExtentDelete) SetRemove(v bool)`
+
+SetRemove sets Remove field to given value.
+
+### HasRemove
+
+`func (o *IscsiExtentDelete) HasRemove() bool`
+
+HasRemove returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
