@@ -1,0 +1,26 @@
+regex_remove_expressions:
+  - ^\/core\/.*$
+  - ^\/activedirectory.*$
+  - ^.*jail.*$
+  - ^\/boot\/.*$
+  - ^\/failover\/.*$
+  - ^.*plugin.*$
+  - ^.*user_set_attribute.*$
+  - ^.*zfs_snapshot_rollback.*$
+  - ^.*reporting_get_data.*$
+  - ^.*pool_dataset_unlock.*$
+  - ^.*pool_dataset_lock.*$
+  - ^.*pool_attach.*$
+  - ^.*mail_send.*$
+  - ^.*filesystem_listdir.*$
+  - ^.*failover_control.*$
+  - ^.*disk_wipe.*$
+  - ^.*core_debug.*$
+  - ^.*cloudsync_sync_onetime.*$
+  - ^.*boot_.*$
+  - ^.*smb_status.*$
+  - ^.*smb_sharesec_getacl.$
+  - ^.*\/zfs\/snapshot\/.*$
+  - ^.*\/filesystem\/.*$
+  - ^.*\/system\/.*$
+  - ^.*\/pool\/attach.*$
