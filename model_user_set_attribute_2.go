@@ -17,7 +17,7 @@ import (
 
 // UserSetAttribute2 struct for UserSetAttribute2
 type UserSetAttribute2 struct {
-	Array *Array
+	[]interface{} *[]interface{}
 	bool *bool
 	int32 *int32
 	map[string]interface{} *map[string]interface{}
@@ -27,17 +27,17 @@ type UserSetAttribute2 struct {
 // Unmarshal JSON data into any of the pointers in the struct
 func (dst *UserSetAttribute2) UnmarshalJSON(data []byte) error {
 	var err error
-	// try to unmarshal JSON data into Array
-	err = json.Unmarshal(data, &dst.Array);
+	// try to unmarshal JSON data into []interface{}
+	err = json.Unmarshal(data, &dst.[]interface{});
 	if err == nil {
-		jsonArray, _ := json.Marshal(dst.Array)
-		if string(jsonArray) == "{}" { // empty struct
-			dst.Array = nil
+		json[]interface{}, _ := json.Marshal(dst.[]interface{})
+		if string(json[]interface{}) == "{}" { // empty struct
+			dst.[]interface{} = nil
 		} else {
-			return nil // data stored in dst.Array, return on the first match
+			return nil // data stored in dst.[]interface{}, return on the first match
 		}
 	} else {
-		dst.Array = nil
+		dst.[]interface{} = nil
 	}
 
 	// try to unmarshal JSON data into bool
@@ -97,8 +97,8 @@ func (dst *UserSetAttribute2) UnmarshalJSON(data []byte) error {
 
 // Marshal data from the first non-nil pointers in the struct to JSON
 func (src *UserSetAttribute2) MarshalJSON() ([]byte, error) {
-	if src.Array != nil {
-		return json.Marshal(&src.Array)
+	if src.[]interface{} != nil {
+		return json.Marshal(&src.[]interface{})
 	}
 
 	if src.bool != nil {

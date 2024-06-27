@@ -29,7 +29,7 @@ type _BootAttach BootAttach
 // will change when the set of required properties is changed
 func NewBootAttach() *BootAttach {
 	this := BootAttach{}
-	var options BootAttach1 = {}
+	var options BootAttach1 = BootAttach{}
 	this.Options = &options
 	return &this
 }
@@ -39,7 +39,7 @@ func NewBootAttach() *BootAttach {
 // but it doesn't guarantee that properties required by API are set
 func NewBootAttachWithDefaults() *BootAttach {
 	this := BootAttach{}
-	var options BootAttach1 = {}
+	var options BootAttach1 = BootAttach{}
 	this.Options = &options
 	return &this
 }

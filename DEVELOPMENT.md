@@ -14,13 +14,15 @@ Unfortunately the raw openapi spec (`cfg/<release>_original.yaml`) is both incom
 To fetch the remote spec:
 
 ```bash
-./cfg/fetch-remote.sh core_13.0-u6_apiv2 cfg/dragonfish.yaml
+./cfg/fetch-remote.sh core_13.0-u6_apiv2 dragonfish
+openapi-generator-cli validate -i cfg/dragonfish.yaml
 ```
 
 To generate go SDK from current (curated) openapi spec use this command:
 ```bash
 npm install @openapitools/openapi-generator-cli -g
 npm install -g swagger2openapi
+npm install -g @stoplight/spectral-cli
 ```
 
 ```bash

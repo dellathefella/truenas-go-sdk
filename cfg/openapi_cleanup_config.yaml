@@ -1,0 +1,3 @@
+remove_path_regex_expressions:
+# - ^\/core\/.*$
+# - ^\/activedirectory.*$

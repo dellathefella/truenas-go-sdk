@@ -1,6 +1,6 @@
-module github.com/dellathefella/truenas-go-sdk
+module github.com/jdella/truenas-go-sdk
 
-go 1.18
+go 1.22
 
 require golang.org/x/oauth2 v0.0.0-20210323180902-22b0adad7558
 
