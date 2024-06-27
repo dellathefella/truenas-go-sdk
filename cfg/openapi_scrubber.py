@@ -18,7 +18,7 @@ def remove_key_with_value(dct, value):
     return new_dct
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-i','--input_file_path',required=True)
     parser.add_argument('-c','--config_file_path',required=True)      
@@ -42,16 +42,21 @@ if __name__ == "main":
     config_file.close()
 
     if config["regex_remove_expressions"] != None:
-        for component in list(input["components"]["schemas"]):
-            for remove_path_regex_expression in config["regex_remove_expressions"]:
-                if re.search(remove_path_regex_expression,component):
-                    print(f'{input["components"]["schemas"][component]}')
-                    del input["components"]["schemas"][component]
-        for path in list(input["paths"]):
-            for remove_path_regex_expression in config["regex_remove_expressions"]:
-                if re.search(remove_path_regex_expression,path):
-                    del input["paths"][path]
-            
+        try:
+            for component in list(input["components"]["schemas"]):
+                for remove_path_regex_expression in config["regex_remove_expressions"]:
+                    if re.search(remove_path_regex_expression,component):
+                        del input["components"]["schemas"][component]
+        except:
+            print(Exception)
+        try:
+            for path in list(input["paths"]):
+                for remove_path_regex_expression in config["regex_remove_expressions"]:
+                    if re.search(remove_path_regex_expression,path):
+                        print(f'{input["paths"][path]}')
+                        del input["paths"][path]
+        except:
+            print(Exception)            
     # for path in list(input["paths"]):
     #     if re.search("^.*{{id}}.*$",path):
     #         input["paths"][path] = input["paths"][f'{path}']
