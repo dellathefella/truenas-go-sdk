@@ -44,7 +44,7 @@ func NewCreateDatasetParamsEncryptionOptionsWithDefaults() *CreateDatasetParamsE
 
 // GetAlgorithm returns the Algorithm field value if set, zero value otherwise.
 func (o *CreateDatasetParamsEncryptionOptions) GetAlgorithm() string {
-	if o == nil || isNil(o.Algorithm) {
+	if o == nil || o.Algorithm == nil {
 		var ret string
 		return ret
 	}
@@ -54,7 +54,7 @@ func (o *CreateDatasetParamsEncryptionOptions) GetAlgorithm() string {
 // GetAlgorithmOk returns a tuple with the Algorithm field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateDatasetParamsEncryptionOptions) GetAlgorithmOk() (*string, bool) {
-	if o == nil || isNil(o.Algorithm) {
+	if o == nil || o.Algorithm == nil {
 		return nil, false
 	}
 	return o.Algorithm, true
@@ -62,7 +62,7 @@ func (o *CreateDatasetParamsEncryptionOptions) GetAlgorithmOk() (*string, bool) 
 
 // HasAlgorithm returns a boolean if a field has been set.
 func (o *CreateDatasetParamsEncryptionOptions) HasAlgorithm() bool {
-	if o != nil && !isNil(o.Algorithm) {
+	if o != nil && o.Algorithm != nil {
 		return true
 	}
 
@@ -76,7 +76,7 @@ func (o *CreateDatasetParamsEncryptionOptions) SetAlgorithm(v string) {
 
 // GetGenerateKey returns the GenerateKey field value if set, zero value otherwise.
 func (o *CreateDatasetParamsEncryptionOptions) GetGenerateKey() bool {
-	if o == nil || isNil(o.GenerateKey) {
+	if o == nil || o.GenerateKey == nil {
 		var ret bool
 		return ret
 	}
@@ -86,7 +86,7 @@ func (o *CreateDatasetParamsEncryptionOptions) GetGenerateKey() bool {
 // GetGenerateKeyOk returns a tuple with the GenerateKey field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateDatasetParamsEncryptionOptions) GetGenerateKeyOk() (*bool, bool) {
-	if o == nil || isNil(o.GenerateKey) {
+	if o == nil || o.GenerateKey == nil {
 		return nil, false
 	}
 	return o.GenerateKey, true
@@ -94,7 +94,7 @@ func (o *CreateDatasetParamsEncryptionOptions) GetGenerateKeyOk() (*bool, bool) 
 
 // HasGenerateKey returns a boolean if a field has been set.
 func (o *CreateDatasetParamsEncryptionOptions) HasGenerateKey() bool {
-	if o != nil && !isNil(o.GenerateKey) {
+	if o != nil && o.GenerateKey != nil {
 		return true
 	}
 
@@ -108,7 +108,7 @@ func (o *CreateDatasetParamsEncryptionOptions) SetGenerateKey(v bool) {
 
 // GetPassphrase returns the Passphrase field value if set, zero value otherwise.
 func (o *CreateDatasetParamsEncryptionOptions) GetPassphrase() string {
-	if o == nil || isNil(o.Passphrase) {
+	if o == nil || o.Passphrase == nil {
 		var ret string
 		return ret
 	}
@@ -118,7 +118,7 @@ func (o *CreateDatasetParamsEncryptionOptions) GetPassphrase() string {
 // GetPassphraseOk returns a tuple with the Passphrase field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateDatasetParamsEncryptionOptions) GetPassphraseOk() (*string, bool) {
-	if o == nil || isNil(o.Passphrase) {
+	if o == nil || o.Passphrase == nil {
 		return nil, false
 	}
 	return o.Passphrase, true
@@ -126,7 +126,7 @@ func (o *CreateDatasetParamsEncryptionOptions) GetPassphraseOk() (*string, bool)
 
 // HasPassphrase returns a boolean if a field has been set.
 func (o *CreateDatasetParamsEncryptionOptions) HasPassphrase() bool {
-	if o != nil && !isNil(o.Passphrase) {
+	if o != nil && o.Passphrase != nil {
 		return true
 	}
 
@@ -140,7 +140,7 @@ func (o *CreateDatasetParamsEncryptionOptions) SetPassphrase(v string) {
 
 // GetKey returns the Key field value if set, zero value otherwise.
 func (o *CreateDatasetParamsEncryptionOptions) GetKey() string {
-	if o == nil || isNil(o.Key) {
+	if o == nil || o.Key == nil {
 		var ret string
 		return ret
 	}
@@ -150,7 +150,7 @@ func (o *CreateDatasetParamsEncryptionOptions) GetKey() string {
 // GetKeyOk returns a tuple with the Key field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateDatasetParamsEncryptionOptions) GetKeyOk() (*string, bool) {
-	if o == nil || isNil(o.Key) {
+	if o == nil || o.Key == nil {
 		return nil, false
 	}
 	return o.Key, true
@@ -158,7 +158,7 @@ func (o *CreateDatasetParamsEncryptionOptions) GetKeyOk() (*string, bool) {
 
 // HasKey returns a boolean if a field has been set.
 func (o *CreateDatasetParamsEncryptionOptions) HasKey() bool {
-	if o != nil && !isNil(o.Key) {
+	if o != nil && o.Key != nil {
 		return true
 	}
 
@@ -172,16 +172,16 @@ func (o *CreateDatasetParamsEncryptionOptions) SetKey(v string) {
 
 func (o CreateDatasetParamsEncryptionOptions) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
-	if !isNil(o.Algorithm) {
+	if o.Algorithm != nil {
 		toSerialize["algorithm"] = o.Algorithm
 	}
-	if !isNil(o.GenerateKey) {
+	if o.GenerateKey != nil {
 		toSerialize["generate_key"] = o.GenerateKey
 	}
-	if !isNil(o.Passphrase) {
+	if o.Passphrase != nil {
 		toSerialize["passphrase"] = o.Passphrase
 	}
-	if !isNil(o.Key) {
+	if o.Key != nil {
 		toSerialize["key"] = o.Key
 	}
 

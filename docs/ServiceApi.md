@@ -5,6 +5,7 @@ All URIs are relative to *http://localhost*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**GetService**](ServiceApi.md#GetService) | **Get** /service/id/{id} | 
+[**ListServices**](ServiceApi.md#ListServices) | **Get** /service | 
 
 
 
@@ -73,6 +74,78 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ListServices
+
+> []Service ListServices(ctx).Limit(limit).Offset(offset).Count(count).Sort(sort).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    limit := int32(56) // int32 |  (optional)
+    offset := int32(56) // int32 |  (optional)
+    count := true // bool |  (optional)
+    sort := "sort_example" // string |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.ServiceApi.ListServices(context.Background()).Limit(limit).Offset(offset).Count(count).Sort(sort).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `ServiceApi.ListServices``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `ListServices`: []Service
+    fmt.Fprintf(os.Stdout, "Response from `ServiceApi.ListServices`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiListServicesRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **int32** |  | 
+ **offset** | **int32** |  | 
+ **count** | **bool** |  | 
+ **sort** | **string** |  | 
+
+### Return type
+
+[**[]Service**](Service.md)
+
+### Authorization
+
+No authorization required
 
 ### HTTP request headers
 

@@ -63,7 +63,7 @@ func NewCreateShareSMBParamsWithDefaults() *CreateShareSMBParams {
 
 // GetPurpose returns the Purpose field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetPurpose() string {
-	if o == nil || isNil(o.Purpose) {
+	if o == nil || o.Purpose == nil {
 		var ret string
 		return ret
 	}
@@ -73,7 +73,7 @@ func (o *CreateShareSMBParams) GetPurpose() string {
 // GetPurposeOk returns a tuple with the Purpose field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetPurposeOk() (*string, bool) {
-	if o == nil || isNil(o.Purpose) {
+	if o == nil || o.Purpose == nil {
 		return nil, false
 	}
 	return o.Purpose, true
@@ -81,7 +81,7 @@ func (o *CreateShareSMBParams) GetPurposeOk() (*string, bool) {
 
 // HasPurpose returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasPurpose() bool {
-	if o != nil && !isNil(o.Purpose) {
+	if o != nil && o.Purpose != nil {
 		return true
 	}
 
@@ -119,7 +119,7 @@ func (o *CreateShareSMBParams) SetPath(v string) {
 
 // GetPathSuffix returns the PathSuffix field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetPathSuffix() string {
-	if o == nil || isNil(o.PathSuffix) {
+	if o == nil || o.PathSuffix == nil {
 		var ret string
 		return ret
 	}
@@ -129,7 +129,7 @@ func (o *CreateShareSMBParams) GetPathSuffix() string {
 // GetPathSuffixOk returns a tuple with the PathSuffix field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetPathSuffixOk() (*string, bool) {
-	if o == nil || isNil(o.PathSuffix) {
+	if o == nil || o.PathSuffix == nil {
 		return nil, false
 	}
 	return o.PathSuffix, true
@@ -137,7 +137,7 @@ func (o *CreateShareSMBParams) GetPathSuffixOk() (*string, bool) {
 
 // HasPathSuffix returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasPathSuffix() bool {
-	if o != nil && !isNil(o.PathSuffix) {
+	if o != nil && o.PathSuffix != nil {
 		return true
 	}
 
@@ -151,7 +151,7 @@ func (o *CreateShareSMBParams) SetPathSuffix(v string) {
 
 // GetHome returns the Home field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetHome() bool {
-	if o == nil || isNil(o.Home) {
+	if o == nil || o.Home == nil {
 		var ret bool
 		return ret
 	}
@@ -161,7 +161,7 @@ func (o *CreateShareSMBParams) GetHome() bool {
 // GetHomeOk returns a tuple with the Home field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetHomeOk() (*bool, bool) {
-	if o == nil || isNil(o.Home) {
+	if o == nil || o.Home == nil {
 		return nil, false
 	}
 	return o.Home, true
@@ -169,7 +169,7 @@ func (o *CreateShareSMBParams) GetHomeOk() (*bool, bool) {
 
 // HasHome returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasHome() bool {
-	if o != nil && !isNil(o.Home) {
+	if o != nil && o.Home != nil {
 		return true
 	}
 
@@ -183,7 +183,7 @@ func (o *CreateShareSMBParams) SetHome(v bool) {
 
 // GetName returns the Name field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetName() string {
-	if o == nil || isNil(o.Name) {
+	if o == nil || o.Name == nil {
 		var ret string
 		return ret
 	}
@@ -193,7 +193,7 @@ func (o *CreateShareSMBParams) GetName() string {
 // GetNameOk returns a tuple with the Name field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetNameOk() (*string, bool) {
-	if o == nil || isNil(o.Name) {
+	if o == nil || o.Name == nil {
 		return nil, false
 	}
 	return o.Name, true
@@ -201,7 +201,7 @@ func (o *CreateShareSMBParams) GetNameOk() (*string, bool) {
 
 // HasName returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasName() bool {
-	if o != nil && !isNil(o.Name) {
+	if o != nil && o.Name != nil {
 		return true
 	}
 
@@ -215,7 +215,7 @@ func (o *CreateShareSMBParams) SetName(v string) {
 
 // GetComment returns the Comment field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetComment() string {
-	if o == nil || isNil(o.Comment) {
+	if o == nil || o.Comment == nil {
 		var ret string
 		return ret
 	}
@@ -225,7 +225,7 @@ func (o *CreateShareSMBParams) GetComment() string {
 // GetCommentOk returns a tuple with the Comment field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetCommentOk() (*string, bool) {
-	if o == nil || isNil(o.Comment) {
+	if o == nil || o.Comment == nil {
 		return nil, false
 	}
 	return o.Comment, true
@@ -233,7 +233,7 @@ func (o *CreateShareSMBParams) GetCommentOk() (*string, bool) {
 
 // HasComment returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasComment() bool {
-	if o != nil && !isNil(o.Comment) {
+	if o != nil && o.Comment != nil {
 		return true
 	}
 
@@ -247,7 +247,7 @@ func (o *CreateShareSMBParams) SetComment(v string) {
 
 // GetRo returns the Ro field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetRo() bool {
-	if o == nil || isNil(o.Ro) {
+	if o == nil || o.Ro == nil {
 		var ret bool
 		return ret
 	}
@@ -257,7 +257,7 @@ func (o *CreateShareSMBParams) GetRo() bool {
 // GetRoOk returns a tuple with the Ro field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetRoOk() (*bool, bool) {
-	if o == nil || isNil(o.Ro) {
+	if o == nil || o.Ro == nil {
 		return nil, false
 	}
 	return o.Ro, true
@@ -265,7 +265,7 @@ func (o *CreateShareSMBParams) GetRoOk() (*bool, bool) {
 
 // HasRo returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasRo() bool {
-	if o != nil && !isNil(o.Ro) {
+	if o != nil && o.Ro != nil {
 		return true
 	}
 
@@ -279,7 +279,7 @@ func (o *CreateShareSMBParams) SetRo(v bool) {
 
 // GetBrowsable returns the Browsable field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetBrowsable() bool {
-	if o == nil || isNil(o.Browsable) {
+	if o == nil || o.Browsable == nil {
 		var ret bool
 		return ret
 	}
@@ -289,7 +289,7 @@ func (o *CreateShareSMBParams) GetBrowsable() bool {
 // GetBrowsableOk returns a tuple with the Browsable field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetBrowsableOk() (*bool, bool) {
-	if o == nil || isNil(o.Browsable) {
+	if o == nil || o.Browsable == nil {
 		return nil, false
 	}
 	return o.Browsable, true
@@ -297,7 +297,7 @@ func (o *CreateShareSMBParams) GetBrowsableOk() (*bool, bool) {
 
 // HasBrowsable returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasBrowsable() bool {
-	if o != nil && !isNil(o.Browsable) {
+	if o != nil && o.Browsable != nil {
 		return true
 	}
 
@@ -311,7 +311,7 @@ func (o *CreateShareSMBParams) SetBrowsable(v bool) {
 
 // GetTimemachine returns the Timemachine field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetTimemachine() bool {
-	if o == nil || isNil(o.Timemachine) {
+	if o == nil || o.Timemachine == nil {
 		var ret bool
 		return ret
 	}
@@ -321,7 +321,7 @@ func (o *CreateShareSMBParams) GetTimemachine() bool {
 // GetTimemachineOk returns a tuple with the Timemachine field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetTimemachineOk() (*bool, bool) {
-	if o == nil || isNil(o.Timemachine) {
+	if o == nil || o.Timemachine == nil {
 		return nil, false
 	}
 	return o.Timemachine, true
@@ -329,7 +329,7 @@ func (o *CreateShareSMBParams) GetTimemachineOk() (*bool, bool) {
 
 // HasTimemachine returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasTimemachine() bool {
-	if o != nil && !isNil(o.Timemachine) {
+	if o != nil && o.Timemachine != nil {
 		return true
 	}
 
@@ -343,7 +343,7 @@ func (o *CreateShareSMBParams) SetTimemachine(v bool) {
 
 // GetRecyclebin returns the Recyclebin field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetRecyclebin() bool {
-	if o == nil || isNil(o.Recyclebin) {
+	if o == nil || o.Recyclebin == nil {
 		var ret bool
 		return ret
 	}
@@ -353,7 +353,7 @@ func (o *CreateShareSMBParams) GetRecyclebin() bool {
 // GetRecyclebinOk returns a tuple with the Recyclebin field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetRecyclebinOk() (*bool, bool) {
-	if o == nil || isNil(o.Recyclebin) {
+	if o == nil || o.Recyclebin == nil {
 		return nil, false
 	}
 	return o.Recyclebin, true
@@ -361,7 +361,7 @@ func (o *CreateShareSMBParams) GetRecyclebinOk() (*bool, bool) {
 
 // HasRecyclebin returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasRecyclebin() bool {
-	if o != nil && !isNil(o.Recyclebin) {
+	if o != nil && o.Recyclebin != nil {
 		return true
 	}
 
@@ -375,7 +375,7 @@ func (o *CreateShareSMBParams) SetRecyclebin(v bool) {
 
 // GetGuestok returns the Guestok field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetGuestok() bool {
-	if o == nil || isNil(o.Guestok) {
+	if o == nil || o.Guestok == nil {
 		var ret bool
 		return ret
 	}
@@ -385,7 +385,7 @@ func (o *CreateShareSMBParams) GetGuestok() bool {
 // GetGuestokOk returns a tuple with the Guestok field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetGuestokOk() (*bool, bool) {
-	if o == nil || isNil(o.Guestok) {
+	if o == nil || o.Guestok == nil {
 		return nil, false
 	}
 	return o.Guestok, true
@@ -393,7 +393,7 @@ func (o *CreateShareSMBParams) GetGuestokOk() (*bool, bool) {
 
 // HasGuestok returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasGuestok() bool {
-	if o != nil && !isNil(o.Guestok) {
+	if o != nil && o.Guestok != nil {
 		return true
 	}
 
@@ -407,7 +407,7 @@ func (o *CreateShareSMBParams) SetGuestok(v bool) {
 
 // GetAbe returns the Abe field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetAbe() bool {
-	if o == nil || isNil(o.Abe) {
+	if o == nil || o.Abe == nil {
 		var ret bool
 		return ret
 	}
@@ -417,7 +417,7 @@ func (o *CreateShareSMBParams) GetAbe() bool {
 // GetAbeOk returns a tuple with the Abe field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetAbeOk() (*bool, bool) {
-	if o == nil || isNil(o.Abe) {
+	if o == nil || o.Abe == nil {
 		return nil, false
 	}
 	return o.Abe, true
@@ -425,7 +425,7 @@ func (o *CreateShareSMBParams) GetAbeOk() (*bool, bool) {
 
 // HasAbe returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasAbe() bool {
-	if o != nil && !isNil(o.Abe) {
+	if o != nil && o.Abe != nil {
 		return true
 	}
 
@@ -439,7 +439,7 @@ func (o *CreateShareSMBParams) SetAbe(v bool) {
 
 // GetHostsallow returns the Hostsallow field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetHostsallow() []string {
-	if o == nil || isNil(o.Hostsallow) {
+	if o == nil || o.Hostsallow == nil {
 		var ret []string
 		return ret
 	}
@@ -449,7 +449,7 @@ func (o *CreateShareSMBParams) GetHostsallow() []string {
 // GetHostsallowOk returns a tuple with the Hostsallow field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetHostsallowOk() ([]string, bool) {
-	if o == nil || isNil(o.Hostsallow) {
+	if o == nil || o.Hostsallow == nil {
 		return nil, false
 	}
 	return o.Hostsallow, true
@@ -457,7 +457,7 @@ func (o *CreateShareSMBParams) GetHostsallowOk() ([]string, bool) {
 
 // HasHostsallow returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasHostsallow() bool {
-	if o != nil && !isNil(o.Hostsallow) {
+	if o != nil && o.Hostsallow != nil {
 		return true
 	}
 
@@ -471,7 +471,7 @@ func (o *CreateShareSMBParams) SetHostsallow(v []string) {
 
 // GetHostsdeny returns the Hostsdeny field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetHostsdeny() []string {
-	if o == nil || isNil(o.Hostsdeny) {
+	if o == nil || o.Hostsdeny == nil {
 		var ret []string
 		return ret
 	}
@@ -481,7 +481,7 @@ func (o *CreateShareSMBParams) GetHostsdeny() []string {
 // GetHostsdenyOk returns a tuple with the Hostsdeny field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetHostsdenyOk() ([]string, bool) {
-	if o == nil || isNil(o.Hostsdeny) {
+	if o == nil || o.Hostsdeny == nil {
 		return nil, false
 	}
 	return o.Hostsdeny, true
@@ -489,7 +489,7 @@ func (o *CreateShareSMBParams) GetHostsdenyOk() ([]string, bool) {
 
 // HasHostsdeny returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasHostsdeny() bool {
-	if o != nil && !isNil(o.Hostsdeny) {
+	if o != nil && o.Hostsdeny != nil {
 		return true
 	}
 
@@ -503,7 +503,7 @@ func (o *CreateShareSMBParams) SetHostsdeny(v []string) {
 
 // GetAaplNameMangling returns the AaplNameMangling field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetAaplNameMangling() bool {
-	if o == nil || isNil(o.AaplNameMangling) {
+	if o == nil || o.AaplNameMangling == nil {
 		var ret bool
 		return ret
 	}
@@ -513,7 +513,7 @@ func (o *CreateShareSMBParams) GetAaplNameMangling() bool {
 // GetAaplNameManglingOk returns a tuple with the AaplNameMangling field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetAaplNameManglingOk() (*bool, bool) {
-	if o == nil || isNil(o.AaplNameMangling) {
+	if o == nil || o.AaplNameMangling == nil {
 		return nil, false
 	}
 	return o.AaplNameMangling, true
@@ -521,7 +521,7 @@ func (o *CreateShareSMBParams) GetAaplNameManglingOk() (*bool, bool) {
 
 // HasAaplNameMangling returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasAaplNameMangling() bool {
-	if o != nil && !isNil(o.AaplNameMangling) {
+	if o != nil && o.AaplNameMangling != nil {
 		return true
 	}
 
@@ -535,7 +535,7 @@ func (o *CreateShareSMBParams) SetAaplNameMangling(v bool) {
 
 // GetAcl returns the Acl field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetAcl() bool {
-	if o == nil || isNil(o.Acl) {
+	if o == nil || o.Acl == nil {
 		var ret bool
 		return ret
 	}
@@ -545,7 +545,7 @@ func (o *CreateShareSMBParams) GetAcl() bool {
 // GetAclOk returns a tuple with the Acl field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetAclOk() (*bool, bool) {
-	if o == nil || isNil(o.Acl) {
+	if o == nil || o.Acl == nil {
 		return nil, false
 	}
 	return o.Acl, true
@@ -553,7 +553,7 @@ func (o *CreateShareSMBParams) GetAclOk() (*bool, bool) {
 
 // HasAcl returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasAcl() bool {
-	if o != nil && !isNil(o.Acl) {
+	if o != nil && o.Acl != nil {
 		return true
 	}
 
@@ -567,7 +567,7 @@ func (o *CreateShareSMBParams) SetAcl(v bool) {
 
 // GetDurablehandle returns the Durablehandle field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetDurablehandle() bool {
-	if o == nil || isNil(o.Durablehandle) {
+	if o == nil || o.Durablehandle == nil {
 		var ret bool
 		return ret
 	}
@@ -577,7 +577,7 @@ func (o *CreateShareSMBParams) GetDurablehandle() bool {
 // GetDurablehandleOk returns a tuple with the Durablehandle field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetDurablehandleOk() (*bool, bool) {
-	if o == nil || isNil(o.Durablehandle) {
+	if o == nil || o.Durablehandle == nil {
 		return nil, false
 	}
 	return o.Durablehandle, true
@@ -585,7 +585,7 @@ func (o *CreateShareSMBParams) GetDurablehandleOk() (*bool, bool) {
 
 // HasDurablehandle returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasDurablehandle() bool {
-	if o != nil && !isNil(o.Durablehandle) {
+	if o != nil && o.Durablehandle != nil {
 		return true
 	}
 
@@ -599,7 +599,7 @@ func (o *CreateShareSMBParams) SetDurablehandle(v bool) {
 
 // GetShadowcopy returns the Shadowcopy field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetShadowcopy() bool {
-	if o == nil || isNil(o.Shadowcopy) {
+	if o == nil || o.Shadowcopy == nil {
 		var ret bool
 		return ret
 	}
@@ -609,7 +609,7 @@ func (o *CreateShareSMBParams) GetShadowcopy() bool {
 // GetShadowcopyOk returns a tuple with the Shadowcopy field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetShadowcopyOk() (*bool, bool) {
-	if o == nil || isNil(o.Shadowcopy) {
+	if o == nil || o.Shadowcopy == nil {
 		return nil, false
 	}
 	return o.Shadowcopy, true
@@ -617,7 +617,7 @@ func (o *CreateShareSMBParams) GetShadowcopyOk() (*bool, bool) {
 
 // HasShadowcopy returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasShadowcopy() bool {
-	if o != nil && !isNil(o.Shadowcopy) {
+	if o != nil && o.Shadowcopy != nil {
 		return true
 	}
 
@@ -631,7 +631,7 @@ func (o *CreateShareSMBParams) SetShadowcopy(v bool) {
 
 // GetStreams returns the Streams field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetStreams() bool {
-	if o == nil || isNil(o.Streams) {
+	if o == nil || o.Streams == nil {
 		var ret bool
 		return ret
 	}
@@ -641,7 +641,7 @@ func (o *CreateShareSMBParams) GetStreams() bool {
 // GetStreamsOk returns a tuple with the Streams field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetStreamsOk() (*bool, bool) {
-	if o == nil || isNil(o.Streams) {
+	if o == nil || o.Streams == nil {
 		return nil, false
 	}
 	return o.Streams, true
@@ -649,7 +649,7 @@ func (o *CreateShareSMBParams) GetStreamsOk() (*bool, bool) {
 
 // HasStreams returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasStreams() bool {
-	if o != nil && !isNil(o.Streams) {
+	if o != nil && o.Streams != nil {
 		return true
 	}
 
@@ -663,7 +663,7 @@ func (o *CreateShareSMBParams) SetStreams(v bool) {
 
 // GetFsrvp returns the Fsrvp field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetFsrvp() bool {
-	if o == nil || isNil(o.Fsrvp) {
+	if o == nil || o.Fsrvp == nil {
 		var ret bool
 		return ret
 	}
@@ -673,7 +673,7 @@ func (o *CreateShareSMBParams) GetFsrvp() bool {
 // GetFsrvpOk returns a tuple with the Fsrvp field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetFsrvpOk() (*bool, bool) {
-	if o == nil || isNil(o.Fsrvp) {
+	if o == nil || o.Fsrvp == nil {
 		return nil, false
 	}
 	return o.Fsrvp, true
@@ -681,7 +681,7 @@ func (o *CreateShareSMBParams) GetFsrvpOk() (*bool, bool) {
 
 // HasFsrvp returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasFsrvp() bool {
-	if o != nil && !isNil(o.Fsrvp) {
+	if o != nil && o.Fsrvp != nil {
 		return true
 	}
 
@@ -695,7 +695,7 @@ func (o *CreateShareSMBParams) SetFsrvp(v bool) {
 
 // GetAuxsmbconf returns the Auxsmbconf field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetAuxsmbconf() string {
-	if o == nil || isNil(o.Auxsmbconf) {
+	if o == nil || o.Auxsmbconf == nil {
 		var ret string
 		return ret
 	}
@@ -705,7 +705,7 @@ func (o *CreateShareSMBParams) GetAuxsmbconf() string {
 // GetAuxsmbconfOk returns a tuple with the Auxsmbconf field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetAuxsmbconfOk() (*string, bool) {
-	if o == nil || isNil(o.Auxsmbconf) {
+	if o == nil || o.Auxsmbconf == nil {
 		return nil, false
 	}
 	return o.Auxsmbconf, true
@@ -713,7 +713,7 @@ func (o *CreateShareSMBParams) GetAuxsmbconfOk() (*string, bool) {
 
 // HasAuxsmbconf returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasAuxsmbconf() bool {
-	if o != nil && !isNil(o.Auxsmbconf) {
+	if o != nil && o.Auxsmbconf != nil {
 		return true
 	}
 
@@ -727,7 +727,7 @@ func (o *CreateShareSMBParams) SetAuxsmbconf(v string) {
 
 // GetEnabled returns the Enabled field value if set, zero value otherwise.
 func (o *CreateShareSMBParams) GetEnabled() bool {
-	if o == nil || isNil(o.Enabled) {
+	if o == nil || o.Enabled == nil {
 		var ret bool
 		return ret
 	}
@@ -737,7 +737,7 @@ func (o *CreateShareSMBParams) GetEnabled() bool {
 // GetEnabledOk returns a tuple with the Enabled field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareSMBParams) GetEnabledOk() (*bool, bool) {
-	if o == nil || isNil(o.Enabled) {
+	if o == nil || o.Enabled == nil {
 		return nil, false
 	}
 	return o.Enabled, true
@@ -745,7 +745,7 @@ func (o *CreateShareSMBParams) GetEnabledOk() (*bool, bool) {
 
 // HasEnabled returns a boolean if a field has been set.
 func (o *CreateShareSMBParams) HasEnabled() bool {
-	if o != nil && !isNil(o.Enabled) {
+	if o != nil && o.Enabled != nil {
 		return true
 	}
 
@@ -759,70 +759,70 @@ func (o *CreateShareSMBParams) SetEnabled(v bool) {
 
 func (o CreateShareSMBParams) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
-	if !isNil(o.Purpose) {
+	if o.Purpose != nil {
 		toSerialize["purpose"] = o.Purpose
 	}
 	if true {
 		toSerialize["path"] = o.Path
 	}
-	if !isNil(o.PathSuffix) {
+	if o.PathSuffix != nil {
 		toSerialize["path_suffix"] = o.PathSuffix
 	}
-	if !isNil(o.Home) {
+	if o.Home != nil {
 		toSerialize["home"] = o.Home
 	}
-	if !isNil(o.Name) {
+	if o.Name != nil {
 		toSerialize["name"] = o.Name
 	}
-	if !isNil(o.Comment) {
+	if o.Comment != nil {
 		toSerialize["comment"] = o.Comment
 	}
-	if !isNil(o.Ro) {
+	if o.Ro != nil {
 		toSerialize["ro"] = o.Ro
 	}
-	if !isNil(o.Browsable) {
+	if o.Browsable != nil {
 		toSerialize["browsable"] = o.Browsable
 	}
-	if !isNil(o.Timemachine) {
+	if o.Timemachine != nil {
 		toSerialize["timemachine"] = o.Timemachine
 	}
-	if !isNil(o.Recyclebin) {
+	if o.Recyclebin != nil {
 		toSerialize["recyclebin"] = o.Recyclebin
 	}
-	if !isNil(o.Guestok) {
+	if o.Guestok != nil {
 		toSerialize["guestok"] = o.Guestok
 	}
-	if !isNil(o.Abe) {
+	if o.Abe != nil {
 		toSerialize["abe"] = o.Abe
 	}
-	if !isNil(o.Hostsallow) {
+	if o.Hostsallow != nil {
 		toSerialize["hostsallow"] = o.Hostsallow
 	}
-	if !isNil(o.Hostsdeny) {
+	if o.Hostsdeny != nil {
 		toSerialize["hostsdeny"] = o.Hostsdeny
 	}
-	if !isNil(o.AaplNameMangling) {
+	if o.AaplNameMangling != nil {
 		toSerialize["aapl_name_mangling"] = o.AaplNameMangling
 	}
-	if !isNil(o.Acl) {
+	if o.Acl != nil {
 		toSerialize["acl"] = o.Acl
 	}
-	if !isNil(o.Durablehandle) {
+	if o.Durablehandle != nil {
 		toSerialize["durablehandle"] = o.Durablehandle
 	}
-	if !isNil(o.Shadowcopy) {
+	if o.Shadowcopy != nil {
 		toSerialize["shadowcopy"] = o.Shadowcopy
 	}
-	if !isNil(o.Streams) {
+	if o.Streams != nil {
 		toSerialize["streams"] = o.Streams
 	}
-	if !isNil(o.Fsrvp) {
+	if o.Fsrvp != nil {
 		toSerialize["fsrvp"] = o.Fsrvp
 	}
-	if !isNil(o.Auxsmbconf) {
+	if o.Auxsmbconf != nil {
 		toSerialize["auxsmbconf"] = o.Auxsmbconf
 	}
-	if !isNil(o.Enabled) {
+	if o.Enabled != nil {
 		toSerialize["enabled"] = o.Enabled
 	}
 

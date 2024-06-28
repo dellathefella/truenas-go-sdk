@@ -95,7 +95,7 @@ func (o *Service) SetService(v string) {
 
 // GetEnable returns the Enable field value if set, zero value otherwise.
 func (o *Service) GetEnable() bool {
-	if o == nil || isNil(o.Enable) {
+	if o == nil || o.Enable == nil {
 		var ret bool
 		return ret
 	}
@@ -105,7 +105,7 @@ func (o *Service) GetEnable() bool {
 // GetEnableOk returns a tuple with the Enable field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *Service) GetEnableOk() (*bool, bool) {
-	if o == nil || isNil(o.Enable) {
+	if o == nil || o.Enable == nil {
 		return nil, false
 	}
 	return o.Enable, true
@@ -113,7 +113,7 @@ func (o *Service) GetEnableOk() (*bool, bool) {
 
 // HasEnable returns a boolean if a field has been set.
 func (o *Service) HasEnable() bool {
-	if o != nil && !isNil(o.Enable) {
+	if o != nil && o.Enable != nil {
 		return true
 	}
 
@@ -127,7 +127,7 @@ func (o *Service) SetEnable(v bool) {
 
 // GetState returns the State field value if set, zero value otherwise.
 func (o *Service) GetState() string {
-	if o == nil || isNil(o.State) {
+	if o == nil || o.State == nil {
 		var ret string
 		return ret
 	}
@@ -137,7 +137,7 @@ func (o *Service) GetState() string {
 // GetStateOk returns a tuple with the State field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *Service) GetStateOk() (*string, bool) {
-	if o == nil || isNil(o.State) {
+	if o == nil || o.State == nil {
 		return nil, false
 	}
 	return o.State, true
@@ -145,7 +145,7 @@ func (o *Service) GetStateOk() (*string, bool) {
 
 // HasState returns a boolean if a field has been set.
 func (o *Service) HasState() bool {
-	if o != nil && !isNil(o.State) {
+	if o != nil && o.State != nil {
 		return true
 	}
 
@@ -159,7 +159,7 @@ func (o *Service) SetState(v string) {
 
 // GetPids returns the Pids field value if set, zero value otherwise.
 func (o *Service) GetPids() []int32 {
-	if o == nil || isNil(o.Pids) {
+	if o == nil || o.Pids == nil {
 		var ret []int32
 		return ret
 	}
@@ -169,7 +169,7 @@ func (o *Service) GetPids() []int32 {
 // GetPidsOk returns a tuple with the Pids field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *Service) GetPidsOk() ([]int32, bool) {
-	if o == nil || isNil(o.Pids) {
+	if o == nil || o.Pids == nil {
 		return nil, false
 	}
 	return o.Pids, true
@@ -177,7 +177,7 @@ func (o *Service) GetPidsOk() ([]int32, bool) {
 
 // HasPids returns a boolean if a field has been set.
 func (o *Service) HasPids() bool {
-	if o != nil && !isNil(o.Pids) {
+	if o != nil && o.Pids != nil {
 		return true
 	}
 
@@ -197,13 +197,13 @@ func (o Service) MarshalJSON() ([]byte, error) {
 	if true {
 		toSerialize["service"] = o.Service
 	}
-	if !isNil(o.Enable) {
+	if o.Enable != nil {
 		toSerialize["enable"] = o.Enable
 	}
-	if !isNil(o.State) {
+	if o.State != nil {
 		toSerialize["state"] = o.State
 	}
-	if !isNil(o.Pids) {
+	if o.Pids != nil {
 		toSerialize["pids"] = o.Pids
 	}
 

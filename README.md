@@ -22,7 +22,7 @@ go get golang.org/x/net/context
 Put the package under your project folder and add the following in import:
 
 ```golang
-import truenas "github.com/dariusbakunas/truenas-go-sdk"
+import truenas "github.com/dellathefella/truenas-go-sdk"
 ```
 
 To use a proxy, set the environment variable `HTTP_PROXY`:
@@ -61,7 +61,7 @@ Each operation can use different server URL defined using `OperationServers` map
 An operation is uniquely identified by `"{classname}Service.{nickname}"` string.
 Similar rules for overriding default operation server index and variables applies by using `sw.ContextOperationServerIndices` and `sw.ContextOperationServerVariables` context maps.
 
-```golang
+```
 ctx := context.WithValue(context.Background(), truenas.ContextOperationServerIndices, map[string]int{
 	"{classname}Service.{nickname}": 2,
 })
@@ -96,6 +96,7 @@ Class | Method | HTTP request | Description
 *NetworkApi* | [**GetNetworkSummary**](docs/NetworkApi.md#getnetworksummary) | **Get** /network/general/summary | 
 *PoolApi* | [**ListPools**](docs/PoolApi.md#listpools) | **Get** /pool | 
 *ServiceApi* | [**GetService**](docs/ServiceApi.md#getservice) | **Get** /service/id/{id} | 
+*ServiceApi* | [**ListServices**](docs/ServiceApi.md#listservices) | **Get** /service | 
 *SharingApi* | [**CreateShareNFS**](docs/SharingApi.md#createsharenfs) | **Post** /sharing/nfs | 
 *SharingApi* | [**CreateShareSMB**](docs/SharingApi.md#createsharesmb) | **Post** /sharing/smb | 
 *SharingApi* | [**GetShareNFS**](docs/SharingApi.md#getsharenfs) | **Get** /sharing/nfs/id/{id} | 

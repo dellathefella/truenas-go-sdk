@@ -78,7 +78,7 @@ func (o *CreateShareNFSParams) SetPaths(v []string) {
 
 // GetComment returns the Comment field value if set, zero value otherwise.
 func (o *CreateShareNFSParams) GetComment() string {
-	if o == nil || isNil(o.Comment) {
+	if o == nil || o.Comment == nil {
 		var ret string
 		return ret
 	}
@@ -88,7 +88,7 @@ func (o *CreateShareNFSParams) GetComment() string {
 // GetCommentOk returns a tuple with the Comment field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareNFSParams) GetCommentOk() (*string, bool) {
-	if o == nil || isNil(o.Comment) {
+	if o == nil || o.Comment == nil {
 		return nil, false
 	}
 	return o.Comment, true
@@ -96,7 +96,7 @@ func (o *CreateShareNFSParams) GetCommentOk() (*string, bool) {
 
 // HasComment returns a boolean if a field has been set.
 func (o *CreateShareNFSParams) HasComment() bool {
-	if o != nil && !isNil(o.Comment) {
+	if o != nil && o.Comment != nil {
 		return true
 	}
 
@@ -110,7 +110,7 @@ func (o *CreateShareNFSParams) SetComment(v string) {
 
 // GetNetworks returns the Networks field value if set, zero value otherwise.
 func (o *CreateShareNFSParams) GetNetworks() []string {
-	if o == nil || isNil(o.Networks) {
+	if o == nil || o.Networks == nil {
 		var ret []string
 		return ret
 	}
@@ -120,7 +120,7 @@ func (o *CreateShareNFSParams) GetNetworks() []string {
 // GetNetworksOk returns a tuple with the Networks field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareNFSParams) GetNetworksOk() ([]string, bool) {
-	if o == nil || isNil(o.Networks) {
+	if o == nil || o.Networks == nil {
 		return nil, false
 	}
 	return o.Networks, true
@@ -128,7 +128,7 @@ func (o *CreateShareNFSParams) GetNetworksOk() ([]string, bool) {
 
 // HasNetworks returns a boolean if a field has been set.
 func (o *CreateShareNFSParams) HasNetworks() bool {
-	if o != nil && !isNil(o.Networks) {
+	if o != nil && o.Networks != nil {
 		return true
 	}
 
@@ -142,7 +142,7 @@ func (o *CreateShareNFSParams) SetNetworks(v []string) {
 
 // GetHosts returns the Hosts field value if set, zero value otherwise.
 func (o *CreateShareNFSParams) GetHosts() []string {
-	if o == nil || isNil(o.Hosts) {
+	if o == nil || o.Hosts == nil {
 		var ret []string
 		return ret
 	}
@@ -152,7 +152,7 @@ func (o *CreateShareNFSParams) GetHosts() []string {
 // GetHostsOk returns a tuple with the Hosts field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareNFSParams) GetHostsOk() ([]string, bool) {
-	if o == nil || isNil(o.Hosts) {
+	if o == nil || o.Hosts == nil {
 		return nil, false
 	}
 	return o.Hosts, true
@@ -160,7 +160,7 @@ func (o *CreateShareNFSParams) GetHostsOk() ([]string, bool) {
 
 // HasHosts returns a boolean if a field has been set.
 func (o *CreateShareNFSParams) HasHosts() bool {
-	if o != nil && !isNil(o.Hosts) {
+	if o != nil && o.Hosts != nil {
 		return true
 	}
 
@@ -174,7 +174,7 @@ func (o *CreateShareNFSParams) SetHosts(v []string) {
 
 // GetAlldirs returns the Alldirs field value if set, zero value otherwise.
 func (o *CreateShareNFSParams) GetAlldirs() bool {
-	if o == nil || isNil(o.Alldirs) {
+	if o == nil || o.Alldirs == nil {
 		var ret bool
 		return ret
 	}
@@ -184,7 +184,7 @@ func (o *CreateShareNFSParams) GetAlldirs() bool {
 // GetAlldirsOk returns a tuple with the Alldirs field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareNFSParams) GetAlldirsOk() (*bool, bool) {
-	if o == nil || isNil(o.Alldirs) {
+	if o == nil || o.Alldirs == nil {
 		return nil, false
 	}
 	return o.Alldirs, true
@@ -192,7 +192,7 @@ func (o *CreateShareNFSParams) GetAlldirsOk() (*bool, bool) {
 
 // HasAlldirs returns a boolean if a field has been set.
 func (o *CreateShareNFSParams) HasAlldirs() bool {
-	if o != nil && !isNil(o.Alldirs) {
+	if o != nil && o.Alldirs != nil {
 		return true
 	}
 
@@ -206,7 +206,7 @@ func (o *CreateShareNFSParams) SetAlldirs(v bool) {
 
 // GetRo returns the Ro field value if set, zero value otherwise.
 func (o *CreateShareNFSParams) GetRo() bool {
-	if o == nil || isNil(o.Ro) {
+	if o == nil || o.Ro == nil {
 		var ret bool
 		return ret
 	}
@@ -216,7 +216,7 @@ func (o *CreateShareNFSParams) GetRo() bool {
 // GetRoOk returns a tuple with the Ro field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareNFSParams) GetRoOk() (*bool, bool) {
-	if o == nil || isNil(o.Ro) {
+	if o == nil || o.Ro == nil {
 		return nil, false
 	}
 	return o.Ro, true
@@ -224,7 +224,7 @@ func (o *CreateShareNFSParams) GetRoOk() (*bool, bool) {
 
 // HasRo returns a boolean if a field has been set.
 func (o *CreateShareNFSParams) HasRo() bool {
-	if o != nil && !isNil(o.Ro) {
+	if o != nil && o.Ro != nil {
 		return true
 	}
 
@@ -238,7 +238,7 @@ func (o *CreateShareNFSParams) SetRo(v bool) {
 
 // GetQuiet returns the Quiet field value if set, zero value otherwise.
 func (o *CreateShareNFSParams) GetQuiet() bool {
-	if o == nil || isNil(o.Quiet) {
+	if o == nil || o.Quiet == nil {
 		var ret bool
 		return ret
 	}
@@ -248,7 +248,7 @@ func (o *CreateShareNFSParams) GetQuiet() bool {
 // GetQuietOk returns a tuple with the Quiet field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareNFSParams) GetQuietOk() (*bool, bool) {
-	if o == nil || isNil(o.Quiet) {
+	if o == nil || o.Quiet == nil {
 		return nil, false
 	}
 	return o.Quiet, true
@@ -256,7 +256,7 @@ func (o *CreateShareNFSParams) GetQuietOk() (*bool, bool) {
 
 // HasQuiet returns a boolean if a field has been set.
 func (o *CreateShareNFSParams) HasQuiet() bool {
-	if o != nil && !isNil(o.Quiet) {
+	if o != nil && o.Quiet != nil {
 		return true
 	}
 
@@ -270,7 +270,7 @@ func (o *CreateShareNFSParams) SetQuiet(v bool) {
 
 // GetMaprootUser returns the MaprootUser field value if set, zero value otherwise.
 func (o *CreateShareNFSParams) GetMaprootUser() string {
-	if o == nil || isNil(o.MaprootUser) {
+	if o == nil || o.MaprootUser == nil {
 		var ret string
 		return ret
 	}
@@ -280,7 +280,7 @@ func (o *CreateShareNFSParams) GetMaprootUser() string {
 // GetMaprootUserOk returns a tuple with the MaprootUser field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareNFSParams) GetMaprootUserOk() (*string, bool) {
-	if o == nil || isNil(o.MaprootUser) {
+	if o == nil || o.MaprootUser == nil {
 		return nil, false
 	}
 	return o.MaprootUser, true
@@ -288,7 +288,7 @@ func (o *CreateShareNFSParams) GetMaprootUserOk() (*string, bool) {
 
 // HasMaprootUser returns a boolean if a field has been set.
 func (o *CreateShareNFSParams) HasMaprootUser() bool {
-	if o != nil && !isNil(o.MaprootUser) {
+	if o != nil && o.MaprootUser != nil {
 		return true
 	}
 
@@ -302,7 +302,7 @@ func (o *CreateShareNFSParams) SetMaprootUser(v string) {
 
 // GetMaprootGroup returns the MaprootGroup field value if set, zero value otherwise.
 func (o *CreateShareNFSParams) GetMaprootGroup() string {
-	if o == nil || isNil(o.MaprootGroup) {
+	if o == nil || o.MaprootGroup == nil {
 		var ret string
 		return ret
 	}
@@ -312,7 +312,7 @@ func (o *CreateShareNFSParams) GetMaprootGroup() string {
 // GetMaprootGroupOk returns a tuple with the MaprootGroup field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareNFSParams) GetMaprootGroupOk() (*string, bool) {
-	if o == nil || isNil(o.MaprootGroup) {
+	if o == nil || o.MaprootGroup == nil {
 		return nil, false
 	}
 	return o.MaprootGroup, true
@@ -320,7 +320,7 @@ func (o *CreateShareNFSParams) GetMaprootGroupOk() (*string, bool) {
 
 // HasMaprootGroup returns a boolean if a field has been set.
 func (o *CreateShareNFSParams) HasMaprootGroup() bool {
-	if o != nil && !isNil(o.MaprootGroup) {
+	if o != nil && o.MaprootGroup != nil {
 		return true
 	}
 
@@ -334,7 +334,7 @@ func (o *CreateShareNFSParams) SetMaprootGroup(v string) {
 
 // GetMapallUser returns the MapallUser field value if set, zero value otherwise.
 func (o *CreateShareNFSParams) GetMapallUser() string {
-	if o == nil || isNil(o.MapallUser) {
+	if o == nil || o.MapallUser == nil {
 		var ret string
 		return ret
 	}
@@ -344,7 +344,7 @@ func (o *CreateShareNFSParams) GetMapallUser() string {
 // GetMapallUserOk returns a tuple with the MapallUser field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareNFSParams) GetMapallUserOk() (*string, bool) {
-	if o == nil || isNil(o.MapallUser) {
+	if o == nil || o.MapallUser == nil {
 		return nil, false
 	}
 	return o.MapallUser, true
@@ -352,7 +352,7 @@ func (o *CreateShareNFSParams) GetMapallUserOk() (*string, bool) {
 
 // HasMapallUser returns a boolean if a field has been set.
 func (o *CreateShareNFSParams) HasMapallUser() bool {
-	if o != nil && !isNil(o.MapallUser) {
+	if o != nil && o.MapallUser != nil {
 		return true
 	}
 
@@ -366,7 +366,7 @@ func (o *CreateShareNFSParams) SetMapallUser(v string) {
 
 // GetMapallGroup returns the MapallGroup field value if set, zero value otherwise.
 func (o *CreateShareNFSParams) GetMapallGroup() string {
-	if o == nil || isNil(o.MapallGroup) {
+	if o == nil || o.MapallGroup == nil {
 		var ret string
 		return ret
 	}
@@ -376,7 +376,7 @@ func (o *CreateShareNFSParams) GetMapallGroup() string {
 // GetMapallGroupOk returns a tuple with the MapallGroup field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareNFSParams) GetMapallGroupOk() (*string, bool) {
-	if o == nil || isNil(o.MapallGroup) {
+	if o == nil || o.MapallGroup == nil {
 		return nil, false
 	}
 	return o.MapallGroup, true
@@ -384,7 +384,7 @@ func (o *CreateShareNFSParams) GetMapallGroupOk() (*string, bool) {
 
 // HasMapallGroup returns a boolean if a field has been set.
 func (o *CreateShareNFSParams) HasMapallGroup() bool {
-	if o != nil && !isNil(o.MapallGroup) {
+	if o != nil && o.MapallGroup != nil {
 		return true
 	}
 
@@ -398,7 +398,7 @@ func (o *CreateShareNFSParams) SetMapallGroup(v string) {
 
 // GetSecurity returns the Security field value if set, zero value otherwise.
 func (o *CreateShareNFSParams) GetSecurity() []string {
-	if o == nil || isNil(o.Security) {
+	if o == nil || o.Security == nil {
 		var ret []string
 		return ret
 	}
@@ -408,7 +408,7 @@ func (o *CreateShareNFSParams) GetSecurity() []string {
 // GetSecurityOk returns a tuple with the Security field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareNFSParams) GetSecurityOk() ([]string, bool) {
-	if o == nil || isNil(o.Security) {
+	if o == nil || o.Security == nil {
 		return nil, false
 	}
 	return o.Security, true
@@ -416,7 +416,7 @@ func (o *CreateShareNFSParams) GetSecurityOk() ([]string, bool) {
 
 // HasSecurity returns a boolean if a field has been set.
 func (o *CreateShareNFSParams) HasSecurity() bool {
-	if o != nil && !isNil(o.Security) {
+	if o != nil && o.Security != nil {
 		return true
 	}
 
@@ -430,7 +430,7 @@ func (o *CreateShareNFSParams) SetSecurity(v []string) {
 
 // GetEnabled returns the Enabled field value if set, zero value otherwise.
 func (o *CreateShareNFSParams) GetEnabled() bool {
-	if o == nil || isNil(o.Enabled) {
+	if o == nil || o.Enabled == nil {
 		var ret bool
 		return ret
 	}
@@ -440,7 +440,7 @@ func (o *CreateShareNFSParams) GetEnabled() bool {
 // GetEnabledOk returns a tuple with the Enabled field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateShareNFSParams) GetEnabledOk() (*bool, bool) {
-	if o == nil || isNil(o.Enabled) {
+	if o == nil || o.Enabled == nil {
 		return nil, false
 	}
 	return o.Enabled, true
@@ -448,7 +448,7 @@ func (o *CreateShareNFSParams) GetEnabledOk() (*bool, bool) {
 
 // HasEnabled returns a boolean if a field has been set.
 func (o *CreateShareNFSParams) HasEnabled() bool {
-	if o != nil && !isNil(o.Enabled) {
+	if o != nil && o.Enabled != nil {
 		return true
 	}
 
@@ -465,40 +465,40 @@ func (o CreateShareNFSParams) MarshalJSON() ([]byte, error) {
 	if true {
 		toSerialize["paths"] = o.Paths
 	}
-	if !isNil(o.Comment) {
+	if o.Comment != nil {
 		toSerialize["comment"] = o.Comment
 	}
-	if !isNil(o.Networks) {
+	if o.Networks != nil {
 		toSerialize["networks"] = o.Networks
 	}
-	if !isNil(o.Hosts) {
+	if o.Hosts != nil {
 		toSerialize["hosts"] = o.Hosts
 	}
-	if !isNil(o.Alldirs) {
+	if o.Alldirs != nil {
 		toSerialize["alldirs"] = o.Alldirs
 	}
-	if !isNil(o.Ro) {
+	if o.Ro != nil {
 		toSerialize["ro"] = o.Ro
 	}
-	if !isNil(o.Quiet) {
+	if o.Quiet != nil {
 		toSerialize["quiet"] = o.Quiet
 	}
-	if !isNil(o.MaprootUser) {
+	if o.MaprootUser != nil {
 		toSerialize["maproot_user"] = o.MaprootUser
 	}
-	if !isNil(o.MaprootGroup) {
+	if o.MaprootGroup != nil {
 		toSerialize["maproot_group"] = o.MaprootGroup
 	}
-	if !isNil(o.MapallUser) {
+	if o.MapallUser != nil {
 		toSerialize["mapall_user"] = o.MapallUser
 	}
-	if !isNil(o.MapallGroup) {
+	if o.MapallGroup != nil {
 		toSerialize["mapall_group"] = o.MapallGroup
 	}
-	if !isNil(o.Security) {
+	if o.Security != nil {
 		toSerialize["security"] = o.Security
 	}
-	if !isNil(o.Enabled) {
+	if o.Enabled != nil {
 		toSerialize["enabled"] = o.Enabled
 	}
 

@@ -49,7 +49,7 @@ func NewCreateGroupParamsWithDefaults() *CreateGroupParams {
 
 // GetGid returns the Gid field value if set, zero value otherwise.
 func (o *CreateGroupParams) GetGid() int32 {
-	if o == nil || isNil(o.Gid) {
+	if o == nil || o.Gid == nil {
 		var ret int32
 		return ret
 	}
@@ -59,7 +59,7 @@ func (o *CreateGroupParams) GetGid() int32 {
 // GetGidOk returns a tuple with the Gid field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateGroupParams) GetGidOk() (*int32, bool) {
-	if o == nil || isNil(o.Gid) {
+	if o == nil || o.Gid == nil {
 		return nil, false
 	}
 	return o.Gid, true
@@ -67,7 +67,7 @@ func (o *CreateGroupParams) GetGidOk() (*int32, bool) {
 
 // HasGid returns a boolean if a field has been set.
 func (o *CreateGroupParams) HasGid() bool {
-	if o != nil && !isNil(o.Gid) {
+	if o != nil && o.Gid != nil {
 		return true
 	}
 
@@ -105,7 +105,7 @@ func (o *CreateGroupParams) SetName(v string) {
 
 // GetSmb returns the Smb field value if set, zero value otherwise.
 func (o *CreateGroupParams) GetSmb() bool {
-	if o == nil || isNil(o.Smb) {
+	if o == nil || o.Smb == nil {
 		var ret bool
 		return ret
 	}
@@ -115,7 +115,7 @@ func (o *CreateGroupParams) GetSmb() bool {
 // GetSmbOk returns a tuple with the Smb field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateGroupParams) GetSmbOk() (*bool, bool) {
-	if o == nil || isNil(o.Smb) {
+	if o == nil || o.Smb == nil {
 		return nil, false
 	}
 	return o.Smb, true
@@ -123,7 +123,7 @@ func (o *CreateGroupParams) GetSmbOk() (*bool, bool) {
 
 // HasSmb returns a boolean if a field has been set.
 func (o *CreateGroupParams) HasSmb() bool {
-	if o != nil && !isNil(o.Smb) {
+	if o != nil && o.Smb != nil {
 		return true
 	}
 
@@ -137,7 +137,7 @@ func (o *CreateGroupParams) SetSmb(v bool) {
 
 // GetSudo returns the Sudo field value if set, zero value otherwise.
 func (o *CreateGroupParams) GetSudo() bool {
-	if o == nil || isNil(o.Sudo) {
+	if o == nil || o.Sudo == nil {
 		var ret bool
 		return ret
 	}
@@ -147,7 +147,7 @@ func (o *CreateGroupParams) GetSudo() bool {
 // GetSudoOk returns a tuple with the Sudo field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateGroupParams) GetSudoOk() (*bool, bool) {
-	if o == nil || isNil(o.Sudo) {
+	if o == nil || o.Sudo == nil {
 		return nil, false
 	}
 	return o.Sudo, true
@@ -155,7 +155,7 @@ func (o *CreateGroupParams) GetSudoOk() (*bool, bool) {
 
 // HasSudo returns a boolean if a field has been set.
 func (o *CreateGroupParams) HasSudo() bool {
-	if o != nil && !isNil(o.Sudo) {
+	if o != nil && o.Sudo != nil {
 		return true
 	}
 
@@ -169,7 +169,7 @@ func (o *CreateGroupParams) SetSudo(v bool) {
 
 // GetSudoNopasswd returns the SudoNopasswd field value if set, zero value otherwise.
 func (o *CreateGroupParams) GetSudoNopasswd() bool {
-	if o == nil || isNil(o.SudoNopasswd) {
+	if o == nil || o.SudoNopasswd == nil {
 		var ret bool
 		return ret
 	}
@@ -179,7 +179,7 @@ func (o *CreateGroupParams) GetSudoNopasswd() bool {
 // GetSudoNopasswdOk returns a tuple with the SudoNopasswd field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateGroupParams) GetSudoNopasswdOk() (*bool, bool) {
-	if o == nil || isNil(o.SudoNopasswd) {
+	if o == nil || o.SudoNopasswd == nil {
 		return nil, false
 	}
 	return o.SudoNopasswd, true
@@ -187,7 +187,7 @@ func (o *CreateGroupParams) GetSudoNopasswdOk() (*bool, bool) {
 
 // HasSudoNopasswd returns a boolean if a field has been set.
 func (o *CreateGroupParams) HasSudoNopasswd() bool {
-	if o != nil && !isNil(o.SudoNopasswd) {
+	if o != nil && o.SudoNopasswd != nil {
 		return true
 	}
 
@@ -201,7 +201,7 @@ func (o *CreateGroupParams) SetSudoNopasswd(v bool) {
 
 // GetSudoCommands returns the SudoCommands field value if set, zero value otherwise.
 func (o *CreateGroupParams) GetSudoCommands() []string {
-	if o == nil || isNil(o.SudoCommands) {
+	if o == nil || o.SudoCommands == nil {
 		var ret []string
 		return ret
 	}
@@ -211,7 +211,7 @@ func (o *CreateGroupParams) GetSudoCommands() []string {
 // GetSudoCommandsOk returns a tuple with the SudoCommands field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateGroupParams) GetSudoCommandsOk() ([]string, bool) {
-	if o == nil || isNil(o.SudoCommands) {
+	if o == nil || o.SudoCommands == nil {
 		return nil, false
 	}
 	return o.SudoCommands, true
@@ -219,7 +219,7 @@ func (o *CreateGroupParams) GetSudoCommandsOk() ([]string, bool) {
 
 // HasSudoCommands returns a boolean if a field has been set.
 func (o *CreateGroupParams) HasSudoCommands() bool {
-	if o != nil && !isNil(o.SudoCommands) {
+	if o != nil && o.SudoCommands != nil {
 		return true
 	}
 
@@ -233,7 +233,7 @@ func (o *CreateGroupParams) SetSudoCommands(v []string) {
 
 // GetAllowDuplicateGid returns the AllowDuplicateGid field value if set, zero value otherwise.
 func (o *CreateGroupParams) GetAllowDuplicateGid() bool {
-	if o == nil || isNil(o.AllowDuplicateGid) {
+	if o == nil || o.AllowDuplicateGid == nil {
 		var ret bool
 		return ret
 	}
@@ -243,7 +243,7 @@ func (o *CreateGroupParams) GetAllowDuplicateGid() bool {
 // GetAllowDuplicateGidOk returns a tuple with the AllowDuplicateGid field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateGroupParams) GetAllowDuplicateGidOk() (*bool, bool) {
-	if o == nil || isNil(o.AllowDuplicateGid) {
+	if o == nil || o.AllowDuplicateGid == nil {
 		return nil, false
 	}
 	return o.AllowDuplicateGid, true
@@ -251,7 +251,7 @@ func (o *CreateGroupParams) GetAllowDuplicateGidOk() (*bool, bool) {
 
 // HasAllowDuplicateGid returns a boolean if a field has been set.
 func (o *CreateGroupParams) HasAllowDuplicateGid() bool {
-	if o != nil && !isNil(o.AllowDuplicateGid) {
+	if o != nil && o.AllowDuplicateGid != nil {
 		return true
 	}
 
@@ -265,7 +265,7 @@ func (o *CreateGroupParams) SetAllowDuplicateGid(v bool) {
 
 // GetUsers returns the Users field value if set, zero value otherwise.
 func (o *CreateGroupParams) GetUsers() []int32 {
-	if o == nil || isNil(o.Users) {
+	if o == nil || o.Users == nil {
 		var ret []int32
 		return ret
 	}
@@ -275,7 +275,7 @@ func (o *CreateGroupParams) GetUsers() []int32 {
 // GetUsersOk returns a tuple with the Users field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CreateGroupParams) GetUsersOk() ([]int32, bool) {
-	if o == nil || isNil(o.Users) {
+	if o == nil || o.Users == nil {
 		return nil, false
 	}
 	return o.Users, true
@@ -283,7 +283,7 @@ func (o *CreateGroupParams) GetUsersOk() ([]int32, bool) {
 
 // HasUsers returns a boolean if a field has been set.
 func (o *CreateGroupParams) HasUsers() bool {
-	if o != nil && !isNil(o.Users) {
+	if o != nil && o.Users != nil {
 		return true
 	}
 
@@ -297,28 +297,28 @@ func (o *CreateGroupParams) SetUsers(v []int32) {
 
 func (o CreateGroupParams) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
-	if !isNil(o.Gid) {
+	if o.Gid != nil {
 		toSerialize["gid"] = o.Gid
 	}
 	if true {
 		toSerialize["name"] = o.Name
 	}
-	if !isNil(o.Smb) {
+	if o.Smb != nil {
 		toSerialize["smb"] = o.Smb
 	}
-	if !isNil(o.Sudo) {
+	if o.Sudo != nil {
 		toSerialize["sudo"] = o.Sudo
 	}
-	if !isNil(o.SudoNopasswd) {
+	if o.SudoNopasswd != nil {
 		toSerialize["sudo_nopasswd"] = o.SudoNopasswd
 	}
-	if !isNil(o.SudoCommands) {
+	if o.SudoCommands != nil {
 		toSerialize["sudo_commands"] = o.SudoCommands
 	}
-	if !isNil(o.AllowDuplicateGid) {
+	if o.AllowDuplicateGid != nil {
 		toSerialize["allow_duplicate_gid"] = o.AllowDuplicateGid
 	}
-	if !isNil(o.Users) {
+	if o.Users != nil {
 		toSerialize["users"] = o.Users
 	}
 
