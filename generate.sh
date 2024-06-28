@@ -4,14 +4,11 @@ set -e
 
 RELEASE=$1
 
-rm -rf "${RELEASE}"
-openapi-generator-cli generate -i cfg/"${RELEASE}".yaml -c cfg/"${RELEASE}"_config.yaml -o ./"${RELEASE}" -g go --git-user-id dellathefella --git-repo-id truenas-go-sdk
-rm -rf "${RELEASE}"/test # seems to be broken
-patch "${RELEASE}"/client.go < client.patch
-mv "${RELEASE}"/go.mod .
-mv "${RELEASE}"/go.sum .
-sed -i '1s/.*/module github.com\/dellathefella\/truenas-go-sdk/' go.mod
-cd "${RELEASE}" || exit
+#!/bin/bash
+
+rm -rf ./*.go
+openapi-generator-cli generate -i cfg/openapi.yaml -c cfg/config.yaml -o . -g go --git-user-id dellathfella --git-repo-id truenas-go-sdk
+rm -rf test # seems to be broken
+patch client.go < client.patch
 go mod tidy
 go fmt ./...
-cd ..
