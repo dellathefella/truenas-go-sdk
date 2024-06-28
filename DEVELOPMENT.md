@@ -26,7 +26,7 @@ npm install -g @stoplight/spectral-cli
 ```
 
 ```bash
-$ openapi-generator-cli generate -i cfg/dragonfish.yaml -c cfg/dragonfish_config.yaml -o ./dragonfish -g go --git-user-id dellathefella --git-repo-id truenas-go-sdk
+$ openapi-generator-cli generate -i cfg/bluefin.yaml -c cfg/bluefin_config.yaml -o ./truenas -g go --git-user-id dellathefella --git-repo-id truenas-go-sdk
 ```
 
 Workaround for TrueNAS content negotiation issue:

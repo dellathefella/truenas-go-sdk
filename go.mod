@@ -1,4 +1,4 @@
-module github.com/dellathefella/truenas-go-sdk/bluefin
+module github.com/dellathefella/truenas-go-sdk
 
 go 1.13
 
